@@ -1,0 +1,30 @@
+name: testing
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: npm install       
+      - name: testing with coverage
+        run: npm run coverage
+      - name: push coverage report
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: coverage
+          FOLDER: coverage
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Coverage: ({sha}) {msg}"
