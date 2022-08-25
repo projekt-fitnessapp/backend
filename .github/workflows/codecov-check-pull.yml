@@ -14,10 +14,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 18
-      - run: npm install       
+      - run: npm install
+      - name: install codecov
+        run: npm install -g codecov      
       - name: testing with coverage
         run: npm run codecov-coverage
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          files: coverage.lcov
