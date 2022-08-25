@@ -4,9 +4,7 @@ coverage:
       default:
         # basic
         target: 80%
-        base: auto 
-        paths: 
-          - "src"
+        base: auto
        # advanced settings
         if_ci_failed: error
         only_pulls: true
