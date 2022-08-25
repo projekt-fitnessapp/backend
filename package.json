@@ -9,6 +9,7 @@
     "start": "node ./dist/app.js",
     "test": "mocha -r ts-node/register --exit  \"./test/**/*.test.ts\" --timeout 0",
     "coverage": "nyc mocha -r ts-node/register --exit  \"./test/**/*.test.ts\" --timeout 0",
+    "codecov-coverage": "nyc --reporter=text-lcov mocha -r ts-node/register --exit  \"./test/**/*.test.ts\" --timeout 0 > coverage.lcov",
     "lint": "eslint . --ext .ts"
   },
   "repository": {
