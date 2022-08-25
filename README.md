@@ -2,7 +2,7 @@
 
 ### Prerequisite
 
-Place ```.env``` file in project root folder. with the following variables:
+Place ```.env``` file in project root folder. It **must** contain the following variables:
 ```
 PORT=[Your Port]
 DB_URL=[Your DB Url]
@@ -33,4 +33,14 @@ npm run devstart
 Test:
 ```
 npm run test
+```
+
+Test with coverage:
+```
+npm run coverage
+```
+
+Lint:
+```
+npm run lint
 ```
