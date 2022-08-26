@@ -4,9 +4,9 @@
   "description": "fitness app backend",
   "main": "dist/index.js",
   "scripts": {
-    "devstart": "tsc-watch --onSuccess \"node ./dist/app.js\"",
+    "devstart": "tsc-watch --onSuccess \"node ./dist/src/app.js\"",
     "build": "tsc",
-    "start": "node ./dist/app.js",
+    "start": "node ./dist/src/app.js",
     "test": "mocha -r ts-node/register --exit  \"./test/**/*.test.ts\" --timeout 0",
     "coverage": "nyc mocha -r ts-node/register --exit  \"./test/**/*.test.ts\" --timeout 0",
     "codecov-coverage": "nyc --reporter=text-lcov mocha -r ts-node/register --exit  \"./test/**/*.test.ts\" --timeout 0 > coverage.lcov",
