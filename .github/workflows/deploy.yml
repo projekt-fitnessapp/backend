@@ -1,0 +1,36 @@
+name: deploy
+
+on:
+  workflow_run:
+    workflows: ["build-docker-image"]
+    branches: [main]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+
+    steps:
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@v0.1.3
+        with:
+          HOST: ${{ secrets.SSH_HOST }}
+          USERNAME: ${{ secrets.SSH_USERNAME }}
+          PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          PORT: ${{ secrets.SSH_PORT }}
+          script: |
+            # Login to docker
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S \
+            docker login
+             ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
+            # Pull the new image from ghcr
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S \
+            docker pull ghcr.io/projekt-fitnessapp/backend:latest
+            # Replace the container and inject env variables
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S \
+            BACKEND_PORT=${{ secrets.BACKEND_PORT }} \
+            docker-compose -f ./hosting/docker-compose.yml up -d --no-deps backend
