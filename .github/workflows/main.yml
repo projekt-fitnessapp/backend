@@ -80,8 +80,7 @@ jobs:
           script: |
             # Login to docker
             echo ${{ secrets.SSH_PASSWORD }} | sudo -S \
-            docker login
-             ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
+            docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
             # Pull the new image from ghcr
             echo ${{ secrets.SSH_PASSWORD }} | sudo -S \
             docker pull ghcr.io/projekt-fitnessapp/backend:latest
