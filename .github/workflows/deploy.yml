@@ -32,5 +32,5 @@ jobs:
             # Replace the container and inject env variables
             echo ${{ secrets.SSH_PASSWORD }} | sudo -S \
             BACKEND_PORT=${{ secrets.BACKEND_PORT }} \
-            DB_URL =${{ secrets.DB_URL}} \
+            #DB_URL =${{ secrets.DB_URL}} \
             docker-compose -f ./hosting/docker-compose.yml up -d --no-deps backend
