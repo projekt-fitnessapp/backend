@@ -23,7 +23,7 @@ jobs:
           PASSWORD: ${{ secrets.SSH_PASSWORD }}
           PORT: ${{ secrets.SSH_PORT }}
           script: |
-            # Login to docker
+            # Login to ghcr
             echo ${{ secrets.SSH_PASSWORD }} | sudo -S \
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
             # Pull the new image from ghcr
