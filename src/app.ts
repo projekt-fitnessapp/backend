@@ -19,4 +19,4 @@ app.use('/', AppRouter);
 
 app.listen(parseInt(process.env.PORT as string), ()=>{
     console.log(`App started on Port ${process.env.PORT}`)
-});
+}); 
