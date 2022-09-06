@@ -3,7 +3,7 @@ name: Feature request
 about: Tickets für Erweiterungen und Wünsche
 title: "[FEATURE] Dein Titel"
 labels: enhancement, help wanted
-assignees: lumaghg, STAT1C-Sy
+assignees: HaseFlrn, Nandinihlg, Vollomat, juengeja
 
 ---
 
