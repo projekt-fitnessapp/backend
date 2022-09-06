@@ -32,4 +32,4 @@ jobs:
             # Replace the container and inject env variables
             printf "DB_URL=${{ secrets.DB_URL }} \n \
             BACKEND_PORT=${{ secrets.BACKEND_PORT }}" > ./hosting/.env
-            docker-compose -f ./hosting/docker-compose.yml up -d --no-deps backend
+            docker-compose -f ./hosting/docker-compose.yml up -d --no-deps fitness-backend
