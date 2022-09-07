@@ -16,11 +16,11 @@ mongoose.connect(process.env.DB_URL as string, async () => {
 });
 
 mongoose.connection.on("error", (err) =>
-  console.log(`Connection error ${err}`)
+  console.log(`Connection error: ${err}`)
 );
 
 app.use("/", AppRouter);
 
 app.listen(parseInt(process.env.PORT as string), () => {
-  console.log(`App started on Port ${process.env.PORT}`);
+  console.log(`App started on https://localhost:${process.env.PORT}`);
 });
