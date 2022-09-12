@@ -22,5 +22,5 @@ mongoose.connection.on("error", (err) =>
 app.use("/", AppRouter);
 
 app.listen(parseInt(process.env.PORT as string), () => {
-  console.log(`App started on https://localhost:${process.env.PORT}`);
+  console.log(`App started on http://localhost:${process.env.PORT}`);
 });
