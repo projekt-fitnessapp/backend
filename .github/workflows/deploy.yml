@@ -30,6 +30,4 @@ jobs:
             echo ${{ secrets.SSH_PASSWORD }} | sudo -S \
             docker pull ghcr.io/projekt-fitnessapp/backend:latest
             # Replace the container and inject env variables
-            printf "DB_URL=${{ secrets.DB_URL }} \n \
-            BACKEND_PORT=${{ secrets.BACKEND_PORT }}" > ./hosting/fitnessapp/.env
-            docker-compose -f ./hosting/docker-compose.yml --env-file ./hosting/fitnessapp/.env up -d --no-deps fitness-backend
+            docker-compose -f ./hosting/docker-compose.yml --env-file ./hosting/.env up -d --no-deps fitness-backend
