@@ -2,8 +2,8 @@
 name: Bug report
 about: Tickets für Fehler und Bugs
 title: "[BUG] Dein Titel"
-labels: bug, help wanted
-assignees: lumaghg, STAT1C-Sy
+labels: bug, help wanted, question
+assignees: HaseFlrn, juengeja, Nandinihlg, Vollomat
 
 ---
 
