@@ -10,11 +10,10 @@ export async function checkAuthenticated(
   next: NextFunction
 ) {
   async function verify() {
-    const ticket = await client.verifyIdToken({
+    await client.verifyIdToken({
       idToken: req.headers.get("tokenID") ?? "",
       audience: CLIENT_ID,
     });
-    const payload = ticket.getPayload();
   }
 
   verify().then(next).catch(console.error);
