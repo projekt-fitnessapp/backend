@@ -4,7 +4,7 @@
   "description": "fitness app backend",
   "main": "dist/index.js",
   "scripts": {
-    "devstart": "tsc-watch --onSuccess \"node ./dist/app.js\"",
+    "devstart": "tsc-watch --onSuccess \"node ./dist/src/app.js\"",
     "build": "tsc",
     "start": "node ./dist/src/app.js",
     "test": "mocha -r ts-node/register --exit  \"./test/**/*.test.ts\" --timeout 0",
