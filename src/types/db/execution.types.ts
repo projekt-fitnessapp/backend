@@ -2,10 +2,10 @@ import { Document, Model } from 'mongoose';
 import { TExcercise } from './exercise.types';
 
 export type TSet = {
-    executionType: String, // TODO: Wie bekomme ich hier ein Enum hinein?
-    weight: Number, // TODO: Minimum?
-    reps: Number,
-    tenRM: Number // TODO: Kann so nicht heißen (10RM)
+    executionType: {type: string, enum: ['warmup', 'working', 'backoff']},
+    weight: {type: Number, min: 0},
+    reps: {type: Number, min: 0},
+    tenRM: {type: Number, min: 0}
 }
 
 export type TExecution = {

@@ -4,8 +4,8 @@ export type TAccount = {
     _id: ObjectId,
     google_id: string,
     name: string,
-    birthdate: string, // TODO: string oder date?
-    sex: string,
+    birthdate: string,
+    sex: {type: string, enum: ['male', 'female']},
     trainingPlans: [string]
 }
 

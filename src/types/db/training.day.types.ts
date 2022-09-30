@@ -5,8 +5,8 @@ export type TTrainingDay = {
     name: string,
     excercises: [{
         excerciseId: string,
-        sets: number,
-        reps: number
+        sets: {type: number, min: 1},
+        reps: {type: number, min: 1}
     }]
 }
 

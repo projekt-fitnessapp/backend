@@ -12,10 +12,10 @@ const ExecutionSchema = new Schema({
     }, required: true },
     notes: { type: [String], default: [] },
     sets: { type: {
-        executionType: String, // TODO: Wie bekomme ich hier ein Enum hinein?
-        weight: Number, // TODO: Minimum?
-        reps: Number,
-        tenRM: Number // TODO: Kann so nicht heißen (10RM)
+        executionType: {type: String, enum: ['warmup', 'working', 'backoff']},
+        weight: {type: Number, min: 0},
+        reps: {type: Number, min: 0},
+        tenRM: {type: Number, min: 0}
     }, required: true}
 });
 

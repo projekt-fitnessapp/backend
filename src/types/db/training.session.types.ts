@@ -5,7 +5,7 @@ export type TTrainingSession = {
     _id: string
     userId: string,
     trainingDayId: string,
-    date: string, // TODO: Oder Date?
+    date: string,
     executions: [TExecution]
 }
 

@@ -6,8 +6,8 @@ const TrainingDaySchema = new Schema({
     name: { type: String, required: true },
     excercises: { type: [{
         excerciseId: { type: String, required: true },
-        sets: { type: Number, required: true },
-        reps: { type: Number, required: true }
+        sets: { type: Number, min: 1, required: true },
+        reps: { type: Number, min: 1, required: true }
     }], required: true }
 });
 

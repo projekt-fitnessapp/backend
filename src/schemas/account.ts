@@ -6,7 +6,7 @@ const AccountSchema = new Schema({
     google_id: { type: String, required: true },
     name: { type: String, required: true },
     birthdate: { type: String, required: true },
-    sex: { type: [String], required: true },
+    sex: { type: String, enum: ['male', 'female'], required: true },
     trainingPlans: { type: [String], default: [] }
 });
 

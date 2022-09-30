@@ -1,7 +1,7 @@
 import { Document, Model } from 'mongoose';
 
 export type TLastTraining = {
-    date: string, // TODO: Oder Date?
+    date: string,
     trained: boolean
 }
 

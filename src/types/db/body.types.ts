@@ -3,7 +3,7 @@ import { Document, Model, ObjectId } from 'mongoose';
 export type TBody = {
     _id: ObjectId,
     userId: string,
-    date: string, // String oder date?
+    date: string,
     height: number,
     weight: number
 }
