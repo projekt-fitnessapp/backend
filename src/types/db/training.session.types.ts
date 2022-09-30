@@ -6,7 +6,7 @@ export type TTrainingSession = {
     userId: string,
     trainingDayId: string,
     date: string,
-    executions: [TExecution]
+    executions: TExecution[]
 }
 
 export type TrainingSessionDocument = Document<TTrainingSession>;

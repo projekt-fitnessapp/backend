@@ -2,15 +2,15 @@ import { Document, Model } from 'mongoose';
 import { TExcercise } from './exercise.types';
 
 export type TSet = {
-    executionType: {type: string, enum: ['warmup', 'working', 'backoff']},
-    weight: {type: number, min: 0},
-    reps: {type: number, min: 0},
-    tenRM: {type: number, min: 0}
+    executionType: 'warmup' | 'working' | 'backoff',
+    weight: number,
+    reps: number,
+    tenRM: number
 }
 
 export type TExecution = {
     exercise: TExcercise,
-    notes: [string],
+    notes: string[],
     sets: [TSet]
 }
 

@@ -3,11 +3,11 @@ import { Document, Model, ObjectId } from 'mongoose';
 export type TTrainingDay = {
     _id: ObjectId,
     name: string,
-    excercises: [{
+    excercises: {
         excerciseId: string,
-        sets: {type: number, min: 1},
-        reps: {type: number, min: 1}
-    }]
+        sets: number
+        reps: number
+    }[]
 }
 
 export type TrainingDayDocument = Document<TTrainingDay>;
