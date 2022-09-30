@@ -11,7 +11,7 @@ export async function getGoogleUserId(
     audience: CLIENT_ID,
   });
   const payload = ticket.getPayload();
-  var googleUserId;
+  let googleUserId;
   if (payload) googleUserId = payload["sub"];
   return googleUserId;
 }
