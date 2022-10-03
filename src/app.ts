@@ -4,9 +4,11 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 
 import { AppRouter } from "./routes/routes";
+import { mem } from "./codecov-demo";
 
 dotenv.config();
 
+mem();
 const app = express();
 
 app.use(morgan("dev"));
