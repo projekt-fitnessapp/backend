@@ -9,6 +9,7 @@ import { mem } from "./codecov-demo";
 dotenv.config();
 
 mem();
+console.log("counter")
 const app = express();
 
 app.use(morgan("dev"));
