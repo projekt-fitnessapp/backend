@@ -1,4 +1,6 @@
 export function mem() {
+    if(false)
+    {
     console.log("Delete codecov-demo.ts")
     console.log("Delete codecov-demo.ts")
     console.log("Delete codecov-demo.ts")
@@ -90,4 +92,5 @@ export function mem() {
     console.log("Delete codecov-demo.ts")
     console.log("Delete codecov-demo.ts")
     console.log("Delete codecov-demo.ts")
+    }
 }
