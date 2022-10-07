@@ -1,6 +1,6 @@
 import { TrainingSession } from '../../schemas/training.session';
 import { TLastTraining } from '../../types/last.training.types';
-import { formatISO, subDays } from 'date-fns';
+import { formatISO, subDays } from '../../helpers/dates';
 
 export async function getLastTraining(
   req: { query: { days: string } },
@@ -12,7 +12,7 @@ export async function getLastTraining(
 ) {
   if (req.query.days && !isNaN(parseInt(req.query.days as string))) {
     const days = parseInt(req.query.days as string);
-    const now = new Date();
+    const now = Date.now();
     const startDate = formatISO(subDays(now, days));
     const docs = JSON.parse(
       JSON.stringify(
