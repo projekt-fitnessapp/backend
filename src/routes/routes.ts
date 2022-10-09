@@ -1,11 +1,9 @@
 import { Router } from 'express';
 
-import { CategoryRouter } from './category/category.router';
+import { AccountRouter } from './account/account.router';
 
 const router = Router();
 
-//uwuuw
-
-router.use('/categories', CategoryRouter);
+router.use('/account', AccountRouter);
 
 export { router as AppRouter };
