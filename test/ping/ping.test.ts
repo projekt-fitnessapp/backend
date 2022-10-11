@@ -1,4 +1,3 @@
-process.env.PORT = "3000";
 import { describe, test } from "mocha";
 import { setupServer } from "../../src/server";
 import supertest from "supertest";
