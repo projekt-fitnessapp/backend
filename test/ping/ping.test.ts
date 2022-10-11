@@ -1,10 +1,10 @@
 process.env.PORT = "3000";
 import { describe, test } from "mocha";
-import { server } from "../../src/app";
+import { setupServer } from "../../src/server";
 import supertest from "supertest";
 import { expect } from "chai";
 
-const requestWithSupertest = supertest(server);
+const requestWithSupertest = supertest(setupServer(true));
 
 describe("Ping Endpoint Test", () => {
   test("Get /ping :)", async () => {
