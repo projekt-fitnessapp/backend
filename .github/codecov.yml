@@ -4,10 +4,10 @@ coverage:
       default:
         # basic
         target: 80%
-        threshold: 80%
         base: auto 
         paths: 
           - "src"
        # advanced settings
         if_ci_failed: error
         only_pulls: true
+    patch: off
