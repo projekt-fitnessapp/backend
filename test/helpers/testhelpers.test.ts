@@ -3,7 +3,6 @@ import { describe, test, beforeEach, afterEach } from "mocha";
 import { expect } from "chai";
 
 import { Body } from '../../src/schemas/body';
-import mongoose from 'mongoose';
 
 describe("I do Database Related stuff :)", ()=>{
     const testdb = new TestDatabase();
