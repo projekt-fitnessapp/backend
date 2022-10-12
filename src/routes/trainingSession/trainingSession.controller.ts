@@ -26,7 +26,7 @@ export async function getTrainingSession(
         } catch (error) {
             return res.sendStatus(400)
         }
-};
+}
 
 export async function postTrainingSession(
     req: Request,
@@ -44,4 +44,4 @@ export async function postTrainingSession(
     } catch (error) {
         return res.sendStatus(400)
     }
-};
+}
