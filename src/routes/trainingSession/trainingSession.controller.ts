@@ -1,31 +1,47 @@
 import { TrainingSession } from "../../schemas/training.session";
-import { TTrainingSession } from "../../types/db/training.session.types";
+import { Request, Response } from 'express';
 
 export async function getTrainingSession(
-    req: { query: { userId: string, id: string[] }},
-    res: {
-        status: (statusCode: number) => void;
-        json: (responseBody: { data: TTrainingSession[] }) => any;
-        statusMessage: string;
-    }
+    req: Request,
+    res: Response
     ){
-        // TODO: what if no userId?
-        if(req.query.id.length === 0){
+        try {
+            let docs = null;
 
-            const docs = JSON.parse(
-                JSON.stringify(
-                    await TrainingSession.find({
-                        userId: req.query.userId
-                    })
-                )
-            );
-
-            res.status(200);
-            res.statusMessage = 'List of Users Trainingssessions';
-            res.json({data: docs});
-            return;
+            if (req.query.id) {
+                docs = await TrainingSession.find({
+                    userId: req.query.userId,
+                    id: req.query.id
+                })
+            } else {
+                docs = await TrainingSession.find({
+                    userId: req.query.userId
+                })
+            }
+            if (!docs) {
+                return res.sendStatus(404)
+            }
+            res.status(200)
+            return res.json(docs)
+        } catch (error) {
+            return res.sendStatus(400)
         }
-        // TODO: what about ids?
 };
 
-export async function postTrainingSession(){};
+export async function postTrainingSession(
+    req: Request,
+    res: Response
+){
+    try {
+        const saved = await TrainingSession.create(req.body)
+        if (saved) {
+            res.status(200)
+            return res.json(saved._id)
+        } else {
+            throw new Error()
+        }
+        
+    } catch (error) {
+        return res.sendStatus(400)
+    }
+};
