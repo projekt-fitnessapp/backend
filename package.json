@@ -36,6 +36,7 @@
     "@types/express": "^4.17.13",
     "@types/mocha": "^9.1.1",
     "@types/supertest": "^2.0.12",
+    "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@typescript-eslint/parser": "^5.35.1",
     "chai": "^4.3.6",
