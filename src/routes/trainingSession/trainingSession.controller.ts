@@ -11,7 +11,7 @@ export async function getTrainingSession(
             if (req.query.id) {
                 docs = await TrainingSession.find({
                     userId: req.query.userId,
-                    id: req.query.id
+                    _id: req.query.id
                 })
             } else {
                 docs = await TrainingSession.find({
