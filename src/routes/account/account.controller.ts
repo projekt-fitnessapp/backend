@@ -1,53 +1,28 @@
 import { Request, Response } from 'express';
-import { TAccount } from '../../types/db/account.types';
+//import { TAccount } from '../../types/db/account.types';
 import { Account } from '../../schemas/account';
 
 export async function getAccount(
-  req: { query: { userId: string } },
-  res: {
-    status: (statusCode: number) => void;
-    json: (responseBody: { data: TAccount }) => any;
-    statusMessage: string;
-  }
+  req: Request,
+  res: Response
 ) {
-  //Die UserID darf nicht leer sein!
-  if (req.query.userId) {
-    const userId = req.query.userId;
-    const docs = JSON.parse(
-      JSON.stringify(
-        await Account.find({
-          _id: { $eq: userId },
-        })
-          .lean()
-          .select('_id')
-          .exec()
-      )
-    );
-
-    let resBody = {} as TAccount;
-    if (docs) {
-      resBody._id = userId;
-      resBody.google_id = docs.gooogle_id;
-      resBody.name = docs.name;
-      resBody.birthdate = docs.birthdate;
-      resBody.sex = docs.sex;
-      resBody.trainingPlans = docs.trainingPlans;
-    } else {
-      res.status(400);
-      res.statusMessage = 'no account found!';
-      return;
+  try{
+    const docs =  await Account.findById(req.query.userId)
+    if(!docs){
+      res.status(404);
+      return res.send();
     }
-
     res.status(200);
-    res.json({ data: resBody });
-    return;
+    return res.json(docs);
+  } catch (e) {
+    res.status(400);
+    return res.send();
+    
   }
-  res.status(400);
-  res.statusMessage = 'bad input parameter';
-  return;
+  
 }
-
-export async function saveAccount(
+/*
+ saveAccount(
   req: { query: { reqAccount: TAccount } },
   res: {
     status: (statusCode: number) => void;
@@ -95,3 +70,4 @@ export async function changeAccount(
 
   }
 }
+*/
