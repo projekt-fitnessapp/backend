@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-//import { TAccount } from '../../types/db/account.types';
 import { Account } from '../../schemas/account';
 
 export async function getAccount(
@@ -17,57 +16,53 @@ export async function getAccount(
   } catch (e) {
     res.status(400);
     return res.send();
-    
   }
   
 }
-/*
- saveAccount(
-  req: { query: { reqAccount: TAccount } },
-  res: {
-    status: (statusCode: number) => void;
-    json: (responseBody: { userId: string }) => any;
-    statusMessage: string;
-  }
+
+export async function saveAccount(
+  req: Request,
+  res: Response
 ) {
 
   try {
-    const account: TAccount = req.query.reqAccount;
-    const savedAccount: TAccount = await Account.save(account);
-    const userId: string = savedAccount._id;
+    const savedAccount = await Account.create(req.query.reqAccount);
+    if(savedAccount) {
+    const userId = savedAccount._id;
     res.status(201);
-    res.json({ userId });
-    return;
-  } catch (err: any) {
+    return res.json({ userId });
+    } else {
+      throw new Error();
+    }
+  } catch (e) {
     res.status(401);
-    res.statusMessage = 'not authorized';
-    return;
+    console.log(e);
+    return res.send();
   }
 }
 
+/*
 
 export async function changeAccount(
-  req: { query: { reqAccount: TAccount } },
-  res: {
-    status: (statusCode: number) => void;
-    json: (responseBody: { data: TAccount }) => any;
-    statusMessage: string;
-  }
+  req: Request,
+  res: Response
 ) {
 
   try {
-    const userId = req.query.reqAccount._id;
+    const newAccount = req.query.reqAccount;
+    const userId = newAccount.google_id;
 
     const filter = { _id: userId };
-    let resBody = await Account.findOneAndUpdate(filter, req.query.reqAccount, { new: true });
-
-    res.status(200);
-    res.json({ data: resBody });
-  } catch (err: any) {
-
+    let resBody = await Account.findOneAndUpdate(filter, newAccount, { new: true });
+    if(resBody) {
+      res.status(200);
+      return res.json({ data: resBody });
+    } else {
+      throw new Error();
+    }
+  } catch (e) {
     res.status(400);
-    res.statusMessage = 'bad input parameter, only accounts changeable';
-
+    return res.send();
   }
 }
 */
