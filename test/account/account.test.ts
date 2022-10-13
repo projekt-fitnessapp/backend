@@ -59,7 +59,36 @@ describe("Account Endpoint Tests", ()=>{
   
 
     const res = await testserver.post("/account").send(account).set('Accept', 'application/json');
-    expect(res.status).to.equal(200);
+    expect(res.status).to.equal(201);
+  });
+
+  test('Post Method with 401 error', async ()=>{
+  
+
+    const res = await testserver.post("/account").send("Max Mustermann").set('Accept', 'application/json');
+    expect(res.status).to.equal(401);
+  });
+
+  
+
+   test('Put Method with no error', async ()=>{
+    const account = {} as TAccount;
+    account._id = <any>'5099803df3f494add2f9d757';
+    account.birthdate = "12.12.2010";
+    account.name = "Max Mustermann";
+    account.google_id = "5099803df3f494add2f9dba7";
+
+    await testserver.post("/account").send(account).set('Accept', 'application/json');
+
+    account.name = "Maximilian Mustermann";
+
+    const res = await testserver.put("/account").send(account);
+    expect(res.status).to.equal(201);
+  });
+
+  test('Put Method with 400 error', async ()=>{
+    const res = await testserver.put("/account").send("Keine UserID");
+    expect(res.status).to.equal(400);
   });
  
     afterEach(async ()=>{

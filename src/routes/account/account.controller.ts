@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import { Account } from '../../schemas/account';
+import { TAccount } from '../../types/db/account.types';
 
 export async function getAccount(
   req: Request,
@@ -36,33 +37,29 @@ export async function saveAccount(
     }
   } catch (e) {
     res.status(401);
-    console.log(e);
     return res.send();
   }
 }
 
-/*
-
 export async function changeAccount(
-  req: Request,
+  req: { query: { reqAccount: TAccount } },
   res: Response
 ) {
 
   try {
-    const newAccount = req.query.reqAccount;
-    const userId = newAccount.google_id;
-
-    const filter = { _id: userId };
-    let resBody = await Account.findOneAndUpdate(filter, newAccount, { new: true });
-    if(resBody) {
-      res.status(200);
-      return res.json({ data: resBody });
+    if(req.query.reqAccount == null) {
+      res.status(400);
+      return res.send();
     } else {
-      throw new Error();
+      const userId = req.query.reqAccount._id;
+      const filter = { _id: userId };
+      const resBody = await Account.findOneAndUpdate(filter, req.query.reqAccount, { new: true });  
+      res.status(201);
+      return res.json({ data: resBody });
     }
-  } catch (e) {
-    res.status(400);
+  } catch (error) {
+    console.log(error);
+    res.status(401);
     return res.send();
   }
 }
-*/
