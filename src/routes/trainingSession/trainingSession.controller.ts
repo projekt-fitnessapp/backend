@@ -1,22 +1,30 @@
 import { TrainingSession } from "../../schemas/training.session";
 import { Request, Response } from 'express';
+import { TrainingSessionDocument, TTrainingSession } from "../../types/db/training.session.types";
 
 export async function getTrainingSession(
     req: Request,
     res: Response
     ){
         try {
-            let docs = null;
+            let docs: (TrainingSessionDocument & Required<{ _id: TTrainingSession; }>)[];
 
             if (req.query.userId == null) {
                 throw new Error("No userId provides!")
             }
 
             if (req.query.id) {
-                docs = await TrainingSession.find({
-                    userId: req.query.userId,
-                    _id: req.query.id
-                })
+                if (typeof req.query.id != 'string' && req.query.id != undefined) {
+                    req.query.id.forEach(async id => {
+                        
+                    });
+                } else {
+                    docs = await TrainingSession.find({
+                        userId: req.query.userId,
+                        _id: req.query.id
+                    })
+                }
+
             } else {
                 docs = await TrainingSession.find({
                     userId: req.query.userId

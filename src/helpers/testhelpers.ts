@@ -19,6 +19,7 @@ export class TestDatabase {
         }
 
         await mongoose.connection.dropDatabase();
+        await mongoose.disconnect();
 
         this.dbName = null;
     }

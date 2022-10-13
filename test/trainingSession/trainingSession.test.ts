@@ -162,7 +162,7 @@ describe('Testing the training session route', () => {
       const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5")
 
       expect(response.status).to.equal(404)
-      expect(response.body).to.equal([])
+      expect(response.body).to.deep.equal([])
   })
 
 })
