@@ -14,16 +14,16 @@ export async function getTrainingSession(
             }
 
             if (req.query.id) {
-                if (typeof req.query.id != 'string' && req.query.id != undefined) {
+                /*if (typeof req.query.id != 'string' && req.query.id != undefined) {
                     req.query.id.forEach(async id => {
-                        
+
                     });
                 } else {
-                    docs = await TrainingSession.find({
-                        userId: req.query.userId,
-                        _id: req.query.id
-                    })
-                }
+                }*/
+                docs = await TrainingSession.find({
+                    userId: req.query.userId,
+                    _id: req.query.id
+                })
 
             } else {
                 docs = await TrainingSession.find({
