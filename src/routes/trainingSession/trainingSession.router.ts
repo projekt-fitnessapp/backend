@@ -3,7 +3,7 @@ import { getTrainingSession, postTrainingSession } from './trainingSession.contr
 
 const router = Router();
 
-router.get('/trainingSession', getTrainingSession);
-router.post('/trainingSession', postTrainingSession);
+router.get('/', getTrainingSession);
+router.post('/', postTrainingSession);
 
 export { router as TrainingSessionRouter };

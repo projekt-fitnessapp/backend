@@ -8,6 +8,10 @@ export async function getTrainingSession(
         try {
             let docs = null;
 
+            if (req.query.userId == null) {
+                throw new Error("No userId provides!")
+            }
+
             if (req.query.id) {
                 docs = await TrainingSession.find({
                     userId: req.query.userId,
@@ -18,8 +22,9 @@ export async function getTrainingSession(
                     userId: req.query.userId
                 })
             }
-            if (!docs) {
-                return res.sendStatus(404)
+            if (docs.length == 0) {
+                res.status(404)
+                return res.json(docs)
             }
             res.status(200)
             return res.json(docs)

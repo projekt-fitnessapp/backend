@@ -6,21 +6,59 @@ import { setupServer } from '../../src/server';
 import supertest from "supertest";
 
 describe('Testing the training session route', () => {
+  
+  const testdb = new TestDatabase()
+  const testserver = supertest(setupServer(true))
+  
+  beforeEach(async ()=>{
+    try {
+      await testdb.initialize()
+    } catch(e) {
+      console.log(e)
+    }
+    
+  })
+  
+  afterEach(async ()=>{
+      await testdb.cleanup()
+  })
 
-    const testdb = new TestDatabase()
-    const testserver = supertest(setupServer(true))
+  test('Testing get training session with Ids', async ()=>{
+      await TrainingSession.create({
+          "_id": "5099803df3f4948bd2f98548",
+          "userId": "5099803df3f494add2f9dja5",
+          "trainingDayId": "5099803df3f4948bd2f9dja5",
+          "date": "2016-05-18T16:30:00Z",
+          "executions": [
+            {
+              "exercise": {
+                "_id": "5099803df3f4948bd2f98391",
+                "name": "Bench Press",
+                "instruction": "Push the bar.",
+                "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+                "muscle": "breast",
+                "equipment": "barbell"
+              },
+              "notes": [
+                "string"
+              ],
+              "sets": [
+                {
+                  "executionType": "warmup",
+                  "weight": 0,
+                  "reps": 0,
+                  "10RM": 0
+                }
+              ]
+            }
+          ]
+        })
 
-    beforeEach(async ()=>{
-        try {
-            await testdb.initialize()
-        } catch(e) {
-            console.log(e)
-        }
-        
-    })
+      const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5&id=[5099803df3f4948bd2f98548]")
 
-    test('Testing get training session with Ids', async ()=>{
-        await TrainingSession.create({
+      expect(response.status).to.equal(200)
+      expect(response.body).to.equal([
+          {
             "_id": "5099803df3f4948bd2f98548",
             "userId": "5099803df3f494add2f9dja5",
             "trainingDayId": "5099803df3f4948bd2f9dja5",
@@ -48,45 +86,46 @@ describe('Testing the training session route', () => {
                 ]
               }
             ]
-          })
+          }
+        ])
+  })
 
-        const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5&id=[5099803df3f4948bd2f98548]")
-
-        expect(response).to.equal([
+  test('Testing get training session without Ids', async ()=>{
+      await TrainingSession.create({
+          "_id": "5099803df3f4948bd2f98548",
+          "userId": "5099803df3f494add2f9dja5",
+          "trainingDayId": "5099803df3f4948bd2f9dja5",
+          "date": "2016-05-18T16:30:00Z",
+          "executions": [
             {
-              "_id": "5099803df3f4948bd2f98548",
-              "userId": "5099803df3f494add2f9dja5",
-              "trainingDayId": "5099803df3f4948bd2f9dja5",
-              "date": "2016-05-18T16:30:00Z",
-              "executions": [
+              "exercise": {
+                "_id": "5099803df3f4948bd2f98391",
+                "name": "Bench Press",
+                "instruction": "Push the bar.",
+                "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+                "muscle": "breast",
+                "equipment": "barbell"
+              },
+              "notes": [
+                "string"
+              ],
+              "sets": [
                 {
-                  "exercise": {
-                    "_id": "5099803df3f4948bd2f98391",
-                    "name": "Bench Press",
-                    "instruction": "Push the bar.",
-                    "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
-                    "muscle": "breast",
-                    "equipment": "barbell"
-                  },
-                  "notes": [
-                    "string"
-                  ],
-                  "sets": [
-                    {
-                      "executionType": "warmup",
-                      "weight": 0,
-                      "reps": 0,
-                      "10RM": 0
-                    }
-                  ]
+                  "executionType": "warmup",
+                  "weight": 0,
+                  "reps": 0,
+                  "10RM": 0
                 }
               ]
             }
-          ])
-    })
+          ]
+        })
 
-    test('Testing get training session without Ids', async ()=>{
-        await TrainingSession.create({
+      const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5")
+
+      expect(response.status).to.equal(200)
+      expect(response.body).to.equal([
+          {
             "_id": "5099803df3f4948bd2f98548",
             "userId": "5099803df3f494add2f9dja5",
             "trainingDayId": "5099803df3f4948bd2f9dja5",
@@ -114,52 +153,16 @@ describe('Testing the training session route', () => {
                 ]
               }
             ]
-          })
+          }
+        ])
+  })
 
-        const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5")
+  test('Testing get training session without a hit', async ()=>{
 
-        expect(response).to.equal([
-            {
-              "_id": "5099803df3f4948bd2f98548",
-              "userId": "5099803df3f494add2f9dja5",
-              "trainingDayId": "5099803df3f4948bd2f9dja5",
-              "date": "2016-05-18T16:30:00Z",
-              "executions": [
-                {
-                  "exercise": {
-                    "_id": "5099803df3f4948bd2f98391",
-                    "name": "Bench Press",
-                    "instruction": "Push the bar.",
-                    "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
-                    "muscle": "breast",
-                    "equipment": "barbell"
-                  },
-                  "notes": [
-                    "string"
-                  ],
-                  "sets": [
-                    {
-                      "executionType": "warmup",
-                      "weight": 0,
-                      "reps": 0,
-                      "10RM": 0
-                    }
-                  ]
-                }
-              ]
-            }
-          ])
-    })
+      const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5")
 
-    test('Testing get training session without a hit', async ()=>{
-
-        const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5")
-
-        expect(response).to.equal([])
-    })
-
-    afterEach(async ()=>{
-        await testdb.cleanup()
-    })
+      expect(response.status).to.equal(404)
+      expect(response.body).to.equal([])
+  })
 
 })
