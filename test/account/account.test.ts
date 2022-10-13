@@ -50,10 +50,8 @@ describe("Account Endpoint Tests", ()=>{
   });
 
   test('Post Method with no error', async ()=>{
-    var mongoose = require('mongoose');
-    var objectId = mongoose.Types.ObjectId('5099803df3f494add2f9d757');
     const account = {} as TAccount;
-    account._id = objectId;
+    account._id = <any>'5099803df3f494add2f9d757';
     account.birthdate = "12.12.2010";
     account.name = "Max Mustermann";
     account.google_id = "5099803df3f494add2f9dba7";
