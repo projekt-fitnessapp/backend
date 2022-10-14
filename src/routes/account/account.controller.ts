@@ -8,8 +8,7 @@ export async function getAccount(
   try{
     const docs =  await Account.findById(req.query.userId)
     if(!docs) {
-      res.status(404);
-      return res.json();
+      return res.status(404).json();
     }
     res.status(200);
     return res.json(docs);
