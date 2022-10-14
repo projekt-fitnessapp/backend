@@ -57,7 +57,7 @@ export async function changeAccount(
       return res.send(resBody);
     }
   } catch (error) {
-    res.status(401);
+    res.status(400);
     return res.send();
   }
 }
