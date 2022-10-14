@@ -35,7 +35,7 @@ export async function saveAccount(
       throw new Error();
     }
   } catch (e) {
-    res.status(401);
+    res.status(400);
     return res.send();
   }
 }
