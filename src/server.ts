@@ -8,6 +8,7 @@ import { AppRouter } from './routes/routes';
 export function setupServer(isTest: boolean) {
   if (isTest) {
     process.env.PORT = '3000';
+    process.env.TEST = 'true';
   } else {
     dotenv.config();
   }
