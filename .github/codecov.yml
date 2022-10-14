@@ -3,11 +3,11 @@ coverage:
     project:
       default:
         # basic
-        target: 80%
+        target: auto
+        threshold: 80%
         base: auto 
         paths: 
           - "src"
        # advanced settings
         if_ci_failed: error
         only_pulls: true
-    patch: off
