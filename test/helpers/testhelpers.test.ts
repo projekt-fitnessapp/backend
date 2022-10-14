@@ -11,7 +11,9 @@ describe('I do Database Related stuff :)', () => {
   beforeEach(async () => {
     try {
       await testdb.initialize();
-    } catch (e) {}
+    } catch (e) {
+      console.log(e);
+    }
   });
 
   test('Here I can do database stuff', async () => {
