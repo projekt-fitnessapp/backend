@@ -46,7 +46,7 @@ export async function changeAccount(
 ) {
 
   try {
-    if(req.body._id == null) {
+    if(!req.body._id) {
       res.status(400);
       return res.send();
     } else {
