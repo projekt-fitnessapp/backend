@@ -1,10 +1,13 @@
 import { TestDatabase } from '../../src/helpers/testhelpers';
 import { describe, test, beforeEach, afterEach } from 'mocha';
-import { expect } from 'chai';
+import chai, { expect } from 'chai';
 import supertest from 'supertest';
 import { setupServer } from '../../src/server';
 import { formatISO, subDays } from '../../src/helpers/dates';
 import { TrainingSession } from '../../src/schemas/training.session';
+import deepEqualInAnyOrder from 'deep-equal-in-any-order';
+
+chai.use(deepEqualInAnyOrder);
 
 describe('LastTraining Endpoint Tests', () => {
   const testdb = new TestDatabase();
@@ -28,9 +31,8 @@ describe('LastTraining Endpoint Tests', () => {
         trained: false,
       });
     }
-    console.log(`Response:  ${res.body}`);
     expect(res.status).to.equal(200);
-    expect(res.body.data).to.equal(notTrainedLast7Days);
+    expect(res.body.data).to.deep.equalInAnyOrder(notTrainedLast7Days);
   });
 
   test('Get Method 400 bc of negative value', async () => {
@@ -89,7 +91,7 @@ describe('LastTraining Endpoint Tests', () => {
 
     const res = await testserver.get('/lastTraining?days=7');
     expect(res.status).to.equal(200);
-    expect(res.body.data).to.equal(trainedOnceLast7Days);
+    expect(res.body.data).to.deep.equalInAnyOrder(trainedOnceLast7Days);
   });
 
   afterEach(async () => {
