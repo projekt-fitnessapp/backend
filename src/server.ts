@@ -15,6 +15,8 @@ export function setupServer(isTest: boolean) {
 
   app.use(morgan("dev"));
 
+  app.use(express.json());
+
   app.use("/", AppRouter);
 
   return app;
