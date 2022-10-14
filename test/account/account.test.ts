@@ -6,7 +6,6 @@ import { setupServer } from "../../src/server";
 
 import { Account } from '../../src/schemas/account';
 
-
 describe("Account Endpoint Tests", ()=>{
     const testdb = new TestDatabase();
     const testserver = supertest(setupServer(true))
@@ -59,13 +58,16 @@ describe("Account Endpoint Tests", ()=>{
 
     const res = await testserver.post("/account").send(testaccount).set('Accept', 'application/json');
     expect(res.status).to.equal(201);
+
+    const res2 = await testserver.get("/account?userId=5099803df3f494add2f9d757");
+    expect(res2.status).to.equal(200);
   });
 
   test('Post Method with 401 error', async ()=>{
   
 
     const res = await testserver.post("/account").send("Max Mustermann").set('Accept', 'application/json');
-    expect(res.status).to.equal(401);
+    expect(res.status).to.equal(400);
   });
 
   
@@ -85,6 +87,9 @@ describe("Account Endpoint Tests", ()=>{
 
     const res = await testserver.put("/account").send(testaccount);
     expect(res.status).to.equal(201);
+
+    const res2 = await testserver.get("/account?userId=5099803df3f494add2f9d757");
+    expect(res2.status).to.equal(200);
   });
 
   test('Put Method with 400 error', async ()=>{

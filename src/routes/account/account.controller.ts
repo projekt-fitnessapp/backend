@@ -49,13 +49,12 @@ export async function changeAccount(
     if(!req.body._id) {
       res.status(400);
       return res.send();
-    } else {
+    } 
       const userId = req.body._id;
       const filter = { _id: userId };
       const resBody = await Account.findOneAndUpdate(filter, req.body, { new: true });  
       res.status(201);
       return res.send(resBody);
-    }
   } catch (error) {
     res.status(400);
     return res.send();
