@@ -1,17 +1,23 @@
 import { TrainingSession } from "../../schemas/training.session";
 import { Request, Response } from 'express';
 import { TrainingSessionDocument, TTrainingSession } from "../../types/db/training.session.types";
+import { error } from "console";
 
 export async function getTrainingSession(
     req: Request,
     res: Response
     ){
         try {
-            let docs: (TrainingSessionDocument & Required<{ _id: TTrainingSession; }>)[];
+            let trainingSessionDocs: (TrainingSessionDocument & Required<{ _id: TTrainingSession; }>)[];
 
             if (req.query.userId == null) {
                 throw new Error("No userId provides!")
             }
+
+            /*if (typeof req.query.id != 'string') {
+                console.error();
+                error
+            }*/
 
             if (req.query.id) {
                 /*if (typeof req.query.id != 'string' && req.query.id != undefined) {
@@ -20,22 +26,23 @@ export async function getTrainingSession(
                     });
                 } else {
                 }*/
-                docs = await TrainingSession.find({
+                trainingSessionDocs = await TrainingSession.find({
                     userId: req.query.userId,
                     _id: req.query.id
                 })
 
             } else {
-                docs = await TrainingSession.find({
+                trainingSessionDocs = await TrainingSession.find({
                     userId: req.query.userId
                 })
+
             }
-            if (docs.length == 0) {
+            if (trainingSessionDocs.length == 0) {
                 res.status(404)
-                return res.json(docs)
+                return res.json(trainingSessionDocs)
             }
             res.status(200)
-            return res.json(docs)
+            return res.json(trainingSessionDocs)
         } catch (error) {
             return res.sendStatus(400)
         }
