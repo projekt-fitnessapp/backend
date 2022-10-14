@@ -48,7 +48,7 @@ describe('Testing the training session route', () => {
               "executionType": "warmup",
               "weight": 0,
               "reps": 0,
-              "10RM": 0
+              "tenRM": 0
             }
           ]
         }
@@ -60,6 +60,7 @@ describe('Testing the training session route', () => {
     expect(response.status).to.equal(200)
     expect(response.body).to.equal([
       {
+        "__v": 0,
         "_id": "5099803df3f4948bd2f98548",
         "userId": "5099803df3f494add2f9dja5",
         "trainingDayId": "5099803df3f4948bd2f9dja5",
@@ -82,7 +83,7 @@ describe('Testing the training session route', () => {
                 "executionType": "warmup",
                 "weight": 0,
                 "reps": 0,
-                "10RM": 0
+                "tenRM": 0
               }
             ]
           }
@@ -101,7 +102,6 @@ describe('Testing the training session route', () => {
       "equipment": "barbell"
     })
     await TrainingSession.create({
-      "__v": 0,
       "_id": "5099803df3f4948bd2f98548",
       "userId": "5099803df3f494add2f9dja5",
       "trainingDayId": "5099803df3f4948bd2f9dja5",
@@ -124,7 +124,7 @@ describe('Testing the training session route', () => {
               "executionType": "warmup",
               "weight": 0,
               "reps": 0,
-              "10RM": 0
+              "tenRM": 0
             }
           ]
         }
@@ -136,6 +136,7 @@ describe('Testing the training session route', () => {
     expect(response.status).to.equal(200)
     expect(response.body).to.equal([
       {
+        "__v": 0,
         "_id": "5099803df3f4948bd2f98548",
         "userId": "5099803df3f494add2f9dja5",
         "trainingDayId": "5099803df3f4948bd2f9dja5",
@@ -158,7 +159,7 @@ describe('Testing the training session route', () => {
                 "executionType": "warmup",
                 "weight": 0,
                 "reps": 0,
-                "10RM": 0
+                "tenRM": 0
               }
             ]
           }
