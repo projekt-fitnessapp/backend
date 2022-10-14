@@ -72,7 +72,7 @@ describe("Account Endpoint Tests", ()=>{
 
    test('Put Method with no error', async ()=>{
     let testaccount = {
-      _id: <any>'5099803df3f494add2f9d757',
+      _id: '5099803df3f494add2f9d757',
       birthdate: "12.12.2010",
       name: "Max Mustermann",
       google_id: "5099803df3f494add2f9dba7"
