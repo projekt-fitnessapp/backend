@@ -1,16 +1,14 @@
 import { TrainingSession } from '../../schemas/training.session';
 import { TLastTraining } from '../../types/last.training.types';
 import { formatISO, subDays } from '../../helpers/dates';
+import { Request, Response } from 'express';
 
-export async function getLastTraining(
-  req: { query: { days: string } },
-  res: {
-    status: (statusCode: number) => void;
-    json: (responseBody: { data: TLastTraining[] }) => any;
-    statusMessage: string;
-  }
-) {
-  if (req.query.days && !isNaN(parseInt(req.query.days as string))) {
+export async function getLastTraining(req: Request, res: Response) {
+  if (
+    req.query.days &&
+    !isNaN(parseInt(req.query.days as string)) &&
+    parseInt(req.query.days as string) > 0
+  ) {
     const days = parseInt(req.query.days as string);
     const now = Date.now();
     const startDate = formatISO(subDays(now, days));
@@ -25,7 +23,7 @@ export async function getLastTraining(
       )
     );
 
-    let resBody = Array<TLastTraining>();
+    const resBody = Array<TLastTraining>();
 
     for (let index = 0; index < days; index++) {
       const dateToCheck = formatISO(subDays(now, index)).split('T')[0];
@@ -39,11 +37,7 @@ export async function getLastTraining(
       resBody.push({ date: dateToCheck, trained: trained });
     }
 
-    res.status(200);
-    res.json({ data: resBody });
-    return;
+    return res.status(200).json({ data: resBody });
   }
-  res.status(400);
-  res.statusMessage = 'bad input parameter';
-  return;
+  return res.status(400).send();
 }
