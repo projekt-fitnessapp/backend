@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
 import { Account } from '../../schemas/account';
-import { TAccount } from '../../types/db/account.types';
 
 export async function getAccount(
   req: Request,
@@ -26,8 +25,9 @@ export async function saveAccount(
   res: Response
 ) {
 
+  console.log(req.body);
   try {
-    const savedAccount = await Account.create(req.query.reqAccount);
+    const savedAccount = await Account.create(req.body);
     if(savedAccount) {
     const userId = savedAccount._id;
     res.status(201);
@@ -42,23 +42,22 @@ export async function saveAccount(
 }
 
 export async function changeAccount(
-  req: { query: { reqAccount: TAccount } },
+  req: Request,
   res: Response
 ) {
 
   try {
-    if(req.query.reqAccount == null) {
+    if(req.body._id == null) {
       res.status(400);
       return res.send();
     } else {
-      const userId = req.query.reqAccount._id;
+      const userId = req.body._id;
       const filter = { _id: userId };
-      const resBody = await Account.findOneAndUpdate(filter, req.query.reqAccount, { new: true });  
+      const resBody = await Account.findOneAndUpdate(filter, req.body, { new: true });  
       res.status(201);
-      return res.json({ data: resBody });
+      return res.send(resBody);
     }
   } catch (error) {
-    console.log(error);
     res.status(401);
     return res.send();
   }

@@ -5,7 +5,6 @@ import supertest from "supertest";
 import { setupServer } from "../../src/server";
 
 import { Account } from '../../src/schemas/account';
-import { TAccount } from '../../src/types/db/account.types';
 
 
 describe("Account Endpoint Tests", ()=>{
@@ -50,15 +49,15 @@ describe("Account Endpoint Tests", ()=>{
   });
 
   test('Post Method with no error', async ()=>{
-    const account = {} as TAccount;
-    account._id = <any>'5099803df3f494add2f9d757';
-    account.birthdate = "12.12.2010";
-    account.name = "Max Mustermann";
-    account.google_id = "5099803df3f494add2f9dba7";
-
+    let testaccount = {
+      _id: <any>'5099803df3f494add2f9d757',
+      birthdate: "12.12.2010",
+      name: "Max Mustermann",
+      google_id: "5099803df3f494add2f9dba7"
+      };
   
 
-    const res = await testserver.post("/account").send(account).set('Accept', 'application/json');
+    const res = await testserver.post("/account").send(testaccount).set('Accept', 'application/json');
     expect(res.status).to.equal(201);
   });
 
@@ -72,17 +71,19 @@ describe("Account Endpoint Tests", ()=>{
   
 
    test('Put Method with no error', async ()=>{
-    const account = {} as TAccount;
-    account._id = <any>'5099803df3f494add2f9d757';
-    account.birthdate = "12.12.2010";
-    account.name = "Max Mustermann";
-    account.google_id = "5099803df3f494add2f9dba7";
+    let testaccount = {
+      _id: <any>'5099803df3f494add2f9d757',
+      birthdate: "12.12.2010",
+      name: "Max Mustermann",
+      google_id: "5099803df3f494add2f9dba7"
+      };
 
-    await testserver.post("/account").send(account).set('Accept', 'application/json');
+    await testserver.post("/account").send(testaccount).set('Accept', 'application/json');
 
-    account.name = "Maximilian Mustermann";
+    testaccount.name = "Maximilian Mustermann";
 
-    const res = await testserver.put("/account").send(account);
+
+    const res = await testserver.put("/account").send(testaccount);
     expect(res.status).to.equal(201);
   });
 
