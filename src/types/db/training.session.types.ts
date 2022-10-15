@@ -5,7 +5,7 @@ export type TTrainingSession = {
     userId: string,
     trainingDayId: string,
     date: string,
-    executions: mongoose.Schema.Types.ObjectId
+    executions: mongoose.Schema.Types.ObjectId[]
 }
 
 export type TrainingSessionDocument = Document<TTrainingSession>;

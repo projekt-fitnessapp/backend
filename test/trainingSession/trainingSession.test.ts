@@ -35,9 +35,7 @@ describe('Testing the training session route', () => {
       "equipment": "barbell"
     })
     const executionId = await Execution.create({
-      "exercise": {
-        "_id": excerciseId._id._id
-      },
+      "exercise": excerciseId._id,
       "notes": [
         "string"
       ],
@@ -56,7 +54,7 @@ describe('Testing the training session route', () => {
       "trainingDayId": "5099803df3f4948bd2f9dja5",
       "date": "2016-05-18T16:30:00Z",
       "executions": [
-        {"_id": executionId._id._id}
+        executionId._id
       ]
     })
 
