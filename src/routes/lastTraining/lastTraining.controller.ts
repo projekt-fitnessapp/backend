@@ -7,7 +7,8 @@ export async function getLastTraining(req: Request, res: Response) {
   if (
     req.query.days &&
     !isNaN(parseInt(req.query.days as string)) &&
-    parseInt(req.query.days as string) > 0
+    parseInt(req.query.days as string) > 0 &&
+    req.query.userId
   ) {
     const days = parseInt(req.query.days as string);
     const now = Date.now();
@@ -16,10 +17,8 @@ export async function getLastTraining(req: Request, res: Response) {
       JSON.stringify(
         await TrainingSession.find({
           date: { $gte: startDate },
-        })
-          .lean()
-          .select('date')
-          .exec()
+          userId: req.query.userId,
+        }).select('date')
       )
     );
 

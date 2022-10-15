@@ -22,7 +22,9 @@ describe('LastTraining Endpoint Tests', () => {
   });
 
   test('Get Method 200 w/ no day trained', async () => {
-    const res = await testserver.get('/lastTraining?days=7');
+    const res = await testserver.get(
+      '/lastTraining?days=7&userId=5099803df3f494add2f9dja5'
+    );
     const now = Date.now();
     const notTrainedLast7Days = [];
     for (let index = 0; index < 7; index++) {
@@ -36,11 +38,25 @@ describe('LastTraining Endpoint Tests', () => {
   });
 
   test('Get Method 400 bc of negative value', async () => {
-    const res = await testserver.get('/lastTraining?days=-7');
+    const res = await testserver.get(
+      '/lastTraining?days=-7&userId=5099803df3f494add2f9dja5'
+    );
     expect(res.status).to.equal(400);
   });
 
-  test('Get Method 400 bc of missing value', async () => {
+  test('Get Method 400 bc of missing days value', async () => {
+    const res = await testserver.get(
+      '/lastTraining?userId=5099803df3f494add2f9dja5'
+    );
+    expect(res.status).to.equal(400);
+  });
+
+  test('Get Method 400 bc of missing userId value', async () => {
+    const res = await testserver.get('/lastTraining?days=5');
+    expect(res.status).to.equal(400);
+  });
+
+  test('Get Method 400 bc of missing queries', async () => {
     const res = await testserver.get('/lastTraining');
     expect(res.status).to.equal(400);
   });
@@ -89,7 +105,9 @@ describe('LastTraining Endpoint Tests', () => {
       });
     }
 
-    const res = await testserver.get('/lastTraining?days=7');
+    const res = await testserver.get(
+      '/lastTraining?days=7&userId=5099803df3f494add2f9dja5'
+    );
     expect(res.status).to.equal(200);
     expect(res.body.data).to.deep.equalInAnyOrder(trainedOnceLast7Days);
   });
