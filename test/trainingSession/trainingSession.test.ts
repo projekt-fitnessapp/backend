@@ -4,7 +4,7 @@ import { expect } from "chai";
 import { TrainingSession } from '../../src/schemas/training.session';
 import { setupServer } from '../../src/server';
 import supertest from "supertest";
-import { Excercise } from '../../src/schemas/excercise';
+import { Exercise } from '../../src/schemas/exercise';
 import { Execution } from '../../src/schemas/execution';
 
 describe('Testing the training session route', () => {
@@ -26,7 +26,7 @@ describe('Testing the training session route', () => {
   })
 
   test('Testing get training session with Ids', async () => {
-    const excerciseId = await Excercise.create({
+    const exerciseId = await Exercise.create({
       "_id": "5099803df3f4948bd2f98391",
       "name": "Bench Press",
       "instruction": "Push the bar.",
@@ -35,12 +35,14 @@ describe('Testing the training session route', () => {
       "equipment": "barbell"
     })
     const executionId = await Execution.create({
-      "exercise": excerciseId._id,
+      "_id": "634ada657b24b0184c17e935",
+      "exercise": exerciseId._id,
       "notes": [
         "string"
       ],
       "sets": [
         {
+          "_id": "634ada677b24b0184c17e941",
           "executionType": "warmup",
           "weight": 0,
           "reps": 0,
@@ -61,7 +63,7 @@ describe('Testing the training session route', () => {
     const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5&id=[5099803df3f4948bd2f98548]")
 
     expect(response.status).to.equal(200)
-    expect(response.body).to.equal([
+    expect(response.body).to.deep.equal([
       {
         "__v": 0,
         "_id": "5099803df3f4948bd2f98548",
@@ -70,7 +72,10 @@ describe('Testing the training session route', () => {
         "date": "2016-05-18T16:30:00Z",
         "executions": [
           {
+            "__v": 0,
+            "_id": "634ada657b24b0184c17e935",
             "exercise": {
+              "__v": 0,
               "_id": "5099803df3f4948bd2f98391",
               "name": "Bench Press",
               "instruction": "Push the bar.",
@@ -83,6 +88,7 @@ describe('Testing the training session route', () => {
             ],
             "sets": [
               {
+                "_id": "634ada677b24b0184c17e941",
                 "executionType": "warmup",
                 "weight": 0,
                 "reps": 0,
@@ -96,7 +102,7 @@ describe('Testing the training session route', () => {
   })
 
   test('Testing get training session without Ids', async () => {
-    const excerciseId = await Excercise.create({
+    const exerciseId = await Exercise.create({
       "_id": "5099803df3f4948bd2f98391",
       "name": "Bench Press",
       "instruction": "Push the bar.",
@@ -105,14 +111,16 @@ describe('Testing the training session route', () => {
       "equipment": "barbell"
     })
     const executionId = await Execution.create({
+      "_id": "634ada677b24b0184c17e940",
       "exercise": {
-        "_id": excerciseId._id._id
+        "_id": exerciseId._id
       },
       "notes": [
         "string"
       ],
       "sets": [
         {
+          "_id": "634ada677b24b0184c17e941",
           "executionType": "warmup",
           "weight": 0,
           "reps": 0,
@@ -120,7 +128,7 @@ describe('Testing the training session route', () => {
         }
       ]
     })
-    const objId = executionId._id._id
+    const objId = executionId._id
     await TrainingSession.create({
       "_id": "5099803df3f4948bd2f98548",
       "userId": "5099803df3f494add2f9dja5",
@@ -134,7 +142,7 @@ describe('Testing the training session route', () => {
     const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5")
 
     expect(response.status).to.equal(200)
-    expect(response.body).to.equal([
+    expect(response.body).to.deep.equal([
       {
         "__v": 0,
         "_id": "5099803df3f4948bd2f98548",
@@ -143,7 +151,10 @@ describe('Testing the training session route', () => {
         "date": "2016-05-18T16:30:00Z",
         "executions": [
           {
+            "__v": 0,
+            "_id": "634ada677b24b0184c17e940",
             "exercise": {
+              "__v": 0,
               "_id": "5099803df3f4948bd2f98391",
               "name": "Bench Press",
               "instruction": "Push the bar.",
@@ -156,6 +167,7 @@ describe('Testing the training session route', () => {
             ],
             "sets": [
               {
+                "_id": "634ada677b24b0184c17e941",
                 "executionType": "warmup",
                 "weight": 0,
                 "reps": 0,

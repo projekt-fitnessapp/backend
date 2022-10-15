@@ -16,7 +16,13 @@ export async function getTrainingSession(
             if ( Array.isArray(req.query.id) ) {
                 req.query.id.forEach(async id => {
                     let singleSession = await TrainingSession.findById(id)
-                    .populate('executions')
+                    .populate({
+                        path: 'executions',
+                        populate: {
+                            path: 'exercise',
+                            model: 'Exercise'
+                        }
+                    })
                     if (singleSession) {
                         trainingSessionDocs.push(singleSession);
                         
@@ -27,7 +33,13 @@ export async function getTrainingSession(
                 trainingSessionDocs = await TrainingSession.find({
                     userId: req.query.userId
                 })
-                .populate('executions')
+                .populate({
+                    path: 'executions',
+                    populate: {
+                        path: 'exercise',
+                        model: 'Exercise'
+                    }
+                })
             }
             if (trainingSessionDocs.length == 0) {
                 res.status(404)

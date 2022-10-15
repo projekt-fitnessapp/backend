@@ -11,7 +11,7 @@ export type TExecution = {
     _id: mongoose.Schema.Types.ObjectId,
     exercise: mongoose.Schema.Types.ObjectId,
     notes: string[],
-    sets: [TSet]
+    sets: TSet[]
 }
 
 export type ExecutionDocument = Document<TExecution>;

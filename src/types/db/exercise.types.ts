@@ -1,6 +1,6 @@
 import { Document, Model, ObjectId } from 'mongoose';
 
-export type TExcercise = {
+export type TExercise = {
     _id: ObjectId,
     name: string,
     instruction: string,
@@ -9,6 +9,6 @@ export type TExcercise = {
     equipment: string
 }
 
-export type ExcerciseDocument = Document<TExcercise>;
+export type ExerciseDocument = Document<TExercise>;
 
-export type ExcerciseModel = Model<ExcerciseDocument>;
+export type ExerciseModel = Model<ExerciseDocument>;
