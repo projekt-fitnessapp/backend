@@ -64,4 +64,37 @@ describe("Testing TrainingPlan Route", ()=>{
 
         expect(res.status).to.equal(400)
     })
+
+    test('Put 201', async ()=>{
+        await TrainingPlan.create({
+            "_id": "5d99802df3f4948bd2f9daa1",
+            "name": "Arnold",
+            "split": 6,
+            "trainingDays": [
+              "5099803df3f4948bd2f9dba5"
+            ],
+            "nextDay": 2
+          });
+
+        const res = await testserver.put("/trainingPlan?trainingPlanId=5d99802df3f4948bd2f9daa1").send(
+            {"_id": "5d99802df3f4948bd2f9daa1",
+            "name": "Arnold",
+            "split": 6,
+            "trainingDays": [
+            "5099803df3f4948bd2f9dba5"
+            ],
+            "nextDay": 2})
+
+        expect(res.status).to.equal(200)
+        expect(res.body).to.deep.equal({
+            "__v":0,
+            "_id": "5d99802df3f4948bd2f9daa1",
+            "name": "Arnold",
+            "split": 6,
+            "trainingDays": [
+              "5099803df3f4948bd2f9dba5"
+            ],
+            "nextDay": 2
+          });
+    })
 })
