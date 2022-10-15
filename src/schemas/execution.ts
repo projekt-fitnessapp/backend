@@ -3,11 +3,7 @@ import { ExecutionDocument, ExecutionModel } from '../types/db/execution.types';
 
 const ExecutionSchema = new Schema({
     excercise: {
-        name: String,
-        instruction: String,
-        gifUrl: String,
-        muscle: String,
-        equipment: String
+        type: mongoose.Schema.Types.ObjectId, ref: 'Excercise'
     },
     notes: [String],
     sets: {

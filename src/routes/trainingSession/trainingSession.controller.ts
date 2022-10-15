@@ -16,6 +16,7 @@ export async function getTrainingSession(
             if ( Array.isArray(req.query.id) ) {
                 req.query.id.forEach(async id => {
                     let singleSession = await TrainingSession.findById(id)
+                    .populate('executions')
                     if (singleSession) {
                         trainingSessionDocs.push(singleSession);
                         
@@ -26,7 +27,7 @@ export async function getTrainingSession(
                 trainingSessionDocs = await TrainingSession.find({
                     userId: req.query.userId
                 })
-
+                .populate('executions')
             }
             if (trainingSessionDocs.length == 0) {
                 res.status(404)
@@ -46,7 +47,7 @@ export async function postTrainingSession(
     try {
         const saved = await TrainingSession.create(req.body)
         if (saved) {
-            res.status(200)
+            res.status(201)
             return res.json(saved._id)
         } else {
             throw new Error()
