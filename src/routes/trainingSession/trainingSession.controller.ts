@@ -15,7 +15,7 @@ export async function getTrainingSession(
 
             if ( Array.isArray(req.query.id) ) {
                 req.query.id.forEach(async id => {
-                    let singleSession = await TrainingSession.findById(id)
+                    const singleSession = await TrainingSession.findById(id)
                     .populate({
                         path: 'executions',
                         populate: {
