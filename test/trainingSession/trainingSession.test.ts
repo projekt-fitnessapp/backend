@@ -36,7 +36,7 @@ describe('Testing the training session route', () => {
     })
     const executionId = await Execution.create({
       "exercise": {
-        "_id": excerciseId
+        "_id": excerciseId._id._id
       },
       "notes": [
         "string"
@@ -56,7 +56,7 @@ describe('Testing the training session route', () => {
       "trainingDayId": "5099803df3f4948bd2f9dja5",
       "date": "2016-05-18T16:30:00Z",
       "executions": [
-        {"_id": executionId}
+        {"_id": executionId._id._id}
       ]
     })
 
@@ -108,7 +108,7 @@ describe('Testing the training session route', () => {
     })
     const executionId = await Execution.create({
       "exercise": {
-        "_id": excerciseId
+        "_id": excerciseId._id._id
       },
       "notes": [
         "string"
@@ -122,13 +122,14 @@ describe('Testing the training session route', () => {
         }
       ]
     })
+    const objId = executionId._id._id
     await TrainingSession.create({
       "_id": "5099803df3f4948bd2f98548",
       "userId": "5099803df3f494add2f9dja5",
       "trainingDayId": "5099803df3f4948bd2f9dja5",
       "date": "2016-05-18T16:30:00Z",
       "executions": [
-        {"_id":executionId}
+        {"_id":objId}
       ]
     })
 
@@ -179,12 +180,12 @@ describe('Testing the training session route', () => {
 
   test('Post Method with no error', async ()=>{
     const trainingSession = {
-      "_id": "5099803df3f4948bd2f98548",
-      "userId": "5099803df3f494add2f9dja5",
-      "trainingDayId": "5099803df3f4948bd2f9dja5",
-      "date": "2016-05-18T16:30:00Z",
-      "executions": [
-        {"_id":"5099803df3f4948bd2f98577"}
+      _id: "5099803df3f4948bd2f98548",
+      userId: "5099803df3f494add2f9dja5",
+      trainingDayId: "5099803df3f4948bd2f9dja5",
+      date: "2016-05-18T16:30:00Z",
+      executions: [
+        {_id:"5099803df3f4948bd2f98577"}
       ]
     }
 

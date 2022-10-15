@@ -1,12 +1,11 @@
-import { Document, Model } from 'mongoose';
-import { TExecution } from './execution.types';
+import mongoose, { Document, Model } from 'mongoose';
 
 export type TTrainingSession = {
     _id: string
     userId: string,
     trainingDayId: string,
     date: string,
-    executions: TExecution[]
+    executions: mongoose.Schema.Types.ObjectId
 }
 
 export type TrainingSessionDocument = Document<TTrainingSession>;
