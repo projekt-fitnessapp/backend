@@ -78,23 +78,84 @@ describe("Testing TrainingPlan Route", ()=>{
 
         const res = await testserver.put("/trainingPlan?trainingPlanId=5d99802df3f4948bd2f9daa1").send(
             {"_id": "5d99802df3f4948bd2f9daa1",
-            "name": "Arnold",
+            "name": "Bruno",
             "split": 6,
             "trainingDays": [
             "5099803df3f4948bd2f9dba5"
             ],
-            "nextDay": 2})
+            "nextDay": 3})
 
-        expect(res.status).to.equal(200)
+        expect(res.status).to.equal(201)
         expect(res.body).to.deep.equal({
             "__v":0,
             "_id": "5d99802df3f4948bd2f9daa1",
-            "name": "Arnold",
+            "name": "Bruno",
             "split": 6,
             "trainingDays": [
               "5099803df3f4948bd2f9dba5"
             ],
-            "nextDay": 2
+            "nextDay": 3
           });
     })
+
+    test('Put 400', async ()=>{
+      await TrainingPlan.create({
+          "_id": "5d99802df3f4948bd2f9daa1",
+          "name": "Arnold",
+          "split": 6,
+          "trainingDays": [
+            "5099803df3f4948bd2f9dba5"
+          ],
+          "nextDay": 2
+        });
+
+      const res = await testserver.put("/trainingPlan").send(
+          {"_id": "5d99802df3f4948bd2f9daa1",
+          "name": "Bruno",
+          "split": 6,
+          "trainingDays": [
+          "5099803df3f4948bd2f9dba5"
+          ],
+          "nextDay": 3})
+
+      expect(res.status).to.equal(400)
+  })
+
+  test('Post 400 without userId', async ()=>{
+
+    const res = await testserver.post("/trainingPlan").send(
+        {
+        "name": "Bruno"
+        })
+
+    expect(res.status).to.equal(400)
+  })
+
+  test('Post 400 with userId', async ()=>{
+
+    const res = await testserver.post("/trainingPlan?userId=123").send(
+      {"_id": "5d99802df3f4948bd2f9daa1",
+      "name": "Bruno",
+      "split": 6,
+      "trainingDays": [
+      "5099803df3f4948bd2f9dba5"
+      ],
+      "nextDay": 3})
+
+    expect(res.status).to.equal(400)
+  })
+
+  test('Post 201 without userId', async ()=>{
+
+    const res = await testserver.post("/trainingPlan").send(
+      {"_id": "5d99802df3f4948bd2f9daa1",
+      "name": "Bruno",
+      "split": 6,
+      "trainingDays": [
+      "5099803df3f4948bd2f9dba5"
+      ],
+      "nextDay": 3})
+
+  expect(res.status).to.equal(201)
+  })
 })
