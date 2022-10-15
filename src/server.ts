@@ -22,14 +22,13 @@ export function setupServer(isTest: boolean) {
   return app;
 }
 
-export function connectDB(isTest: boolean) {
+export async function connectDB(isTest: boolean) {
   if (isTest) {
     process.env.DB_URL =
       "mongodb+srv://test:test@cluster0.r1rtx.mongodb.net/?retryWrites=true&w=majority";
   } else {
     dotenv.config();
   }
-  mongoose.connect(process.env.DB_URL as string, async () => {
-    console.log("Database connection successfull");
-  });
+  await mongoose.connect(process.env.DB_URL as string);
+  console.log("Database connection successfull");
 }
