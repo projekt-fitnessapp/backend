@@ -10,6 +10,7 @@ export async function getTrainingPlan(
     if(!req.query.trainingPlanId) throw new Error("No trainingPlanId provided!");
     res.status(200).json(await TrainingPlan.findById(req.query.trainingPlanId))
   } catch (e) {
+    res.statusMessage = "No trainingPlanId provided"
     res.status(400).send()
   }
   
@@ -23,7 +24,7 @@ export async function postTrainingPlan(
     let id
     if(req.query.userId){
       const account = await Account.findById(req.query.userId)
-      id = String((await TrainingPlan.create(req.body))._id._id)
+      id = (await TrainingPlan.create(req.body))._id.toString()
       if (!id) {
         throw new Error("Malformed TrainingPlan");
       }
@@ -32,11 +33,11 @@ export async function postTrainingPlan(
         const filter = { _id: req.query.userId }
         const resBody = await Account.findOneAndUpdate(filter, account, { new: true })
         if (!resBody) {
-          TrainingPlan.findByIdAndDelete(id)
+          await TrainingPlan.findByIdAndDelete(id)
           throw new Error("Update went wrong")
         }
       } else {
-        TrainingPlan.findByIdAndDelete(id)
+        await TrainingPlan.findByIdAndDelete(id)
         throw new Error("No Account with that Id!")
       }
     } else {
@@ -57,6 +58,7 @@ export async function putTrainingPlan(
     const filter = {_id: req.query.trainingPlanId}
     res.status(201).send(await TrainingPlan.findOneAndUpdate(filter, req.body, {new: true}))
   } catch (error) {
+    res.statusMessage = "No trainingPlanId provided"
     res.status(400).send()
   }
 }
