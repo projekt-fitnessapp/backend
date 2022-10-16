@@ -1,9 +1,10 @@
-import { Router } from "express";
+import { Router } from 'express';
+import { getExercise } from './exercise.controller';
 
-import { getAllExercises } from "./exercise.controller";
+
 
 const router = Router();
 
-router.get("/", getAllExercises);
+router.get('/', getExercise);
 
 export { router as ExerciseRouter };

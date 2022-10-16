@@ -1,10 +1,14 @@
-import { Document, Model } from "mongoose";
+import { Document, Model, ObjectId } from 'mongoose';
 
-export type TExercise = {
-  name: string;
-  muscle_group: string;
-};
+export type TExcercise = {
+    _id: ObjectId,
+    name: string,
+    instruction: string,
+    gifUrl: string,
+    muscle: string,
+    equipment: string
+}
 
-export type ExerciseDocument = Document<TExercise>;
+export type ExcerciseDocument = Document<TExcercise>;
 
-export type ExerciseModel = Model<ExerciseDocument>;
+export type ExcerciseModel = Model<ExcerciseDocument>;

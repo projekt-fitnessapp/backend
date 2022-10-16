@@ -1,6 +1,6 @@
 # backend
 
-Test
+Hosting: https://api.fitnessapp.gang-of-fork.de/
 
 ### Prerequisite
 

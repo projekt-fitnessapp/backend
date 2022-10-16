@@ -1,45 +1,40 @@
 import { Request, Response } from "express";
+import { Excercise } from "../../schemas/excercise";
 
-// import { Exercise } from "../../schemas/exercise";
+const validMuscles = ["abs", "calves", 'quads', 'lats', 'pectorals', 'glutes', 'hamstrings', 'adductors',"abductors", 'triceps','cardiovascular system', 'spine', 'upper back', 'biceps', 'delts', 'forearms', 'traps'];
+const validEquipment = ["body weight",'barbell', "cable", 'assisted', 'rope', 'leverage machine', 'dumbbell', "stability ball","ez barbell","sled machine","upper body ergometer","kettlebell", "medicine ball", "olympic barbell", "bosu ball", "resistance band","roller","wheel roller", "smith machine", "tire", "elliptical machine","weighted"];
 
-import exerciseJson from "../../../exercises.json";
-// import exerciseNinjaJson from "../../../exercises.ninja.json";
+export async function getExercise(req: Request, res: Response) {
+  const queryObject: { name?: string; muscle?: string; equipment?: string } =
+    {};
 
-export async function getAllExercises(_req: Request, res: Response) {
-  // const result = await Exercise.find();
+  try {
+    if (req.query.muscle) {
+      const reqMuscle = req.query.muscle.toString();
+      validMuscles.forEach((muscle) => {
+        if (muscle.includes(reqMuscle.toLowerCase())) {
+          queryObject.muscle = muscle;
+        }
+      });
+    }
 
-  const result = doStuff();
+    if (req.query.name) {
+      queryObject.name = req.query.name.toString();
+    }
 
-  res.json({
-    data: result,
-    count: result.length,
-  });
-}
+    if (req.query.equipment) {
+      const reqEquipment = req.query.equipment.toString();
+      validEquipment.forEach((equipment) => {
+        if (equipment.includes(reqEquipment.toLowerCase())) {
+          queryObject.equipment = equipment;
+        }
+      });
+    }
 
-function doStuff() {
-  var exerciseData = exerciseJson.data;
-  // var ninjaData = exerciseNinjaJson.data;
+    const resBody = await Excercise.find(queryObject).select('_id equipment name muscle gifUrl instruction' );
 
-  interface exerciseI {
-    name: string;
-    instruction: string;
-    gifUrl: string;
-    muscle: string;
-    equipment: string;
+    res.status(200).json(resBody);
+  } catch (error) {
+    res.status(500).json({ msg: "Internal Server Error" });
   }
-
-  var newexer: Array<exerciseI> = [];
-  // var exercise: exerciseI;
-  exerciseData.forEach((exercise) => {
-    var exer: exerciseI = {
-      name: exercise.name,
-      instruction: "",
-      gifUrl: exercise.gifUrl,
-      muscle: exercise.target,
-      equipment: exercise.equipment
-    };
-    newexer.push(exer);
-  });
-
-  return newexer;
 }
