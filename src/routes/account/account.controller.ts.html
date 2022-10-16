@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90.9% </span>
+                <span class="strong">90.62% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>30/33</span>
+                <span class='fraction'>29/32</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90% </span>
+                <span class="strong">89.65% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>27/30</span>
+                <span class='fraction'>26/29</span>
             </div>
         
             
@@ -114,23 +114,10 @@
 <a name='L49'></a><a href='#L49'>49</a>
 <a name='L50'></a><a href='#L50'>50</a>
 <a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a>
-<a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">4x</span>
@@ -144,13 +131,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">2x</span>
@@ -168,10 +149,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -179,22 +156,22 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, Response } from 'express';
 import { Account } from '../../schemas/account';
 &nbsp;
-export async function getAccount(
-  req: Request,
-  res: Response
-) {
-  try{
-    const docs =  await Account.findById(req.query.userId)
-    if(!docs) {
+export async function getAccount(req: Request, res: Response) {
+  try {
+    const docs = await Account.findById(req.query.userId);
+    if (!docs) {
       return res.status(404).json();
     }
     res.status(200);
@@ -203,21 +180,15 @@ export async function getAccount(
     res.status(400);
     return res.send();
   }
-  
 }
 &nbsp;
-export async function saveAccount(
-  req: Request,
-  res: Response
-) {
-&nbsp;
-  console.log(req.body);
+export async function saveAccount(req: Request, res: Response) {
   try {
     const savedAccount = await Account.create(req.body);
-    <span class="missing-if-branch" title="else path not taken" >E</span>if(savedAccount) {
-    const userId = savedAccount._id;
-    res.status(201);
-    return res.json({ userId });
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (savedAccount) {
+      const userId = savedAccount._id;
+      res.status(201);
+      return res.json({ userId });
     } else {
 <span class="cstat-no" title="statement not covered" >      throw new Error();</span>
     }
@@ -227,33 +198,32 @@ export async function saveAccount(
   }
 }
 &nbsp;
-export async function changeAccount(
-  req: Request,
-  res: Response
-) {
-&nbsp;
+export async function changeAccount(req: Request, res: Response) {
   try {
-    if(!req.body._id) {
+    if (!req.body._id) {
       res.status(400);
       return res.send();
-    } 
-      const userId = req.body._id;
-      const filter = { _id: userId };
-      const resBody = await Account.findOneAndUpdate(filter, req.body, { new: true });  
-      res.status(201);
-      return res.send(resBody);
+    }
+    const userId = req.body._id;
+    const filter = { _id: userId };
+    const resBody = await Account.findOneAndUpdate(filter, req.body, {
+      new: true,
+    });
+    res.status(201);
+    return res.send(resBody);
   } catch (error) {
 <span class="cstat-no" title="statement not covered" >    res.status(400);</span>
 <span class="cstat-no" title="statement not covered" >    return res.send();</span>
   }
-}</pre></td></tr></table></pre>
+}
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-14T18:31:23.589Z
+                at 2022-10-16T07:45:40.443Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
