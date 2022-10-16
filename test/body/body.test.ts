@@ -20,10 +20,8 @@ describe("Body Endpoint Tests", ()=>{
     });
 
     test('Get Method with no error', async ()=>{
-        var mongoose = require('mongoose');
-        var objectId = mongoose.Types.ObjectId('5099803df3f494add2f9d707');
         await Body.create({
-            _id: objectId,
+            _id: "5099803df3f494add2f9d707",
             userId: "5099803df3f494add2f9dba7",
             date: "12.12.2010",
             height: 1.78,
@@ -32,7 +30,13 @@ describe("Body Endpoint Tests", ()=>{
     
         const res = await testserver.get("/body?userId=5099803df3f494add2f9d707");
         expect(res.status).to.equal(200);
-        expect(res.body == null);
+        expect(res.body = {
+          _id: "5099803df3f494add2f9d707",
+          userId: "5099803df3f494add2f9dba7",
+          date: "12.12.2010",
+          height: 1.78,
+          weight: 75
+      });
       });
 
   test('Get Method with error 400', async ()=>{

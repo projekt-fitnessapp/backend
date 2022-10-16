@@ -1,7 +1,6 @@
 import { Router } from 'express';
 
-import { getBody } from './body.controller';
-import { saveBody } from './body.controller';
+import { getBody, saveBody } from './body.controller'
 
 const router = Router();
 

@@ -22,9 +22,9 @@ export async function saveBody(
 
   try {
     const savedBody = await Body.create(req.body);
-    const userId = savedBody._id;
+    const bodyId = savedBody._id;
     res.status(201);
-    return res.json({ userId });
+    return res.json({ bodyId });
   } catch (e) {
     res.status(401);
     return res.send();
