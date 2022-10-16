@@ -29,9 +29,8 @@ export async function postTrainingPlan(
         throw new Error("Malformed TrainingPlan");
       }
       if (account != null) {
-        account._id.trainingPlans.push(id)
         const filter = { _id: req.query.userId }
-        const resBody = await Account.findOneAndUpdate(filter, account, { new: true })
+        const resBody = await Account.findOneAndUpdate(filter, { $push: { trainingPlans: id }}, { new: true })
         if (!resBody) {
           await TrainingPlan.findByIdAndDelete(id)
           throw new Error("Update went wrong")
