@@ -22,7 +22,7 @@ export async function postTrainingPlan(
   try {
     let id
     if(req.query.userId){
-      let account = await Account.findById(req.query.userId)
+      const account = await Account.findById(req.query.userId)
       id = String((await TrainingPlan.create(req.body))._id._id)
       if (!id) {
         throw new Error("Malformed TrainingPlan");
