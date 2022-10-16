@@ -33,7 +33,7 @@ export async function getExercise(req: Request, res: Response) {
 
     const resBody = await Excercise.find(queryObject).select('_id equipment name muscle gifUrl instruction' );
 
-    res.status(200).json(resBody);
+    res.json(resBody);
   } catch (error) {
     res.status(500).json({ msg: "Internal Server Error" });
   }
