@@ -6,9 +6,12 @@ export async function getBody(
   res: Response
 ) {
   try{
-    const docs =  await Body.findById(req.query.userId)
+    if(!req.query.userId) {
+      throw new Error;
+    }
+    const docs =  await Body.find({ userId: req.query.userId }).sort({date: -1});
     res.status(200);
-    return res.json(docs);
+    return res.json(docs[0]);
   } catch (e) {
     res.status(400);
     return res.send();
