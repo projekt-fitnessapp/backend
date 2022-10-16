@@ -1,6 +1,7 @@
 import { TestDatabase } from '../../src/helpers/testhelpers';
 import { describe, test, beforeEach, afterEach } from "mocha";
 import { expect } from "chai";
+import { Exercise } from '../../src/schemas/excercise';
 import { TrainingDay } from '../../src/schemas/training.day';
 import { setupServer } from '../../src/server';
 import supertest from "supertest";
@@ -24,11 +25,20 @@ describe('Testing the training day route', () => {
 
   test('Testing GET with no error', async () => {
 
+    const exerciseId = await Exercise.create({
+      "_id": "5099803df3f4948bd2f98391",
+      "name": "Bench Press",
+      "instruction": "Push the bar.",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+      "muscle": "breast",
+      "equipment": "barbell"
+    })
+
     await TrainingDay.create({
       "_id": "5099803df3f494add2f9d707",
       "name": "Push",
       "exercises": [{
-          "exerciseId": "5099803df3f5948bd2f98391",
+          "exerciseId": exerciseId,
           "sets": 3,
           "reps": 10
         }]
@@ -43,7 +53,13 @@ describe('Testing the training day route', () => {
       "name": "Push",
       "exercises": [
         {
-          "exerciseId": "5099803df3f4948bd2f98391",
+          "__v": 0,
+          "_id": "5099803df3f4948bd2f98391",
+          "name": "Bench Press",
+          "instruction": "Push the bar.",
+          "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+          "muscle": "breast",
+          "equipment": "barbell",
           "sets": 3,
           "reps": 10
         }
