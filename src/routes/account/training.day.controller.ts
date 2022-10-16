@@ -1,15 +1,17 @@
 import { Request, Response } from 'express';
 import { TrainingDay } from '../../schemas/training.day';
-import { TrainingDayRouter } from './training,day,router';
 
 export async function getTrainingDay(
   req: Request,
   res: Response
 ) {
+  console.log(req.query.trainingDayId);
   try{
     const docs =  await TrainingDay
     .findById(req.query.trainingDayId)
-    .populate("excercises");
+    .populate('exercises');
+    //.populate({path:'exercises', model:'Exercise'});
+    console.log(docs);
     if(!docs) {
       return res.status(404).json();
     }

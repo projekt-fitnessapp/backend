@@ -23,7 +23,6 @@ export async function saveAccount(
   req: Request,
   res: Response
 ) {
-
   console.log(req.body);
   try {
     const savedAccount = await Account.create(req.body);

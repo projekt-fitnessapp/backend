@@ -24,23 +24,29 @@ describe('Testing the training day route', () => {
   })
 
   test('Testing GET with no error', async () => {
+    var mongoose = require('mongoose');
+    var exerciseobjectId = mongoose.Types.ObjectId('5099803df3f4948bd2f98391');
 
     const exerciseId = await Exercise.create({
-      "_id": "5099803df3f4948bd2f98391",
-      "name": "Bench Press",
-      "instruction": "Push the bar.",
-      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
-      "muscle": "breast",
-      "equipment": "barbell"
-    })
+      _id: exerciseobjectId,
+      name: "Bench Press",
+      instruction: "Push the bar.",
+      gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+      muscle: "breast",
+      equipment: "barbell"
+    });
 
+    const docs =  await Exercise.findById(exerciseId._id);
+    console.log(docs);
+
+    var trainingdayobjectId = mongoose.Types.ObjectId('5099803df3f494add2f9d707');
     await TrainingDay.create({
-      "_id": "5099803df3f494add2f9d707",
-      "name": "Push",
-      "exercises": [{
-          "exerciseId": exerciseId,
-          "sets": 3,
-          "reps": 10
+      _id: trainingdayobjectId,
+      name: "Push",
+      exercises: [{
+          exerciseId: exerciseId._id,
+          sets: 3,
+          reps: 10,
         }]
     });
 
@@ -91,15 +97,15 @@ describe('Testing the training day route', () => {
         }
       ]
   }
-    const res = await testserver.post("/training.day").send(testTrainingDay).set('Accept', 'application/json');
+    const res = await testserver.post("/trainingDay").send(testTrainingDay).set('Accept', 'application/json');
     expect(res.status).to.equal(201);
 
-    const res2 = await testserver.get("/trainingDay?trainingDayId=5099803df3f4948bd2f9daa5");
-   expect(res2.status).to.equal(200);
+    //const res2 = await testserver.get("/trainingDay?trainingDayId=5099803df3f4948bd2f9daa5");
+   //expect(res2.status).to.equal(200);
   });
 
-  test('Testing POST with error 401', async () => {
-    const res = await testserver.post("/training.day").send("Max Mustermann").set('Accept', 'application/json');
+  test('Testing POST with error 400', async () => {
+    const res = await testserver.post("/trainingDay").send("Max Mustermann").set('Accept', 'application/json');
     expect(res.status).to.equal(400);
   })
 
@@ -115,10 +121,10 @@ describe('Testing the training day route', () => {
         }
       ]
     }
-    await testserver.post("/training.day").send(testTrainingDay).set('Accept', 'application/json');
+    await testserver.post("/trainingDay").send(testTrainingDay).set('Accept', 'application/json');
     testTrainingDay.name = "Pull";
 
-    const res = await testserver.put("/training.day").send(testTrainingDay);
+    const res = await testserver.put("/trainingDay").send(testTrainingDay);
     expect(res.status).to.equal(201);
 
     const res2 = await testserver.get("/trainingDay?trainingDayId=5099803df3f4948bd2f9daa5");
@@ -126,7 +132,7 @@ describe('Testing the training day route', () => {
   });
 
   test('Testing PUT with error 400', async () => {
-    const res = await testserver.post("/training.day").send("Keine TrainingDayID").set('Accept', 'application/json');
+    const res = await testserver.post("/trainingDay").send("Keine TrainingDayID").set('Accept', 'application/json');
     expect(res.status).to.equal(400);
   });
 })
