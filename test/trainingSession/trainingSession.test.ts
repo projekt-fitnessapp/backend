@@ -195,7 +195,7 @@ describe('Testing the training session route', () => {
       trainingDayId: "5099803df3f4948bd2f9dja5",
       date: "2016-05-18T16:30:00Z",
       executions: [
-        {_id:"5099803df3f4948bd2f98577"}
+        "5099803df3f4948bd2f98577"
       ]
     }
 

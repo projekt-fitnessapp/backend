@@ -14,21 +14,15 @@ export async function getTrainingSession(
             }
 
             if ( Array.isArray(req.query.id) ) {
-                req.query.id.forEach(async id => {
-                    const singleSession = await TrainingSession.findById(id)
-                    .populate({
-                        path: 'executions',
-                        populate: {
-                            path: 'exercise',
-                            model: 'Exercise'
-                        }
-                    })
-                    if (singleSession) {
-                        trainingSessionDocs.push(singleSession);
-                        
+                const ids = req.query.id
+                trainingSessionDocs = await TrainingSession.find({_id: {$in: ids}, userId: req.query.userId})
+                .populate({
+                    path: 'executions',
+                    populate: {
+                        path: 'exercise',
+                        model: 'Exercise'
                     }
-                })
-                    
+                }) 
             } else {
                 trainingSessionDocs = await TrainingSession.find({
                     userId: req.query.userId

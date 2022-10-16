@@ -1,7 +1,6 @@
-import { Document, Model, ObjectId } from 'mongoose';
+import { Document, Model } from 'mongoose';
 
 export type TExercise = {
-    _id: ObjectId,
     name: string,
     instruction: string,
     gifUrl: string,
