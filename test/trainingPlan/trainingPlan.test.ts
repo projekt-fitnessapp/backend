@@ -27,34 +27,57 @@ describe("Testing TrainingPlan Route", () => {
 
   test('Get 200', async () => {
     const exerciseId = await Excercise.create({
-
+      "_id": "5099803df3f4948bd2f98391",
+      "name": "Bench Press",
+      "instruction": "Push the bar.",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+      "muscle": "breast",
+      "equipment": "barbell"
     })
     const trainingDayId = await TrainingDay.create({
-
+        "_id": "5099803df3f4948bd2f9dja5",
+        "name": "Push",
+        "exercises": [
+          {
+            exerciseId
+          }
+        ]
     })
-    await TrainingPlan.create({
-      "_id": "5d99802df3f4948bd2f9daa1",
-      "name": "Arnold",
-      "split": 6,
-      "trainingDays": [
-        trainingDayId
-      ],
-      "nextDay": 2
-    });
+    const trainingPlanId = await TrainingPlan.create({
+        "_id": "5d99802df3f4948bd2f9dba1",
+        "name": "Arnold",
+        "split": 6,
+        "trainingDays": [
+          trainingDayId
+        ],
+        "nextDay": 2
+    })
 
-    const res = await testserver.get("/trainingPlan?trainingPlanId=5d99802df3f4948bd2f9daa1")
+    const res = await testserver.get("/trainingPlan?trainingPlanId=5d99802df3f4948bd2f9dba1")
 
     expect(res.status).to.equal(200)
-    expect(res.body).to.deep.equal({
-      "__v": 0,
-      "_id": "5d99802df3f4948bd2f9daa1",
+    expect(res.body).to.deep.equal([{
+      "_id": trainingPlanId,
       "name": "Arnold",
       "split": 6,
       "trainingDays": [
-        "5099803df3f4948bd2f9dba5"
+        {
+            "_id": trainingDayId,
+            "name": "Push",
+            "exercises": [
+                {
+                    "_id": exerciseId,
+                    "name": "Bench Press",
+                    "instruction": "Push the bar.",
+                    "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+                    "muscle": "breast",
+                    "equipment": "barbell"
+                }
+            ]
+        }
       ],
       "nextDay": 2
-    });
+    }]);
   })
 
   test('Get 400', async () => {
