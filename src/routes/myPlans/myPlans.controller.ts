@@ -13,9 +13,10 @@ export async function getMyPlans(
             const account = await Account.findById(req.query.userId)
             .populate({
                 path: 'trainingPlans',
+                model: 'Training Plan',
                 populate: {
                     path: 'trainingDays',
-                    model: 'TrainingDay',
+                    model: 'Training Day',
                     populate: {
                         path: 'exercises',
                         model: 'Exercise'
@@ -28,7 +29,7 @@ export async function getMyPlans(
                 return res.sendStatus(404)
             }
             res.statusMessage = "Users TrainingPlans list"
-            return res.json(account._id.trainingPlans)
+            return res.json(account.toJSON().trainingPlans)
             
         } catch (error) {
             return res.sendStatus(400)
