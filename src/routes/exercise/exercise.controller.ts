@@ -1,8 +1,49 @@
-import { Request, Response } from "express";
-import { Excercise } from "../../schemas/excercise";
+import { Request, Response } from 'express';
+import { Excercise } from '../../schemas/excercise';
 
-const validMuscles = ["abs", "calves", 'quads', 'lats', 'pectorals', 'glutes', 'hamstrings', 'adductors',"abductors", 'triceps','cardiovascular system', 'spine', 'upper back', 'biceps', 'delts', 'forearms', 'traps'];
-const validEquipment = ["body weight",'barbell', "cable", 'assisted', 'rope', 'leverage machine', 'dumbbell', "stability ball","ez barbell","sled machine","upper body ergometer","kettlebell", "medicine ball", "olympic barbell", "bosu ball", "resistance band","roller","wheel roller", "smith machine", "tire", "elliptical machine","weighted"];
+const validMuscles = [
+  'abs',
+  'calves',
+  'quads',
+  'lats',
+  'pectorals',
+  'glutes',
+  'hamstrings',
+  'adductors',
+  'abductors',
+  'triceps',
+  'cardiovascular system',
+  'spine',
+  'upper back',
+  'biceps',
+  'delts',
+  'forearms',
+  'traps',
+];
+const validEquipment = [
+  'body weight',
+  'barbell',
+  'cable',
+  'assisted',
+  'rope',
+  'leverage machine',
+  'dumbbell',
+  'stability ball',
+  'ez barbell',
+  'sled machine',
+  'upper body ergometer',
+  'kettlebell',
+  'medicine ball',
+  'olympic barbell',
+  'bosu ball',
+  'resistance band',
+  'roller',
+  'wheel roller',
+  'smith machine',
+  'tire',
+  'elliptical machine',
+  'weighted',
+];
 
 export async function getExercise(req: Request, res: Response) {
   const queryObject: { name?: string; muscle?: string; equipment?: string } =
@@ -11,11 +52,9 @@ export async function getExercise(req: Request, res: Response) {
   try {
     if (req.query.muscle) {
       const reqMuscle = req.query.muscle.toString();
-      validMuscles.forEach((muscle) => {
-        if (muscle.includes(reqMuscle.toLowerCase())) {
-          queryObject.muscle = muscle;
-        }
-      });
+      queryObject.muscle = validMuscles.filter((muscle) =>
+        muscle.includes(reqMuscle.toLowerCase())
+      )[0];
     }
 
     if (req.query.name) {
@@ -24,17 +63,17 @@ export async function getExercise(req: Request, res: Response) {
 
     if (req.query.equipment) {
       const reqEquipment = req.query.equipment.toString();
-      validEquipment.forEach((equipment) => {
-        if (equipment.includes(reqEquipment.toLowerCase())) {
-          queryObject.equipment = equipment;
-        }
-      });
+      queryObject.equipment = validEquipment.filter((equipment) => {
+        equipment.includes(reqEquipment.toLowerCase());
+      })[0];
     }
 
-    const resBody = await Excercise.find(queryObject).select('_id equipment name muscle gifUrl instruction' );
+    const resBody = await Excercise.find(queryObject).select(
+      '_id equipment name muscle gifUrl instruction'
+    );
 
     res.json(resBody);
   } catch (error) {
-    res.status(500).json({ msg: "Internal Server Error" });
+    res.status(500).json({ msg: 'Internal Server Error' });
   }
 }
