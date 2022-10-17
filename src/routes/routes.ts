@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { LastTrainingRouter } from './lastTraining/lastTraining.router';
 import { AccountRouter } from './account/account.router';
-import { TrainingDayRouter } from './training.day/training.day.router';
+import { TrainingDayRouter } from './trainingDay/trainingDay.router';
 import { BodyRouter } from './body/body.router';
 import { ExerciseRouter } from './exercise/exercise.router';
 import { PingRouter } from './ping/ping.router';
