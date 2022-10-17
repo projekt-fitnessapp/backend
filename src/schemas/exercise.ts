@@ -1,7 +1,7 @@
 import mongoose, { Schema } from 'mongoose';
-import { ExcerciseDocument, ExcerciseModel } from '../types/db/exercise.types';
+import { ExerciseDocument, ExerciseModel } from '../types/db/exercise.types';
 
-const ExcerciseSchema = new Schema({
+const ExerciseSchema = new Schema({
     name: { type: String, required: true },
     instruction: { type: String, required: true },
     gifUrl: { type: String, required: true },
@@ -9,4 +9,4 @@ const ExcerciseSchema = new Schema({
     equipment: { type: String, required: true }
 });
 
-export const Excercise = mongoose.model<ExcerciseDocument, ExcerciseModel>('Excercise', ExcerciseSchema, 'excercises');
+export const Exercise = mongoose.model<ExerciseDocument, ExerciseModel>('Exercise', ExerciseSchema, 'exercises');
