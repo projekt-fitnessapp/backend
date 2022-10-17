@@ -8,9 +8,9 @@ export async function getTrainingDay(
   console.log(req.query.trainingDayId);
   try{
     const docs =  await TrainingDay
-    .findById(req.query.trainingDayId)
-    .populate('exercises');
-    console.log(docs);
+    .findById(req.query.trainingDayId);
+    //.populate({path:'exercises', 
+    //populate: { path: 'exerciseId', model: 'Exercise'}});
     if(!docs) {
       return res.status(404).json();
     }
@@ -26,7 +26,6 @@ export async function saveTrainingDay(
   req: Request,
   res: Response
 ) {
-  console.log(req.body);
   try {
     const savedTrainingDay = await TrainingDay.create(req.body);
     if(savedTrainingDay) {

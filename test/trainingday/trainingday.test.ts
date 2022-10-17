@@ -34,23 +34,20 @@ describe('Testing the training day route', () => {
     });
 
     await TrainingDay.create({
+      __v: 0,
       _id: '5099803df3f494add2f9d707',
       name: "Push",
       exercises: [{
-          _id: '5099803df3f4948bd2f98391',
           exerciseId: '5099803df3f4948bd2f98391',
           sets: 3,
           reps: 10,
         }]
     });
 
-    const docs =  await Exercise.findById('5099803df3f4948bd2f98391')
-    console.log(docs);
     const response = await testserver.get("/trainingDay?trainingDayId=5099803df3f494add2f9d707");
 
     expect(response.status).to.equal(200);
-    expect(response.body._id).to.equal("5099803df3f494add2f9d707");
-
+    expect(response.body._id).to.equal('5099803df3f494add2f9d707');
   })
 
   test('Testing GET with error 404', async () => {
