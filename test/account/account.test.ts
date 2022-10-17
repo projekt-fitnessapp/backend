@@ -5,8 +5,6 @@ import supertest from "supertest";
 import { setupServer } from "../../src/server";
 
 import { Account } from '../../src/schemas/account';
-import { TAccount } from '../../src/types/db/account.types';
-
 
 describe("Account Endpoint Tests", ()=>{
     const testdb = new TestDatabase();
@@ -50,16 +48,53 @@ describe("Account Endpoint Tests", ()=>{
   });
 
   test('Post Method with no error', async ()=>{
-    const account = {} as TAccount;
-    account._id = <any>'5099803df3f494add2f9d757';
-    account.birthdate = "12.12.2010";
-    account.name = "Max Mustermann";
-    account.google_id = "5099803df3f494add2f9dba7";
+    let testaccount = {
+      _id: '5099803df3f494add2f9d757',
+      birthdate: "12.12.2010",
+      name: "Max Mustermann",
+      google_id: "5099803df3f494add2f9dba7"
+      };
+  
+
+    const res = await testserver.post("/account").send(testaccount).set('Accept', 'application/json');
+    expect(res.status).to.equal(201);
+
+    const res2 = await testserver.get("/account?userId=5099803df3f494add2f9d757");
+    expect(res2.status).to.equal(200);
+  });
+
+  test('Post Method with 401 error', async ()=>{
+  
+
+    const res = await testserver.post("/account").send("Max Mustermann").set('Accept', 'application/json');
+    expect(res.status).to.equal(400);
+  });
 
   
 
-    const res = await testserver.post("/account").send(account).set('Accept', 'application/json');
-    expect(res.status).to.equal(200);
+   test('Put Method with no error', async ()=>{
+    let testaccount = {
+      _id: '5099803df3f494add2f9d757',
+      birthdate: "12.12.2010",
+      name: "Max Mustermann",
+      google_id: "5099803df3f494add2f9dba7"
+      };
+
+    await testserver.post("/account").send(testaccount).set('Accept', 'application/json');
+
+    testaccount.name = "Maximilian Mustermann";
+
+
+    const res = await testserver.put("/account").send(testaccount);
+    expect(res.status).to.equal(201);
+
+    const res2 = await testserver.get("/account?userId=5099803df3f494add2f9d757");
+    expect(res2.status).to.equal(200);
+  });
+
+  test('Put Method with 400 error', async ()=>{
+    const res = await testserver.put("/account").send("Keine UserID");
+    expect(res.status).to.equal(400);
   });
  
     afterEach(async ()=>{
