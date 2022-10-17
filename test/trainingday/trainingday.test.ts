@@ -33,6 +33,7 @@ describe('Testing the training day route', () => {
     });
 
     await TrainingDay.create({
+      __v: 0,
       _id: '5099803df3f494add2f9d707',
       name: 'Push',
       exercises: [
