@@ -1,13 +1,14 @@
 import { Document, Model, ObjectId } from 'mongoose';
 
 export type TAccount = {
-    _id: ObjectId,
-    google_id: string,
-    name: string,
-    birthdate: string,
-    sex: {type: string, enum: ['male', 'female']},
-    trainingPlans: [string]
-}
+  _id: ObjectId;
+  google_id: string;
+  name: string;
+  birthdate: string;
+  sex: { type: string; enum: ['male', 'female'] };
+  trainingPlans: [string];
+  activePlan: string;
+};
 
 export type AccountDocument = Document<TAccount>;
 
