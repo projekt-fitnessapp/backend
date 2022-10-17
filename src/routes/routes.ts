@@ -7,7 +7,6 @@ import { PingRouter } from './ping/ping.router';
 import { TrainingSessionRouter } from "./trainingSession/trainingSession.router";
 import { MyPlansRouter } from "./myPlans/myPlans.router";
 
-
 const router = Router();
 
 router.use("/ping", PingRouter);
@@ -16,6 +15,7 @@ router.use('/myPlans', MyPlansRouter)
 router.use('/lastTraining', LastTrainingRouter);
 router.use('/account', AccountRouter);
 router.use('/trainingPlan', TrainingPlanRouter)
+router.use('/trainingSession', TrainingSessionRouter)
 router.use('/exercises', ExerciseRouter)
 
 export { router as AppRouter };
