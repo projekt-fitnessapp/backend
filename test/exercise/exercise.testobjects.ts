@@ -60,7 +60,7 @@ export const testObjects = [
     equipment: "body weight",
   },
   {
-    _id: "634ac754a956a13abd77108g",
+    _id: "634ac754a956a13abd771090",
     name: "archer pull up",
     instruction:
       "Grab the pull-up bar with the palms facing forward using a wide grip. As you have both arms extended in front of you holding the bar at a wide grip, bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position. Pull your torso up while leaning to the left hand side until the bar almost touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space (no swinging) and only the arms should move. The forearms should do no other work other than hold the bar. After a second of contraction, inhale as you go back to the starting position. Now, pull your torso up while leaning to the right hand side until the bar almost touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space and only the arms should move. The forearms should do no other work other than hold the bar. After a second of contraction, inhale as you go back to the starting position. Repeat steps 3-6 until you have performed the prescribed amount of repetitions for each side.  Caution: If you are new to this exercise and do not have the strength to perform it, using a spotter to hold your legs can help being that it requires putting a lot of stress on the rotator cuffs. Alternatively you can also use a chin assist machine. Variations: If you have developed enough strength to perform this exercise with weights, do so with caution. Side to side chins can be a challenging exercise and if not performed correctly, can cause injury. Before attempting to use weights, make sure you are able to perform the exercise with good form. You can also perform the side to side chins by doing all reps to one side and then the next or by also including the middle movement as well (in which case you would pull up first to the left hand side, then the middle and then the right side). You can use a chin assist machine if you do not have the strength to perform the exercise on your own.",
@@ -69,7 +69,7 @@ export const testObjects = [
     equipment: "body weight",
   },
   {
-    _id: "634ac754a956a13abd77108h",
+    _id: "634ac754a956a13abd771091",
     name: "archer push up",
     instruction:
       "Assume a push-up position with your body straight, supported by your extended arms. Your hands should be outside of shoulder width. This will be your starting position. Initiate the movement by flexing the elbows and leaning to one side, lowering your torso to the ground. Return to the starting position by extending your elbows, pushing yourself back to center. On the next repetition lower yourself to the other side, again returning to the starting position after the rep is complete. Continue alternating until the set is finished.",
@@ -78,7 +78,7 @@ export const testObjects = [
     equipment: "body weight",
   },
   {
-    _id: "634ac754a956a13abd77108i",
+    _id: "634ac754a956a13abd771092",
     name: "arm slingers hanging bent knee legs",
     instruction:
       "Take a grip on pull-ups bars; hang with your knees together and your body straight. This will be your starting position. Initiate the movement by flexing the hips and knees, drawing the legs up. Pull the knees up into one side, going above 90 degrees at the hip. Avoid any swinging, performing the exercise with control. Return to the starting position and then perform the movement to the other side. Continue alternating until the set in complete.",
@@ -87,7 +87,7 @@ export const testObjects = [
     equipment: "body weight",
   },
   {
-    _id: "634ac754a956a13abd77108j",
+    _id: "634ac754a956a13abd771093",
     name: "arm slingers hanging straight legs",
     instruction:
       "Hang from a chin-up bar with both arms extended at arms length in top of you using either a wide grip or a medium grip. The legs should be straight down with the pelvis rolled slightly backwards. This will be your starting position. Raise your legs until the torso makes a 90-degree angle with the legs. Exhale as you perform this movement and hold the contraction for a second or so. Go back slowly to the starting position as you breathe in. Repeat for the recommended amount of repetitions.  Caution: Perform this exercise slowly and deliberately as it takes some getting used to. Also, do not be hasty and try to use weights on the first time; you'll have enough in your hands by holding your weight and also learning how to balance yourself so that you avoid swinging your torso. As you get more advanced you can hold a dumbbell in between your feet. However, you have to be very careful when adding weight to this exercise as if you add too much too quickly you could get a hernia. Variations: This exercise can also be performed using a vertical bench that makes the exercise easier by supporting your upper back in place and by allowing you to hold yourself by placing your elbows and arms on the side pads.",
@@ -96,7 +96,7 @@ export const testObjects = [
     equipment: "body weight",
   },
   {
-    _id: "634ac754a956a13abd77108k",
+    _id: "634ac754a956a13abd771094",
     name: "arms apart circular toe touch (male)",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3214.gif",
@@ -104,7 +104,7 @@ export const testObjects = [
     equipment: "body weight",
   },
   {
-    _id: "634ac754a956a13abd77108l",
+    _id: "634ac754a956a13abd771095",
     name: "arms overhead full sit-up (male)",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3204.gif",
@@ -112,7 +112,7 @@ export const testObjects = [
     equipment: "body weight",
   },
   {
-    _id: "634ac754a956a13abd77108m",
+    _id: "634ac754a956a13abd771096",
     name: "assisted chest dip (kneeling)",
     instruction:
       "Sit securely in a dip machine, select the weight and firmly grasp the handles. Now keep your elbows in at your sides in order to place emphasis on the triceps. The elbows should be bent at a 90 degree angle. As you contract the triceps, extend your arms downwards as you exhale. Tip: At the bottom of the movement, focus on keeping a little bend in your arms to keep tension on the triceps muscle. Now slowly let your arms come back up to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations: You can perform this exercise on parallel bars or on a triceps dip assist machine.",
@@ -121,7 +121,7 @@ export const testObjects = [
     equipment: "leverage machine",
   },
   {
-    _id: "634ac754a956a13abd77108n",
+    _id: "634ac754a956a13abd771097",
     name: "assisted hanging knee raise",
     instruction:
       "Hang from a pull-up bar with your arms extended and your feet together (use ab straps if your grip is weak). Lock a slight bend in your knees. This will be your starting position. Without swinging your body, contract your lower abs to raise your knees just past a position in which your thighs are parallel to the floor. As your pelvis begins to curl upward, your partner should place his hand just above your knees to push your legs back down to the starting position, keeping his hand in contact with your legs at all times. Engage your abs and try to resist the movement. With their free hand your partner can push against your lower back to ensure your body doesnâ€™t swing.",
@@ -130,7 +130,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd77108o",
+    _id: "634ac754a956a13abd771098",
     name: "assisted lying calves stretch",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1708.gif",
@@ -138,7 +138,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd77108p",
+    _id: "634ac754a956a13abd771099",
     name: "assisted lying glutes stretch",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1709.gif",
@@ -146,7 +146,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd77108q",
+    _id: "634ac754a956a13abd77109a",
     name: "assisted lying gluteus and piriformis stretch",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1710.gif",
@@ -154,7 +154,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd77108r",
+    _id: "634ac754a956a13abd77109b",
     name: "assisted lying leg raise with lateral throw down",
     instruction:
       "Lie supine on the floor with your feet together; your partner should position one foot on either side of your head and stand upright with his knees slightly bent. Grasp your partner's ankles to stabilize your torso. This will be your starting position. With a slight bend in your knees, do a reverse-crunch movement, raising your feet toward your partner while lifting your hips off the floor. Your partner should grab your ankles and push your feet back toward the start position. Donâ€™t allow your feet to contact the floor and smoothly reverse the direction, repeating for reps.",
@@ -163,7 +163,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd77108s",
+    _id: "634ac754a956a13abd77109c",
     name: "assisted lying leg raise with throw down",
     instruction:
       "Lie supine on the floor with your feet together; your partner should position one foot on either side of your head and stand upright with his knees slightly bent. Grasp your partner's ankles to stabilize your torso. This will be your starting position. With a slight bend in your knees, do a reverse-crunch movement, raising your feet toward your partner while lifting your hips off the floor. Your partner should grab your ankles and push your feet back toward the start position. Donâ€™t allow your feet to contact the floor and smoothly reverse the direction, repeating for reps.",
@@ -172,7 +172,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd77108t",
+    _id: "634ac754a956a13abd77109d",
     name: "assisted motion russian twist",
     instruction:
       "Lie down on the floor placing your feet either under something that will not move or by having a partner hold them. Your legs should be bent at the knees. Elevate your upper body so that it creates an imaginary V-shape with your thighs. Your arms should be fully extended in front of you perpendicular to your torso and with the hands clasped. This is the starting position. Twist your torso to the right side until your arms are parallel with the floor while breathing out. Hold the contraction for a second and move back to the starting position while breathing out. Now move to the opposite side performing the same techniques you applied to the right side. Repeat for the recommended amount of repetitions.  Variation: As you get more advanced, you can hold a weight with both arms for resistance.",
@@ -181,7 +181,7 @@ export const testObjects = [
     equipment: "medicine ball",
   },
   {
-    _id: "634ac754a956a13abd77108u",
+    _id: "634ac754a956a13abd77109e",
     name: "assisted parallel close grip pull-up",
     instruction:
       "Use an assisted pull-up machine or securely attach a heavy-duty band to a pull-up station, securing it around just one knee. The tension should be taut enough to pull that lower leg up. Grasp the bar with an overhand grip just outside shoulder width and hang at full arm extension. This is your start position. Keeping your body straight, contract your lats to pull yourself up as high as you can, driving your elbows down. Slowly release to full arm extension. Repeat for the required number of reps and safely dismount from the apparatus.",
@@ -190,7 +190,7 @@ export const testObjects = [
     equipment: "leverage machine",
   },
   {
-    _id: "634ac754a956a13abd77108v",
+    _id: "634ac754a956a13abd77109f",
     name: "assisted prone hamstring",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0016.gif",
@@ -198,7 +198,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd77108w",
+    _id: "634ac754a956a13abd7710a0",
     name: "assisted prone lying quads stretch",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1713.gif",
@@ -206,7 +206,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd77108x",
+    _id: "634ac754a956a13abd7710a1",
     name: "assisted prone rectus femoris stretch",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1714.gif",
@@ -214,7 +214,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd77108y",
+    _id: "634ac754a956a13abd7710a2",
     name: "assisted pull-up",
     instruction:
       "Use an assisted pull-up machine or securely attach a heavy-duty band to a pull-up station, securing it around just one knee. The tension should be taut enough to pull that lower leg up. Grasp the bar with an overhand grip just outside shoulder width and hang at full arm extension. This is your start position. Keeping your body straight, contract your lats to pull yourself up as high as you can, driving your elbows down. Slowly release to full arm extension. Repeat for the required number of reps and safely dismount from the apparatus.",
@@ -223,7 +223,7 @@ export const testObjects = [
     equipment: "leverage machine",
   },
   {
-    _id: "634ac754a956a13abd77108z",
+    _id: "634ac754a956a13abd7710a3",
     name: "assisted seated pectoralis major stretch with stability ball",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1716.gif",
@@ -231,7 +231,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd7710a3",
+    _id: "634ac754a956a13abd7710a4",
     name: "assisted side lying adductor stretch",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1712.gif",
@@ -239,7 +239,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd7710b3",
+    _id: "634ac754a956a13abd7710a5",
     name: "assisted sit-up",
     instruction:
       "Lie face-up on the floor, knees bent and feet flat on the floor about hip-width apart. Cross your fingertips and raise your hands above your head while your partner carefully holds your feet down by stepping on your toes. Your partner should extend one hand out in front of them and above your knees. This will be your starting position. Initiate the movement by contracting your abs to lift your shoulder blades off the floor, reaching to touch your partnerâ€™s hand. Use the strength of your abs to drive higher, not simply reaching with your arms. Donâ€™t allow your shoulder blades to come completely down between reps to keep tension on the muscle. Your partner can move the target point higher or lower, and to one side or the other, to increase the challenge.",
@@ -248,7 +248,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd7710c3",
+    _id: "634ac754a956a13abd7710a6",
     name: "assisted standing chin-up",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1431.gif",
@@ -256,7 +256,7 @@ export const testObjects = [
     equipment: "leverage machine",
   },
   {
-    _id: "634ac754a956a13abd7710d3",
+    _id: "634ac754a956a13abd7710a7",
     name: "assisted standing pull-up",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1432.gif",
@@ -264,7 +264,7 @@ export const testObjects = [
     equipment: "leverage machine",
   },
   {
-    _id: "634ac754a956a13abd7710e3",
+    _id: "634ac754a956a13abd7710a8",
     name: "assisted standing triceps extension (with towel)",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0018.gif",
@@ -272,7 +272,7 @@ export const testObjects = [
     equipment: "assisted",
   },
   {
-    _id: "634ac754a956a13abd7710f3",
+    _id: "634ac754a956a13abd7710a9",
     name: "assisted triceps dip (kneeling)",
     instruction:
       "Sit securely in a dip machine, select the weight and firmly grasp the handles. Now keep your elbows in at your sides in order to place emphasis on the triceps. The elbows should be bent at a 90 degree angle. As you contract the triceps, extend your arms downwards as you exhale. Tip: At the bottom of the movement, focus on keeping a little bend in your arms to keep tension on the triceps muscle. Now slowly let your arms come back up to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations: You can perform this exercise on parallel bars or on a triceps dip assist machine.",
@@ -281,7 +281,7 @@ export const testObjects = [
     equipment: "leverage machine",
   },
   {
-    _id: "634ac754a956a13abd7710g3",
+    _id: "634ac754a956a13abd7710aa",
     name: "assisted wide-grip chest dip (kneeling)",
     instruction:
       "Sit securely in a dip machine, select the weight and firmly grasp the handles. Now keep your elbows in at your sides in order to place emphasis on the triceps. The elbows should be bent at a 90 degree angle. As you contract the triceps, extend your arms downwards as you exhale. Tip: At the bottom of the movement, focus on keeping a little bend in your arms to keep tension on the triceps muscle. Now slowly let your arms come back up to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations: You can perform this exercise on parallel bars or on a triceps dip assist machine.",
@@ -290,7 +290,7 @@ export const testObjects = [
     equipment: "leverage machine",
   },
   {
-    _id: "634ac754a956a13abd7710h3",
+    _id: "634ac754a956a13abd7710ab",
     name: "astride jumps (male)",
     instruction:
       "Start by standing with your feet together. In one motion, jump your feet out to the side and raise your arms above your head. Immediately reverse the motion by jumping back to the starting position. Repeat for the recommended amount of repetitions.",
@@ -299,7 +299,7 @@ export const testObjects = [
     equipment: "body weight",
   },
   {
-    _id: "634ac754a956a13abd7710i3",
+    _id: "634ac754a956a13abd7710ac",
     name: "back and forth step",
     instruction:
       "Start in a relaxed position with one leg slightly forward. This will be your starting position. Skip by executing a step-hop pattern of right-right-step to left-left-step, and so on, alternating back and forth. Perform fast skips by maintaining close contact with the ground and reduce air time, moving as quickly as possible.",
@@ -308,7 +308,7 @@ export const testObjects = [
     equipment: "body weight",
   },
   {
-    _id: "634ac754a956a13abd7710j3",
+    _id: "634ac754a956a13abd7710ad",
     name: "back extension on exercise ball",
     instruction: " ",
     gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1314.gif",
