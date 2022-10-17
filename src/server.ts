@@ -18,6 +18,8 @@ export function setupServer(isTest: boolean) {
 
   app.use(express.json());
 
+  app.use(express.json())
+
   app.use("/", AppRouter);
 
   return app;

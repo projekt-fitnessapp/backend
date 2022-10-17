@@ -69,27 +69,7 @@ describe('LastTraining Endpoint Tests', () => {
       userId: '5099803df3f494add2f9dja5',
       trainingDayId: '5099803df3f4948bd2f9dja5',
       date: `${formatISO(now)}`,
-      executions: [
-        {
-          exercise: {
-            _id: '5099803df3f4948bd2f98391',
-            name: 'Bench Press',
-            instruction: 'Push the bar.',
-            gifUrl: 'http://d205bpvrqc9yn1.cloudfront.net/0030.gif',
-            muscle: 'breast',
-            equipment: 'barbell',
-          },
-          notes: ['string'],
-          sets: [
-            {
-              executionType: 'warmup',
-              weight: 0,
-              reps: 0,
-              tenRM: 0,
-            },
-          ],
-        },
-      ],
+      executions: ['5099803df3f4948bd2f98391'],
     });
 
     const trainedOnceLast7Days = [
