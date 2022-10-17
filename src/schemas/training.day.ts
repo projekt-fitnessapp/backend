@@ -3,8 +3,8 @@ import { TrainingDayDocument, TrainingDayModel } from '../types/db/training.day.
 
 const TrainingDaySchema = new Schema({
     name: { type: String, required: true },
-    excercises: [{
-        excerciseId: { type: String, required: true },
+    exercises: [{
+        exerciseId:  { type: Schema.Types.ObjectId, ref: 'Exercise', required: true },
         sets: { type: Number, min: 1, required: true },
         reps: { type: Number, min: 1, required: true }
     }]

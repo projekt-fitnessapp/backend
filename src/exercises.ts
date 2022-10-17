@@ -1,0 +1,9285 @@
+export const exercises = [
+      {
+        "name": "3/4 sit-up",
+        "instruction": "Lie down on the floor and secure your feet. Your legs should be bent at the knees. Place your hands behind or to the side of your head. You will begin with your back on the ground. This will be your starting position. Flex your hips and spine to raise your torso toward your knees. At the top of the contraction your torso should be perpendicular to the ground. Reverse the motion, going only Â¾ of the way down. Repeat for the recommended amount of repetitions.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0001.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "45° side bend",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0002.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "air bike",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0003.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "all fours squad stretch",
+        "instruction": "Start off on your hands and knees, then lift your leg off the floor and hold the foot with your hand. Use your hand to hold the foot or ankle, keeping the knee fully flexed, stretching the quadriceps and hip flexors. Focus on extending your hips, thrusting them towards the floor. Hold for 10-20 seconds and then switch sides.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1512.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "alternate heel touchers",
+        "instruction": "Lie on the floor with the knees bent and the feet on the floor around 18-24 inches apart. Your arms should be extended by your side. This will be your starting position. Crunch over your torso forward and up about 3-4 inches to the right side and touch your right heel as you hold the contraction for a second. Exhale while performing this movement. Now go back slowly to the starting position as you inhale. Now crunch over your torso forward and up around 3-4 inches to the left side and touch your left heel as you hold the contraction for a second. Exhale while performing this movement and then go back to the starting position as you inhale. Now that both heels have been touched, that is considered 1 repetition. Continue alternating sides in this manner until all prescribed repetitions are done.  Variations: None",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0006.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "alternate lateral pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0007.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "ankle circles",
+        "instruction": "Use a sturdy object like a squat rack to hold yourself. Lift the right leg in the air (just around 2 inches from the floor) and perform a circular motion with the big toe. Pretend that you are drawing a big circle with it. Tip: One circle equals 1 repetition. Breathe normally as you perform the movement. When you are done with the right foot, then repeat with the left leg.  Variations: None",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1368.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "archer pull up",
+        "instruction": "Grab the pull-up bar with the palms facing forward using a wide grip. As you have both arms extended in front of you holding the bar at a wide grip, bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position. Pull your torso up while leaning to the left hand side until the bar almost touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space (no swinging) and only the arms should move. The forearms should do no other work other than hold the bar. After a second of contraction, inhale as you go back to the starting position. Now, pull your torso up while leaning to the right hand side until the bar almost touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space and only the arms should move. The forearms should do no other work other than hold the bar. After a second of contraction, inhale as you go back to the starting position. Repeat steps 3-6 until you have performed the prescribed amount of repetitions for each side.  Caution: If you are new to this exercise and do not have the strength to perform it, using a spotter to hold your legs can help being that it requires putting a lot of stress on the rotator cuffs. Alternatively you can also use a chin assist machine. Variations: If you have developed enough strength to perform this exercise with weights, do so with caution. Side to side chins can be a challenging exercise and if not performed correctly, can cause injury. Before attempting to use weights, make sure you are able to perform the exercise with good form. You can also perform the side to side chins by doing all reps to one side and then the next or by also including the middle movement as well (in which case you would pull up first to the left hand side, then the middle and then the right side). You can use a chin assist machine if you do not have the strength to perform the exercise on your own.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3293.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "archer push up",
+        "instruction": "Assume a push-up position with your body straight, supported by your extended arms. Your hands should be outside of shoulder width. This will be your starting position. Initiate the movement by flexing the elbows and leaning to one side, lowering your torso to the ground. Return to the starting position by extending your elbows, pushing yourself back to center. On the next repetition lower yourself to the other side, again returning to the starting position after the rep is complete. Continue alternating until the set is finished.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3294.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "arm slingers hanging bent knee legs",
+        "instruction": "Take a grip on pull-ups bars; hang with your knees together and your body straight. This will be your starting position. Initiate the movement by flexing the hips and knees, drawing the legs up. Pull the knees up into one side, going above 90 degrees at the hip. Avoid any swinging, performing the exercise with control. Return to the starting position and then perform the movement to the other side. Continue alternating until the set in complete.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2355.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "arm slingers hanging straight legs",
+        "instruction": "Hang from a chin-up bar with both arms extended at arms length in top of you using either a wide grip or a medium grip. The legs should be straight down with the pelvis rolled slightly backwards. This will be your starting position. Raise your legs until the torso makes a 90-degree angle with the legs. Exhale as you perform this movement and hold the contraction for a second or so. Go back slowly to the starting position as you breathe in. Repeat for the recommended amount of repetitions.  Caution: Perform this exercise slowly and deliberately as it takes some getting used to. Also, do not be hasty and try to use weights on the first time; you'll have enough in your hands by holding your weight and also learning how to balance yourself so that you avoid swinging your torso. As you get more advanced you can hold a dumbbell in between your feet. However, you have to be very careful when adding weight to this exercise as if you add too much too quickly you could get a hernia. Variations: This exercise can also be performed using a vertical bench that makes the exercise easier by supporting your upper back in place and by allowing you to hold yourself by placing your elbows and arms on the side pads.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2333.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "arms apart circular toe touch (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3214.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "arms overhead full sit-up (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3204.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "assisted chest dip (kneeling)",
+        "instruction": "Sit securely in a dip machine, select the weight and firmly grasp the handles. Now keep your elbows in at your sides in order to place emphasis on the triceps. The elbows should be bent at a 90 degree angle. As you contract the triceps, extend your arms downwards as you exhale. Tip: At the bottom of the movement, focus on keeping a little bend in your arms to keep tension on the triceps muscle. Now slowly let your arms come back up to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations: You can perform this exercise on parallel bars or on a triceps dip assist machine.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0009.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "assisted hanging knee raise",
+        "instruction": "Hang from a pull-up bar with your arms extended and your feet together (use ab straps if your grip is weak). Lock a slight bend in your knees. This will be your starting position. Without swinging your body, contract your lower abs to raise your knees just past a position in which your thighs are parallel to the floor. As your pelvis begins to curl upward, your partner should place his hand just above your knees to push your legs back down to the starting position, keeping his hand in contact with your legs at all times. Engage your abs and try to resist the movement. With their free hand your partner can push against your lower back to ensure your body doesnâ€™t swing.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0011.gif",
+        "muscle": "abs",
+        "equipment": "assisted"
+      },
+      // {
+      //   "name": "assisted lying calves stretch",
+      //   "instruction": " ",
+      //   "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1708.gif",
+      //   "muscle": "calves",
+      //   "equipment": "assisted"
+      // },
+      // {
+      //   "name": "assisted lying glutes stretch",
+      //   "instruction": " ",
+      //   "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1709.gif",
+      //   "muscle": "glutes",
+      //   "equipment": "assisted"
+      // },
+      // {
+      //   "name": "assisted lying gluteus and piriformis stretch",
+      //   "instruction": " ",
+      //   "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1710.gif",
+      //   "muscle": "glutes",
+      //   "equipment": "assisted"
+      // },
+      {
+        "name": "assisted lying leg raise with lateral throw down",
+        "instruction": "Lie supine on the floor with your feet together; your partner should position one foot on either side of your head and stand upright with his knees slightly bent. Grasp your partner's ankles to stabilize your torso. This will be your starting position. With a slight bend in your knees, do a reverse-crunch movement, raising your feet toward your partner while lifting your hips off the floor. Your partner should grab your ankles and push your feet back toward the start position. Donâ€™t allow your feet to contact the floor and smoothly reverse the direction, repeating for reps.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0012.gif",
+        "muscle": "abs",
+        "equipment": "assisted"
+      },
+      {
+        "name": "assisted lying leg raise with throw down",
+        "instruction": "Lie supine on the floor with your feet together; your partner should position one foot on either side of your head and stand upright with his knees slightly bent. Grasp your partner's ankles to stabilize your torso. This will be your starting position. With a slight bend in your knees, do a reverse-crunch movement, raising your feet toward your partner while lifting your hips off the floor. Your partner should grab your ankles and push your feet back toward the start position. Donâ€™t allow your feet to contact the floor and smoothly reverse the direction, repeating for reps.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0013.gif",
+        "muscle": "abs",
+        "equipment": "assisted"
+      },
+      {
+        "name": "assisted motion russian twist",
+        "instruction": "Lie down on the floor placing your feet either under something that will not move or by having a partner hold them. Your legs should be bent at the knees. Elevate your upper body so that it creates an imaginary V-shape with your thighs. Your arms should be fully extended in front of you perpendicular to your torso and with the hands clasped. This is the starting position. Twist your torso to the right side until your arms are parallel with the floor while breathing out. Hold the contraction for a second and move back to the starting position while breathing out. Now move to the opposite side performing the same techniques you applied to the right side. Repeat for the recommended amount of repetitions.  Variation: As you get more advanced, you can hold a weight with both arms for resistance.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0014.gif",
+        "muscle": "abs",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "assisted parallel close grip pull-up",
+        "instruction": "Use an assisted pull-up machine or securely attach a heavy-duty band to a pull-up station, securing it around just one knee. The tension should be taut enough to pull that lower leg up. Grasp the bar with an overhand grip just outside shoulder width and hang at full arm extension. This is your start position. Keeping your body straight, contract your lats to pull yourself up as high as you can, driving your elbows down. Slowly release to full arm extension. Repeat for the required number of reps and safely dismount from the apparatus.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0015.gif",
+        "muscle": "lats",
+        "equipment": "leverage machine"
+      },
+      // {
+      //   "name": "assisted prone hamstring",
+      //   "instruction": " ",
+      //   "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0016.gif",
+      //   "muscle": "hamstrings",
+      //   "equipment": "assisted"
+      // },
+      // {
+      //   "name": "assisted prone lying quads stretch",
+      //   "instruction": " ",
+      //   "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1713.gif",
+      //   "muscle": "quads",
+      //   "equipment": "assisted"
+      // },
+      // {
+      //   "name": "assisted prone rectus femoris stretch",
+      //   "instruction": " ",
+      //   "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1714.gif",
+      //   "muscle": "abs",
+      //   "equipment": "assisted"
+      // },
+      {
+        "name": "assisted pull-up",
+        "instruction": "Use an assisted pull-up machine or securely attach a heavy-duty band to a pull-up station, securing it around just one knee. The tension should be taut enough to pull that lower leg up. Grasp the bar with an overhand grip just outside shoulder width and hang at full arm extension. This is your start position. Keeping your body straight, contract your lats to pull yourself up as high as you can, driving your elbows down. Slowly release to full arm extension. Repeat for the required number of reps and safely dismount from the apparatus.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0017.gif",
+        "muscle": "lats",
+        "equipment": "leverage machine"
+      },
+      // {
+      //   "name": "assisted seated pectoralis major stretch with stability ball",
+      //   "instruction": " ",
+      //   "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1716.gif",
+      //   "muscle": "pectorals",
+      //   "equipment": "assisted"
+      // },
+      // {
+      //   "name": "assisted side lying adductor stretch",
+      //   "instruction": " ",
+      //   "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1712.gif",
+      //   "muscle": "adductors",
+      //   "equipment": "assisted"
+      // },
+      {
+        "name": "assisted sit-up",
+        "instruction": "Lie face-up on the floor, knees bent and feet flat on the floor about hip-width apart. Cross your fingertips and raise your hands above your head while your partner carefully holds your feet down by stepping on your toes. Your partner should extend one hand out in front of them and above your knees. This will be your starting position. Initiate the movement by contracting your abs to lift your shoulder blades off the floor, reaching to touch your partnerâ€™s hand. Use the strength of your abs to drive higher, not simply reaching with your arms. Donâ€™t allow your shoulder blades to come completely down between reps to keep tension on the muscle. Your partner can move the target point higher or lower, and to one side or the other, to increase the challenge.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1758.gif",
+        "muscle": "abs",
+        "equipment": "assisted"
+      },
+      {
+        "name": "assisted standing chin-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1431.gif",
+        "muscle": "lats",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "assisted standing pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1432.gif",
+        "muscle": "lats",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "assisted standing triceps extension (with towel)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0018.gif",
+        "muscle": "triceps",
+        "equipment": "assisted"
+      },
+      {
+        "name": "assisted triceps dip (kneeling)",
+        "instruction": "Sit securely in a dip machine, select the weight and firmly grasp the handles. Now keep your elbows in at your sides in order to place emphasis on the triceps. The elbows should be bent at a 90 degree angle. As you contract the triceps, extend your arms downwards as you exhale. Tip: At the bottom of the movement, focus on keeping a little bend in your arms to keep tension on the triceps muscle. Now slowly let your arms come back up to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations: You can perform this exercise on parallel bars or on a triceps dip assist machine.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0019.gif",
+        "muscle": "triceps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "assisted wide-grip chest dip (kneeling)",
+        "instruction": "Sit securely in a dip machine, select the weight and firmly grasp the handles. Now keep your elbows in at your sides in order to place emphasis on the triceps. The elbows should be bent at a 90 degree angle. As you contract the triceps, extend your arms downwards as you exhale. Tip: At the bottom of the movement, focus on keeping a little bend in your arms to keep tension on the triceps muscle. Now slowly let your arms come back up to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations: You can perform this exercise on parallel bars or on a triceps dip assist machine.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2364.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "astride jumps (male)",
+        "instruction": "Start by standing with your feet together. In one motion, jump your feet out to the side and raise your arms above your head. Immediately reverse the motion by jumping back to the starting position. Repeat for the recommended amount of repetitions.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3220.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "back and forth step",
+        "instruction": "Start in a relaxed position with one leg slightly forward. This will be your starting position. Skip by executing a step-hop pattern of right-right-step to left-left-step, and so on, alternating back and forth. Perform fast skips by maintaining close contact with the ground and reduce air time, moving as quickly as possible.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3672.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      // {
+      //   "name": "back extension on exercise ball",
+      //   "instruction": " ",
+      //   "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1314.gif",
+      //   "muscle": "spine",
+      //   "equipment": "stability ball"
+      // },
+      {
+        "name": "back lever",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3297.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      // {
+      //   "name": "back pec stretch",
+      //   "instruction": " ",
+      //   "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1405.gif",
+      //   "muscle": "lats",
+      //   "equipment": "body weight"
+      // },
+      {
+        "name": "backward jump",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1473.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "balance board",
+        "instruction": "Note: This exercise is designed to increase balance.  Place a balance board in front of you. Stand up on it and try to balance yourself. Hold the balance for as long as desired.  Caution: If your balance is poor, start out with one of the less challenging boards. Variations: You can perform this exercise using various types of balance boards. Some are more challenging than others.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0020.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "band alternating biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0968.gif",
+        "muscle": "biceps",
+        "equipment": "band"
+      },
+      {
+        "name": "band alternating v-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0969.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band assisted pull-up",
+        "instruction": "Use an assisted pull-up machine or securely attach a heavy-duty band to a pull-up station, securing it around just one knee. The tension should be taut enough to pull that lower leg up. Grasp the bar with an overhand grip just outside shoulder width and hang at full arm extension. This is your start position. Keeping your body straight, contract your lats to pull yourself up as high as you can, driving your elbows down. Slowly release to full arm extension. Repeat for the required number of reps and safely dismount from the apparatus.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0970.gif",
+        "muscle": "lats",
+        "equipment": "band"
+      },
+      {
+        "name": "band assisted wheel rollerout",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0971.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band bench press",
+        "instruction": "Using a flat bench secure a band under the leg of the bench that is nearest to your head. Once the band is secure, grab it by both handles and lie down on the bench. Extend your arms so that you are holding the band handles in front of you at shoulder width. Once at shoulder width, rotate your wrists forward so that the palms of your hands are facing away from you. This will be your starting position. Bring down the handles slowly until your elbow forms a 90 degree angle. Keep full control at all times. As you breathe out, bring the handles up using your pectoral muscles. Lock your arms in the contracted position, squeeze your chest, hold for a second and then start coming down slowly. Tip: It should take at least twice as long to go down than to come up. Repeat the movement for the prescribed amount of repetitions of your training program.  Variations: You can also use a pulley machine, dumbbells or a barbell for this exercise.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1254.gif",
+        "muscle": "pectorals",
+        "equipment": "band"
+      },
+      {
+        "name": "band bent-over hip extension",
+        "instruction": "Secure one end of the band to the lower portion of a post and attach the other to one ankle. Facing the attachment point of the band, hold on to the column to stabilize yourself. Keeping your head and your chest up, move the resisted leg back as far as you can while keeping the knee straight. Return the leg to the starting position.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0980.gif",
+        "muscle": "glutes",
+        "equipment": "band"
+      },
+      {
+        "name": "band bicycle crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0972.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band close-grip pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0974.gif",
+        "muscle": "lats",
+        "equipment": "band"
+      },
+      {
+        "name": "band close-grip push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0975.gif",
+        "muscle": "triceps",
+        "equipment": "band"
+      },
+      {
+        "name": "band concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0976.gif",
+        "muscle": "biceps",
+        "equipment": "band"
+      },
+      {
+        "name": "band fixed back close grip pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3117.gif",
+        "muscle": "lats",
+        "equipment": "band"
+      },
+      {
+        "name": "band fixed back underhand pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3116.gif",
+        "muscle": "lats",
+        "equipment": "band"
+      },
+      {
+        "name": "band front lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0977.gif",
+        "muscle": "delts",
+        "equipment": "band"
+      },
+      {
+        "name": "band front raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0978.gif",
+        "muscle": "delts",
+        "equipment": "band"
+      },
+      {
+        "name": "band hip lift",
+        "instruction": "After choosing a suitable band, lay down in the middle of the rack, after securing the band on either side of you. If your rack doesn't have pegs, the band can be secured using heavy dumbbells or similar objects, just ensure they won't move. Adjust your position so that the band is directly over your hips. Bend your knees and place your feet flat on the floor. Your hands can be on the floor or holding the band in position. Keeping your shoulders on the ground, drive through your heels to raise your hips, pushing into the band as high as you can. Pause at the top of the motion, and return to the starting position.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1408.gif",
+        "muscle": "glutes",
+        "equipment": "band"
+      },
+      {
+        "name": "band horizontal pallof press",
+        "instruction": "Connect a standard handle to a tower, and if possible position the cable to shoulder height. If not, a low pulley will suffice. With your side to the cable, grab the handle with both hands and step away from the tower. You should be approximately armâ€™s length away from the pulley, with the tension of the weight on the cable. With your feet positioned hip-width apart and knees slightly bent, hold the cable to the middle of your chest. This will be your starting position. Press the cable away from your chest, fully extending both arms. You core should be tight and engaged. Hold the repetition for several seconds before returning to the starting position. At the conclusion of the set, repeat facing the other direction.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0979.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band jack knife sit-up",
+        "instruction": "Lie flat on the floor (or exercise mat) on your back with your arms extended straight back behind your head and your legs extended also. This will be your starting position. As you exhale, bend at the waist while simultaneously raising your legs and arms to meet in a jackknife position. Tip: The legs should be extended and lifted at approximately a 35-45 degree angle from the floor and the arms should be extended and parallel to your legs. The upper torso should be off the floor. While inhaling, lower your arms and legs back to the starting position. Repeat for the recommended amount of repetitions.  Variation: If you are really advanced you could use a medicine ball for added resistance.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0981.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band kneeling one arm pulldown",
+        "instruction": "Select an appropriate weight and adjust the knee pad to help keep you down. Grasp the handle with a pronated grip. This will be your starting position. Pull the handle down, squeezing your elbow to your side as you flex the elbow. Pause at the bottom of the motion, and then slowly return the handle to the starting position. For multiple repetitions, avoid completely returning the weight to keep tension on the muscles being worked.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0983.gif",
+        "muscle": "lats",
+        "equipment": "band"
+      },
+      {
+        "name": "band kneeling twisting crunch",
+        "instruction": "Connect a rope attachment to a high pulley cable and position a mat on the floor in front of it. Grab the rope with both hands and kneel approximately two feet back from the tower. Position the rope behind your head with your hands by your ears. Keep your hands in the same place, contract your abs and pull downward on the rope in a crunching movement until your elbows reach your knees. Pause briefly at the bottom and rise up in a slow and controlled manner until you reach the starting position. Repeat the same downward movement until youâ€™re halfway down, at which time youâ€™ll begin rotating one of your elbows to the opposite knee. Again, pause briefly at the bottom and rise up in a slow and controlled manner until you reach the starting position. Repeat the same movement as before, but alternate the other elbow to the opposite knee. Continue this series of movements to failure.  Tip: Keep your elbows in tight when doing the normal crunching movement, but extend them outward when doing the oblique twist. This technique will open your body for a greater rotation, as well as allow your elbow to drive backward with more force.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0985.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band lying hip internal rotation",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0984.gif",
+        "muscle": "glutes",
+        "equipment": "band"
+      },
+      {
+        "name": "band lying straight leg raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1002.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band one arm overhead biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0986.gif",
+        "muscle": "biceps",
+        "equipment": "band"
+      },
+      {
+        "name": "band one arm single leg split squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0987.gif",
+        "muscle": "quads",
+        "equipment": "band"
+      },
+      {
+        "name": "band one arm standing low row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0988.gif",
+        "muscle": "upper back",
+        "equipment": "band"
+      },
+      {
+        "name": "band one arm twisting chest press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0989.gif",
+        "muscle": "pectorals",
+        "equipment": "band"
+      },
+      {
+        "name": "band one arm twisting seated row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0990.gif",
+        "muscle": "upper back",
+        "equipment": "band"
+      },
+      {
+        "name": "band pull through",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0991.gif",
+        "muscle": "glutes",
+        "equipment": "band"
+      },
+      {
+        "name": "band push sit-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0992.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band reverse fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0993.gif",
+        "muscle": "delts",
+        "equipment": "band"
+      },
+      {
+        "name": "band reverse wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0994.gif",
+        "muscle": "forearms",
+        "equipment": "band"
+      },
+      {
+        "name": "band seated hip internal rotation",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0996.gif",
+        "muscle": "glutes",
+        "equipment": "band"
+      },
+      {
+        "name": "band seated twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1011.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band shoulder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0997.gif",
+        "muscle": "delts",
+        "equipment": "band"
+      },
+      {
+        "name": "band shrug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1018.gif",
+        "muscle": "traps",
+        "equipment": "band"
+      },
+      {
+        "name": "band side triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0998.gif",
+        "muscle": "triceps",
+        "equipment": "band"
+      },
+      {
+        "name": "band single leg calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0999.gif",
+        "muscle": "calves",
+        "equipment": "band"
+      },
+      {
+        "name": "band single leg reverse calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1000.gif",
+        "muscle": "calves",
+        "equipment": "band"
+      },
+      {
+        "name": "band single leg split squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1001.gif",
+        "muscle": "quads",
+        "equipment": "band"
+      },
+      {
+        "name": "band squat",
+        "instruction": "Set up the bands on the sleeves, secured to either band pegs, the rack, or dumbbells so that there is appropriate tension. Begin by stepping under the bar and placing it across the back of the shoulders. Squeeze your shoulder blades together and rotate your elbows forward, attempting to bend the bar across your shoulders. Remove the bar from the rack, creating a tight arch in your lower back, and step back into position. Place your feet wide for more emphasis on the back, glutes, adductors, and hamstrings. Keep your head facing forward. With your back, shoulders, and core tight, push your knees and butt out and you begin your descent. Sit back with your hips as much as possible. Ideally, your shins should be perpendicular to the ground. Lower bar position necessitates a greater torso lean to keep the bar over the heels. Continue until you break parallel, which is defined as the crease of the hip being in line with the top of the knee. Keeping the weight on your heels and pushing your feet and knees out, drive upward as you lead the movement with your head. Continue upward, maintaining tightness head to toe, until you have returned to the starting position.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1004.gif",
+        "muscle": "glutes",
+        "equipment": "band"
+      },
+      {
+        "name": "band squat row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1003.gif",
+        "muscle": "glutes",
+        "equipment": "band"
+      },
+      {
+        "name": "band standing crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1005.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band standing rear delt row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1022.gif",
+        "muscle": "delts",
+        "equipment": "band"
+      },
+      {
+        "name": "band standing twisting crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1007.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band step-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1008.gif",
+        "muscle": "glutes",
+        "equipment": "band"
+      },
+      {
+        "name": "band stiff leg deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1009.gif",
+        "muscle": "glutes",
+        "equipment": "band"
+      },
+      {
+        "name": "band straight back stiff leg deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1023.gif",
+        "muscle": "glutes",
+        "equipment": "band"
+      },
+      {
+        "name": "band straight leg deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1010.gif",
+        "muscle": "spine",
+        "equipment": "band"
+      },
+      {
+        "name": "band twisting overhead press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1012.gif",
+        "muscle": "delts",
+        "equipment": "band"
+      },
+      {
+        "name": "band two legs calf raise - (band under both legs) v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1369.gif",
+        "muscle": "calves",
+        "equipment": "band"
+      },
+      {
+        "name": "band underhand pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1013.gif",
+        "muscle": "lats",
+        "equipment": "band"
+      },
+      {
+        "name": "band v-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1014.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band vertical pallof press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1015.gif",
+        "muscle": "abs",
+        "equipment": "band"
+      },
+      {
+        "name": "band wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1016.gif",
+        "muscle": "forearms",
+        "equipment": "band"
+      },
+      {
+        "name": "band y-raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1017.gif",
+        "muscle": "delts",
+        "equipment": "band"
+      },
+      {
+        "name": "barbell alternate biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0023.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell bench front squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0024.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell bench press",
+        "instruction": "Lie back on a flat bench. Using a medium width grip (a grip that creates a 90-degree angle in the middle of the movement between the forearms and the upper arms), lift the bar from the rack and hold it straight over you with your arms locked. This will be your starting position. From the starting position, breathe in and begin coming down slowly until the bar touches your middle chest. After a brief pause, push the bar back to the starting position as you breathe out. Focus on pushing the bar using your chest muscles. Lock your arms and squeeze your chest in the contracted position at the top of the motion, hold for a second and then start coming down slowly again. Tip: Ideally, lowering the weight should take about twice as long as raising it. Repeat the movement for the prescribed amount of repetitions. When you are done, place the bar back in the rack.  Caution: If you are new at this exercise, it is advised that you use a spotter. If no spotter is available, then be conservative with the amount of weight used. Also, beware of letting the bar drift too far forward. You want the bar to touch your middle chest and nowhere else. Don't bounce the weight off your chest. You should be in full control of the barbell at all times.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0025.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell bench squat",
+        "instruction": "This exercise is best performed inside a squat rack for safety purposes. To begin, first place a flat bench or a box behind you. The flat bench is used to teach you to set your hips back and to hit depth.   Then, set the bar on a rack that best matches your height. Once the correct height is chosen and the bar is loaded, step under the bar and place the back of your shoulders (slightly below the neck) across it.   Hold on to the bar using both arms at each side and lift it off the rack by first pushing with your legs and at the same time straightening your torso.   Step away from the rack and position your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times as looking down will get you off balance and also maintain a straight back. This will be your starting position. (Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances discussed in the foot stances section).   Begin to slowly lower the bar by bending the knees and sitting your hips back as you maintain a straight posture with the head up. Continue down until you slightly touch the bench behind you. Inhale as you perform this portion of the movement. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly.   Begin to raise the bar as you exhale by pushing the floor with the heel of your foot as you straighten the legs and extend the hips to go back to the starting position.   Repeat for the recommended amount of repetitions.   Caution: This is not an exercise to be taken lightly. If you have back issues, substitute it with the dumbbell squat variation or a leg press instead. If you have a healthy back, ensure perfect form and never slouch the back forward as this can cause back injury. Be cautious as well with the weight used; in case of doubt, use less weight rather than more. The squat is a very safe exercise but only if performed properly. Variations: As previously mentioned, there are various stances that can be used depending on what you want to emphasize. You can also place a small block under the heels to improve balance. Dumbbells can be used as well for resistance by holding them to your sides. The use of wrist wraps is a necessity due to the amount of weights used. I find this an excellent variation when my lower back begins to act up after many weeks of regular barbell squats. (Note: For wide stance dumbbell squats you will have to hold the dumbbells in between your legs as opposed to both sides in order to be able to distance your legs sufficiently). Another way to perform these is by using a smith machine though I do not recommend this. The reason for not performing regular squats on the smith machine is that since the machine allows you to execute the exercise while leaning versus the bar, hip flexor involvement is minimized taking the hamstring out of the exercise. While this does take pressure off the lower back, hamstring involvement is a requirement to stabilize the knee-cap. So, as a result, what is created is a situation where destructive forces place a huge stress on the ACL (anterior cruciate ligament; a primary ligament in the knee capsule whose job is to provide knee stability) by pushing the knee-cap forward. For this reason, I highly recommend against smith machine use for squats and if you still insist on doing so, make sure it is a sporadic use rather than frequent, and also be sure to control the amount of weight used.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0026.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell bent arm pullover",
+        "instruction": "Lie on a flat bench with a barbell using a shoulder grip width. Hold the bar straight over your chest with a bend in your arms. This will be your starting position. While keeping your arms in the bent arm position, lower the weight slowly in an arc behind your head while breathing in until you feel a stretch on the chest. At that point, bring the barbell back to the starting position using the arc through which the weight was lowered and exhale as you perform this movement. Hold the weight on the initial position for a second and repeat the motion for the prescribed number of repetitions.  Variations:  You can perform this exercise using a dumbbell or an E-Z bar instead of dumbbells.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1316.gif",
+        "muscle": "lats",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell bent over row",
+        "instruction": "Holding a barbell with a pronated grip (palms facing down), bend your knees slightly and bring your torso forward, by bending at the waist, while keeping the back straight until it is almost parallel to the floor. Tip: Make sure that you keep the head up. The barbell should hang directly in front of you as your arms hang perpendicular to the floor and your torso. This is your starting position. Now, while keeping the torso stationary, breathe out and lift the barbell to you. Keep the elbows close to the body and only use the forearms to hold the weight. At the top contracted position, squeeze the back muscles and hold for a brief pause. Then inhale and slowly lower the barbell back to the starting position. Repeat for the recommended amount of repetitions.  Caution: This exercise is not recommended for people with back problems. A Low Pulley Row is a better choice for people with back issues. Also, just like with the bent knee dead-lift, if you have a healthy back, ensure perfect form and never slouch the back forward as this can cause back injury. Be cautious as well with the weight used; in case of doubt, use less weight rather than more. Variations: You can perform the same exercise using a supinated (palms facing you) grip.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0027.gif",
+        "muscle": "upper back",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell biceps curl (with arm blaster)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2407.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell clean and press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0028.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell clean-grip front squat",
+        "instruction": "This exercise is best performed inside a squat rack for safety purposes. To begin, first set the bar on a rack that best matches your height. Once the correct height is chosen and the bar is loaded, bring your arms up under the bar while keeping the elbows high and the upper arm slightly above parallel to the floor. Rest the bar on top of the deltoids and cross your arms while grasping the bar for total control. Lift the bar off the rack by first pushing with your legs and at the same time straightening your torso. Step away from the rack and position your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times as looking down will get you off balance and also maintain a straight back. This will be your starting position. (Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances described in the foot positioning section). Begin to slowly lower the bar by bending the knees as you maintain a straight posture with the head up. Continue down until the angle between the upper leg and the calves becomes slightly less than 90-degrees (which is the point in which the upper legs are below parallel to the floor). Inhale as you perform this portion of the movement. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly. Begin to raise the bar as you exhale by pushing the floor mainly with the middle of your foot as you straighten the legs again and go back to the starting position. Repeat for the recommended amount of repetitions.  Caution: This is not an exercise to be taken lightly. If you have back issues, substitute it with the dumbbell squat variation or a leg press instead. If you have a healthy back, ensure perfect form and never slouch the back forward as this can cause back injury. Be cautious as well with the weight used; in case of doubt, use less weight rather than more. The front squat is a very safe exercise but only if performed properly. This version of the squat is better suited for advanced athletes. Variations: As previously mentioned, there are various stances that can be used depending on what you want to emphasize. You can also place a small block under the heels to improve balance.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0029.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell close-grip bench press",
+        "instruction": "Load the bar to an appropriate weight for your training. Lay on the bench with your feet flat on the ground, driving through to your hips. Your back should be arched, and your shoulder blades retracted. Take a close, pronated grip covering the rings on the bar. Remove the bar from the rack, holding the weight above your chest with your arms extended. This will be your starting position. Lower the bar to the sternum by flexing the elbows. Maintain control and do not bounce the bar off of your chest. Your lats should stay tight and elbows slightly drawn in. After touching your torso with the bar, extend the elbows to return the bar to the starting position.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell curl",
+        "instruction": "Stand up with your torso upright while holding a barbell at a shoulder-width grip. The palm of your hands should be facing forward and the elbows should be close to the torso. This will be your starting position. While holding the upper arms stationary, curl the weights forward while contracting the biceps as you breathe out. Tip: Only the forearms should move. Continue the movement until your biceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second and squeeze the biceps hard. Slowly begin to bring the bar back to starting position as your breathe in. Repeat for the recommended amount of repetitions.  Variations:  You can also perform this movement using a straight bar attachment hooked to a low pulley. This variation seems to really provide a good contraction at the top of the movement. You may also use the closer grip for variety purposes.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0031.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell deadlift",
+        "instruction": "Approach the bar so that it is centered over your feet. Your feet should be about hip-width apart. Bend at the hip to grip the bar at shoulder-width allowing your shoulder blades to protract. Typically, you would use an alternating grip. With your feet and your grip set, take a big breath and then lower your hips and flex the knees until your shins contact the bar. Look forward with your head. Keep your chest up and your back arched, and begin driving through the heels to move the weight upward. After the bar passes the knees aggressively pull the bar back, pulling your shoulder blades together as you drive your hips forward into the bar. Lower the bar by bending at the hips and guiding it to the floor.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0032.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        //!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        "name": "barbell decline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0033.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell decline bent arm pullover",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0034.gif",
+        "muscle": "lats",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell decline close grip to skull press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0035.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell decline pullover",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1255.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell decline wide-grip press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0036.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell decline wide-grip pullover",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0037.gif",
+        "muscle": "lats",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell drag curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0038.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell floor calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1370.gif",
+        "muscle": "calves",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell front chest squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0039.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell front raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0041.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell front raise and pullover",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0040.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell front squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0042.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell full squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0043.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell full squat (back pov)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1461.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell full squat (side pov)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1462.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell full zercher squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1545.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell glute bridge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1409.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell glute bridge two legs on bench (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3562.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell good morning",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0044.gif",
+        "muscle": "hamstrings",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell guillotine bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0045.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell hack squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0046.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell high bar squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1436.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell incline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0047.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell incline close grip bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1719.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell incline reverse-grip press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0048.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell incline row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0049.gif",
+        "muscle": "upper back",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell incline shoulder raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0050.gif",
+        "muscle": "serratus anterior",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell jefferson squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0051.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell jm bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0052.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell jump squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0053.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell lateral lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1410.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell low bar squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1435.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0054.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell lying back of the head tricep extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1720.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell lying close-grip press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0055.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell lying close-grip triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0056.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell lying extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0057.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell lying lifting (on hip)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0058.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell lying preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0059.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell lying triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0061.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell lying triceps extension skull crusher",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0060.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell narrow stance squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0063.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell one arm bent over row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0064.gif",
+        "muscle": "upper back",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell one arm floor press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0065.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell one arm side deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0066.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell one arm snatch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0067.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell one leg squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0068.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell overhead squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0069.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell palms down wrist curl over a bench",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1411.gif",
+        "muscle": "forearms",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell palms up wrist curl over a bench",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1412.gif",
+        "muscle": "forearms",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell pendlay row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3017.gif",
+        "muscle": "upper back",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell pin presses",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1751.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0070.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell press sit-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0071.gif",
+        "muscle": "abs",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell prone incline curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0072.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell pullover",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0073.gif",
+        "muscle": "lats",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell pullover to press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0022.gif",
+        "muscle": "lats",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell rack pull",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0074.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell rear delt raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0075.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell rear delt row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0076.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell rear lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0078.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell rear lunge v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0077.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell revers wrist curl v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0079.gif",
+        "muscle": "forearms",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell reverse close-grip bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2187.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell reverse curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0080.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell reverse grip bent over row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0118.gif",
+        "muscle": "upper back",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell reverse grip decline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1256.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell reverse grip incline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1257.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell reverse grip incline bench row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1317.gif",
+        "muscle": "upper back",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell reverse grip skullcrusher",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1721.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell reverse preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0081.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell reverse wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0082.gif",
+        "muscle": "forearms",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell rollerout",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0084.gif",
+        "muscle": "abs",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell rollerout from bench",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0083.gif",
+        "muscle": "abs",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell romanian deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0085.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell seated behind head military press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0086.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell seated bradford rocky press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0087.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell seated calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0088.gif",
+        "muscle": "calves",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell seated calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1371.gif",
+        "muscle": "calves",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell seated close grip behind neck triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1718.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell seated close-grip concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0089.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell seated good morning",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0090.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell seated overhead press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0091.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell seated overhead triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0092.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell seated twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0094.gif",
+        "muscle": "abs",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell shrug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0095.gif",
+        "muscle": "traps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell side bent v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0096.gif",
+        "muscle": "abs",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell side split squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0098.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell side split squat v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0097.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell single leg deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1756.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell single leg split squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0099.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell sitted alternate leg raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2799.gif",
+        "muscle": "abs",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell sitted alternate leg raise (female)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2800.gif",
+        "muscle": "abs",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell skier",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0100.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell speed squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0101.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell split squat v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2810.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell squat (on knees)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0102.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell squat jump step rear lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2798.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing ab rollerout",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0103.gif",
+        "muscle": "abs",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing back wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0104.gif",
+        "muscle": "forearms",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing bradford press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0105.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1372.gif",
+        "muscle": "calves",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing close grip curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0106.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing close grip military press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1456.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2414.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing front raise over head",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0107.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing leg calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0108.gif",
+        "muscle": "calves",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing overhead triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0109.gif",
+        "muscle": "triceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing reverse grip curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0110.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing rocking leg calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0111.gif",
+        "muscle": "calves",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0112.gif",
+        "muscle": "abs",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing wide grip biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1629.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing wide military press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1457.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell standing wide-grip curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0113.gif",
+        "muscle": "biceps",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell step-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0114.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell stiff leg good morning",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0115.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell straight leg deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0116.gif",
+        "muscle": "hamstrings",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell sumo deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0117.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell thruster",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3305.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell upright row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0120.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell upright row v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0119.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell upright row v. 3",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0121.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell wide bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0122.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell wide reverse grip bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1258.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell wide squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0124.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell wide-grip upright row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0123.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0126.gif",
+        "muscle": "forearms",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell wrist curl v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0125.gif",
+        "muscle": "forearms",
+        "equipment": "barbell"
+      },
+      {
+        "name": "barbell zercher squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0127.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "basic toe touch (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3212.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "battling ropes",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0128.gif",
+        "muscle": "delts",
+        "equipment": "rope"
+      },
+      {
+        "name": "bear crawl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3360.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "behind head chest stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1259.gif",
+        "muscle": "pectorals",
+        "equipment": "assisted"
+      },
+      {
+        "name": "bench dip (knees bent)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0129.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bench dip on floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1399.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bench hip extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0130.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bench pull-ups",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3019.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bent knee lying twist (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3639.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "biceps leg concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1770.gif",
+        "muscle": "biceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "biceps narrow pull-ups",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0139.gif",
+        "muscle": "biceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "biceps pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0140.gif",
+        "muscle": "biceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "body-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0137.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight drop jump squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3543.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight incline side plank",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3544.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight kneeling triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1771.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight side lying biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1769.gif",
+        "muscle": "biceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight squatting row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3168.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight squatting row (with towel)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3167.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight standing calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1373.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight standing close-grip one arm row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3156.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight standing close-grip row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3158.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight standing one arm row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3162.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight standing one arm row (with towel)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3161.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight standing row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3166.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bodyweight standing row (with towel)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3165.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bottoms-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0138.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "box jump down with one leg stabilization",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1374.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "bridge - mountain climber (cross body)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2466.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "burpee",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1160.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "butt-ups",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0870.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "butterfly yoga pose",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1494.gif",
+        "muscle": "adductors",
+        "equipment": "body weight"
+      },
+      {
+        "name": "cable alternate shoulder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0148.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable alternate triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0149.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable assisted inverse leg curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3235.gif",
+        "muscle": "hamstrings",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable bar lateral pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0150.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0151.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable close grip curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1630.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1631.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable concentration extension (on knee)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0152.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable cross-over lateral pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0153.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable cross-over revers fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0154.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable cross-over variation",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0155.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0868.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0157.gif",
+        "muscle": "glutes",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable decline fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0158.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable decline one arm press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1260.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable decline press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1261.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable decline seated wide-grip row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0159.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable drag curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1632.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable floor seated wide-grip row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0160.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable forward raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0161.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable front raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0162.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable front shoulder raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0164.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable hammer curl (with rope)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0165.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable high pulley overhead tricep extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1722.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable high row (kneeling)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0167.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable hip adduction",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0168.gif",
+        "muscle": "adductors",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable incline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0169.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable incline bench row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1318.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable incline fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0171.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable incline fly (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0170.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable incline pushdown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0172.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable incline triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0173.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable judo flip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0174.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable kickback",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0860.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable kneeling crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0175.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable kneeling rear delt row (with rope) (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3697.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable kneeling triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0176.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable lat pulldown full range of motion",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2330.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable lateral pulldown (with rope attachment)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0177.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable lateral pulldown with v-bar",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2616.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0178.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable low fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0179.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable low seated row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0180.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable lying bicep curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1634.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable lying close-grip curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0182.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable lying extension pullover (with rope attachment)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0184.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable lying fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0185.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable lying triceps extension v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0186.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable middle fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0188.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm bent over row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0189.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0190.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm decline chest fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1262.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm fly on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1263.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm incline fly on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1264.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm incline press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1265.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm incline press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1266.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm lateral bent-over",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0191.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0192.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1633.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1267.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3563.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm reverse preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1635.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm straight back high row (kneeling)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0193.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable one arm tricep pushdown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1723.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable overhead curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1636.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable overhead curl on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1637.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable overhead triceps extension (rope attachment)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0194.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable palm rotational row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1319.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0195.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1268.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable pull through (with rope)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0196.gif",
+        "muscle": "glutes",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0198.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable pulldown (pro lat bar)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0197.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable pulldown bicep curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1638.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable pushdown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0201.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable pushdown (straight arm) v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0199.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable pushdown (with rope attachment)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0200.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rear delt row (stirrups)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0202.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rear delt row (with rope)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0203.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rear drive",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0204.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rear pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0205.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable reverse crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0873.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable reverse curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0206.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable reverse grip triceps pushdown (sz-bar) (with arm blaster)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2406.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable reverse one arm curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1413.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable reverse preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0209.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable reverse wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0210.gif",
+        "muscle": "forearms",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable reverse-grip pushdown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0207.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable reverse-grip straight back seated high row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0208.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rope crossover seated row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1320.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rope elevated seated row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1321.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rope extension incline bench row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1322.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rope hammer preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1639.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rope high pulley overhead tricep extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1724.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rope incline tricep extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1725.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rope lying on floor tricep extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1726.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rope one arm hammer preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1640.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable rope seated row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1323.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable russian twists (on stability ball)",
+        "instruction": "Connect a standard handle attachment, and position the cable to a middle pulley position. Lie on a stability ball perpendicular to the cable and grab the handle with one hand. You should be approximately armâ€™s length away from the pulley, with the tension of the weight on the cable. Grab the handle with both hands and fully extend your arms above your chest. You hands should be directly in-line with the pulley. If not, adjust the pulley up or down until they are. Keep your hips elevated and abs engaged. Rotate your torso away from the pulley for a full-quarter rotation. Your body should be flat from head to knees. Pause for a moment and in a slow and controlled manner reset to the starting position. You should still have side tension on the cable in the resting position. Repeat the same movement to failure. Then, reposition and repeat the same series of movements on the opposite side.  Tip: Itâ€™s extremely important to keep your hips elevated during this exercise. If you do it correctly, your upper back will be on the ball, but your lower back and rear-end will be completely unsupported. Keeping your hips elevated will engage your core (lower back and abdominals), and make the exercise more effective.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0211.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated chest press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2144.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0212.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1641.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated high row (v-bar)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0213.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated one arm alternate row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0214.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated one arm concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1642.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated overhead curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1643.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated rear lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0215.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0861.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated shoulder internal rotation",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0216.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2399.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable seated wide-grip row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0218.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable shoulder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0219.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable shrug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0220.gif",
+        "muscle": "traps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable side bend",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0222.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable side bend crunch (bosu ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0221.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable side crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0223.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable squat row (with rope attachment)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1717.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable squatting curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1644.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing back wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0224.gif",
+        "muscle": "forearms",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1375.gif",
+        "muscle": "calves",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing cross-over high reverse fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0225.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0226.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing crunch (with rope attachment)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0874.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0227.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing hip extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0228.gif",
+        "muscle": "glutes",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing inner curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0229.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing lift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0230.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing one arm triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0231.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing one leg calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1376.gif",
+        "muscle": "calves",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing pulldown (with rope)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0232.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing rear delt row (with rope)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0233.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing reverse grip one arm overhead tricep extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1727.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing row (v-bar)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0234.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing shoulder external rotation",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0235.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing twist row (v-bar)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0236.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable standing up straight crossovers",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1269.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable straight arm pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0238.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable straight arm pulldown (with rope)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0237.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable straight back seated row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0239.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable supine reverse fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0240.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable thibaudeau kayak row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2464.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable triceps pushdown (v-bar)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0241.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable triceps pushdown (v-bar) (with arm blaster)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2405.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable tuck reverse crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0242.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0243.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable twist (up-down)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0862.gif",
+        "muscle": "abs",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable twisting pull",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0244.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable two arm curl on incline bench",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1645.gif",
+        "muscle": "biceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable two arm tricep kickback",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1728.gif",
+        "muscle": "triceps",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable underhand pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0245.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable upper chest crossovers",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1270.gif",
+        "muscle": "pectorals",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable upper row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1324.gif",
+        "muscle": "upper back",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable upright row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0246.gif",
+        "muscle": "delts",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable wide grip rear pulldown behind neck",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1325.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "cable wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0247.gif",
+        "muscle": "forearms",
+        "equipment": "cable"
+      },
+      {
+        "name": "calf push stretch with hands against wall",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1407.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "calf stretch with hands against wall",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1377.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "calf stretch with rope",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1378.gif",
+        "muscle": "calves",
+        "equipment": "rope"
+      },
+      {
+        "name": "cambered bar lying row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0248.gif",
+        "muscle": "upper back",
+        "equipment": "barbell"
+      },
+      {
+        "name": "captains chair straight leg raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2963.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "chair leg extended stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1548.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "chest and front of shoulder stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1271.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "chest dip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0251.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "chest dip (on dip-pull-up cage)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1430.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "chest dip on straight bar",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2462.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "chest stretch with exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1272.gif",
+        "muscle": "pectorals",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "chest tap push-up (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3216.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "chin-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1326.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "chin-ups (narrow parallel grip)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0253.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "circles knee stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0257.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "clap push up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1273.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "clock push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0258.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "close grip chin-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1327.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "close-grip push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0259.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "close-grip push-up (on knees)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2398.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "cocoons",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0260.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "crab twist toe touch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1468.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "cross body crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0262.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "crunch (hands overhead)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0267.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "crunch (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0271.gif",
+        "muscle": "abs",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "crunch (on stability ball, arms straight)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0272.gif",
+        "muscle": "abs",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "crunch floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0274.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "curl-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3016.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "curtsey squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3769.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "cycle cross trainer",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2331.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "dead bug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0276.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "decline crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0277.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "decline push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0279.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "decline sit-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0282.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "deep push up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1274.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "diamond push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0283.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "donkey calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0284.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "drop push up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1275.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "dumbbell alternate biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0285.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell alternate biceps curl (with arm blaster)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2403.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell alternate hammer preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1646.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell alternate preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1647.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell alternate seated hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1648.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell alternate side press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0286.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell alternating bicep curl with leg raised on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1649.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell alternating seated bicep curl on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1650.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell arnold press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2137.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell arnold press v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0287.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell around pullover",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0288.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0289.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell bench seated press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0290.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell bench squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0291.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell bent over row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0293.gif",
+        "muscle": "upper back",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell bicep curl lunge with bowling motion",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1651.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell bicep curl on exercise ball with leg raised",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1652.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell bicep curl with stork stance",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1653.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0294.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell biceps curl (with arm blaster)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2401.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell biceps curl reverse",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1654.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell biceps curl squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1655.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell biceps curl v sit on bosu ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1656.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell burpee",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1201.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell clean",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0295.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell close grip press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1731.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell close-grip press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0296.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0297.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell contralateral forward lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3635.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell cross body hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0298.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell cross body hammer curl v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1657.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell cuban press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0299.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell cuban press v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2136.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0300.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell decline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0301.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell decline fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0302.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell decline hammer press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0303.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell decline one arm fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1276.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell decline one arm hammer press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1617.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell decline shrug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0305.gif",
+        "muscle": "traps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell decline shrug v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0304.gif",
+        "muscle": "traps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell decline triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0306.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell decline twist fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0307.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell finger curls",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1437.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0308.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell fly on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1277.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell forward lunge triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1732.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell front raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0310.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell front raise v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0309.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell full can lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0311.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell goblet squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1760.gif",
+        "muscle": "quads",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0313.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell hammer curl on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1659.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell hammer curl v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0312.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell hammer curls (with arm blaster)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2402.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell high curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1664.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline alternate press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3545.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0314.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0315.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline breeding",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0316.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0318.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline curl v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0317.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0319.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline fly on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1278.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0320.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline hammer press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0321.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline hammer press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1618.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline inner biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0322.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline one arm fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1279.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline one arm fly on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1280.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline one arm hammer press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1619.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline one arm hammer press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1620.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline one arm lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0323.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline one arm press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1281.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline one arm press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1282.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline palm-in press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0324.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1283.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0325.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline rear lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0326.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0327.gif",
+        "muscle": "upper back",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline shoulder raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0328.gif",
+        "muscle": "serratus anterior",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline shrug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0329.gif",
+        "muscle": "traps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline t-raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3542.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0330.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline twisted flyes",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0331.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline two arm extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1733.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell incline y-raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3541.gif",
+        "muscle": "upper back",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell iron cross",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0332.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell kickback",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0333.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell kickbacks on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1734.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell kneeling bicep curl exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1660.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0334.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lateral to front raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0335.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0336.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lunge with bicep curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1658.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying  extension (across face)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0337.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying alternate extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1729.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying elbow press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0338.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying external shoulder rotation",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0863.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying femoral",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0339.gif",
+        "muscle": "hamstrings",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying hammer press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0340.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying on floor rear delt raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2470.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying one arm deltoid rear",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0341.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying one arm press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0343.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying one arm press v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0342.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying one arm pronated triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0344.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying one arm rear lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0345.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying one arm supinated triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0346.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying pronation",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0347.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying pronation on floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2705.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying pullover on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1284.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying rear delt row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1328.gif",
+        "muscle": "upper back",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying rear lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0348.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying single extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1735.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying supination",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0349.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying supination on floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2706.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying supine biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1661.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying supine curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0350.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0351.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell lying wide curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1662.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell neutral grip bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0352.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm bench fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1285.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm bent-over row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0292.gif",
+        "muscle": "upper back",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm chest fly on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1286.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm concetration curl (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0353.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm decline chest press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1287.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm fly on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1288.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm french press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1736.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm hammer preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1663.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm hammer press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1621.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm incline chest press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1289.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm kickback",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0354.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0355.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm lateral raise with support",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0356.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1290.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm prone curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1665.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm prone hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1666.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm pullover on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1291.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm revers wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0358.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm reverse fly (with support)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0359.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm reverse grip press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1622.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm reverse preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1414.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm reverse spider curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1667.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm seated bicep curl on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1668.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm seated hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1669.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm seated neutral wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1415.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm shoulder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0361.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm shoulder press v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0360.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm snatch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3888.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm standing curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1670.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm standing hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1671.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm triceps extension (on bench)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0362.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm upright row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0363.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0364.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one arm zottman preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1672.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell one leg fly on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1292.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell over bench neutral wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0365.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell over bench one arm  neutral wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0366.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell over bench one arm reverse wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1441.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell over bench one arm wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0367.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell over bench revers wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0368.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell over bench wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0369.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell palm rotational bent over row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1329.gif",
+        "muscle": "upper back",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell palms in incline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1623.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell peacher hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0370.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell plyo squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0371.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0372.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell preacher curl over exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1673.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1293.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell pronate-grip triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0373.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell prone incline curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0374.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell prone incline hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1674.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell pullover",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0375.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell pullover hip extension on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1294.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell pullover on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1295.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell push press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1700.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0376.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell rear delt raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2292.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell rear delt row_shoulder",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0377.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell rear fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0378.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell rear lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0380.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell rear lateral raise (support head)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0379.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell rear lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0381.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell revers grip biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0382.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell reverse bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1624.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell reverse fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0383.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell reverse grip incline bench one arm row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1330.gif",
+        "muscle": "upper back",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell reverse grip incline bench two arm row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1331.gif",
+        "muscle": "upper back",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell reverse grip row (female)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2327.gif",
+        "muscle": "upper back",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell reverse preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0384.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell reverse spider curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1675.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell reverse wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0385.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell romanian deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1459.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell rotation reverse fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0386.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell scott press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2397.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated alternate front raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0387.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated alternate hammer curl on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1676.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated alternate press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0388.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated alternate shoulder",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3546.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated bench extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0389.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated bent arm lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2317.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated bent over alternate kickback",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1730.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated bent over triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1737.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated bicep curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1677.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated biceps curl (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0390.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated biceps curl to shoulder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3547.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1379.gif",
+        "muscle": "calves",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0391.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated front raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0392.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1678.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated inner biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0393.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated kickback",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0394.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0396.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated lateral raise v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0395.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated neutral wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0397.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated one arm bicep curl on exercise ball with leg raised",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1679.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated one arm kickback",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0398.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated one arm rotate",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0399.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated one leg calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0400.gif",
+        "muscle": "calves",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated one leg calf raise - hammer grip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1380.gif",
+        "muscle": "calves",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated one leg calf raise - palm up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1381.gif",
+        "muscle": "calves",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated palms up wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0401.gif",
+        "muscle": "forearms",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0402.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated revers grip concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0403.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated reverse grip one arm overhead tricep extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1738.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated shoulder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0405.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated shoulder press (parallel grip)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0404.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell seated triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2188.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell shrug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0406.gif",
+        "muscle": "traps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell side bend",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0407.gif",
+        "muscle": "abs",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell side lying one hand raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0408.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell side plank with rear fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3664.gif",
+        "muscle": "upper back",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell single arm overhead carry",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3548.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell single leg calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0409.gif",
+        "muscle": "calves",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell single leg deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1757.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell single leg deadlift with stepbox support",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2805.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell single leg split squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0410.gif",
+        "muscle": "quads",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell single leg squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0411.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0413.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing alternate hammer curl and press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3560.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing alternate overhead press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0414.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing alternate raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0415.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing alternating tricep kickback",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1739.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing around world",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2143.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing bent over one arm triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1740.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing bent over two arm triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1741.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0416.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0417.gif",
+        "muscle": "calves",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0418.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing front raise above head",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0419.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing inner biceps curl v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2321.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing kickback",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0420.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing one arm concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0421.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing one arm curl (over incline bench)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0422.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing one arm curl over incline bench",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1680.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing one arm extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0423.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing one arm palm in press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0424.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing one arm reverse curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0425.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing overhead press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0426.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing palms in press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0427.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0428.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing reverse curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0429.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0430.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell standing zottman preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2293.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell step up single leg balance with bicep curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1684.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell step-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0431.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell step-up lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2796.gif",
+        "muscle": "quads",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell step-up split squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2812.gif",
+        "muscle": "quads",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell stiff leg deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0432.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell straight arm pullover",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0433.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell straight leg deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0434.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell sumo pull through",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2808.gif",
+        "muscle": "glutes",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell supported squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2803.gif",
+        "muscle": "quads",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell tate press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0436.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell tricep kickback with stork stance",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1742.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell twisting bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1743.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell upright row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0437.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell upright row (back pov)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1765.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell upright shoulder external rotation",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0864.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell waiter biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/5201.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell w-press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0438.gif",
+        "muscle": "delts",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell zottman curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0439.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbell zottman preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2294.gif",
+        "muscle": "biceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dumbbells seated triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2189.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "dynamic chest stretch (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1167.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "elbow dips",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3287.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "elbow lift - reverse push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1772.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "elbow-to-knee",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0443.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "elevator",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3292.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "exercise ball alternating arm ups",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1332.gif",
+        "muscle": "lats",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball back extension with arms extended",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1333.gif",
+        "muscle": "spine",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball back extension with hands behind head",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1334.gif",
+        "muscle": "spine",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball back extension with knees off ground",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1335.gif",
+        "muscle": "spine",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball back extension with rotation",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1336.gif",
+        "muscle": "spine",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball dip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1744.gif",
+        "muscle": "triceps",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball hip flexor stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1559.gif",
+        "muscle": "glutes",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball hug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1338.gif",
+        "muscle": "spine",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball lat stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1339.gif",
+        "muscle": "lats",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball lower back stretch (pyramid)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1341.gif",
+        "muscle": "lats",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball lying side lat stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1342.gif",
+        "muscle": "lats",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball on the wall calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1382.gif",
+        "muscle": "calves",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "exercise ball on the wall calf raise (tennis ball between ankles)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3241.gif",
+        "muscle": "calves",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "exercise ball on the wall calf raise (tennis ball between knees)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3240.gif",
+        "muscle": "calves",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "exercise ball one leg prone lower body rotation",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1416.gif",
+        "muscle": "glutes",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball one legged diagonal kick hamstring curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1417.gif",
+        "muscle": "glutes",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball pike push up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1296.gif",
+        "muscle": "pectorals",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball prone leg raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1343.gif",
+        "muscle": "spine",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball seated hamstring stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1560.gif",
+        "muscle": "hamstrings",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball seated triceps stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1745.gif",
+        "muscle": "triceps",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "exercise ball supine triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1746.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "ez bar french press on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1747.gif",
+        "muscle": "triceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez bar lying bent arms pullover",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3010.gif",
+        "muscle": "lats",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez bar lying close grip triceps extension behind head",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1748.gif",
+        "muscle": "triceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez bar reverse grip bent over row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1344.gif",
+        "muscle": "upper back",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez bar seated close grip concentration curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1682.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez bar standing french press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1749.gif",
+        "muscle": "triceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell anti gravity press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0445.gif",
+        "muscle": "delts",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell close grip preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1627.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell close-grip curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0446.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0447.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell decline close grip face press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0448.gif",
+        "muscle": "triceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell decline triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2186.gif",
+        "muscle": "triceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell incline triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0449.gif",
+        "muscle": "triceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell jm bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0450.gif",
+        "muscle": "triceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell reverse grip curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0451.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell reverse grip preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0452.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell seated curls",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1458.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell seated triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0453.gif",
+        "muscle": "triceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell spider curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0454.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez barbell spider curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1628.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez-bar biceps curl (with arm blaster)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2404.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez-bar close-grip bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2432.gif",
+        "muscle": "triceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "ez-barbell standing wide grip biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2741.gif",
+        "muscle": "biceps",
+        "equipment": "ez barbell"
+      },
+      {
+        "name": "farmers walk",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2133.gif",
+        "muscle": "quads",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "finger curls",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0455.gif",
+        "muscle": "forearms",
+        "equipment": "barbell"
+      },
+      {
+        "name": "flag",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3303.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "flexion leg sit up (bent knee)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0456.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "flexion leg sit up (straight arm)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0457.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "floor fly (with barbell)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0458.gif",
+        "muscle": "pectorals",
+        "equipment": "barbell"
+      },
+      {
+        "name": "flutter kicks",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0459.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "forward jump",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1472.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "forward lunge (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3470.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "frankenstein squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3194.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "frog crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2429.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "frog planche",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3301.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "front lever",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3296.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "front lever reps",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3295.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "front plank with twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0464.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "full maltese",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3315.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "full planche",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3299.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "full planche push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3327.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "gironda sternum chin",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0466.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "glute bridge march",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3561.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "glute bridge two legs on bench (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3523.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "glute-ham raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3193.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "gorilla chin",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0467.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "groin crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0469.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hack calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1383.gif",
+        "muscle": "calves",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "hack one leg calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1384.gif",
+        "muscle": "calves",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "half knee bends (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3221.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "half sit-up (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3202.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hamstring stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1511.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hands bike",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2139.gif",
+        "muscle": "pectorals",
+        "equipment": "upper body ergometer"
+      },
+      {
+        "name": "hands clasped circular toe touch (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3218.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hands reversed clasped circular toe touch (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3215.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "handstand",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3302.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "handstand push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0471.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hanging leg hip raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1764.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hanging leg raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0472.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hanging oblique knee raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1761.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hanging pike",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0473.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hanging straight leg hip raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0474.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hanging straight leg raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0475.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hanging straight twisting leg hip raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0476.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "high knee against wall",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3636.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hip raise (bent knee)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0484.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hug keens to chest",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1418.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hyght dumbbell fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3234.gif",
+        "muscle": "pectorals",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "hyperextension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0489.gif",
+        "muscle": "spine",
+        "equipment": "body weight"
+      },
+      {
+        "name": "hyperextension (on bench)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0488.gif",
+        "muscle": "spine",
+        "equipment": "body weight"
+      },
+      {
+        "name": "impossible dips",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3289.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "inchworm",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1471.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "inchworm v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3698.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "incline close-grip push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0490.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "incline leg hip raise (leg straight)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0491.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "incline push up depth jump",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0492.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "incline push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0493.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "incline push-up (on box)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3785.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "incline reverse grip push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0494.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "incline scapula push up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3011.gif",
+        "muscle": "serratus anterior",
+        "equipment": "body weight"
+      },
+      {
+        "name": "incline twisting sit-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0495.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "intermediate hip flexor and quad stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1564.gif",
+        "muscle": "quads",
+        "equipment": "rope"
+      },
+      {
+        "name": "inverse leg curl (bench support)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0496.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "inverse leg curl (on pull-up cable machine)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2400.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "inverted row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0499.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "inverted row bent knees",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2300.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "inverted row on bench",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2298.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "inverted row v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0497.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "inverted row with straps",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0498.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "iron cross stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1419.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "isometric chest squeeze",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1297.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "isometric wipers",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0500.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "jack burpee",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0501.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "jack jump (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3224.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "jackknife sit-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0507.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "janda sit-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0508.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "jump rope",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2612.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "rope"
+      },
+      {
+        "name": "jump squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0514.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "jump squat v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0513.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "kettlebell advanced windmill",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0517.gif",
+        "muscle": "abs",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell alternating hang clean",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0518.gif",
+        "muscle": "forearms",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell alternating press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0520.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell alternating press on floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0519.gif",
+        "muscle": "pectorals",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell alternating renegade row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0521.gif",
+        "muscle": "upper back",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell alternating row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0522.gif",
+        "muscle": "upper back",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell arnold press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0523.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell bent press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0524.gif",
+        "muscle": "abs",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell bottoms up clean from the hang position",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0525.gif",
+        "muscle": "biceps",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell double alternating hang clean",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0526.gif",
+        "muscle": "biceps",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell double jerk",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0527.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell double push press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0528.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell double snatch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0529.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell double windmill",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0530.gif",
+        "muscle": "abs",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell extended range one arm press on floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0531.gif",
+        "muscle": "pectorals",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell figure 8",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0532.gif",
+        "muscle": "abs",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell front squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0533.gif",
+        "muscle": "glutes",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell goblet squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0534.gif",
+        "muscle": "glutes",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell hang clean",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0535.gif",
+        "muscle": "hamstrings",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell lunge pass through",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0536.gif",
+        "muscle": "glutes",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell one arm clean and jerk",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0537.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell one arm floor press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1298.gif",
+        "muscle": "pectorals",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell one arm jerk",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0538.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell one arm military press to the side",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0539.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell one arm push press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0540.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell one arm row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0541.gif",
+        "muscle": "upper back",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell one arm snatch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0542.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell pirate supper legs",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0543.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell pistol squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0544.gif",
+        "muscle": "glutes",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell plyo push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0545.gif",
+        "muscle": "pectorals",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell seated press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0546.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell seated two arm military press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1438.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell seesaw press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0547.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell sumo high pull",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0548.gif",
+        "muscle": "traps",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell swing",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0549.gif",
+        "muscle": "glutes",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell thruster",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0550.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell turkish get up (squat style)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0551.gif",
+        "muscle": "glutes",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell two arm clean",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0552.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell two arm military press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0553.gif",
+        "muscle": "delts",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell two arm row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1345.gif",
+        "muscle": "upper back",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kettlebell windmill",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0554.gif",
+        "muscle": "abs",
+        "equipment": "kettlebell"
+      },
+      {
+        "name": "kick out sit",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0555.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "kipping muscle up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0558.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "knee touch crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3640.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "kneeling jump squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1420.gif",
+        "muscle": "glutes",
+        "equipment": "barbell"
+      },
+      {
+        "name": "kneeling lat stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1346.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "kneeling plank tap shoulder (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3239.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "kneeling push-up (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3211.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "korean dips",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3288.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "l-pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3418.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "l-sit on floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3419.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "landmine 180",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0562.gif",
+        "muscle": "abs",
+        "equipment": "barbell"
+      },
+      {
+        "name": "landmine lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3237.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "lean planche",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3300.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "left hook. boxing",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2271.gif",
+        "muscle": "delts",
+        "equipment": "body weight"
+      },
+      {
+        "name": "leg pull in flat bench",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0570.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "leg up hamstring stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1576.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "lever alternate leg press ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2287.gif",
+        "muscle": "quads",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever alternating narrow grip seated row ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0571.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever assisted chin-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0572.gif",
+        "muscle": "lats",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever back extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0573.gif",
+        "muscle": "spine",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever bent over row ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0574.gif",
+        "muscle": "upper back",
+        "equipment": "barbell"
+      },
+      {
+        "name": "lever bent-over row with v-bar ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3200.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever bicep curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0575.gif",
+        "muscle": "biceps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever calf press ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2289.gif",
+        "muscle": "calves",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever chest press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0577.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever chest press ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0576.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever chest press v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1455.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever deadlift ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0578.gif",
+        "muscle": "glutes",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever decline chest press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1300.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever donkey calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1253.gif",
+        "muscle": "calves",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever front pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0579.gif",
+        "muscle": "lats",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever gripless shrug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0580.gif",
+        "muscle": "traps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever gripless shrug v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1439.gif",
+        "muscle": "traps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever gripper hands ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2288.gif",
+        "muscle": "forearms",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever hammer grip preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1615.gif",
+        "muscle": "biceps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever high row ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0581.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever hip extension v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2286.gif",
+        "muscle": "glutes",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever horizontal one leg press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2611.gif",
+        "muscle": "glutes",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever incline chest press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1299.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever incline chest press v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1479.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever kneeling leg curl ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0582.gif",
+        "muscle": "hamstrings",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever kneeling twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0583.gif",
+        "muscle": "abs",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever lateral raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0584.gif",
+        "muscle": "delts",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever leg extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0585.gif",
+        "muscle": "quads",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever lying leg curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0586.gif",
+        "muscle": "hamstrings",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever lying two-one leg curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3195.gif",
+        "muscle": "hamstrings",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever military press ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0587.gif",
+        "muscle": "delts",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever narrow grip seated row ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0588.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever one arm bent over row ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0589.gif",
+        "muscle": "upper back",
+        "equipment": "barbell"
+      },
+      {
+        "name": "lever one arm lateral high row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1356.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever one arm lateral wide pulldown ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1347.gif",
+        "muscle": "lats",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever one arm shoulder press ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0590.gif",
+        "muscle": "delts",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever overhand triceps dip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0591.gif",
+        "muscle": "triceps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0592.gif",
+        "muscle": "biceps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever preacher curl v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1614.gif",
+        "muscle": "biceps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever pullover ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2285.gif",
+        "muscle": "lats",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever reverse grip lateral pulldown ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2736.gif",
+        "muscle": "lats",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever reverse grip preacher curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1616.gif",
+        "muscle": "biceps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever reverse grip vertical row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1348.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever reverse hyperextension ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0593.gif",
+        "muscle": "glutes",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever reverse t-bar row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1349.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever rotary calf",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2315.gif",
+        "muscle": "calves",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated calf press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2335.gif",
+        "muscle": "calves",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated calf raise ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0594.gif",
+        "muscle": "calves",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1452.gif",
+        "muscle": "abs",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated crunch (chest pad)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0595.gif",
+        "muscle": "abs",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated crunch v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3760.gif",
+        "muscle": "abs",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated dip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1451.gif",
+        "muscle": "triceps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0596.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated good morning",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3759.gif",
+        "muscle": "glutes",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated hip abduction",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0597.gif",
+        "muscle": "abductors",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated hip adduction",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0598.gif",
+        "muscle": "adductors",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated leg curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0599.gif",
+        "muscle": "hamstrings",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated leg raise crunch ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0600.gif",
+        "muscle": "abs",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated reverse fly",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0602.gif",
+        "muscle": "delts",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated reverse fly (parallel grip)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0601.gif",
+        "muscle": "delts",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1350.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated shoulder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1454.gif",
+        "muscle": "delts",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated squat calf raise on leg press machine",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1385.gif",
+        "muscle": "calves",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever seated twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1453.gif",
+        "muscle": "abs",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever shoulder press ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0603.gif",
+        "muscle": "delts",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever shoulder press  v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0869.gif",
+        "muscle": "delts",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever shoulder press  v. 3",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2318.gif",
+        "muscle": "delts",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever shrug ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0604.gif",
+        "muscle": "traps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever standing calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0605.gif",
+        "muscle": "calves",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever standing chest press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3758.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever t bar row ",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0606.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever t-bar reverse grip row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1351.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0607.gif",
+        "muscle": "triceps",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "lever unilateral row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1313.gif",
+        "muscle": "upper back",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "london bridge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0609.gif",
+        "muscle": "upper back",
+        "equipment": "rope"
+      },
+      {
+        "name": "low glute bridge on floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3013.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "lower back curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1352.gif",
+        "muscle": "spine",
+        "equipment": "body weight"
+      },
+      {
+        "name": "lunge with jump",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3582.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "lunge with twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1688.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "lying (side) quads stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0613.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "lying elbow to knee",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2312.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "lying leg raise flat bench",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0620.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "lying leg-hip raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0865.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "machine inner chest press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1301.gif",
+        "muscle": "pectorals",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "march sit (wall)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0624.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "medicine ball catch and overhead throw",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1353.gif",
+        "muscle": "lats",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "medicine ball chest pass",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1302.gif",
+        "muscle": "pectorals",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "medicine ball chest push from 3 point stance",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1303.gif",
+        "muscle": "pectorals",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "medicine ball chest push multiple response",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1304.gif",
+        "muscle": "pectorals",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "medicine ball chest push single response",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1305.gif",
+        "muscle": "pectorals",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "medicine ball chest push with run release",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1312.gif",
+        "muscle": "pectorals",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "medicine ball close grip push up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1701.gif",
+        "muscle": "triceps",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "medicine ball overhead slam",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1354.gif",
+        "muscle": "upper back",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "medicine ball supine chest throw",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1750.gif",
+        "muscle": "triceps",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "mixed grip chin-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0627.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "modified hindu push-up (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3217.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "modified push up to lower arms",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1421.gif",
+        "muscle": "forearms",
+        "equipment": "body weight"
+      },
+      {
+        "name": "monster walk",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0628.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "mountain climber",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0630.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "muscle up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0631.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "muscle-up (on vertical bar)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1401.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "narrow push-up on exercise ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2328.gif",
+        "muscle": "triceps",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "neck side stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1403.gif",
+        "muscle": "levator scapulae",
+        "equipment": "body weight"
+      },
+      {
+        "name": "negative crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0634.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "oblique crunch v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1495.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "oblique crunches floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0635.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "olympic barbell hammer curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0636.gif",
+        "muscle": "biceps",
+        "equipment": "olympic barbell"
+      },
+      {
+        "name": "olympic barbell triceps extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0637.gif",
+        "muscle": "triceps",
+        "equipment": "olympic barbell"
+      },
+      {
+        "name": "one arm against wall",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1355.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "one arm chin-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0638.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "one arm dip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0639.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "one arm slam (with medicine ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0640.gif",
+        "muscle": "abs",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "one arm towel row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1773.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "one leg donkey calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1386.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "one leg floor calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1387.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "one leg squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1476.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "otis up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0641.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "outside leg kick push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0642.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "overhead triceps stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0643.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "pelvic tilt",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3147.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "pelvic tilt into bridge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1422.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "peroneals stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1388.gif",
+        "muscle": "calves",
+        "equipment": "rope"
+      },
+      {
+        "name": "pike-to-cobra push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3662.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "plyo push up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1306.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "posterior step to overhead reach",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1687.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "posterior tibialis stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1389.gif",
+        "muscle": "calves",
+        "equipment": "rope"
+      },
+      {
+        "name": "potty squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3119.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "potty squat with support",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3132.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "power clean",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0648.gif",
+        "muscle": "hamstrings",
+        "equipment": "barbell"
+      },
+      {
+        "name": "power point plank",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3665.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "prisoner half sit-up (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3203.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "prone twist on stability ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1707.gif",
+        "muscle": "abs",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "pull up (neutral grip)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0651.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "pull-in (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0650.gif",
+        "muscle": "abs",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0652.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "push and pull bodyweight",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1689.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "push to run",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3638.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "push up on bosu ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1307.gif",
+        "muscle": "pectorals",
+        "equipment": "bosu ball"
+      },
+      {
+        "name": "push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0662.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "push-up (bosu ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0653.gif",
+        "muscle": "pectorals",
+        "equipment": "bosu ball"
+      },
+      {
+        "name": "push-up (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0655.gif",
+        "muscle": "pectorals",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "push-up (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0656.gif",
+        "muscle": "pectorals",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "push-up (wall)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0659.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "push-up (wall) v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0658.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "push-up close-grip off dumbbell",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0660.gif",
+        "muscle": "triceps",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "push-up inside leg kick",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0661.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "push-up medicine ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0663.gif",
+        "muscle": "pectorals",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "push-up on lower arms",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1467.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "push-up plus",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3145.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "push-up to side plank",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0664.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "quads",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3533.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "quarter sit-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3201.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "quick feet v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3552.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "raise single arm push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0666.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "rear decline bridge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0668.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "rear deltoid stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0669.gif",
+        "muscle": "delts",
+        "equipment": "body weight"
+      },
+      {
+        "name": "rear pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0670.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "reclining big toe pose with rope",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1582.gif",
+        "muscle": "hamstrings",
+        "equipment": "rope"
+      },
+      {
+        "name": "resistance band hip thrusts on knees (female)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3236.gif",
+        "muscle": "glutes",
+        "equipment": "resistance band"
+      },
+      {
+        "name": "resistance band leg extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3007.gif",
+        "muscle": "quads",
+        "equipment": "resistance band"
+      },
+      {
+        "name": "resistance band seated biceps curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3123.gif",
+        "muscle": "biceps",
+        "equipment": "resistance band"
+      },
+      {
+        "name": "resistance band seated chest press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3124.gif",
+        "muscle": "pectorals",
+        "equipment": "resistance band"
+      },
+      {
+        "name": "resistance band seated hip abduction",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3006.gif",
+        "muscle": "abductors",
+        "equipment": "resistance band"
+      },
+      {
+        "name": "resistance band seated shoulder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3122.gif",
+        "muscle": "delts",
+        "equipment": "resistance band"
+      },
+      {
+        "name": "resistance band seated straight back row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3144.gif",
+        "muscle": "upper back",
+        "equipment": "resistance band"
+      },
+      {
+        "name": "reverse crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0872.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "reverse dip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0672.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "reverse grip machine lat pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0673.gif",
+        "muscle": "lats",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "reverse grip pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0674.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "reverse hyper extension (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0675.gif",
+        "muscle": "glutes",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "reverse hyper on flat bench",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1423.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "reverse plank with leg lift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3663.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "ring dips",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0677.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "rocking frog stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2571.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "rocky pull-up pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0678.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "roller back stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2208.gif",
+        "muscle": "spine",
+        "equipment": "roller"
+      },
+      {
+        "name": "roller body saw",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2204.gif",
+        "muscle": "abs",
+        "equipment": "roller"
+      },
+      {
+        "name": "roller hip lat stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2205.gif",
+        "muscle": "glutes",
+        "equipment": "roller"
+      },
+      {
+        "name": "roller hip stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2202.gif",
+        "muscle": "glutes",
+        "equipment": "roller"
+      },
+      {
+        "name": "roller reverse crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2206.gif",
+        "muscle": "abs",
+        "equipment": "roller"
+      },
+      {
+        "name": "roller seated shoulder flexor depresor retractor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2203.gif",
+        "muscle": "pectorals",
+        "equipment": "roller"
+      },
+      {
+        "name": "roller seated single leg shoulder flexor depresor retractor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2209.gif",
+        "muscle": "pectorals",
+        "equipment": "roller"
+      },
+      {
+        "name": "roller side lat stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2207.gif",
+        "muscle": "lats",
+        "equipment": "roller"
+      },
+      {
+        "name": "rope climb",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0680.gif",
+        "muscle": "upper back",
+        "equipment": "rope"
+      },
+      {
+        "name": "run",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0685.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "run (equipment)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0684.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "runners stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1585.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "russian twist",
+        "instruction": "Lie down on the floor placing your feet either under something that will not move or by having a partner hold them. Your legs should be bent at the knees. Elevate your upper body so that it creates an imaginary V-shape with your thighs. Your arms should be fully extended in front of you perpendicular to your torso and with the hands clasped. This is the starting position. Twist your torso to the right side until your arms are parallel with the floor while breathing out. Hold the contraction for a second and move back to the starting position while breathing out. Now move to the opposite side performing the same techniques you applied to the right side. Repeat for the recommended amount of repetitions.  Variation: As you get more advanced, you can hold a weight with both arms for resistance.",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0687.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "scapula dips",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3012.gif",
+        "muscle": "traps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "scapula push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3021.gif",
+        "muscle": "serratus anterior",
+        "equipment": "body weight"
+      },
+      {
+        "name": "scapular pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0688.gif",
+        "muscle": "traps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "scissor jumps (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3219.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "seated calf stretch (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1390.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "seated glute stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1424.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "seated leg raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0689.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "seated lower back stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0690.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "seated piriformis stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2567.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "seated side crunch (wall)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0691.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "seated wide angle pose sequence",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1587.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "self assisted inverse leg curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0697.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "self assisted inverse leg curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1766.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "self assisted inverse leg curl (on floor)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0696.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "semi squat jump (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3222.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "short stride run",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3656.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "shoulder grip pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1763.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "shoulder tap",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3699.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "shoulder tap push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0699.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side bridge hip abduction",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1774.gif",
+        "muscle": "abductors",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side bridge v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0705.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side hip (on parallel bars)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0709.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side hip abduction",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0710.gif",
+        "muscle": "abductors",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side lying floor stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1358.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side lying hip adduction (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3667.gif",
+        "muscle": "adductors",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side plank hip adduction",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1775.gif",
+        "muscle": "adductors",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side push neck stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0716.gif",
+        "muscle": "levator scapulae",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0717.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side wrist pull stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0721.gif",
+        "muscle": "forearms",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side-to-side chin",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0720.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "side-to-side toe touch (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3213.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "single arm push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0725.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "single leg bridge with outstretched leg",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3645.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "single leg calf raise (on a dumbbell)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0727.gif",
+        "muscle": "calves",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "single leg platform slide",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0730.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "single leg squat (pistol) male",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1759.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "sissy squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1489.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "sit-up v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0735.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "sit-up with arms on chest",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3679.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "skater hops",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3361.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "ski ergometer",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2142.gif",
+        "muscle": "triceps",
+        "equipment": "skierg machine"
+      },
+      {
+        "name": "ski step",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3671.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "skin the cat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3304.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "sled 45 degrees one leg press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1425.gif",
+        "muscle": "glutes",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled 45в° calf press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0738.gif",
+        "muscle": "calves",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled 45в° leg press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0739.gif",
+        "muscle": "glutes",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled 45в° leg press (back pov)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1464.gif",
+        "muscle": "glutes",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled 45в° leg press (side pov)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1463.gif",
+        "muscle": "glutes",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled 45в° leg wide press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0740.gif",
+        "muscle": "glutes",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled calf press on leg press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1391.gif",
+        "muscle": "calves",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled closer hack squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0741.gif",
+        "muscle": "glutes",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled forward angled calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0742.gif",
+        "muscle": "calves",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled hack squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0743.gif",
+        "muscle": "glutes",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled lying calf press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2334.gif",
+        "muscle": "calves",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled lying squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0744.gif",
+        "muscle": "glutes",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sled one leg calf press on leg press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1392.gif",
+        "muscle": "calves",
+        "equipment": "sled machine"
+      },
+      {
+        "name": "sledge hammer",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1496.gif",
+        "muscle": "abs",
+        "equipment": "hammer"
+      },
+      {
+        "name": "smith back shrug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0746.gif",
+        "muscle": "traps",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith behind neck press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0747.gif",
+        "muscle": "delts",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0748.gif",
+        "muscle": "pectorals",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith bent knee good morning",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0749.gif",
+        "muscle": "glutes",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith bent over row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1359.gif",
+        "muscle": "upper back",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith chair squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0750.gif",
+        "muscle": "quads",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith close-grip bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0751.gif",
+        "muscle": "triceps",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0752.gif",
+        "muscle": "glutes",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith decline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0753.gif",
+        "muscle": "pectorals",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith decline reverse-grip press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0754.gif",
+        "muscle": "pectorals",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith front squat (clean grip)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1433.gif",
+        "muscle": "glutes",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith full squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3281.gif",
+        "muscle": "glutes",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith hack squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0755.gif",
+        "muscle": "glutes",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith hip raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0756.gif",
+        "muscle": "abs",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith incline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0757.gif",
+        "muscle": "pectorals",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith incline reverse-grip press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0758.gif",
+        "muscle": "pectorals",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith incline shoulder raises",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0759.gif",
+        "muscle": "serratus anterior",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith leg press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0760.gif",
+        "muscle": "glutes",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith low bar squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1434.gif",
+        "muscle": "glutes",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith machine bicep curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1683.gif",
+        "muscle": "biceps",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith machine decline close grip bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1625.gif",
+        "muscle": "triceps",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith machine incline tricep extension",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1752.gif",
+        "muscle": "triceps",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith machine reverse decline close grip bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1626.gif",
+        "muscle": "pectorals",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith narrow row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0761.gif",
+        "muscle": "upper back",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith one arm row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1360.gif",
+        "muscle": "upper back",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith one leg floor calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1393.gif",
+        "muscle": "calves",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith rear delt row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0762.gif",
+        "muscle": "delts",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith reverse calf raises",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0763.gif",
+        "muscle": "calves",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith reverse calf raises",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1394.gif",
+        "muscle": "calves",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith reverse grip bent over row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1361.gif",
+        "muscle": "upper back",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith reverse-grip press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0764.gif",
+        "muscle": "pectorals",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith seated one leg calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1395.gif",
+        "muscle": "calves",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith seated shoulder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0765.gif",
+        "muscle": "delts",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith seated wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1426.gif",
+        "muscle": "forearms",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith shoulder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0766.gif",
+        "muscle": "delts",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith shrug",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0767.gif",
+        "muscle": "traps",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith single leg split squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0768.gif",
+        "muscle": "quads",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith sprint lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0769.gif",
+        "muscle": "glutes",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0770.gif",
+        "muscle": "glutes",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith standing back wrist curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0771.gif",
+        "muscle": "forearms",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith standing behind head military press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0772.gif",
+        "muscle": "delts",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith standing leg calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0773.gif",
+        "muscle": "calves",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith standing military press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0774.gif",
+        "muscle": "delts",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith sumo squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3142.gif",
+        "muscle": "glutes",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith toe raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1396.gif",
+        "muscle": "calves",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith upright row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0775.gif",
+        "muscle": "delts",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith wide grip bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1308.gif",
+        "muscle": "pectorals",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "smith wide grip decline bench press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1309.gif",
+        "muscle": "pectorals",
+        "equipment": "smith machine"
+      },
+      {
+        "name": "snatch pull",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0776.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "spell caster",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0777.gif",
+        "muscle": "abs",
+        "equipment": "dumbbell"
+      },
+      {
+        "name": "sphinx",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1362.gif",
+        "muscle": "spine",
+        "equipment": "body weight"
+      },
+      {
+        "name": "spider crawl push up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0778.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "spine stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1363.gif",
+        "muscle": "spine",
+        "equipment": "body weight"
+      },
+      {
+        "name": "spine twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2329.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "split squats",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2368.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "squat jerk",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0786.gif",
+        "muscle": "quads",
+        "equipment": "barbell"
+      },
+      {
+        "name": "squat on bosu ball",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1705.gif",
+        "muscle": "quads",
+        "equipment": "bosu ball"
+      },
+      {
+        "name": "squat to overhead reach",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1685.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "squat to overhead reach with twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1686.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "stability ball crunch (full range hands behind head)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2297.gif",
+        "muscle": "abs",
+        "equipment": "stability ball"
+      },
+      {
+        "name": "stalder press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3291.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "standing archer",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3669.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "standing behind neck press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0788.gif",
+        "muscle": "delts",
+        "equipment": "barbell"
+      },
+      {
+        "name": "standing calf raise (on a staircase)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1490.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "standing calves",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1397.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "standing calves calf stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1398.gif",
+        "muscle": "calves",
+        "equipment": "body weight"
+      },
+      {
+        "name": "standing hamstring and calf stretch with strap",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1599.gif",
+        "muscle": "hamstrings",
+        "equipment": "rope"
+      },
+      {
+        "name": "standing lateral stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0794.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "standing pelvic tilt",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1364.gif",
+        "muscle": "spine",
+        "equipment": "body weight"
+      },
+      {
+        "name": "standing single leg curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0795.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "standing wheel rollerout",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0796.gif",
+        "muscle": "abs",
+        "equipment": "wheel roller"
+      },
+      {
+        "name": "star jump (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3223.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "stationary bike run v. 3",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2138.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "stationary bike"
+      },
+      {
+        "name": "stationary bike walk",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0798.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "straddle maltese",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3314.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "straddle planche",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3298.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "straight leg outer hip abductor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1427.gif",
+        "muscle": "abductors",
+        "equipment": "body weight"
+      },
+      {
+        "name": "superman push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0803.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "suspended abdominal fallout",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0805.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "suspended push-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0806.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "suspended reverse crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0807.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "suspended row",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0808.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "suspended split squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0809.gif",
+        "muscle": "quads",
+        "equipment": "body weight"
+      },
+      {
+        "name": "swimmer kicks v. 2 (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3433.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "swing 360",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3318.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "three bench dip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1753.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "tire flip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2459.gif",
+        "muscle": "glutes",
+        "equipment": "tire"
+      },
+      {
+        "name": "trap bar deadlift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0811.gif",
+        "muscle": "glutes",
+        "equipment": "trap bar"
+      },
+      {
+        "name": "triceps dip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0814.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "triceps dip (bench leg)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0812.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "triceps dip (between benches)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0813.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "triceps dips floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0815.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "triceps press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0816.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "triceps stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0817.gif",
+        "muscle": "triceps",
+        "equipment": "body weight"
+      },
+      {
+        "name": "tuck crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0871.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "twin handle parallel grip lat pulldown",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0818.gif",
+        "muscle": "lats",
+        "equipment": "cable"
+      },
+      {
+        "name": "twist hip lift",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1466.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "twisted leg raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2802.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "twisted leg raise (female)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2801.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "two toe touch (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3231.gif",
+        "muscle": "spine",
+        "equipment": "body weight"
+      },
+      {
+        "name": "upper back stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1365.gif",
+        "muscle": "upper back",
+        "equipment": "body weight"
+      },
+      {
+        "name": "upward facing dog",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1366.gif",
+        "muscle": "spine",
+        "equipment": "body weight"
+      },
+      {
+        "name": "v-sit on floor",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3420.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "vertical leg raise (on parallel bars)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0826.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "walk elliptical cross trainer",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2141.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "elliptical machine"
+      },
+      {
+        "name": "walking high knees lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3655.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "walking lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1460.gif",
+        "muscle": "glutes",
+        "equipment": "body weight"
+      },
+      {
+        "name": "walking on incline treadmill",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3666.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "leverage machine"
+      },
+      {
+        "name": "walking on stepmill",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2311.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "stepmill machine"
+      },
+      {
+        "name": "weighted bench dip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0830.gif",
+        "muscle": "triceps",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted close grip chin-up on dip cage",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2987.gif",
+        "muscle": "lats",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted cossack squats (male)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3643.gif",
+        "muscle": "glutes",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted crunch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0832.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted decline sit-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3670.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted donkey calf raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0833.gif",
+        "muscle": "calves",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted drop push up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1310.gif",
+        "muscle": "pectorals",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted front plank",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2135.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted front raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0834.gif",
+        "muscle": "delts",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted hanging leg-hip raise",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0866.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted hyperextension (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0835.gif",
+        "muscle": "spine",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted kneeling step with swing",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3641.gif",
+        "muscle": "delts",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted lunge with swing",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3644.gif",
+        "muscle": "glutes",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted muscle up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3286.gif",
+        "muscle": "lats",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted muscle up (on bar)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3312.gif",
+        "muscle": "lats",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted one hand pull up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3290.gif",
+        "muscle": "lats",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted overhead crunch (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0840.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0841.gif",
+        "muscle": "lats",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted round arm",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0844.gif",
+        "muscle": "delts",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted russian twist",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0846.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted russian twist (legs up)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0845.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted russian twist v. 2",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2371.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted seated bicep curl  (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0847.gif",
+        "muscle": "biceps",
+        "equipment": "medicine ball"
+      },
+      {
+        "name": "weighted seated twist (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0849.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted side bend (on stability ball)",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0850.gif",
+        "muscle": "abs",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted sissy squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0851.gif",
+        "muscle": "quads",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted squat",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0852.gif",
+        "muscle": "glutes",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted standing curl",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0853.gif",
+        "muscle": "biceps",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted standing hand squeeze",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0854.gif",
+        "muscle": "forearms",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted straight bar dip",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3313.gif",
+        "muscle": "pectorals",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted stretch lunge",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3642.gif",
+        "muscle": "glutes",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted svend press",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0856.gif",
+        "muscle": "pectorals",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted three bench dips",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1754.gif",
+        "muscle": "triceps",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted tricep dips",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1755.gif",
+        "muscle": "triceps",
+        "equipment": "weighted"
+      },
+      {
+        "name": "weighted triceps dip on high parallel bars",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1767.gif",
+        "muscle": "triceps",
+        "equipment": "weighted"
+      },
+      {
+        "name": "wheel rollerout",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0857.gif",
+        "muscle": "abs",
+        "equipment": "wheel roller"
+      },
+      {
+        "name": "wheel run",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3637.gif",
+        "muscle": "cardiovascular system",
+        "equipment": "body weight"
+      },
+      {
+        "name": "wide grip pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1429.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "wide grip rear pull-up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1367.gif",
+        "muscle": "lats",
+        "equipment": "body weight"
+      },
+      {
+        "name": "wide hand push up",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1311.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "wide-grip chest dip on high parallel bars",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2363.gif",
+        "muscle": "pectorals",
+        "equipment": "body weight"
+      },
+      {
+        "name": "wind sprints",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0858.gif",
+        "muscle": "abs",
+        "equipment": "body weight"
+      },
+      {
+        "name": "world greatest stretch",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1604.gif",
+        "muscle": "hamstrings",
+        "equipment": "body weight"
+      },
+      {
+        "name": "wrist circles",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1428.gif",
+        "muscle": "forearms",
+        "equipment": "body weight"
+      },
+      {
+        "name": "wrist rollerer",
+        "instruction": " ",
+        "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0859.gif",
+        "muscle": "forearms",
+        "equipment": "weighted"
+      }
+    ]

@@ -1,8 +1,6 @@
 import { Router } from 'express';
 import { getExercise } from './exercise.controller';
 
-
-
 const router = Router();
 
 router.get('/', getExercise);
