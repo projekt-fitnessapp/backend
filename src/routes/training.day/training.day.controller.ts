@@ -9,7 +9,8 @@ export async function getTrainingDay(
   try{
     const docs =  await TrainingDay
     .findById(req.query.trainingDayId)
-    //.populate('exercises');
+    .populate('exercises');
+    console.log(docs);
     if(!docs) {
       return res.status(404).json();
     }

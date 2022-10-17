@@ -1,7 +1,7 @@
 import { TestDatabase } from '../../src/helpers/testhelpers';
 import { describe, test, beforeEach, afterEach } from "mocha";
 import { expect } from "chai";
-import { Exercise } from '../../src/schemas/excercise';
+import { Exercise } from '../../src/schemas/exercise';
 import { TrainingDay } from '../../src/schemas/training.day';
 import { setupServer } from '../../src/server';
 import supertest from "supertest";
@@ -44,6 +44,8 @@ describe('Testing the training day route', () => {
         }]
     });
 
+    const docs =  await Exercise.findById('5099803df3f4948bd2f98391')
+    console.log(docs);
     const response = await testserver.get("/trainingDay?trainingDayId=5099803df3f494add2f9d707");
 
     expect(response.status).to.equal(200);
