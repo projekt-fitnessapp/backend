@@ -3,10 +3,10 @@ import { describe, test, beforeEach, afterEach } from "mocha";
 import chai, { expect } from "chai";
 import supertest from "supertest";
 import { setupServer } from "../../src/server";
-import { Excercise } from "../../src/schemas/excercise";
+import { Exercise } from "../../src/schemas/exercise";
 import { testObjects } from "./exercise.testobjects";
 import deepEqualInAnyOrder from "deep-equal-in-any-order";
-import { TExcercise } from "../../src/types/db/exercise.types";
+import { TExercise } from "../../src/types/db/exercise.types";
 
 chai.use(deepEqualInAnyOrder);
 
@@ -29,7 +29,7 @@ describe("Exercise Endpoint Tests", () => {
   });
 
   test("Get Method with one element in db", async () => {
-    await Excercise.create({
+    await Exercise.create({
       _id: "634ac754a956a13abd771083",
       name: "3/4 sit-up",
       instruction:
@@ -56,7 +56,7 @@ describe("Exercise Endpoint Tests", () => {
 
   test("Get Method with one out of 37 found by name", async () => {
     testObjects.forEach(async (testObject) => {
-      await Excercise.create(testObject);
+      await Exercise.create(testObject);
     });
 
     const res = await testserver.get(
@@ -78,24 +78,24 @@ describe("Exercise Endpoint Tests", () => {
 
   test("Get Method all exercises with body weight equipment", async () => {
     testObjects.forEach(async (testObject) => {
-      await Excercise.create(testObject);
+      await Exercise.create(testObject);
     });
 
     const res = await testserver.get("/exercises?equipment=body weight");
     expect(res.status).to.equal(200);
-    res.body.forEach((element: TExcercise) => {
+    res.body.forEach((element: TExercise) => {
       expect(element).to.have.property("equipment", "body weight");
     });
   });
 
   test("Get Method all exercises with target muscle abs", async () => {
     testObjects.forEach(async (testObject) => {
-      await Excercise.create(testObject);
+      await Exercise.create(testObject);
     });
 
     const res = await testserver.get("/exercises?muscle=abs");
     expect(res.status).to.equal(200);
-    res.body.forEach((element: TExcercise) => {
+    res.body.forEach((element: TExercise) => {
       expect(element).to.have.property("muscle", "abs");
     });
   });
