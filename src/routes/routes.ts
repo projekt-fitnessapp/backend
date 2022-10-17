@@ -2,7 +2,7 @@ import { Router } from "express";
 
 import { PingRouter } from "./ping/ping.router";
 import { AccountRouter } from './account/account.router';
-import { TrainingDayRouter } from "./account/training.day.router";
+import { TrainingDayRouter } from "./training.day/training.day.router";
 
 const router = Router();
 
