@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Exercise } from '../../schemas/excercise';
+import { Exercise } from '../../schemas/exercise';
 
 const validMuscles = [
   'abs',
