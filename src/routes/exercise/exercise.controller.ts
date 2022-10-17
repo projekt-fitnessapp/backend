@@ -58,7 +58,7 @@ export async function getExercise(req: Request, res: Response) {
     }
 
     if (req.query.name) {
-      queryObject.name = req.query.name.toString();
+      queryObject.name = `/${req.query.name.toString()}/i`;
     }
 
     if (req.query.equipment) {
