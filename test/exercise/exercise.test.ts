@@ -22,7 +22,7 @@ describe("Exercise Endpoint Tests", () => {
     }
   });
 
-  test("Get Method with no element in db", async () => {
+  test("Get Method with no element in db", async ( ) => {
     const res = await testserver.get("/exercises");
     expect(res.status).to.equal(200);
     expect(res.body).to.deep.equal([]);
