@@ -29,14 +29,14 @@ MongoClient.connect(url, function(err, db) {
   // Use the admin database for the operation
   var adminDb = db.db('test').admin();
   // List all the available databases
-  adminDb.listDatabases(function(err, result) {
-    result.databases.forEach(async (dba) => {
+  adminDb.listDatabases(async function(err, result) {
+    await Promise.all(result.databases.map(async (dba) => {
         if (dba.name != "admin" && dba.name != "local") {
             console.log(`deleting ${dba.name}`);
             await (await db.db(dba.name)).dropDatabase();
             console.log(`deleted ${dba.name}`)
         }
-    });
+    }));
     db.close();
   });
 });
