@@ -1,5 +1,5 @@
 import { Document, Model } from 'mongoose';
-import { TExcercise } from './exercise.types';
+import {TExercise } from './exercise.types';
 
 export type TSet = {
     executionType: 'warmup' | 'working' | 'backoff',
@@ -9,7 +9,7 @@ export type TSet = {
 }
 
 export type TExecution = {
-    exercise: TExcercise,
+    exercise: TExercise,
     notes: string[],
     sets: [TSet]
 }

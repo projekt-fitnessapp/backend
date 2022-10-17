@@ -24,7 +24,7 @@ describe('Testing the training day route', () => {
 
   test('Testing GET with no error', async () => {
 
-    const exerciseId = await Exercise.create({
+    await Exercise.create({
       _id: '5099803df3f4948bd2f98391',
       name: "Bench Press",
       instruction: "Push the bar.",
@@ -32,9 +32,6 @@ describe('Testing the training day route', () => {
       muscle: "breast",
       equipment: "barbell"
     });
-
-    const docs =  await Exercise.findById(exerciseId._id);
-    console.log(docs);
 
     await TrainingDay.create({
       _id: '5099803df3f494add2f9d707',
@@ -81,8 +78,8 @@ describe('Testing the training day route', () => {
     const res = await testserver.post("/trainingDay").send(testTrainingDay).set('Accept', 'application/json');
     expect(res.status).to.equal(201);
 
-    //const res2 = await testserver.get("/trainingDay?trainingDayId=5099803df3f4948bd2f9daa5");
-    //expect(res2.status).to.equal(200);
+    const res2 = await testserver.get("/trainingDay?trainingDayId=5099803df3f4948bd2f9daa5");
+    expect(res2.status).to.equal(200);
   });
 
   test('Testing POST with error 400', async () => {

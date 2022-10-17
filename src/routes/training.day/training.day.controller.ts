@@ -8,10 +8,8 @@ export async function getTrainingDay(
   console.log(req.query.trainingDayId);
   try{
     const docs =  await TrainingDay
-    .findById(req.query.trainingDayId);
+    .findById(req.query.trainingDayId)
     //.populate('exercises');
-    //.populate({path:'exercises', model:'Exercise'});
-    console.log(docs);
     if(!docs) {
       return res.status(404).json();
     }
