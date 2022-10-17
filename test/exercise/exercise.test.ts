@@ -1,12 +1,14 @@
-import { TestDatabase } from '../../src/helpers/testhelpers';
-import { describe, test, beforeEach, afterEach } from 'mocha';
-import chai, { expect } from 'chai';
-import supertest from 'supertest';
-import { setupServer } from '../../src/server';
-import { Exercise } from '../../src/schemas/exercise';
-import { testObjects } from './exercise.testobjects';
-import deepEqualInAnyOrder from 'deep-equal-in-any-order';
-import { TExercise } from '../../src/types/db/exercise.types';
+
+import { TestDatabase } from "../../src/helpers/testhelpers";
+import { describe, test, beforeEach, afterEach } from "mocha";
+import chai, { expect } from "chai";
+import supertest from "supertest";
+import { setupServer } from "../../src/server";
+import { Exercise } from "../../src/schemas/exercise";
+import { testObjects } from "./exercise.testobjects";
+import deepEqualInAnyOrder from "deep-equal-in-any-order";
+import { TExercise } from "../../src/types/db/exercise.types";
+
 
 chai.use(deepEqualInAnyOrder);
 
@@ -28,6 +30,7 @@ describe('Exercise Endpoint Tests', () => {
     expect(res.status).to.equal(200);
     expect(res.body).to.deep.equal([]);
   });
+
 
   test('Get Method with one element in db', async () => {
     await Exercise.create({

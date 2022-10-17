@@ -1,4 +1,3 @@
-
 import { describe, test, after } from "mocha";
 import { setupServer, connectDB } from "../src/server";
 import { expect } from "chai";
@@ -17,9 +16,6 @@ describe('setupServer', () => {
 
 
 describe('Connect to DB', () => {
-  before(async () => {
-    await mongoose.disconnect();
-  });
 
   test('Sets DB_URL in process.env :', async () => {
     await connectDB(true);
