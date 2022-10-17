@@ -7,7 +7,6 @@ import { setupServer } from '../../src/server';
 import supertest from "supertest";
 
 describe('Testing the training day route', () => {
-
   const testdb = new TestDatabase()
   const testserver = supertest(setupServer(true))
 
