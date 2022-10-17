@@ -1,5 +1,4 @@
-import { Document, Model } from 'mongoose';
-import { TExcercise } from './exercise.types';
+import mongoose, { Document, Model } from 'mongoose';
 
 export type TSet = {
     executionType: 'warmup' | 'working' | 'backoff',
@@ -9,9 +8,9 @@ export type TSet = {
 }
 
 export type TExecution = {
-    exercise: TExcercise,
+    exercise: mongoose.Schema.Types.ObjectId,
     notes: string[],
-    sets: [TSet]
+    sets: TSet[]
 }
 
 export type ExecutionDocument = Document<TExecution>;

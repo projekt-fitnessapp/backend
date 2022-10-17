@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Excercise } from '../../schemas/excercise';
+import { Exercise } from '../../schemas/exercise';
 
 const validMuscles = [
   'abs',
@@ -68,7 +68,7 @@ export async function getExercise(req: Request, res: Response) {
       })[0];
     }
 
-    const resBody = await Excercise.find(queryObject).select(
+    const resBody = await Exercise.find(queryObject).select(
       '_id equipment name muscle gifUrl instruction'
     );
 

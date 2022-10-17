@@ -18,6 +18,8 @@ export function setupServer(isTest: boolean) {
 
   app.use(express.json());
 
+  app.use(express.json())
+
   app.use("/", AppRouter);
 
   return app;
@@ -31,5 +33,6 @@ export async function connectDB(isTest: boolean) {
     dotenv.config();
   }
   await mongoose.connect(process.env.DB_URL as string);
-  console.log('Database connection successfull');
+  console.log("Database connection successfull");
+
 }
