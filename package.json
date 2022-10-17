@@ -6,6 +6,7 @@
   "scripts": {
     "devstart": "tsc-watch --onSuccess \"node ./dist/src/app.js\"",
     "build": "tsc",
+    "cleardb": "node cleardb.js",
     "start": "node ./dist/src/app.js",
     "test": "mocha -r ts-node/register --exit  \"./test/**/*.test.ts\" --timeout 0",
     "coverage": "nyc mocha -r ts-node/register --exit  \"./test/**/*.test.ts\" --timeout 0",
@@ -28,6 +29,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "google-auth-library": "^8.5.2",
+    "mongodb": "^4.10.0",
     "mongoose": "^6.5.0",
     "morgan": "^1.10.0"
   },
