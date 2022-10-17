@@ -9,10 +9,7 @@ describe('setupServer', () => {
     expect(process.env.PORT).to.equal('3000');
     expect(process.env.TEST).to.equal('true');
   });
-  after(async ()=>{
-    await mongoose.disconnect();
-});
-});
+ });
 
 
 describe('Connect to DB', () => {
@@ -23,7 +20,6 @@ describe('Connect to DB', () => {
       'mongodb+srv://test:test@cluster0.r1rtx.mongodb.net/?retryWrites=true&w=majority'
     );
   });
-
 
   after(async () => {
     await mongoose.disconnect();
