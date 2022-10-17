@@ -18,6 +18,7 @@ export class TestDatabase {
             throw new Error("Your Testdatabse is not initialized yet");
         }
 
+
         await (mongoose.connection.getClient().db(this.dbName)).dropDatabase();
         await mongoose.disconnect();
 

@@ -1,10 +1,10 @@
-import { Document, Model, ObjectId } from 'mongoose';
+import { Document, Model, ObjectId, Schema } from 'mongoose';
 
 export type TTrainingDay = {
     _id: ObjectId,
     name: string,
-    excercises: {
-        excerciseId: string,
+    exercises: {
+        exerciseId: Schema.Types.ObjectId,
         sets: number
         reps: number
     }[]
