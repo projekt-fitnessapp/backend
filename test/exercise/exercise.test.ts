@@ -58,7 +58,7 @@ describe('Exercise Endpoint Tests', () => {
 
   test("Get Method with one out of 37 found by name", async () => {
     for (const testObject of testObjects){
-      await Excercise.create(testObject);
+      await Exercise.create(testObject);
     };
 
     const res = await testserver.get(
@@ -81,7 +81,7 @@ describe('Exercise Endpoint Tests', () => {
 
   test("Get Method all exercises with body weight equipment", async () => {
     for (const testObject of testObjects){
-      await Excercise.create(testObject);
+      await Exercise.create(testObject);
     };
 
     const res = await testserver.get('/exercises?equipment=body weight');
@@ -94,7 +94,7 @@ describe('Exercise Endpoint Tests', () => {
 
   test("Get Method all exercises with target muscle abs", async () => {
     for (const testObject of testObjects){
-      await Excercise.create(testObject);
+      await Exercise.create(testObject);
     };
 
     const res = await testserver.get('/exercises?muscle=abs');
