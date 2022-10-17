@@ -38,9 +38,12 @@ describe('Testing TrainingPlan Route', () => {
       name: 'Push',
       exercises: [
         {
-          exerciseId,
-        },
-      ],
+          _id: exerciseId,
+          exerciseId: exerciseId,
+          reps: 2,
+          sets: 3
+        }
+      ]
     });
     const trainingDayId = trainingDay._id.toString();
     const trainingPlan = await TrainingPlan.create({
@@ -67,7 +70,12 @@ describe('Testing TrainingPlan Route', () => {
           __v: 0,
           _id: trainingDayId,
           name: 'Push',
-          excercises: [],
+          exercises: [{
+            _id: exerciseId,
+            exerciseId: exerciseId,
+            reps: 2,
+            sets: 3
+          }],
         },
       ],
       nextDay: 2,
