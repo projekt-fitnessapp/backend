@@ -6,7 +6,7 @@ import { setupServer } from '../../src/server';
 import { Exercise } from '../../src/schemas/exercise';
 import { testObjects } from './exercise.testobjects';
 import deepEqualInAnyOrder from 'deep-equal-in-any-order';
-import { TExcercise } from '../../src/types/db/exercise.types';
+import { TExercise } from '../../src/types/db/exercise.types';
 
 chai.use(deepEqualInAnyOrder);
 
@@ -83,7 +83,7 @@ describe('Exercise Endpoint Tests', () => {
 
     const res = await testserver.get('/exercises?equipment=body weight');
     expect(res.status).to.equal(200);
-    res.body.forEach((element: TExcercise) => {
+    res.body.forEach((element: TExercise) => {
       expect(element).to.have.property('equipment', 'body weight');
     });
   });
@@ -95,7 +95,7 @@ describe('Exercise Endpoint Tests', () => {
 
     const res = await testserver.get('/exercises?muscle=abs');
     expect(res.status).to.equal(200);
-    res.body.forEach((element: TExcercise) => {
+    res.body.forEach((element: TExercise) => {
       expect(element).to.have.property('muscle', 'abs');
     });
   });
