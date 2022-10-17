@@ -14,6 +14,7 @@ describe('setupServer', () => {
 });
 });
 
+
 describe('Connect to DB', () => {
 
   test('Sets DB_URL in process.env :', async () => {
@@ -22,6 +23,7 @@ describe('Connect to DB', () => {
       'mongodb+srv://test:test@cluster0.r1rtx.mongodb.net/?retryWrites=true&w=majority'
     );
   });
+
 
   after(async () => {
     await mongoose.disconnect();
