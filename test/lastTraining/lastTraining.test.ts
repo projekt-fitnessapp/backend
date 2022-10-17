@@ -6,6 +6,8 @@ import { setupServer } from '../../src/server';
 import { formatISO, subDays } from '../../src/helpers/dates';
 import { TrainingSession } from '../../src/schemas/training.session';
 import deepEqualInAnyOrder from 'deep-equal-in-any-order';
+import { Exercise } from '../../src/schemas/exercise';
+import { Execution } from '../../src/schemas/execution';
 
 chai.use(deepEqualInAnyOrder);
 
@@ -64,31 +66,44 @@ describe('LastTraining Endpoint Tests', () => {
   test('Get Method 200 w/ one day trained', async () => {
     const now = Date.now();
 
+    await Exercise.create({
+      _id: '5099803df3f4948bd2f98391',
+      name: 'Bench Press',
+      instruction: 'Push the bar.',
+      gifUrl: 'http://d205bpvrqc9yn1.cloudfront.net/0030.gif',
+      muscle: 'breast',
+      equipment: 'barbell',
+    })
+
+    const execution = await Execution.create({
+      exercise: {
+        _id: '5099803df3f4948bd2f98391',
+        name: 'Bench Press',
+        instruction: 'Push the bar.',
+        gifUrl: 'http://d205bpvrqc9yn1.cloudfront.net/0030.gif',
+        muscle: 'breast',
+        equipment: 'barbell',
+      },
+      notes: ['string'],
+      sets: [
+        {
+          executionType: 'warmup',
+          weight: 0,
+          reps: 0,
+          tenRM: 0,
+        },
+      ],
+    })
+
+    const executionId = execution._id.toString()
+
     await TrainingSession.create({
       _id: '5099803df3f4948bd2f98548',
       userId: '5099803df3f494add2f9dja5',
       trainingDayId: '5099803df3f4948bd2f9dja5',
       date: `${formatISO(now)}`,
       executions: [
-        {
-          exercise: {
-            _id: '5099803df3f4948bd2f98391',
-            name: 'Bench Press',
-            instruction: 'Push the bar.',
-            gifUrl: 'http://d205bpvrqc9yn1.cloudfront.net/0030.gif',
-            muscle: 'breast',
-            equipment: 'barbell',
-          },
-          notes: ['string'],
-          sets: [
-            {
-              executionType: 'warmup',
-              weight: 0,
-              reps: 0,
-              tenRM: 0,
-            },
-          ],
-        },
+        executionId
       ],
     });
 
