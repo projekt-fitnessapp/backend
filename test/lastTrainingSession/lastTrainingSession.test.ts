@@ -78,7 +78,7 @@ describe('Testing lastTrainingSession', () => {
     );
 
     const response = await testserver.get(
-      '/lastTrainingSession?userId=5099803df3f494add2f9dja5&trainingDayId=5099803df3f4948bd2f98548'
+      '/lastTrainingSession?userId=5099803df3f494add2f9dja5&trainingDayId=5099803df3f4948bd2f9dja5'
     );
 
     expect(response.status).to.equal(200);
@@ -118,10 +118,10 @@ describe('Testing lastTrainingSession', () => {
 
   test('GET 400 userId missing', async () => {
     const response = await testserver.get(
-      '/lastTrainingSession?trainingDayId=5099803df3f4948bd2f98548'
+      '/lastTrainingSession?trainingDayId=5099803df3f4948bd2f9dja5'
     );
     expect(response.status).to.equal(400);
-    expect(response.body).to.equal('userId is missing');
+    expect(response.body).to.deep.equal({ msg: 'userId is missing' });
   });
 
   test('GET 400 userId missing', async () => {
@@ -129,12 +129,12 @@ describe('Testing lastTrainingSession', () => {
       '/lastTrainingSession?userId=5099803df3f494add2f9dja5'
     );
     expect(response.status).to.equal(400);
-    expect(response.body).to.equal('trainingDayId is missing');
+    expect(response.body).to.deep.equal({ msg: 'trainingDayId is missing' });
   });
 
   test('GET 404 no session found', async () => {
     const response = await testserver.get(
-      '/lastTrainingSession?userId=5099803df3f494add2f9dja5&trainingDayId=5099803df3f4948bd2f98548'
+      '/lastTrainingSession?userId=5099803df3f494add2f9dja5&trainingDayId=5099803df3f4948bd2f9dja5'
     );
     expect(response.status).to.equal(404);
   });
