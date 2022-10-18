@@ -7,7 +7,7 @@ const AccountSchema = new Schema({
   birthdate: { type: String, required: true },
   sex: { type: String, enum: ['male', 'female'], required: false },
   trainingPlans: {
-    type: [Schema.Types.ObjectId],
+    type: Schema.Types.ObjectId[],
     ref: 'Training Plan',
     default: [],
   },
