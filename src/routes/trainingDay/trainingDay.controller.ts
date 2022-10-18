@@ -16,36 +16,36 @@ export async function getTrainingDay(req: Request, res: Response) {
 }
 
 export async function saveTrainingDay(req: Request, res: Response) {
-  console.log(req.body);
   try {
     const savedTrainingDay = await TrainingDay.create(req.body);
     if (savedTrainingDay) {
       const trainingDayId = savedTrainingDay._id;
       res.status(201);
-      return res.json({ trainingDayId });
+      return res.json(trainingDayId);
     } else {
       throw new Error();
     }
   } catch (e) {
     res.status(400);
-    return res.send();
+    return res.send(e);
   }
 }
 
 export async function changeTrainingDay(req: Request, res: Response) {
   try {
     if (!req.body._id) {
-      res.status(400);
-      return res.send();
+      return res.status(400).send({ msg: '_id is missing' });
     }
-    const filter = { _id: req.body._id };
-    const resBody = await TrainingDay.findOneAndUpdate(filter, req.body, {
-      new: true,
-    });
-    res.status(201);
-    return res.send(resBody);
+    const resBody = await TrainingDay.findOneAndUpdate(
+      { _id: req.body._id },
+      req.body,
+      {
+        new: true,
+      }
+    );
+
+    return res.status(201).send(resBody);
   } catch (error) {
-    res.status(400);
-    return res.send();
+    return res.status(400).send(error);
   }
 }

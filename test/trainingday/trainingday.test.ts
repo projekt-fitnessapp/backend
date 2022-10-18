@@ -114,50 +114,80 @@ describe('Testing the training day route', () => {
       '/trainingDay?trainingDayId=5099803df3f4948bd2f9daa5'
     );
     expect(res2.status).to.equal(200);
+    console.log(res2.body);
+    // expect(res2.body).to.equal();
   });
 
-  // test('Testing POST with error 400', async () => {
-  //   const res = await testserver
-  //     .post('/trainingDay')
-  //     .send('Max Mustermann')
-  //     .set('Accept', 'application/json');
-  //   expect(res.status).to.equal(400);
-  // });
+  test('Testing POST with error 400', async () => {
+    const res = await testserver.post('/trainingDay').send('Max Mustermann');
+    expect(res.status).to.equal(400);
+  });
 
-  // test('Testing PUT with no error', async () => {
-  //   let testTrainingDay = {
-  //     _id: '5099803df3f4948bd2f9daa5',
-  //     name: 'Push',
-  //     exercises: [
-  //       {
-  //         exerciseId: '5099803df3f4948bd2f98391',
-  //         sets: 3,
-  //         reps: 10,
-  //       },
-  //     ],
-  //   };
-  //   await testserver
-  //     .post('/trainingDay')
-  //     .send(testTrainingDay)
-  //     .set('Accept', 'application/json');
-  //   testTrainingDay.name = 'Pull';
+  test('Testing PUT with no error', async () => {
+    await Exercise.create({
+      _id: '5099803df3f4948bd2f98391',
+      name: 'Bench Press',
+      instruction: 'Push the bar.',
+      gifUrl: 'http://d205bpvrqc9yn1.cloudfront.net/0030.gif',
+      muscle: 'breast',
+      equipment: 'barbell',
+    });
 
-  //   const res = await testserver.put('/trainingDay').send(testTrainingDay);
-  //   expect(res.status).to.equal(201);
+    const trainingDay = {
+      _id: '5099803df3f4948bd2f9daa5',
+      name: 'Push',
+      exercises: [
+        {
+          exerciseId: '5099803df3f4948bd2f98391',
+          sets: 3,
+          reps: 10,
+        },
+      ],
+    };
 
-  //   const res2 = await testserver.get(
-  //     '/trainingDay?trainingDayId=5099803df3f4948bd2f9daa5'
-  //   );
-  //   expect(res2.status).to.equal(200);
-  // });
+    const testTrainingDay = await TrainingDay.create(trainingDay);
+    const trainingExerciseId = testTrainingDay
+      .toJSON()
+      .exercises[0]._id.toString();
 
-  // test('Testing PUT with error 400', async () => {
-  //   const res = await testserver
-  //     .post('/trainingDay')
-  //     .send('Keine TrainingDayID')
-  //     .set('Accept', 'application/json');
-  //   expect(res.status).to.equal(400);
-  // });
+    const expectedResBody = {
+      _id: '5099803df3f4948bd2f9daa5',
+      name: 'Pull',
+      exercises: [
+        {
+          _id: trainingExerciseId,
+          exerciseId: '5099803df3f4948bd2f98391',
+          sets: 3,
+          reps: 10,
+        },
+      ],
+      __v: 0,
+    };
+
+    trainingDay.name = 'Pull';
+
+    const res = await testserver.put('/trainingDay').send(trainingDay);
+    expect(res.status).to.equal(201);
+    expect(res.body._id).to.include(expectedResBody._id);
+    expect(res.body.name).to.equal(expectedResBody.name);
+    expect(res.body.exercises[0].exerciseId).to.equal(
+      expectedResBody.exercises[0].exerciseId
+    );
+    expect(res.body.exercises[0].sets).to.equal(
+      expectedResBody.exercises[0].sets
+    );
+    expect(res.body.exercises[0].reps).to.equal(
+      expectedResBody.exercises[0].reps
+    );
+  });
+
+  test('Testing PUT with error 400', async () => {
+    const res = await testserver
+      .put('/trainingDay')
+      .send('Keine TrainingDayID');
+    expect(res.status).to.equal(400);
+    expect(res.body).to.deep.equal({ msg: '_id is missing' });
+  });
 
   afterEach(async () => {
     await testdb.cleanup();
