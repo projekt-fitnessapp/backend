@@ -1,37 +1,27 @@
-import { Account } from "../../schemas/account";
 import { Request, Response } from 'express';
+import { TrainingPlan } from '../../schemas/training.plan';
 
-export async function getMyPlans(
-    req: Request,
-    res: Response
-    ){
-        try {
-            if(!req.query.userId){
-                res.statusMessage = "No User Id provided"
-                return res.sendStatus(400)
-            }
-            const account = await Account.findById(req.query.userId)
-            .populate({
-                path: 'trainingPlans',
-                model: 'Training Plan',
-                populate: {
-                    path: 'trainingDays',
-                    model: 'Training Day',
-                    populate: {
-                        path: 'exercises',
-                        model: 'Exercise'
-                    }
-                }
-            })
-
-            if(!account){
-                res.statusMessage = "No User with that Id"
-                return res.sendStatus(404)
-            }
-            res.statusMessage = "Users TrainingPlans list"
-            return res.json(account.toJSON().trainingPlans)
-            
-        } catch (error) {
-            return res.sendStatus(400)
-        }
+export async function getMyPlans(req: Request, res: Response) {
+  try {
+    if (!req.query.userId) {
+      res.statusMessage = 'No User Id provided';
+      return res.sendStatus(400);
+    }
+    const myPlanDocs = await TrainingPlan.find({
+      userId: req.query.userId,
+    })
+      .populate({
+        path: 'trainingDays',
+        populate: { path: 'exercises.exerciseId' },
+      });
+    const myPlans = myPlanDocs.map((plan) => plan.toJSON());
+    if (!myPlanDocs || myPlans.length == 0) {
+      return res.sendStatus(404);
+    }
+    console.log(`My Plans = ${myPlans}`);
+    return res.json(myPlans);
+  } catch (error) {
+    console.log(error);
+    return res.sendStatus(500);
+  }
 }
