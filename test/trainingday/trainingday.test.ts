@@ -114,8 +114,6 @@ describe('Testing the training day route', () => {
       '/trainingDay?trainingDayId=5099803df3f4948bd2f9daa5'
     );
     expect(res2.status).to.equal(200);
-    console.log(res2.body);
-    // expect(res2.body).to.equal();
   });
 
   test('Testing POST with error 400', async () => {
