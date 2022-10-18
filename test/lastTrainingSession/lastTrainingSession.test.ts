@@ -84,7 +84,7 @@ describe('Testing lastTrainingSession', () => {
     expect(response.status).to.equal(200);
     expect(response.body).to.deep.equal({
       __v: 0,
-      _id: '5099803df3f4948bd2f98548',
+      _id: '5099803df3f4948bd2f9854a',
       userId: '5099803df3f494add2f9dja5',
       trainingDayId: '5099803df3f4948bd2f9dja5',
       date: '2016-06-18T16:30:00Z',
