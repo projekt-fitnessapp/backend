@@ -91,7 +91,7 @@ describe('Testing lastTrainingSession', () => {
       executions: [
         {
           __v: 0,
-          _id: '634ada657b24b0184c17e935',
+          _id: '634ada657b24b0184c17e936',
           exercise: {
             __v: 0,
             _id: '5099803df3f4948bd2f98391',
@@ -104,7 +104,7 @@ describe('Testing lastTrainingSession', () => {
           notes: ['string'],
           sets: [
             {
-              _id: '634ada677b24b0184c17e941',
+              _id: '634ada677b24b0184c17e946',
               executionType: 'warmup',
               weight: 0,
               reps: 0,
