@@ -20,15 +20,13 @@ describe("Account Endpoint Tests", ()=>{
     });
 
     test('Get Method with error 404', async ()=>{
-    const res = await testserver.get("/account?userId=5099803df3f494add2f9dba8");
+    const res = await testserver.get("/account?googleId=5099803df3f494add2f9dba8");
     expect(res.status).to.equal(404);
-    expect(res.body == null);
   });
 
   test('Get Method with error 400', async ()=>{
-    const res = await testserver.get("/account?userId=2045");
+    const res = await testserver.get("/account");
     expect(res.status).to.equal(400);
-    expect(res.body == null);
   });
 
   test('Get Method with no error', async ()=>{
@@ -42,7 +40,7 @@ describe("Account Endpoint Tests", ()=>{
       google_id: "5099803df3f494add2f9dba7"
     });
 
-    const res = await testserver.get("/account?userId=5099803df3f494add2f9d707");
+    const res = await testserver.get("/account?googleId=5099803df3f494add2f9dba7");
     expect(res.status).to.equal(200);
     expect(res.body == null);
   });
@@ -59,7 +57,7 @@ describe("Account Endpoint Tests", ()=>{
     const res = await testserver.post("/account").send(testaccount).set('Accept', 'application/json');
     expect(res.status).to.equal(201);
 
-    const res2 = await testserver.get("/account?userId=5099803df3f494add2f9d757");
+    const res2 = await testserver.get("/account?googleId=5099803df3f494add2f9dba7");
     expect(res2.status).to.equal(200);
   });
 
@@ -88,7 +86,7 @@ describe("Account Endpoint Tests", ()=>{
     const res = await testserver.put("/account").send(testaccount);
     expect(res.status).to.equal(201);
 
-    const res2 = await testserver.get("/account?userId=5099803df3f494add2f9d757");
+    const res2 = await testserver.get("/account?googleId=5099803df3f494add2f9dba7");
     expect(res2.status).to.equal(200);
   });
 
