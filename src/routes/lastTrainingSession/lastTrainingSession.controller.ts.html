@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/routes/myPlans/myPlans.controller.ts</title>
+    <title>Code coverage report for src/routes/lastTrainingSession/lastTrainingSession.controller.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/routes/myPlans</a> myPlans.controller.ts</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/routes/lastTrainingSession</a> lastTrainingSession.controller.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.3% </span>
+                <span class="strong">88.23% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/13</span>
+                <span class='fraction'>15/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90.9% </span>
+                <span class="strong">86.66% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/11</span>
+                <span class='fraction'>13/15</span>
             </div>
         
             
@@ -88,54 +88,84 @@
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, Response } from 'express';
-import { TrainingPlan } from '../../schemas/training.plan';
+import { TrainingSession } from '../../schemas/training.session';
 &nbsp;
-export async function getMyPlans(req: Request, res: Response) {
+export async function getLastTrainingSession(req: Request, res: Response) {
   try {
     if (!req.query.userId) {
-      res.statusMessage = 'No User Id provided';
-      return res.sendStatus(400);
+      return res.status(400).json({ msg: 'userId is missing' });
     }
-    const myPlanDocs = await TrainingPlan.find({
-      userId: req.query.userId,
-    }).populate({
-      path: 'trainingDays',
-      populate: { path: 'exercises.exerciseId' },
-    });
-    const myPlans = myPlanDocs.map((plan) =&gt; plan.toJSON());
-    if (!myPlanDocs || myPlans.length == 0) {
-      return res.sendStatus(404);
+    if (!req.query.trainingDayId) {
+      return res.status(400).json({ msg: 'trainingDayId is missing' });
     }
-&nbsp;
-    return res.json(myPlans);
+    const userId = req.query.userId.toString();
+    const trainingDayId = req.query.trainingDayId.toString();
+    const lastSessionDoc = await TrainingSession.find({
+      userId: userId,
+      trainingDayId: trainingDayId,
+    })
+      .sort({ date: -1 })
+      .limit(1)
+      .populate({
+        path: 'executions',
+        populate: {
+          path: 'exercise',
+        },
+      });
+    if (!lastSessionDoc || lastSessionDoc.length == 0) {
+      return res.status(404).send();
+    }
+    const lastSession = lastSessionDoc.map((session) =&gt; session.toJSON());
+    return res.status(200).json(lastSession[0]);
   } catch (error) {
-<span class="cstat-no" title="statement not covered" >    return res.sendStatus(500);</span>
+<span class="cstat-no" title="statement not covered" >    console.log(error);</span>
+<span class="cstat-no" title="statement not covered" >    return res.status(500).send();</span>
   }
 }
 &nbsp;</pre></td></tr></table></pre>
