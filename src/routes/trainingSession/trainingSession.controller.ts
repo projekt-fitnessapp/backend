@@ -62,4 +62,4 @@ export async function postTrainingSession(
     } catch (error) {
         return res.sendStatus(400)
     }
-}
+} 
