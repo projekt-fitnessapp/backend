@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { LastTrainingRouter } from './lastTraining/lastTraining.router';
 import { AccountRouter } from './account/account.router';
 import { TrainingDayRouter } from './trainingDay/trainingDay.router';
-import { TrainingPlanRouter } from "./trainingPlan/trainingPlan.router";
+import { TrainingPlanRouter } from './trainingPlan/trainingPlan.router';
 import { BodyRouter } from './body/body.router';
 import { ExerciseRouter } from './exercise/exercise.router';
 import { PingRouter } from './ping/ping.router';
@@ -20,6 +20,6 @@ router.use('/trainingDay', TrainingDayRouter);
 router.use('/body', BodyRouter);
 router.use('/exercises', ExerciseRouter);
 router.use('/trainingSession', TrainingSessionRouter);
+router.use('/trainingPlan', TrainingPlanRouter);
 
 export { router as AppRouter };
-
