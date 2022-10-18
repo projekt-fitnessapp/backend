@@ -11,7 +11,7 @@ export async function checkAuthenticated(
 ) {
   if (process.env.TEST && process.env.TEST === 'true') {
     next();
-  }
+  }  
   async function verify() {
     await client.verifyIdToken({
       idToken: req.headers.get('tokenID') ?? '',
