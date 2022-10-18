@@ -9,19 +9,17 @@ export async function getMyPlans(req: Request, res: Response) {
     }
     const myPlanDocs = await TrainingPlan.find({
       userId: req.query.userId,
-    })
-      .populate({
-        path: 'trainingDays',
-        populate: { path: 'exercises.exerciseId' },
-      });
+    }).populate({
+      path: 'trainingDays',
+      populate: { path: 'exercises.exerciseId' },
+    });
     const myPlans = myPlanDocs.map((plan) => plan.toJSON());
     if (!myPlanDocs || myPlans.length == 0) {
       return res.sendStatus(404);
     }
-    console.log(`My Plans = ${myPlans}`);
+
     return res.json(myPlans);
   } catch (error) {
-    console.log(error);
     return res.sendStatus(500);
   }
 }
