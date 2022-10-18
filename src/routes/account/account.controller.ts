@@ -15,6 +15,7 @@ export async function getAccount(req: Request, res: Response) {
   }
 }
 
+
 export async function saveAccount(req: Request, res: Response) {
   try {
     const savedAccount = await Account.create(req.body);
