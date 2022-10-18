@@ -9,10 +9,9 @@ describe('setupServer', () => {
     expect(process.env.PORT).to.equal('3000');
     expect(process.env.TEST).to.equal('true');
   });
-  after(async () => {
-    await mongoose.disconnect();
-  });
-});
+
+ });
+
 
 describe('Connect to DB', () => {
   test('Sets DB_URL in process.env :', async () => {
