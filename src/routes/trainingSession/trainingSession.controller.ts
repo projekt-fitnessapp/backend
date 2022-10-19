@@ -77,3 +77,4 @@ export async function postTrainingSession(req: Request, res: Response) {
     return res.sendStatus(400);
   }
 }
+
