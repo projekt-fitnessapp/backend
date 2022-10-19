@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">10% </span>
+                <span class="strong">42.18% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/60</span>
+                <span class='fraction'>27/64</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">16.66% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/18</span>
+                <span class='fraction'>3/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>4/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">12.24% </span>
+                <span class="strong">43.13% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/49</span>
+                <span class='fraction'>22/51</span>
             </div>
         
             
@@ -158,7 +158,12 @@
 <a name='L93'></a><a href='#L93'>93</a>
 <a name='L94'></a><a href='#L94'>94</a>
 <a name='L95'></a><a href='#L95'>95</a>
-<a name='L96'></a><a href='#L96'>96</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -219,30 +224,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -309,35 +319,40 @@ export async function <span class="fstat-no" title="function not covered" >postT
   }
 }
 &nbsp;
-export async function <span class="fstat-no" title="function not covered" >putTrainingPlan(</span>
+export async function putTrainingPlan(
   req: Request,
   res: Response
 ) {
   try {
-<span class="cstat-no" title="statement not covered" >    if(!req.query.trainingPlanId) <span class="cstat-no" title="statement not covered" >throw new Error("No trainingPlanId provided!");</span></span>
-<span class="cstat-no" title="statement not covered" >    if(!Array.isArray(req.body.trainingDays)){</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(!req.query.trainingPlanId) <span class="cstat-no" title="statement not covered" >throw new Error("No trainingPlanId provided!");</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(!Array.isArray(req.body.trainingDays)){
 <span class="cstat-no" title="statement not covered" >      res.statusMessage = 'TrainingDays has to be an array!'</span>
 <span class="cstat-no" title="statement not covered" >      res.status(400)</span>
 <span class="cstat-no" title="statement not covered" >      return</span>
     }
-    const <span class="cstat-no" title="statement not covered" >newTrainingDays = req.body.trainingDays</span>
-    const <span class="cstat-no" title="statement not covered" >tDays: string[] = []</span>
-<span class="cstat-no" title="statement not covered" >    await Promise.all(newTrainingDays.map(<span class="fstat-no" title="function not covered" >async (n</span>ewDay: UpdateQuery&lt;TrainingDayDocument&gt; | undefined<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >) =&gt; {</span></span></span>
-<span class="cstat-no" title="statement not covered" >      if(newDay == undefined){</span>
+    const newTrainingDays = req.body.trainingDays
+    const tDays: string[] = []
+    await Promise.all(newTrainingDays.map(async (newDay: UpdateQuery&lt;TrainingDayDocument&gt; | undefined) =&gt; {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if(newDay == undefined){
 <span class="cstat-no" title="statement not covered" >        res.statusMessage = 'New TrainingDay undefined'</span>
 <span class="cstat-no" title="statement not covered" >        res.sendStatus(400)</span>
 <span class="cstat-no" title="statement not covered" >        return</span>
       }
-      const <span class="cstat-no" title="statement not covered" >newExercises = newDay.exercises</span>
-<span class="cstat-no" title="statement not covered" >      newExercises.forEach(<span class="fstat-no" title="function not covered" >(n</span>ewExercise: { exerciseId: { _id: any; }; }) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        newExercise.exerciseId = newExercise.exerciseId._id</span>
+      const newExercises = newDay.exercises
+      newExercises.forEach((newExercise: { exerciseId: { _id: any; }; }) =&gt; {
+        newExercise.exerciseId = newExercise.exerciseId._id
       });
-<span class="cstat-no" title="statement not covered" >      await TrainingDay.findOneAndUpdate({_id: newDay._id}, newDay)</span>
-<span class="cstat-no" title="statement not covered" >      tDays.push(newDay._id.toString())</span>
+      await TrainingDay.findOneAndUpdate({_id: newDay._id}, newDay, { upsert: true })
+      tDays.push(newDay._id.toString())
     }));
-<span class="cstat-no" title="statement not covered" >    req.body.trainingDays = tDays</span>
-    const <span class="cstat-no" title="statement not covered" >filter = {_id: req.query.trainingPlanId}</span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    res.status(201).send(<span class="cstat-no" title="statement not covered" >a</span>wait TrainingPlan.findOneAndUpdate(filter, req.body, {new: true}).populate({</span></span>
+    req.body.trainingDays = tDays
+    const filter = {_id: req.query.trainingPlanId}
+&nbsp;
+    await TrainingPlan.findOneAndUpdate(filter, req.body, {new: true})
+&nbsp;
+    console.log(await TrainingPlan.findOne(filter));
+&nbsp;
+    res.status(201).send(await TrainingPlan.findOne(filter).populate({
       path: 'trainingDays',
       model: 'Training Day',
       populate: {
@@ -355,7 +370,7 @@ export async function <span class="fstat-no" title="function not covered" >putTr
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-19T12:33:23.230Z
+                at 2022-10-19T12:58:57.128Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
