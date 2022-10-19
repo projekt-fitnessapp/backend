@@ -51,7 +51,6 @@ export async function getTrainingSession(req: Request, res: Response) {
 
 export async function postTrainingSession(req: Request, res: Response) {
   try {
-    console.log(JSON.stringify(req.body, null, 4));
     if (!Array.isArray(req.body.executions)) {
       res.statusMessage = 'No executions array provided!';
       return res.sendStatus(400);
