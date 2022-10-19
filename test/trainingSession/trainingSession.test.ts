@@ -191,18 +191,38 @@ describe('Testing the training session route', () => {
   test('Post Method with no error', async ()=>{
     const trainingSession = {
       _id: "5099803df3f4948bd2f98548",
-      userId: "5099803df3f494add2f9dja5",
-      trainingDayId: "5099803df3f4948bd2f9dja5",
+      userId: "5099803df3f494add2f9dba5",
+      trainingDayId: "5099803df3f4948bd2f9dba5",
       date: "2016-05-18T16:30:00Z",
       executions: [
-        "5099803df3f4948bd2f98577"
+        {
+          "exercise": {
+            "_id": "5099803df3f4948bd2f98391",
+            "name": "Bench Press",
+            "instruction": "Push the bar.",
+            "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+            "muscle": "breast",
+            "equipment": "barbell"
+          },
+          "notes": [
+            "string"
+          ],
+          "sets": [
+            {
+              "executionType": "warmup",
+              "weight": 0,
+              "reps": 0,
+              "10RM": 0
+            }
+          ]
+        }
       ]
     }
 
     const res = await testserver.post("/trainingSession").send(trainingSession).set('Accept', 'application/json');
     expect(res.status).to.equal(201);
 
-    const res2 = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5");
+    const res2 = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dba5");
     expect(res2.status).to.equal(200);
   });
 
