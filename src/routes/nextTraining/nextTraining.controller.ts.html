@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">91.3% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>21/21</span>
+                <span class='fraction'>21/23</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">79.16% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>20/25</span>
+                <span class='fraction'>19/24</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">90% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>18/18</span>
+                <span class='fraction'>18/20</span>
             </div>
         
             
@@ -93,17 +93,22 @@
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -111,16 +116,13 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, Response } from 'express';
@@ -129,29 +131,30 @@ import { TrainingDay } from '../../schemas/training.day';
 import { TrainingPlan } from '../../schemas/training.plan';
 &nbsp;
 export async function getNextTraining(req: Request, res: Response) {
-  if (req.query.userId) {
-    const accountDoc = await Account.findById(req.query.userId);
-    const account = accountDoc<span class="branch-0 cbranch-no" title="branch not covered" >?.t</span>oJSON();
-&nbsp;
-    if (<span class="missing-if-branch" title="if path not taken" >I</span>account &amp;&amp; account != null) {
-      if (account.activePlan == ' ') {
-        return res.status(400).send({ msg: 'No training plan active.' });
-      }
-      const trainingPlanDoc = await TrainingPlan.findById(account.activePlan);
-      const trainingPlan = trainingPlanDoc<span class="branch-0 cbranch-no" title="branch not covered" >?.t</span>oJSON();
-&nbsp;
-      if (<span class="missing-if-branch" title="if path not taken" >I</span>trainingPlan &amp;&amp; trainingPlan != null) {
-        const nextTrainingDayId =
-          trainingPlan.trainingDays[trainingPlan.nextDay];
-        const trainingDayDoc = await TrainingDay.findById(
-          nextTrainingDayId
-        ).populate('exercises.exerciseId');
-        const trainingDay = trainingDayDoc<span class="branch-0 cbranch-no" title="branch not covered" >?.t</span>oJSON();
-        return res.send(trainingDay);
-      }
-    }
+  if (!req.query.userId) {
+    return res.status(400).send({ msg: 'UserId missing!' });
   }
-  return res.status(400).send({ msg: 'UserId missing!' });
+  const accountDoc = await Account.findById(req.query.userId);
+  const account = accountDoc<span class="branch-0 cbranch-no" title="branch not covered" >?.t</span>oJSON();
+&nbsp;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (!account || account == null) {
+<span class="cstat-no" title="statement not covered" >    return res.status(404).json({ msg: 'User not found' });</span>
+  }
+  if (account.activePlan == ' ') {
+    return res.status(400).json({ msg: 'No training plan active.' });
+  }
+  const trainingPlanDoc = await TrainingPlan.findById(account.activePlan);
+  const trainingPlan = trainingPlanDoc<span class="branch-0 cbranch-no" title="branch not covered" >?.t</span>oJSON();
+&nbsp;
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (!trainingPlan || trainingPlan == null) {
+<span class="cstat-no" title="statement not covered" >    return res.status(404).json({ msg: 'No Trainingplan found' });</span>
+  }
+  const nextTrainingDayId = trainingPlan.trainingDays[trainingPlan.nextDay];
+  const trainingDayDoc = await TrainingDay.findById(nextTrainingDayId).populate(
+    'exercises.exerciseId'
+  );
+  const trainingDay = trainingDayDoc<span class="branch-0 cbranch-no" title="branch not covered" >?.t</span>oJSON();
+  return res.send(trainingDay);
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -160,7 +163,7 @@ export async function getNextTraining(req: Request, res: Response) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-19T10:28:41.092Z
+                at 2022-10-19T11:09:25.209Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

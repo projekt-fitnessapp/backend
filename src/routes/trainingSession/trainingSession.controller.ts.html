@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">78.94% </span>
+                <span class="strong">79.48% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>30/38</span>
+                <span class='fraction'>31/39</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">78.12% </span>
+                <span class="strong">79.41% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>25/32</span>
+                <span class='fraction'>27/34</span>
             </div>
         
             
@@ -139,17 +139,22 @@
 <a name='L74'></a><a href='#L74'>74</a>
 <a name='L75'></a><a href='#L75'>75</a>
 <a name='L76'></a><a href='#L76'>76</a>
-<a name='L77'></a><a href='#L77'>77</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -166,8 +171,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -190,9 +196,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -201,7 +204,10 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -211,94 +217,100 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { TrainingSession } from "../../schemas/training.session";
-import { Execution } from "../../schemas/execution";
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { TrainingSession } from '../../schemas/training.session';
+import { Execution } from '../../schemas/execution';
 import { Request, Response } from 'express';
-import { TrainingSessionDocument, TTrainingSession } from "../../types/db/training.session.types";
+import {
+  TrainingSessionDocument,
+  TTrainingSession,
+} from '../../types/db/training.session.types';
 &nbsp;
-export async function getTrainingSession(
-    req: Request,
-    res: Response
-    ){
-        try {
-            let trainingSessionDocs: (TrainingSessionDocument &amp; Required&lt;{ _id: TTrainingSession; }&gt;)[] = [];
+export async function getTrainingSession(req: Request, res: Response) {
+  try {
+    let trainingSessionDocs: (TrainingSessionDocument &amp;
+      Required&lt;{ _id: TTrainingSession }&gt;)[] = [];
 &nbsp;
-            <span class="missing-if-branch" title="if path not taken" >I</span>if (req.query.userId == null) {
-<span class="cstat-no" title="statement not covered" >                throw new Error("No userId provided!")</span>
-            }
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (req.query.userId == null) {
+<span class="cstat-no" title="statement not covered" >      throw new Error('No userId provided!');</span>
+    }
 &nbsp;
-            if ( <span class="missing-if-branch" title="else path not taken" >E</span>Array.isArray(req.query.id) ) {
-                const <span class="cstat-no" title="statement not covered" >ids = req.query.id</span>
-<span class="cstat-no" title="statement not covered" >                trainingSessionDocs = <span class="cstat-no" title="statement not covered" >await TrainingSession.find({_id: {$in: ids}, userId: req.query.userId})</span></span>
-                .populate({
-                    path: 'executions',
-                    populate: {
-                        path: 'exercise',
-                        model: 'Exercise'
-                    }
-                }) 
-            } else {
-                trainingSessionDocs = await TrainingSession.find({
-                    userId: req.query.userId
-                })
-                .populate({
-                    path: 'executions',
-                    populate: {
-                        path: 'exercise',
-                        model: 'Exercise'
-                    }
-                })
-            }
-            if (trainingSessionDocs.length == 0) {
-                res.status(404)
-                return res.json(trainingSessionDocs)
-            }
-            res.status(200)
-            return res.json(trainingSessionDocs)
-        } catch (error) {
-<span class="cstat-no" title="statement not covered" >            return res.sendStatus(400)</span>
-        }
+    if (<span class="missing-if-branch" title="else path not taken" >E</span>Array.isArray(req.query.id)) {
+      const <span class="cstat-no" title="statement not covered" >ids = req.query.id;</span>
+<span class="cstat-no" title="statement not covered" >      trainingSessionDocs = <span class="cstat-no" title="statement not covered" >await TrainingSession.find({</span></span>
+        _id: { $in: ids },
+        userId: req.query.userId,
+      }).populate({
+        path: 'executions',
+        populate: {
+          path: 'exercise',
+          model: 'Exercise',
+        },
+      });
+    } else {
+      trainingSessionDocs = await TrainingSession.find({
+        userId: req.query.userId,
+      }).populate({
+        path: 'executions',
+        populate: {
+          path: 'exercise',
+          model: 'Exercise',
+        },
+      });
+    }
+    if (trainingSessionDocs.length == 0) {
+      res.status(404);
+      return res.json(trainingSessionDocs);
+    }
+    res.status(200);
+    return res.json(trainingSessionDocs);
+  } catch (error) {
+<span class="cstat-no" title="statement not covered" >    return res.sendStatus(400);</span>
+  }
 }
 &nbsp;
-export async function postTrainingSession(
-    req: Request,
-    res: Response
-){
-    try {
-        <span class="missing-if-branch" title="if path not taken" >I</span>if(!Array.isArray(req.body.executions)){
-<span class="cstat-no" title="statement not covered" >            res.statusMessage = "No executions array provided!"</span>
-<span class="cstat-no" title="statement not covered" >            return res.sendStatus(400)</span>
-        }
-        const newExecution: string[] = []
-        req.body.executions.forEach(async (execution: { exercise: { _id: any; }; }) =&gt; {
-            execution.exercise = execution.exercise._id
-            newExecution.push((await Execution.create(execution))._id.toString())
-        })
-        req.body.executions = newExecution
-        const saved = await TrainingSession.create(req.body)
-        <span class="missing-if-branch" title="else path not taken" >E</span>if (saved) {
-            res.status(201)
-            return res.json(saved._id._id)
-        } else {
-<span class="cstat-no" title="statement not covered" >            throw new Error()</span>
-        }
-        
-    } catch (error) {
-        res.statusMessage = "Execution malformed! Exercises must contain exerciseId as _id!"
-        return res.sendStatus(400)
+export async function postTrainingSession(req: Request, res: Response) {
+  try {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!Array.isArray(req.body.executions)) {
+<span class="cstat-no" title="statement not covered" >      res.statusMessage = 'No executions array provided!';</span>
+<span class="cstat-no" title="statement not covered" >      return res.sendStatus(400);</span>
     }
-} </pre></td></tr></table></pre>
+    const newExecution: string[] = [];
+    req.body.executions.forEach(
+      async (execution: { exercise: { _id: any } }) =&gt; {
+        execution.exercise = execution.exercise._id;
+        newExecution.push((await Execution.create(execution)).toJSON()._id);
+      }
+    );
+    const toSave = new TrainingSession(req.body).toJSON();
+    toSave.executions = newExecution;
+    const saved = await TrainingSession.create(toSave);
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (saved) {
+      res.status(201);
+      return res.json(saved._id._id);
+    } else {
+<span class="cstat-no" title="statement not covered" >      throw new Error();</span>
+    }
+  } catch (error) {
+    res.statusMessage =
+      'Execution malformed! Exercises must contain exerciseId as _id!';
+    return res.sendStatus(400);
+  }
+}
+&nbsp;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-19T10:28:41.092Z
+                at 2022-10-19T11:09:25.209Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
