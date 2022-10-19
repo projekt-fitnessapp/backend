@@ -1,6 +1,9 @@
 import { Request, Response } from 'express';
+import { UpdateQuery } from 'mongoose';
 import { Account } from '../../schemas/account';
+import { TrainingDay } from '../../schemas/training.day';
 import { TrainingPlan } from '../../schemas/training.plan';
+import { TrainingDayDocument } from '../../types/db/training.day.types';
 
 export async function getTrainingPlan(
   req: Request,
@@ -57,8 +60,35 @@ export async function putTrainingPlan(
 ) {
   try {
     if(!req.query.trainingPlanId) throw new Error("No trainingPlanId provided!");
+    if(!Array.isArray(req.body.trainingDays)){
+      res.statusMessage = 'TrainingDays has to be an array!'
+      res.status(400)
+      return
+    }
+    const newTrainingDays = req.body.trainingDays
+    const tDays: string[] = []
+    await Promise.all(newTrainingDays.map(async (newDay: UpdateQuery<TrainingDayDocument> | undefined) => {
+      if(newDay == undefined){
+        res.statusMessage = 'New TrainingDay undefined'
+        res.sendStatus(400)
+        return
+      }
+      const newExercises = newDay.exercises
+      newExercises.forEach((newExercise: { exerciseId: { _id: any; }; }) => {
+        newExercise.exerciseId = newExercise.exerciseId._id
+      });
+      await TrainingDay.findOneAndUpdate({_id: newDay._id}, newDay)
+      tDays.push(newDay._id.toString())
+    }));
+    req.body.trainingDays = tDays
     const filter = {_id: req.query.trainingPlanId}
-    res.status(201).send(await TrainingPlan.findOneAndUpdate(filter, req.body, {new: true}))
+    res.status(201).send(await TrainingPlan.findOneAndUpdate(filter, req.body, {new: true}).populate({
+      path: 'trainingDays',
+      model: 'Training Day',
+      populate: {
+        path: 'exercises.exerciseId'
+      }
+    }))
   } catch (error) {
     res.statusMessage = "No trainingPlanId provided"
     res.status(400).send()
