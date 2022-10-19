@@ -24,7 +24,7 @@ export async function saveAccount(req: Request, res: Response) {
 
       return res.status(201).json({ userId });
     } else {
-      throw new Error();
+      throw new Error("Save failed");
     }
   } catch (e) {
     return res.status(400).json(e);
