@@ -77,12 +77,17 @@ export async function putTrainingPlan(
       newExercises.forEach((newExercise: { exerciseId: { _id: any; }; }) => {
         newExercise.exerciseId = newExercise.exerciseId._id
       });
-      await TrainingDay.findOneAndUpdate({_id: newDay._id}, newDay)
+      await TrainingDay.findOneAndUpdate({_id: newDay._id}, newDay, { upsert: true })
       tDays.push(newDay._id.toString())
     }));
     req.body.trainingDays = tDays
     const filter = {_id: req.query.trainingPlanId}
-    res.status(201).send(await TrainingPlan.findOneAndUpdate(filter, req.body, {new: true}).populate({
+
+    await TrainingPlan.findOneAndUpdate(filter, req.body, {new: true})
+
+    console.log(await TrainingPlan.findOne(filter));
+
+    res.status(201).send(await TrainingPlan.findOne(filter).populate({
       path: 'trainingDays',
       model: 'Training Day',
       populate: {

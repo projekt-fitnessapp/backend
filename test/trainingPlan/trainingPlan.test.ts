@@ -96,7 +96,7 @@ describe('Testing TrainingPlan Route', () => {
     expect(res.status).to.equal(400);
   });
 
-  test('Put 201', async () => {
+  test.only('Put 201', async () => {
 
     await Exercise.create({
       _id: '5d99802df3f4955bd2f9dba1',
@@ -160,6 +160,8 @@ describe('Testing TrainingPlan Route', () => {
         }],
         nextDay: 3,
       });
+
+      console.log(res.body)
 
     expect(res.status).to.equal(201);
     expect(res.body).to.deep.equal({
