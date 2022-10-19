@@ -6,7 +6,7 @@ import { expect } from "chai";
 const requestWithSupertest = supertest(setupServer(true));
 
 describe("Ping Endpoint Test", () => {
-  test("Get /ping :)", async () => {
+  test.only("Get /ping :)", async () => {
     const res = await requestWithSupertest.get("/ping");
     expect(res.status).to.equal(200);
     expect(res.body.msg).to.equal("pong");
