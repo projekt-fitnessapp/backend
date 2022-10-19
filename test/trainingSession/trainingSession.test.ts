@@ -196,23 +196,23 @@ describe('Testing the training session route', () => {
       date: "2016-05-18T16:30:00Z",
       executions: [
         {
-          "exercise": {
-            "_id": "5099803df3f4948bd2f98391",
-            "name": "Bench Press",
-            "instruction": "Push the bar.",
-            "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
-            "muscle": "breast",
-            "equipment": "barbell"
+          exercise: {
+            _id: "5099803df3f4948bd2f98391",
+            name: "Bench Press",
+            instruction: "Push the bar.",
+            gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+            muscle: "breast",
+            equipment: "barbell"
           },
-          "notes": [
+          notes: [
             "string"
           ],
-          "sets": [
+          sets: [
             {
-              "executionType": "warmup",
-              "weight": 0,
-              "reps": 0,
-              "10RM": 0
+              executionType: "warmup",
+              weight: 0,
+              reps: 0,
+              tenRM: 0
             }
           ]
         }
@@ -228,9 +228,9 @@ describe('Testing the training session route', () => {
 
   test('Post Method with 400 error', async ()=>{
     const trainingSession = {
-      "_id": "5099803df3f4948bd2f98548",
-      "date": "2016-05-18T16:30:00Z",
-      "executions": []
+      _id: "5099803df3f4948bd2f98548",
+      date: "2016-05-18T16:30:00Z",
+      executions: []
     }
 
     const res = await testserver.post("/trainingSession").send(trainingSession).set('Accept', 'application/json');
