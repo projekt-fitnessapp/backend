@@ -56,7 +56,7 @@ export async function postTrainingSession(
             res.statusMessage = "No executions array provided!"
             return res.sendStatus(400)
         }
-        let newExecution: string[] = []
+        const newExecution: string[] = []
         req.body.executions.forEach(async (execution: { exercise: { _id: any; }; }) => {
             execution.exercise = execution.exercise._id
             newExecution.push((await Execution.create(execution))._id.toString())
