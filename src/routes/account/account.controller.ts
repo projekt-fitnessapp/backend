@@ -4,7 +4,7 @@ import { Account } from '../../schemas/account';
 export async function getAccount(req: Request, res: Response) {
   try {
     if (!req.query.googleId) throw Error('googleId is missing');
-    const docs = await Account.find({ googleId: { $eq: req.query.googleId }});
+    const docs = await Account.find({ googleId: req.query.googleId });
 
     if (!docs || docs.length == 0) {
       return res.status(404).json();
