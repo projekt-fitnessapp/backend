@@ -60,7 +60,7 @@ export async function postTrainingSession(
         req.body.executions.forEach(async (execution: { exercise: { _id: any; }; }) => {
             execution.exercise = execution.exercise._id
             newExecution.push((await Execution.create(execution))._id.toString())
-        });
+        })
         req.body.executions = newExecution
         const saved = await TrainingSession.create(req.body)
         if (saved) {
