@@ -1,4 +1,5 @@
 import { TrainingSession } from "../../schemas/training.session";
+import { Execution } from "../../schemas/execution";
 import { Request, Response } from 'express';
 import { TrainingSessionDocument, TTrainingSession } from "../../types/db/training.session.types";
 
@@ -51,6 +52,16 @@ export async function postTrainingSession(
     res: Response
 ){
     try {
+        if(!Array.isArray(req.body.executions)){
+            res.statusMessage = "No executions array provided!"
+            return res.sendStatus(400)
+        }
+        let newExecution: string[] = []
+        req.body.executions.forEach(async (execution: { exercise: { _id: any; }; }) => {
+            execution.exercise = execution.exercise._id
+            newExecution.push((await Execution.create(execution))._id.toString())
+        });
+        req.body.executions = newExecution
         const saved = await TrainingSession.create(req.body)
         if (saved) {
             res.status(201)
@@ -60,6 +71,7 @@ export async function postTrainingSession(
         }
         
     } catch (error) {
+        res.statusMessage = "Execution malformed! Exercises must contain exerciseId as _id!"
         return res.sendStatus(400)
     }
 } 
