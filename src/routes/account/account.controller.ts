@@ -27,7 +27,7 @@ export async function saveAccount(req: Request, res: Response) {
       throw new Error();
     }
   } catch (e) {
-    return res.status(400).send();
+    return res.status(400).json(e);
   }
 }
 
