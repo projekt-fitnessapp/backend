@@ -20,4 +20,4 @@ export async function checkAuthenticated(
   }
 
   verify().then(next).catch(console.error);
-}
+} 
