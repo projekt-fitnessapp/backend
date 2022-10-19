@@ -51,20 +51,20 @@ export async function getTrainingSession(req: Request, res: Response) {
 
 export async function postTrainingSession(req: Request, res: Response) {
   try {
+    console.log(JSON.stringify(req.body, null, 4));
     if (!Array.isArray(req.body.executions)) {
       res.statusMessage = 'No executions array provided!';
       return res.sendStatus(400);
     }
     const newExecution: string[] = [];
-    req.body.executions.forEach(
-      async (execution: { exercise: { _id: any } }) => {
+    await Promise.all(
+      req.body.executions.map(async (execution: any) => {
         execution.exercise = execution.exercise._id;
         newExecution.push((await Execution.create(execution)).toJSON()._id);
-      }
+      })
     );
-    const toSave = new TrainingSession(req.body).toJSON();
-    toSave.executions = newExecution;
-    const saved = await TrainingSession.create(toSave);
+    req.body.executions = newExecution;
+    const saved = await TrainingSession.create(req.body);
     if (saved) {
       res.status(201);
       return res.json(saved._id._id);
@@ -74,7 +74,6 @@ export async function postTrainingSession(req: Request, res: Response) {
   } catch (error) {
     res.statusMessage =
       'Execution malformed! Exercises must contain exerciseId as _id!';
-    return res.sendStatus(400);
+    return res.status(400).json({ msg: error });
   }
 }
-
