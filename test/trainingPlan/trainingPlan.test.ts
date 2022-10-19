@@ -96,7 +96,7 @@ describe('Testing TrainingPlan Route', () => {
     expect(res.status).to.equal(400);
   });
 
-  test.only('Put 201', async () => {
+  test('Put 201', async () => {
 
     await Exercise.create({
       _id: '5d99802df3f4955bd2f9dba1',
