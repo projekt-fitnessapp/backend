@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">91.3% </span>
+                <span class="strong">17.39% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>21/23</span>
+                <span class='fraction'>4/23</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">79.16% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>19/24</span>
+                <span class='fraction'>0/24</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">90% </span>
+                <span class="strong">20% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>18/20</span>
+                <span class='fraction'>4/20</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -100,61 +100,61 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, Response } from 'express';
 import { Account } from '../../schemas/account';
 import { TrainingDay } from '../../schemas/training.day';
 import { TrainingPlan } from '../../schemas/training.plan';
 &nbsp;
-export async function getNextTraining(req: Request, res: Response) {
-  if (!req.query.userId) {
-    return res.status(400).send({ msg: 'UserId missing!' });
+export async function <span class="fstat-no" title="function not covered" >getNextTraining(</span>req: Request, res: Response) {
+<span class="cstat-no" title="statement not covered" >  if (!req.query.userId) {</span>
+<span class="cstat-no" title="statement not covered" >    return res.status(400).send({ msg: 'UserId missing!' });</span>
   }
-  const accountDoc = await Account.findById(req.query.userId);
-  const account = accountDoc<span class="branch-0 cbranch-no" title="branch not covered" >?.t</span>oJSON();
+  const <span class="cstat-no" title="statement not covered" >accountDoc = <span class="cstat-no" title="statement not covered" >await Account.findById(req.query.userId);</span></span>
+  const <span class="cstat-no" title="statement not covered" >account = accountDoc?.toJSON();</span>
 &nbsp;
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!account || account == null) {
+<span class="cstat-no" title="statement not covered" >  if (!account || account == null) {</span>
 <span class="cstat-no" title="statement not covered" >    return res.status(404).json({ msg: 'User not found' });</span>
   }
-  if (account.activePlan == ' ') {
-    return res.status(400).json({ msg: 'No training plan active.' });
+<span class="cstat-no" title="statement not covered" >  if (account.activePlan == ' ') {</span>
+<span class="cstat-no" title="statement not covered" >    return res.status(400).json({ msg: 'No training plan active.' });</span>
   }
-  const trainingPlanDoc = await TrainingPlan.findById(account.activePlan);
-  const trainingPlan = trainingPlanDoc<span class="branch-0 cbranch-no" title="branch not covered" >?.t</span>oJSON();
+  const <span class="cstat-no" title="statement not covered" >trainingPlanDoc = <span class="cstat-no" title="statement not covered" >await TrainingPlan.findById(account.activePlan);</span></span>
+  const <span class="cstat-no" title="statement not covered" >trainingPlan = trainingPlanDoc?.toJSON();</span>
 &nbsp;
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!trainingPlan || trainingPlan == null) {
+<span class="cstat-no" title="statement not covered" >  if (!trainingPlan || trainingPlan == null) {</span>
 <span class="cstat-no" title="statement not covered" >    return res.status(404).json({ msg: 'No Trainingplan found' });</span>
   }
-  const nextTrainingDayId = trainingPlan.trainingDays[trainingPlan.nextDay];
-  const trainingDayDoc = await TrainingDay.findById(nextTrainingDayId).populate(
+  const <span class="cstat-no" title="statement not covered" >nextTrainingDayId = trainingPlan.trainingDays[trainingPlan.nextDay];</span>
+  const <span class="cstat-no" title="statement not covered" >trainingDayDoc = <span class="cstat-no" title="statement not covered" >await TrainingDay.findById(nextTrainingDayId).populate(</span></span>
     'exercises.exerciseId'
   );
-  const trainingDay = trainingDayDoc<span class="branch-0 cbranch-no" title="branch not covered" >?.t</span>oJSON();
-  return res.send(trainingDay);
+  const <span class="cstat-no" title="statement not covered" >trainingDay = trainingDayDoc?.toJSON();</span>
+<span class="cstat-no" title="statement not covered" >  return res.send(trainingDay);</span>
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -163,7 +163,7 @@ export async function getNextTraining(req: Request, res: Response) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-19T12:32:01.738Z
+                at 2022-10-19T12:33:23.230Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

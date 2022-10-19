@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.73% </span>
+                <span class="strong">21.05% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>18/19</span>
+                <span class='fraction'>4/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>0/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.44% </span>
+                <span class="strong">22.22% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>17/18</span>
+                <span class='fraction'>4/18</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -190,33 +190,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">22x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -268,34 +268,34 @@ const validEquipment = [
   'weighted',
 ];
 &nbsp;
-export async function getExercise(req: Request, res: Response) {
-  const queryObject: { name?: string; muscle?: string; equipment?: string } =
+export async function <span class="fstat-no" title="function not covered" >getExercise(</span>req: Request, res: Response) {
+  const <span class="cstat-no" title="statement not covered" >queryObject: { name?: string; muscle?: string; equipment?: string } =</span>
     {};
 &nbsp;
   try {
-    if (req.query.muscle) {
-      const reqMuscle = req.query.muscle.toString();
-      queryObject.muscle = validMuscles.filter((muscle) =&gt;
-        muscle.includes(reqMuscle.toLowerCase())
+<span class="cstat-no" title="statement not covered" >    if (req.query.muscle) {</span>
+      const <span class="cstat-no" title="statement not covered" >reqMuscle = req.query.muscle.toString();</span>
+<span class="cstat-no" title="statement not covered" >      queryObject.muscle = validMuscles.filter(<span class="fstat-no" title="function not covered" >(m</span>uscle) =&gt;</span>
+<span class="cstat-no" title="statement not covered" >        muscle.includes(reqMuscle.toLowerCase())</span>
       )[0];
     }
 &nbsp;
-    if (req.query.name) {
-      queryObject.name = req.query.name.toString();
+<span class="cstat-no" title="statement not covered" >    if (req.query.name) {</span>
+<span class="cstat-no" title="statement not covered" >      queryObject.name = req.query.name.toString();</span>
     }
 &nbsp;
-    if (req.query.equipment) {
-      const reqEquipment = req.query.equipment.toString();
-      queryObject.equipment = validEquipment.filter((equipment) =&gt; {
-        equipment.includes(reqEquipment.toLowerCase());
+<span class="cstat-no" title="statement not covered" >    if (req.query.equipment) {</span>
+      const <span class="cstat-no" title="statement not covered" >reqEquipment = req.query.equipment.toString();</span>
+<span class="cstat-no" title="statement not covered" >      queryObject.equipment = validEquipment.filter(<span class="fstat-no" title="function not covered" >(e</span>quipment) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        equipment.includes(reqEquipment.toLowerCase());</span>
       })[0];
     }
 &nbsp;
-    const resBody = await Exercise.find(queryObject).select(
+    const <span class="cstat-no" title="statement not covered" >resBody = <span class="cstat-no" title="statement not covered" >await Exercise.find(queryObject).select(</span></span>
       '_id equipment name muscle gifUrl instruction'
     );
 &nbsp;
-    res.json(resBody);
+<span class="cstat-no" title="statement not covered" >    res.json(resBody);</span>
   } catch (error) {
 <span class="cstat-no" title="statement not covered" >    res.status(500).json({ msg: 'Internal Server Error' });</span>
   }
@@ -307,7 +307,7 @@ export async function getExercise(req: Request, res: Response) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-19T12:32:01.738Z
+                at 2022-10-19T12:33:23.230Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

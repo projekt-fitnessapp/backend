@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">13.04% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>23/23</span>
+                <span class='fraction'>3/23</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/21</span>
+                <span class='fraction'>3/21</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -112,82 +112,82 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { TrainingSession } from '../../schemas/training.session';
 import { TLastTraining } from '../../types/last.training.types';
 import { formatISO, subDays } from '../../helpers/dates';
 import { Request, Response } from 'express';
 &nbsp;
-export async function getLastTraining(req: Request, res: Response) {
+export async function <span class="fstat-no" title="function not covered" >getLastTraining(</span>req: Request, res: Response) {
   if (
-    req.query.days &amp;&amp;
+<span class="cstat-no" title="statement not covered" >    req.</span>query.days &amp;&amp;
     !isNaN(parseInt(req.query.days as string)) &amp;&amp;
     parseInt(req.query.days as string) &gt; 0 &amp;&amp;
     req.query.userId
   ) {
-    const days = parseInt(req.query.days as string);
-    const now = Date.now();
-    const startDate = formatISO(subDays(now, days));
-    const docs = JSON.parse(
-      JSON.stringify(
-        await TrainingSession.find({
+    const <span class="cstat-no" title="statement not covered" >days = parseInt(req.query.days as string);</span>
+    const <span class="cstat-no" title="statement not covered" >now = Date.now();</span>
+    const <span class="cstat-no" title="statement not covered" >startDate = formatISO(subDays(now, days));</span>
+    const <span class="cstat-no" title="statement not covered" >docs = <span class="cstat-no" title="statement not covered" >JSON.parse(</span></span>
+<span class="cstat-no" title="statement not covered" >      JSON.stringify(</span>
+<span class="cstat-no" title="statement not covered" >        await TrainingSession.find({</span>
           date: { $gte: startDate },
           userId: req.query.userId,
         }).select('date')
       )
     );
 &nbsp;
-    const resBody = Array&lt;TLastTraining&gt;();
+    const <span class="cstat-no" title="statement not covered" >resBody = Array&lt;TLastTraining&gt;();</span>
 &nbsp;
-    for (let index = 0; index &lt; days; index++) {
-      const dateToCheck = formatISO(subDays(now, index)).split('T')[0];
-      let trained = false;
-      docs.forEach((trainingSession: { _id: string; date: string }) =&gt; {
-        const entryDate = trainingSession.date;
-        if (entryDate.includes(dateToCheck)) {
-          trained = true;
+<span class="cstat-no" title="statement not covered" >    for (let <span class="cstat-no" title="statement not covered" >index = 0</span>; index &lt; days; index++) {</span>
+      const dateToCheck = <span class="cstat-no" title="statement not covered" >formatISO(subDays(now, index)).split('T')[0];</span>
+      let trained = <span class="cstat-no" title="statement not covered" >false;</span>
+<span class="cstat-no" title="statement not covered" >      docs.forEach(<span class="fstat-no" title="function not covered" >(t</span>rainingSession: { _id: string; date: string }) =&gt; {</span>
+        const entryDate = <span class="cstat-no" title="statement not covered" >trainingSession.date;</span>
+<span class="cstat-no" title="statement not covered" >        if (entryDate.includes(dateToCheck)) {</span>
+<span class="cstat-no" title="statement not covered" >          trained = true;</span>
         }
       });
-      resBody.push({ date: dateToCheck, trained: trained });
+<span class="cstat-no" title="statement not covered" >      resBody.push({ date: dateToCheck, trained: trained });</span>
     }
 &nbsp;
-    return res.status(200).json({ data: resBody });
+<span class="cstat-no" title="statement not covered" >    return res.status(200).json({ data: resBody });</span>
   }
-  return res.status(400).send();
+<span class="cstat-no" title="statement not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >  return res.status(400).send();</span></span>
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -196,7 +196,7 @@ export async function getLastTraining(req: Request, res: Response) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-19T12:32:01.738Z
+                at 2022-10-19T12:33:23.230Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

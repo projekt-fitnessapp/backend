@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.23% </span>
+                <span class="strong">11.76% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/17</span>
+                <span class='fraction'>2/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>8/8</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">86.66% </span>
+                <span class="strong">13.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>13/15</span>
+                <span class='fraction'>2/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -103,17 +103,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -123,11 +121,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -136,17 +136,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, Response } from 'express';
 import { TrainingSession } from '../../schemas/training.session';
 &nbsp;
-export async function getLastTrainingSession(req: Request, res: Response) {
+export async function <span class="fstat-no" title="function not covered" >getLastTrainingSession(</span>req: Request, res: Response) {
   try {
-    if (!req.query.userId) {
-      return res.status(400).json({ msg: 'userId is missing' });
+<span class="cstat-no" title="statement not covered" >    if (!req.query.userId) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(400).json({ msg: 'userId is missing' });</span>
     }
-    if (!req.query.trainingDayId) {
-      return res.status(400).json({ msg: 'trainingDayId is missing' });
+<span class="cstat-no" title="statement not covered" >    if (!req.query.trainingDayId) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(400).json({ msg: 'trainingDayId is missing' });</span>
     }
-    const userId = req.query.userId.toString();
-    const trainingDayId = req.query.trainingDayId.toString();
-    const lastSessionDoc = await TrainingSession.find({
+    const <span class="cstat-no" title="statement not covered" >userId = req.query.userId.toString();</span>
+    const <span class="cstat-no" title="statement not covered" >trainingDayId = req.query.trainingDayId.toString();</span>
+    const <span class="cstat-no" title="statement not covered" >lastSessionDoc = <span class="cstat-no" title="statement not covered" >await TrainingSession.find({</span></span>
       userId: userId,
       trainingDayId: trainingDayId,
     })
@@ -158,11 +158,11 @@ export async function getLastTrainingSession(req: Request, res: Response) {
           path: 'exercise',
         },
       });
-    if (!lastSessionDoc || lastSessionDoc.length == 0) {
-      return res.status(404).send();
+<span class="cstat-no" title="statement not covered" >    if (!lastSessionDoc || lastSessionDoc.length == 0) {</span>
+<span class="cstat-no" title="statement not covered" >      return res.status(404).send();</span>
     }
-    const lastSession = lastSessionDoc.map((session) =&gt; session.toJSON());
-    return res.status(200).json(lastSession[0]);
+    const <span class="cstat-no" title="statement not covered" >lastSession = lastSessionDoc.map(<span class="fstat-no" title="function not covered" >(s</span>ession) =&gt; <span class="cstat-no" title="statement not covered" >session.toJSON());</span></span>
+<span class="cstat-no" title="statement not covered" >    return res.status(200).json(lastSession[0]);</span>
   } catch (error) {
 <span class="cstat-no" title="statement not covered" >    console.log(error);</span>
 <span class="cstat-no" title="statement not covered" >    return res.status(500).send();</span>
@@ -175,7 +175,7 @@ export async function getLastTrainingSession(req: Request, res: Response) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-19T12:32:01.738Z
+                at 2022-10-19T12:33:23.230Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

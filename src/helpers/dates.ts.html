@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">20% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>2/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">20% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>2/10</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -81,35 +81,35 @@
 <a name='L16'></a><a href='#L16'>16</a>
 <a name='L17'></a><a href='#L17'>17</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">32x</span>
-<span class="cline-any cline-yes">32x</span>
-<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">31x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">30x</span>
-<span class="cline-any cline-yes">30x</span>
-<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export function formatISO(date: number) {
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export function <span class="fstat-no" title="function not covered" >formatISO(</span>date: number) {
   /*Usage: formatISO(Date.now()) returns the current Time in UTC in ISO format*/
-  const dateTime = new Date(date);
-  dateTime.toISOString();
-  return dateTime.toISOString();
+  const dateTime = <span class="cstat-no" title="statement not covered" >new Date(date);</span>
+<span class="cstat-no" title="statement not covered" >  dateTime.toISOString();</span>
+<span class="cstat-no" title="statement not covered" >  return dateTime.toISOString();</span>
 }
 &nbsp;
-export function subDays(date: number, days: number) {
+export function <span class="fstat-no" title="function not covered" >subDays(</span>date: number, days: number) {
   /*Usage: subDays(Date.now(), 7) returns the current Time in UTC 7 days before*/
-  if (days &lt; 0) {
-    throw Error('Only positive whole numbers!');
+<span class="cstat-no" title="statement not covered" >  if (days &lt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >    throw Error('Only positive whole numbers!');</span>
   }
-  const dateTime = new Date(date);
-  dateTime.setDate(dateTime.getDate() - days);
-  return dateTime.valueOf();
+  const dateTime = <span class="cstat-no" title="statement not covered" >new Date(date);</span>
+<span class="cstat-no" title="statement not covered" >  dateTime.setDate(dateTime.getDate() - days);</span>
+<span class="cstat-no" title="statement not covered" >  return dateTime.valueOf();</span>
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -118,7 +118,7 @@ export function subDays(date: number, days: number) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-19T12:32:01.738Z
+                at 2022-10-19T12:33:23.230Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
