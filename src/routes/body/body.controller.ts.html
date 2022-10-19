@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">16.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/18</span>
+                <span class='fraction'>18/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">18.75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/16</span>
+                <span class='fraction'>16/16</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -105,15 +105,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -123,47 +123,47 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, Response } from 'express';
 import { Body } from '../../schemas/body';
 &nbsp;
-export async function <span class="fstat-no" title="function not covered" >getBody(</span>
+export async function getBody(
   req: Request,
   res: Response
 ) {
   try{
-<span class="cstat-no" title="statement not covered" >    if(!req.query.userId) {</span>
-<span class="cstat-no" title="statement not covered" >      throw new Error;</span>
+    if(!req.query.userId) {
+      throw new Error;
     }
-    const <span class="cstat-no" title="statement not covered" >docs =  <span class="cstat-no" title="statement not covered" >await Body.find({ userId: req.query.userId }).sort({date: -1});</span></span>
-<span class="cstat-no" title="statement not covered" >    res.status(200);</span>
-<span class="cstat-no" title="statement not covered" >    return res.json(docs[0]);</span>
+    const docs =  await Body.find({ userId: req.query.userId }).sort({date: -1});
+    res.status(200);
+    return res.json(docs[0]);
   } catch (e) {
-<span class="cstat-no" title="statement not covered" >    res.status(400);</span>
-<span class="cstat-no" title="statement not covered" >    return res.send();</span>
+    res.status(400);
+    return res.send();
   }
 }
 &nbsp;
-export async function <span class="fstat-no" title="function not covered" >saveBody(</span>
+export async function saveBody(
   req: Request,
   res: Response
 ) {
 &nbsp;
   try {
-    const <span class="cstat-no" title="statement not covered" >savedBody = <span class="cstat-no" title="statement not covered" >await Body.create(req.body);</span></span>
-    const <span class="cstat-no" title="statement not covered" >bodyId = savedBody._id;</span>
-<span class="cstat-no" title="statement not covered" >    res.status(201);</span>
-<span class="cstat-no" title="statement not covered" >    return res.json({ bodyId });</span>
+    const savedBody = await Body.create(req.body);
+    const bodyId = savedBody._id;
+    res.status(201);
+    return res.json({ bodyId });
   } catch (e) {
-<span class="cstat-no" title="statement not covered" >    res.status(401);</span>
-<span class="cstat-no" title="statement not covered" >    return res.send();</span>
+    res.status(401);
+    return res.send();
   }
 }</pre></td></tr></table></pre>
 
@@ -172,7 +172,7 @@ export async function <span class="fstat-no" title="function not covered" >saveB
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-19T12:58:57.128Z
+                at 2022-10-19T13:11:46.683Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

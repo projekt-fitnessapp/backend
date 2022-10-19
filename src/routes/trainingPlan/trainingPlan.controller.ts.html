@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">42.18% </span>
+                <span class="strong">60.93% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>27/64</span>
+                <span class='fraction'>39/64</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">16.66% </span>
+                <span class="strong">38.88% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/18</span>
+                <span class='fraction'>7/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">43.13% </span>
+                <span class="strong">58.82% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>22/51</span>
+                <span class='fraction'>30/51</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -175,14 +175,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -192,6 +192,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -199,21 +206,14 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -270,30 +270,30 @@ import { TrainingDay } from '../../schemas/training.day';
 import { TrainingPlan } from '../../schemas/training.plan';
 import { TrainingDayDocument } from '../../types/db/training.day.types';
 &nbsp;
-export async function <span class="fstat-no" title="function not covered" >getTrainingPlan(</span>
+export async function getTrainingPlan(
   req: Request,
   res: Response
 ) {
   try{
-<span class="cstat-no" title="statement not covered" >    if(!req.query.trainingPlanId) <span class="cstat-no" title="statement not covered" >throw new Error("No trainingPlanId provided!");</span></span>
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    res.status(200).json(<span class="cstat-no" title="statement not covered" >a</span>wait TrainingPlan.findById(req.query.trainingPlanId).populate({</span></span>
+    if(!req.query.trainingPlanId) throw new Error("No trainingPlanId provided!");
+    res.status(200).json(await TrainingPlan.findById(req.query.trainingPlanId).populate({
       path: 'trainingDays',
       model: 'Training Day'
     }))
   } catch (e) {
-<span class="cstat-no" title="statement not covered" >    res.statusMessage = "No trainingPlanId provided"</span>
-<span class="cstat-no" title="statement not covered" >    res.status(400).send()</span>
+    res.statusMessage = "No trainingPlanId provided"
+    res.status(400).send()
   }
   
 }
 &nbsp;
-export async function <span class="fstat-no" title="function not covered" >postTrainingPlan(</span>
+export async function postTrainingPlan(
   req: Request,
   res: Response
 ) {
   try {
-    let <span class="cstat-no" title="statement not covered" >id</span>
-    if(<span class="cstat-no" title="statement not covered" >req.</span>query.userId){
+    let id
+    if(<span class="missing-if-branch" title="else path not taken" >E</span>req.query.userId){
       const <span class="cstat-no" title="statement not covered" >account = <span class="cstat-no" title="statement not covered" >await Account.findById(req.query.userId)</span></span>
 <span class="cstat-no" title="statement not covered" >      id = (<span class="cstat-no" title="statement not covered" >await TrainingPlan.create(req.body)).</span>_id.toString()</span>
 <span class="cstat-no" title="statement not covered" >      if (!id) {</span>
@@ -307,13 +307,13 @@ export async function <span class="fstat-no" title="function not covered" >postT
 <span class="cstat-no" title="statement not covered" >          throw new Error("Update went wrong")</span>
         }
       } else {
-<span class="cstat-no" title="statement not covered" >        await TrainingPlan.findByIdAndDelete(id)</span>
+<span class="cstat-no" title="statement not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >        await TrainingPlan.findByIdAndDelete(id)</span></span>
 <span class="cstat-no" title="statement not covered" >        throw new Error("No Account with that Id!")</span>
       }
     } else {
-<span class="cstat-no" title="statement not covered" >      id = (<span class="cstat-no" title="statement not covered" >await TrainingPlan.create(req.body)).</span>_id._id</span>
+      id = (await TrainingPlan.create(req.body))._id._id
     }
-<span class="cstat-no" title="statement not covered" >    res.status(201).send(id)</span>
+    res.status(201).send(id)
   } catch (e) {
 <span class="cstat-no" title="statement not covered" >    res.status(400).send()</span>
   }
@@ -370,7 +370,7 @@ export async function putTrainingPlan(
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-19T12:58:57.128Z
+                at 2022-10-19T13:11:46.683Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
