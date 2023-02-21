@@ -15,7 +15,7 @@ describe('setupServer', () => {
 
 describe('Connect to DB', () => {
   test('Sets DB_URL in process.env :', async () => {
-    await connectDB(true);
+    await connectDB(true, { log: function(){} });
     expect(process.env.DB_URL).to.equal(
       'mongodb+srv://test:test@cluster0.r1rtx.mongodb.net/?retryWrites=true&w=majority'
     );
