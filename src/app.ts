@@ -1,4 +1,6 @@
 import { setupServer, connectDB } from './server';
+import basicAuth from 'express-basic-auth';
+
 import express from 'express';
 import responseTime from 'response-time'
 
@@ -7,6 +9,16 @@ const app = setupServer(false);
 /**
  * Begin Important Logging Code do not remove or alter 
  */
+function getUnauthorizedResponse() {
+  return 'You shall not pass'
+}
+
+app.use('/logs*', basicAuth({
+  users: { 'logs': 'supersecretlogpasswort' },
+  challenge: true,
+  unauthorizedResponse: getUnauthorizedResponse
+}))
+
 const {createLogger, format, transports} = require('winston');
 
 const logger = createLogger({
