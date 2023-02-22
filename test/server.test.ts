@@ -1,5 +1,5 @@
-import { describe, test, after } from 'mocha';
-import { setupServer, connectDB } from '../src/server';
+import { describe, test } from 'mocha';
+import { setupServer } from '../src/server';
 import { expect } from 'chai';
 import mongoose from 'mongoose';
 
