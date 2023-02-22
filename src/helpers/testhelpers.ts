@@ -1,11 +1,12 @@
 import mongoose from 'mongoose';
+import { MongoClient } from 'mongodb';
 import { v4 as uuidv4 } from 'uuid';
 
 export class TestDatabase {
     private dbName: string | null = null;
 
     public async initialize() {
-        if(this.dbName) {
+        if (this.dbName) {
             throw new Error("Please cleanup your testdb before using it again");
         }
 
@@ -14,13 +15,34 @@ export class TestDatabase {
     }
 
     public async cleanup() {
-        if(!this.dbName) {
+        if (!this.dbName) {
             throw new Error("Your Testdatabse is not initialized yet");
         }
+        const dbName = this.dbName
 
+        mongoose.disconnect()
 
-        await (mongoose.connection.getClient().db(this.dbName)).dropDatabase();
-        await mongoose.disconnect();
+        // Connection url
+        const url = 'mongodb+srv://fynn:test1234@cluster0.ybqjxoi.mongodb.net/?retryWrites=true&w=majority';
+        // Connect using MongoClient
+        MongoClient.connect(url, function (_err, db) {
+            if(!db) return
+            
+            // Use the admin database for the operation
+            const adminDb = db.db('test').admin();
+            // List all the available databases
+            adminDb.listDatabases(async function (_err, result) {
+                if(!result) return
+                await Promise.all(result.databases.map(async (dba) => {
+                    if (dba.name == dbName) {
+                        console.log(`deleting ${dba.name}`);
+                        await (await db.db(dba.name)).dropDatabase();
+                        console.log(`deleted ${dba.name}`)
+                    }
+                }));
+                db.close();
+            });
+        });
 
         this.dbName = null;
     }
