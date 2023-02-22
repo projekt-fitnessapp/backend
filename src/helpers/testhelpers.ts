@@ -35,9 +35,7 @@ export class TestDatabase {
                 if(!result) return
                 await Promise.all(result.databases.map(async (dba) => {
                     if (dba.name == dbName) {
-                        console.log(`deleting ${dba.name}`);
                         await (await db.db(dba.name)).dropDatabase();
-                        console.log(`deleted ${dba.name}`)
                     }
                 }));
                 db.close();
