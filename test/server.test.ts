@@ -1,7 +1,6 @@
 import { describe, test } from 'mocha';
 import { setupServer } from '../src/server';
 import { expect } from 'chai';
-import mongoose from 'mongoose';
 
 describe('setupServer', () => {
   test('Sets port and test var in process.env :)', () => {
