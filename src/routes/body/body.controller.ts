@@ -13,7 +13,7 @@ export async function getBody(req: Request, res: Response) {
     return res.json(docs[0]);
   } catch (e) {
     res.status(400);
-    return res.send();
+    return res.send(e);
   }
 }
 
@@ -28,6 +28,6 @@ export async function saveBody(req: Request, res: Response) {
     return res.json({ bodyId });
   } catch (e) {
     res.status(401);
-    return res.send();
+    return res.send(e);
   }
 }
