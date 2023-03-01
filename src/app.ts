@@ -2,6 +2,8 @@ import { setupServer, connectDB } from './server';
 import basicAuth from 'express-basic-auth';
 import logger from './helpers/logging';
 import loggingMiddleware from './middleware/logging.middleware';
+//@ts-expect-error no type declarations available
+import winstonVisualize from 'winston-visualize'
 
 
 const app = setupServer(false);
@@ -21,7 +23,7 @@ app.use('/logs*', basicAuth({
 
 app.use(loggingMiddleware);
 
-require('winston-visualize')(app, logger);
+winstonVisualize(app, logger);
 
 process.on("uncaughtExceptionMonitor", (err)=>{
   logger.log('error', err.toString());
