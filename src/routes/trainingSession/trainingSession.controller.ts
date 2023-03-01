@@ -72,7 +72,7 @@ export async function postTrainingSession(req: Request, res: Response) {
           res.status(202);
           return res.json(saved._id._id);
         }
-        let modifiedTrainingPlan = trainingPlan;
+        const modifiedTrainingPlan = trainingPlan;
         modifiedTrainingPlan.nextDay = (trainingPlan.nextDay + 1) % trainingPlan.trainingDays.length();
         TrainingPlan.replaceOne(trainingPlan, trainingPlan);
       }
