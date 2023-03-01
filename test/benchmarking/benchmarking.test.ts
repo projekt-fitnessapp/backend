@@ -29,12 +29,12 @@ describe("Benchmarking Endpoint Tests", ()=>{
             week_counter: 4
         });
     
-        const res = await testserver.get("/body?userId=5099803df3f414add2f9dba7");
+        const res = await testserver.get("/benchmarking?userId=5099803df3f414add2f9dba7");
         expect(res.status).to.equal(200);
       });
 
   test('Get Method with error 400', async ()=>{
-    const res = await testserver.get("/body?wrongInput=204dfdsafaxxd5");
+    const res = await testserver.get("/benchmarking?wrongInput=204dfdsafaxxd5");
     expect(res.status).to.equal(400);
     expect(res.body.data).to.equal(undefined);
   });
@@ -52,13 +52,13 @@ describe("Benchmarking Endpoint Tests", ()=>{
     const res = await testserver.post("/benchmarking").send(testbodyofbenchmarking).set('Accept', 'application/json');
     expect(res.status).to.equal(201);
 
-    const res2 = await testserver.get("/body?userId=5099803df3f494add2f9dba7");
+    const res2 = await testserver.get("/benchmarking?userId=5099803df3f494add2f9dba7");
     expect(res2.status).to.equal(200);
   });
 
 
   test('Post Method with 401 error', async ()=>{
-    const res = await testserver.post("/body").send("Wrong Data").set('Accept', 'application/json');
+    const res = await testserver.post("/benchmarking").send("Wrong Data").set('Accept', 'application/json');
     expect(res.status).to.equal(401);
     expect(res.body.data).to.equal(undefined);
   });
