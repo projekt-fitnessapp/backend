@@ -109,7 +109,7 @@ describe('Testing the myPlans route', () => {
     expect(res.status).to.equal(400);
   });
 
-  test('Get 404 bc no plans found', async () => {
+  test('Get 200 w/ empty arr', async () => {
     await Account.create({
       _id: '5099803df3f494add2f9dba5',
       google_id: '110169484474386270000',
@@ -122,6 +122,7 @@ describe('Testing the myPlans route', () => {
     const res = await testserver.get(
       '/myPlans?userId=5099803df3f494add2f9dba5'
     );
-    expect(res.status).to.equal(404);
+    expect(res.status).to.equal(200);
+    expect(res.body).to.deep.equal([]);
   });
 });
