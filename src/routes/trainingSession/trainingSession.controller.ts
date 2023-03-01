@@ -1,5 +1,6 @@
 import { TrainingSession } from '../../schemas/training.session';
 import { Execution } from '../../schemas/execution';
+import { TrainingPlan } from '../../schemas/training.plan';
 import { Request, Response } from 'express';
 import {
   TrainingSessionDocument,
@@ -65,6 +66,16 @@ export async function postTrainingSession(req: Request, res: Response) {
     req.body.executions = newExecution;
     const saved = await TrainingSession.create(req.body);
     if (saved) {
+      if (req.params.trainingPlanId) {
+        const trainingPlan = (await TrainingPlan.findById({id: req.params.trainingPlanId}).populate('trainingDays'))?.toJSON();
+        if (trainingPlan === undefined) {
+          res.status(202);
+          return res.json(saved._id._id);
+        }
+        let modifiedTrainingPlan = trainingPlan;
+        modifiedTrainingPlan.nextDay = (trainingPlan.nextDay + 1) % trainingPlan.trainingDays.length();
+        TrainingPlan.replaceOne(trainingPlan, trainingPlan);
+      }
       res.status(201);
       return res.json(saved._id._id);
     } else {
