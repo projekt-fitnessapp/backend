@@ -16,7 +16,7 @@ function getUnauthorizedResponse() {
 }
 
 app.use('/logs*', basicAuth({
-  users: { 'logs': 'supersecretlogpasswort' },
+  users: { 'logs': process.env.LOGS_PASSWORD as string },
   challenge: true,
   unauthorizedResponse: getUnauthorizedResponse
 }))
