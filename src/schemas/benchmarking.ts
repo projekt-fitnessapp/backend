@@ -3,9 +3,12 @@ import { BenchmarkingDocument, BenchmarkingModel } from '../types/db/benchmarkin
 
 const BenchmarkingSchema = new Schema({
     userId: { type: String, required: true },
-    amount_of_pull_ups: { type: Number, required: true },
-    amount_of_push_ups: { type: Number, required: true },
-    weightlifting_weight: { type: Number, required: true },
+    exercise_one_amount: { type: Number, required: true },
+    exercise_one_name: { type: String, required: true },
+    exercise_two_amount: { type: Number, required: false },
+    exercise_two_name: { type: String, required: false },
+    exercise_three_amount: { type: Number, required: false },
+    exercise_three_name: { type: String, required: false },
     week_counter: { type: Number, required: true }
 });
 
