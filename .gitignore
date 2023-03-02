@@ -6,3 +6,4 @@ package-lock.json
 /coverage/
 /cache/
 .env
+winston.log
