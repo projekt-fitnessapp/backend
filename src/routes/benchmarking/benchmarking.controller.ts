@@ -8,7 +8,7 @@ export async function getBenchmarking(req: Request, res: Response) {
     }
     const docs = await Benchmarking.find({ userId: req.query.userId });
     res.status(200);
-    return res.json(docs[0]);
+    return res.json(docs);
   } catch (e) {
     res.status(400);
     return res.send(e);
