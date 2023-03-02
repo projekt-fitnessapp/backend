@@ -15,7 +15,7 @@ export async function getMyPlans(req: Request, res: Response) {
     });
     const myPlans = myPlanDocs.map((plan) => plan.toJSON());
     if (!myPlanDocs || myPlans.length == 0) {
-      return res.status(200).json(myPlans);
+      return res.status(200).json([]);
     }
 
     return res.json(myPlans);
