@@ -3,6 +3,7 @@ import { Document, Model, ObjectId } from 'mongoose';
 export type TBenchmarking = {
     _id: ObjectId,
     userId: string,
+    date: Date,
     exercise_one_amount: number,
     exercise_one_name: string,
     exercise_two_amount: number,
