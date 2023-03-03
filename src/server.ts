@@ -18,21 +18,19 @@ export function setupServer(isTest: boolean) {
 
   app.use(express.json());
 
-  app.use(express.json())
-
   app.use("/", AppRouter);
 
   return app;
 }
 
-export async function connectDB(isTest: boolean) {
+export async function connectDB(isTest: boolean, logger: any) {
   if (isTest) {
     process.env.DB_URL =
       'mongodb+srv://test:test@cluster0.r1rtx.mongodb.net/?retryWrites=true&w=majority';
   } else {
     dotenv.config();
   }
-  await mongoose.connect(process.env.DB_URL as string);
-  console.log("Database connection successfull");
-
+  await mongoose.connect(process.env.DB_URL as string)
+  .then(() => logger.log('info', "Database connection successfull"))
+  .catch(err => logger.log('error', err.toString()));
 }
