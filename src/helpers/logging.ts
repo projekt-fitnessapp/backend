@@ -28,7 +28,7 @@ class MongoTransport extends Transport {
     if (info.timestamp) {
       info.timestamp = new Date(info.timestamp)
     }
-    await this.dbclient.db('log').collection('logs').insertOne(info)
+    await this.dbclient.db('prod').collection('logs').insertOne(info)
 
     callback();
   }
