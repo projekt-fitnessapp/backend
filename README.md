@@ -1,6 +1,8 @@
 # backend
 
 Hosting: https://api.fitnessapp.gang-of-fork.de/
+Documentation: https://projekt-fitnessapp.github.io/backend-docs/
+Prod-Logs: https://api.fitnessapp.gang-of-fork.de/admin/resources/LogEntry
 
 ### Prerequisite
 
