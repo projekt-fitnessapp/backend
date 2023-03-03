@@ -6,6 +6,11 @@ require('winston-mongodb')
 
 dotenv.config()
 
+export enum LogLevels {
+    INFO = "info",
+    ERROR = "error",
+    WARN = "warn"
+  }
 class MongoTransport extends Transport {
     private dbclient: MongoClient; 
     constructor(opts: any, dbUrl: string) {
@@ -22,15 +27,13 @@ class MongoTransport extends Transport {
 
         //convert timestamp to Date and convert to MEZ
         if(info.timestamp) {
-            info.timestamp = new Date(new Date(info.timestamp).getTime() + 60 * 60 * 1000)
+            info.timestamp = new Date(info.timestamp)
         }
-        await this.dbclient.db('log').collection('log').insertOne(info)
+        await this.dbclient.db('log').collection('logs').insertOne(info)
     
         callback();
       }
 }
-
-
 
 const logger = createLogger({
     format: format.combine(
@@ -47,7 +50,8 @@ const logger = createLogger({
 
 //Only log to mongo in prod
 if(process.env.LOGS_MONGO_ACTIVE == 'true') {
-    logger.add(new MongoTransport({}, process.env.LOGS_DB_URL as string))
+    logger.add(new MongoTransport({}, process.env.DB_URL as string))
 }
 
 export default logger
+

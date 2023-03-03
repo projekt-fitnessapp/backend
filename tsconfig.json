@@ -63,5 +63,7 @@
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
     "resolveJsonModule": true,
+    //needed because of type errors in react
+    "skipLibCheck": true
   }
 }

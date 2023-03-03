@@ -2,52 +2,46 @@ import { setupServer, connectDB } from './server';
 import basicAuth from 'express-basic-auth';
 import logger from './helpers/logging';
 import loggingMiddleware from './middleware/logging.middleware';
-//@ts-expect-error no type declarations available
-import winstonVisualize from 'winston-visualize'
-//import { Request, Response } from 'express';
-
+import adminjs from './helpers/adminjs';
 
 const app = setupServer(false);
-
-/**
- * Begin Important Logging Code do not remove or alter 
- */
+connectDB(false, logger).then(() => {
 
 
-function getUnauthorizedResponse() {
-  return 'You shall not pass'
-}
-app.use('/logs*', basicAuth({
-  users: { 'logs': process.env.LOGS_PASSWORD as string },
-  challenge: true,
-  unauthorizedResponse: getUnauthorizedResponse
-}))
+
+  /**
+   * Begin Important Logging Code do not remove or alter 
+   */
 
 
-app.use(loggingMiddleware);
-
-winstonVisualize(app, logger);
-//app.use('/logs', serveAdminJsLoggingDashboard)
-
-process.on("uncaughtExceptionMonitor", (err)=>{
-  logger.log('error', err.toString());
-});
-
-
-/**
- * End important logging code - please look above for instructions
- */
+  function getUnauthorizedResponse() {
+    return 'You shall not pass'
+  }
+  app.use('/logs*', basicAuth({
+    users: { 'logs': process.env.LOGS_PASSWORD as string },
+    challenge: true,
+    unauthorizedResponse: getUnauthorizedResponse
+  }))
 
 
-connectDB(false, logger);
+  app.use(loggingMiddleware);
 
-app.listen(parseInt(process.env.PORT as string), () => {
-  logger.log('info', `App started on  http://localhost:${process.env.PORT}`);
-});
+  //winstonVisualize(app, logger);
+  app.use('/admin', adminjs)
 
-/*
-function serveAdminJsLoggingDashboard(req: Request, res: Response) {
+  process.on("uncaughtExceptionMonitor", (err) => {
+    logger.log('error', err.toString());
+  });
 
 
-}
-*/
+  /**
+   * End important logging code - please look above for instructions
+   */
+
+  app.listen(parseInt(process.env.PORT as string), () => {
+    logger.log('info', `App started on  http://localhost:${process.env.PORT}`);
+  });
+})
+
+
+
