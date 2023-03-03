@@ -74,6 +74,7 @@ export async function putTrainingPlan(
         return
       }
       const newExercises = newDay.exercises
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       newExercises.forEach((newExercise: { exerciseId: { _id: any; }; }) => {
         newExercise.exerciseId = newExercise.exerciseId._id
       });

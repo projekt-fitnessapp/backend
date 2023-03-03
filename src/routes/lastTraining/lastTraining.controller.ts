@@ -41,6 +41,6 @@ export async function getLastTraining(req: Request, res: Response) {
     }
     return res.status(400).send();
   } catch (e) {
-    res.status(500).send(e);
+    return res.status(500).send(e);
   }
 }
