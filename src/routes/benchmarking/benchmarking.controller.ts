@@ -6,7 +6,9 @@ export async function getBenchmarking(req: Request, res: Response) {
     if (!req.query.userId) {
       throw new Error();
     }
-    const docs = await Benchmarking.find({ userId: req.query.userId });
+    const docs = await Benchmarking.find({ userId: req.query.userId }).sort({
+      date: -1,
+    });
     res.status(200);
     return res.json(docs);
   } catch (e) {

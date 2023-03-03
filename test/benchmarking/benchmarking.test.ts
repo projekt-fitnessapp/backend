@@ -23,9 +23,12 @@ describe("Benchmarking Endpoint Tests", ()=>{
         await Benchmarking.create({
             _id: "5099803df3f494add2f9d707",
             userId: "5099803df3f414add2f9dba7",
-            amount_of_pull_ups: 35,
-            amount_of_push_ups: 35,
-            weightlifting_weight: 125,
+            exercise_one_amount: 35,
+            exercise_one_name: "pullups",
+            exercise_two_amount: 35,
+            exercise_two_name: "pushups",
+            exercise_three_amount: 125,
+            exercise_three_name: "weightlifting",
             week_counter: 4
         });
     
@@ -39,13 +42,32 @@ describe("Benchmarking Endpoint Tests", ()=>{
     expect(res.body.data).to.equal(undefined);
   });
 
-  test('Post Method with no error', async ()=>{
+  test('Post Method with no error and three exercises', async ()=>{
     let testbodyofbenchmarking = {
         _id: '5099803da3f494add2f5d757',
         userId: "5099803df3f494add2f9dba7",
-        amount_of_pull_ups: 35,
-        amount_of_push_ups: 35,
-        weightlifting_weight: 125,
+        exercise_one_amount: 35,
+        exercise_one_name: "pullups",
+        exercise_two_amount: 35,
+        exercise_two_name: "pushups",
+        exercise_three_amount: 125,
+        exercise_three_name: "weightlifting",
+        week_counter: 4
+      };
+  
+    const res = await testserver.post("/benchmarking").send(testbodyofbenchmarking).set('Accept', 'application/json');
+    expect(res.status).to.equal(201);
+
+    const res2 = await testserver.get("/benchmarking?userId=5099803df3f494add2f9dba7");
+    expect(res2.status).to.equal(200);
+  });
+
+  test('Post Method with no error and only one exercise', async ()=>{
+    let testbodyofbenchmarking = {
+        _id: '5099803da3f494add2f5d757',
+        userId: "5099803df3f494add2f9dba7",
+        exercise_one_amount: 35,
+        exercise_one_name: "pullups",
         week_counter: 4
       };
   
