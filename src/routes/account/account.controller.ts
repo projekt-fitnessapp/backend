@@ -24,7 +24,7 @@ export async function saveAccount(req: Request, res: Response) {
 
       return res.status(201).json({ userId });
     } else {
-      throw new Error("Save failed");
+      throw new Error('Save failed');
     }
   } catch (e) {
     return res.status(400).json(e);
@@ -34,7 +34,7 @@ export async function saveAccount(req: Request, res: Response) {
 export async function changeAccount(req: Request, res: Response) {
   try {
     if (!req.body._id) {
-      return res.status(400).send();
+      return res.status(400).send('_iId is missing!');
     }
     const userId = req.body._id;
     const filter = { _id: userId };
@@ -44,6 +44,6 @@ export async function changeAccount(req: Request, res: Response) {
 
     return res.status(201).send(resBody);
   } catch (error) {
-    return res.status(400).send();
+    return res.status(400).send(error);
   }
 }
