@@ -40,6 +40,8 @@
     "response-time": "^2.3.2",
     "uuid": "^9.0.0",
     "winston": "^3.8.2",
+    "winston-mongodb": "^5.1.1",
+    "winston-transport": "^4.5.0",
     "winston-visualize": "^1.0.2"
   },
   "devDependencies": {
