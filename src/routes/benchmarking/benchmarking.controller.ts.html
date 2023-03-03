@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/routes/lastTrainingSession/lastTrainingSession.controller.ts</title>
+    <title>Code coverage report for src/routes/benchmarking/benchmarking.controller.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/routes/lastTrainingSession</a> lastTrainingSession.controller.ts</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/routes/benchmarking</a> benchmarking.controller.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.23% </span>
+                <span class="strong">95.23% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/17</span>
+                <span class='fraction'>20/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>8/8</span>
+                <span class='fraction'>3/4</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">86.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>13/15</span>
+                <span class='fraction'>18/18</span>
             </div>
         
             
@@ -95,10 +95,7 @@
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -107,65 +104,59 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, Response } from 'express';
-import { TrainingSession } from '../../schemas/training.session';
+import { Benchmarking } from '../../schemas/benchmarking';
 &nbsp;
-export async function getLastTrainingSession(req: Request, res: Response) {
+export async function getBenchmarking(req: Request, res: Response) {
   try {
     if (!req.query.userId) {
-      return res.status(400).json({ msg: 'userId is missing' });
+      throw new Error();
     }
-    if (!req.query.trainingDayId) {
-      return res.status(400).json({ msg: 'trainingDayId is missing' });
-    }
-    const userId = req.query.userId.toString();
-    const trainingDayId = req.query.trainingDayId.toString();
-    const lastSessionDoc = await TrainingSession.find({
-      userId: userId,
-      trainingDayId: trainingDayId,
-    })
-      .sort({ date: -1 })
-      .limit(1)
-      .populate({
-        path: 'executions',
-        populate: {
-          path: 'exercise',
-        },
-      });
-    if (!lastSessionDoc || lastSessionDoc.length == 0) {
-      return res.status(404).send();
-    }
-    const lastSession = lastSessionDoc.map((session) =&gt; session.toJSON());
-    return res.status(200).json(lastSession[0]);
-  } catch (error) {
-<span class="cstat-no" title="statement not covered" >    console.log(error);</span>
-<span class="cstat-no" title="statement not covered" >    return res.status(500).send();</span>
+    const docs = await Benchmarking.find({ userId: req.query.userId }).sort({
+      date: -1,
+    });
+    res.status(200);
+    return res.json(docs);
+  } catch (e) {
+    res.status(400);
+    return res.send(e);
+  }
+}
+&nbsp;
+export async function saveBenchmarking(req: Request, res: Response) {
+  try {
+    const reqBody = req.body;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (reqBody._id == '') <span class="cstat-no" title="statement not covered" >delete reqBody._id;</span>
+    const savedBody = await Benchmarking.create(req.body);
+    const bodyId = savedBody._id;
+    res.status(201);
+    return res.json({ bodyId });
+  } catch (e) {
+    res.status(401);
+    return res.send(e);
   }
 }
 &nbsp;</pre></td></tr></table></pre>
