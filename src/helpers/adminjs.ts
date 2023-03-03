@@ -3,14 +3,14 @@ import * as AdminJSMongoose from '@adminjs/mongoose'
 import AdminJS from 'adminjs'
 import { LogEntry } from './logging.entity'
 
-    AdminJS.registerAdapter({
-      Resource: AdminJSMongoose.Resource,
-      Database: AdminJSMongoose.Database,
-    })
+AdminJS.registerAdapter({
+    Resource: AdminJSMongoose.Resource,
+    Database: AdminJSMongoose.Database,
+})
 
-    const adminOptions = {
-      // We pass Category to `resources`
-      resources: [{
+const adminOptions = {
+    // We pass Category to `resources`
+    resources: [{
         resource: LogEntry,
         options: {
             listProperties: ['message', 'level', 'timestamp'],
@@ -22,14 +22,12 @@ import { LogEntry } from './logging.entity'
                 direction: 'desc'
             }
         }
-      }]
-    }
-  
-    
+    }]
+}
 
-    const adminJS = new AdminJS(adminOptions)
-    adminJS.watch()
-  
-    export default AdminJSExpress.buildRouter(adminJS)
-  
-  
+
+const adminJS = new AdminJS(adminOptions)
+adminJS.watch()
+
+export default AdminJSExpress.buildRouter(adminJS)
+

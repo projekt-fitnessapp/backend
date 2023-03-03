@@ -3,6 +3,8 @@ import basicAuth from 'express-basic-auth';
 import logger from './helpers/logging';
 import loggingMiddleware from './middleware/logging.middleware';
 import adminjs from './helpers/adminjs';
+//@ts-expect-error no type declarations available
+import winstonVisualize from 'winston-visualize'
 
 const app = setupServer(false);
 connectDB(false, logger).then(() => {
@@ -26,8 +28,12 @@ connectDB(false, logger).then(() => {
 
   app.use(loggingMiddleware);
 
-  //winstonVisualize(app, logger);
-  app.use('/admin', adminjs)
+  winstonVisualize(app, logger);
+
+  //only use adminjs in prod
+  if (process.env.LOGS_MONGO_ACTIVE) {
+    app.use('/admin', adminjs)
+  }
 
   process.on("uncaughtExceptionMonitor", (err) => {
     logger.log('error', err.toString());
