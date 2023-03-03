@@ -11,7 +11,7 @@ const app = setupServer(false);
 /**
  * Begin Important Logging Code do not remove or alter 
  */
-function getUnauthorizedResponse() {
+function getUnauthorizedResponse() { 
   return 'You shall not pass'
 }
 
