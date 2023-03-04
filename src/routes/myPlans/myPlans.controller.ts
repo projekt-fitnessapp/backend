@@ -12,7 +12,7 @@ export async function getMyPlans(req: Request, res: Response) {
     const user = (await Account.findById(req.query.userId))?.toJSON();
 
     if (!user) {
-      return res.status(400).send('User not found');
+      return res.status(400).send({ msg: 'User not found' });
     }
 
     const myPlanDocs = await TrainingPlan.find({

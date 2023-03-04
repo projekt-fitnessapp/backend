@@ -149,7 +149,7 @@ describe('Testing the myPlans route', () => {
     );
 
     expect(response.status).to.equal(400);
-    expect(response.body).to.deep.equal('User not found');
+    expect(response.body).to.deep.equal({msg: 'User not found'});
   });
 
   test('Get 400 bc of missing id', async () => {
