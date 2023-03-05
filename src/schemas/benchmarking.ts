@@ -6,7 +6,7 @@ const BenchmarkingSchema = new Schema({
     date: { type: Number, default: Date.now() },
     exercise_amount: { type: Number, required: true },
     exercise_name: { type: String, required: true },
-    week_counter: { type: Number, required: true }
+    week_counter: { type: Number, required: false }
 });
 
 export const Benchmarking = mongoose.model<BenchmarkingDocument, BenchmarkingModel>('Benchmarking', BenchmarkingSchema, 'benchmarking');
