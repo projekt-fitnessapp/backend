@@ -66,17 +66,22 @@ export async function postTrainingSession(req: Request, res: Response) {
     req.body.executions = newExecution;
     const saved = await TrainingSession.create(req.body);
     if (saved) {
-      if (req.params.trainingPlanId) {
-        const trainingPlan = (await TrainingPlan.findById({id: req.params.trainingPlanId}).populate('trainingDays'))?.toJSON();
-        if (trainingPlan === undefined) {
+      if (req.query.trainingPlanId != undefined) {
+        const trainingPlan = await TrainingPlan.findById(req.query.trainingPlanId).populate('trainingDays');
+        if (trainingPlan === null) {
           res.status(202);
+          res.statusMessage = 'Session saved but nextDay couldn`t be updated.';
           return res.json(saved._id._id);
         }
-        const modifiedTrainingPlan = trainingPlan;
-        modifiedTrainingPlan.nextDay = (trainingPlan.nextDay + 1) % trainingPlan.trainingDays.length();
-        TrainingPlan.replaceOne(trainingPlan, trainingPlan);
+        const modifiedTrainingPlan = trainingPlan.toJSON();
+        modifiedTrainingPlan.nextDay = (modifiedTrainingPlan.nextDay+1)%modifiedTrainingPlan.trainingDays.length;
+        await TrainingPlan.findOneAndReplace(trainingPlan._id, modifiedTrainingPlan, {returnDocument: 'after'});
+        res.status(201);
+        res.statusMessage = 'Session saved and nextDay updated.';
+        return res.json(saved._id._id);
       }
-      res.status(201);
+      res.status(202);
+      res.statusMessage = 'Session saved but no planId was provided, so nextDay couldn`t be updated.';
       return res.json(saved._id._id);
     } else {
       throw new Error();
