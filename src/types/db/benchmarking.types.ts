@@ -4,12 +4,8 @@ export type TBenchmarking = {
     _id: ObjectId,
     userId: string,
     date: Date,
-    exercise_one_amount: number,
-    exercise_one_name: string,
-    exercise_two_amount: number,
-    exercise_two_name: string,
-    exercise_three_amount: number,
-    exercise_three_name: string,
+    exercise_amount: number,
+    exercise_name: string,
     week_counter: number
 }
 

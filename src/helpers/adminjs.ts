@@ -46,7 +46,7 @@ const adminOptions = {
             listProperties: ['message', 'level', 'timestamp'],
             filterProperties: ['message', 'level', 'timestamp', 'statusCode'],
             editProperties: [],
-            showProperties: ['message', 'level', 'timestamp', 'statusCode', 'time', 'path', 'method'],
+            showProperties: ['message', 'level', 'timestamp', 'statusCode', 'time', 'path', 'method', 'payload'],
             sort: {
                 sortBy: 'timestamp',
                 direction: 'desc'
@@ -59,5 +59,14 @@ const adminOptions = {
 const adminJS = new AdminJS(adminOptions)
 adminJS.watch()
 
-export default AdminJSExpress.buildRouter(adminJS)
+export default AdminJSExpress.buildAuthenticatedRouter(adminJS, {
+    authenticate: (email, password) => {
+        if (email == 'logadmin' && password == process.env.LOGS_PASSWORD as string) {
+            return true;
+        }
+
+        return false;
+    },
+    cookiePassword: 'session Key',
+})
 

@@ -3,10 +3,10 @@ import { Benchmarking } from '../../schemas/benchmarking';
 
 export async function getBenchmarking(req: Request, res: Response) {
   try {
-    if (!req.query.userId) {
-      throw new Error();
+    if (!req.query.userId || !req.query.exercise_name) {
+      throw new Error('not all variables were given');
     }
-    const docs = await Benchmarking.find({ userId: req.query.userId }).sort({
+    const docs = await Benchmarking.find({ userId: req.query.userId, exercise_name: req.query.exercise_name }).sort({
       date: -1,
     });
     res.status(200);

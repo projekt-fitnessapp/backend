@@ -23,16 +23,20 @@ describe("Benchmarking Endpoint Tests", ()=>{
         await Benchmarking.create({
             _id: "5099803df3f494add2f9d707",
             userId: "5099803df3f414add2f9dba7",
-            exercise_one_amount: 35,
-            exercise_one_name: "pullups",
-            exercise_two_amount: 35,
-            exercise_two_name: "pushups",
-            exercise_three_amount: 125,
-            exercise_three_name: "weightlifting",
+            exercise_amount: 35,
+            exercise_name: "pullups",
             week_counter: 4
         });
+
+        await Benchmarking.create({
+          _id: "5099803df3f494add2f9d708",
+          userId: "5099803df3f414add2f9dba7",
+          exercise_amount: 105,
+          exercise_name: "weightlifting",
+          week_counter: 4
+      });
     
-        const res = await testserver.get("/benchmarking?userId=5099803df3f414add2f9dba7");
+        const res = await testserver.get("/benchmarking?userId=5099803df3f414add2f9dba7&exercise_name=weightlifting");
         expect(res.status).to.equal(200);
       });
 
@@ -46,19 +50,15 @@ describe("Benchmarking Endpoint Tests", ()=>{
     let testbodyofbenchmarking = {
         _id: '5099803da3f494add2f5d757',
         userId: "5099803df3f494add2f9dba7",
-        exercise_one_amount: 35,
-        exercise_one_name: "pullups",
-        exercise_two_amount: 35,
-        exercise_two_name: "pushups",
-        exercise_three_amount: 125,
-        exercise_three_name: "weightlifting",
+        exercise_amount: 35,
+        exercise_name: "pullups",
         week_counter: 4
       };
   
     const res = await testserver.post("/benchmarking").send(testbodyofbenchmarking).set('Accept', 'application/json');
     expect(res.status).to.equal(201);
 
-    const res2 = await testserver.get("/benchmarking?userId=5099803df3f494add2f9dba7");
+    const res2 = await testserver.get("/benchmarking?userId=5099803df3f494add2f9dba7&exercise_name=pullups");
     expect(res2.status).to.equal(200);
   });
 
@@ -66,15 +66,15 @@ describe("Benchmarking Endpoint Tests", ()=>{
     let testbodyofbenchmarking = {
         _id: '5099803da3f494add2f5d757',
         userId: "5099803df3f494add2f9dba7",
-        exercise_one_amount: 35,
-        exercise_one_name: "pullups",
+        exercise_amount: 35,
+        exercise_name: "pullups",
         week_counter: 4
       };
   
     const res = await testserver.post("/benchmarking").send(testbodyofbenchmarking).set('Accept', 'application/json');
     expect(res.status).to.equal(201);
 
-    const res2 = await testserver.get("/benchmarking?userId=5099803df3f494add2f9dba7");
+    const res2 = await testserver.get("/benchmarking?userId=5099803df3f494add2f9dba7&exercise_name=pullups");
     expect(res2.status).to.equal(200);
   });
 
