@@ -76,7 +76,7 @@ async function prepareDBEntries(): Promise<void> {
   fullyPopulatedTrainingPlan.trainingDays[0].exercises[0].exerciseId['__v'] = 0;
 }
 
-describe('Testing the myPlans route', () => {
+describe('Testing the myPlans/active route', () => {
   const testdb = new TestDatabase();
   const testserver = supertest(setupServer(true));
 
