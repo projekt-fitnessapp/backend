@@ -175,6 +175,6 @@ describe('Testing the myPlans route', () => {
     const response = await testserver.get(`/myPlans/active`);
 
     expect(response.status).to.equal(400);
-    expect(response.body).to.equal({ msg: 'No User Id provided' });
+    expect(response.body).to.deep.equal({ msg: 'No User Id provided' });
   });
 });
