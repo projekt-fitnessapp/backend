@@ -58,6 +58,7 @@ export async function postTrainingSession(req: Request, res: Response) {
     }
     const newExecution: string[] = [];
     await Promise.all(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       req.body.executions.map(async (execution: any) => {
         execution.exercise = execution.exercise._id;
         newExecution.push((await Execution.create(execution)).toJSON()._id);

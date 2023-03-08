@@ -2,16 +2,20 @@ import { Request, Response } from 'express';
 import { TrainingDay } from '../../schemas/training.day';
 
 export async function getTrainingDay(req: Request, res: Response) {
-  if (req.query.trainingDayId) {
-    const docs = await TrainingDay.findById(req.query.trainingDayId).populate(
-      'exercises.exerciseId'
-    );
-    if (!docs) {
-      return res.status(404).send({ msg: 'Not found' });
+  try {
+    if (req.query.trainingDayId) {
+      const docs = await TrainingDay.findById(req.query.trainingDayId).populate(
+        'exercises.exerciseId'
+      );
+      if (!docs) {
+        return res.status(404).send({ msg: 'Not found' });
+      }
+      return res.json(docs);
+    } else {
+      return res.status(400).send({ msg: 'trainingDayId is missing!' });
     }
-    return res.json(docs);
-  } else {
-    return res.status(400).send({ msg: 'trainingDayId is missing!' });
+  } catch (error) {
+    return res.status(500).send(error);
   }
 }
 

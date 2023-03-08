@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import { Account } from '../../schemas/account';
 import { TrainingPlan } from '../../schemas/training.plan';
 
 export async function getMyPlans(req: Request, res: Response) {
@@ -7,15 +8,22 @@ export async function getMyPlans(req: Request, res: Response) {
       res.statusMessage = 'No User Id provided';
       return res.sendStatus(400);
     }
+
+    const user = (await Account.findById(req.query.userId))?.toJSON();
+
+    if (!user) {
+      return res.status(400).send({ msg: 'User not found' });
+    }
+
     const myPlanDocs = await TrainingPlan.find({
-      userId: req.query.userId,
+      _id: { $in: user.trainingPlans },
     }).populate({
       path: 'trainingDays',
       populate: { path: 'exercises.exerciseId' },
     });
     const myPlans = myPlanDocs.map((plan) => plan.toJSON());
     if (!myPlanDocs || myPlans.length == 0) {
-      return res.sendStatus(404);
+      return res.status(200).json([]);
     }
 
     return res.json(myPlans);
