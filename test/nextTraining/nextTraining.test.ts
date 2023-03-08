@@ -177,7 +177,7 @@ describe('NextTraining Endpoint Tests', () => {
     );
 
     expect(res.status).to.equal(400);
-    expect(res.body).to.deep.equal({ msg: 'No training plan active.' });
+    expect(res.body).to.deep.equal({ msg: 'No Trainingplan found' });
   });
 
   afterEach(async () => {
