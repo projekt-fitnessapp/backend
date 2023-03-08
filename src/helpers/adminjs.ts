@@ -61,7 +61,7 @@ adminJS.watch()
 
 export default AdminJSExpress.buildAuthenticatedRouter(adminJS, {
     authenticate: (email, password) => {
-        if(email == 'logadmin' && password == 'logpassword') {
+        if (email == 'logadmin' && password == process.env.LOGS_PASSWORD as string) {
             return true;
         }
 
