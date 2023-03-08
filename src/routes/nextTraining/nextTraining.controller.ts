@@ -12,7 +12,7 @@ export async function getNextTraining(req: Request, res: Response) {
     const account = accountDoc?.toJSON();
 
     if (!account || account == null) {
-      return res.status(404).json({ msg: 'User not found' });
+      return res.status(400).json({ msg: 'User not found' });
     }
     if (account.activePlan == ' ') {
       return res.status(400).json({ msg: 'No training plan active.' });
@@ -21,7 +21,7 @@ export async function getNextTraining(req: Request, res: Response) {
     const trainingPlan = trainingPlanDoc?.toJSON();
 
     if (!trainingPlan || trainingPlan == null) {
-      return res.status(404).json({ msg: 'No Trainingplan found' });
+      return res.status(400).json({ msg: 'No Trainingplan found' });
     }
     const nextTrainingDayId = trainingPlan.trainingDays[trainingPlan.nextDay];
     const trainingDayDoc = await TrainingDay.findById(
