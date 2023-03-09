@@ -87,8 +87,6 @@ export async function putTrainingPlan(
 
     await TrainingPlan.findOneAndUpdate(filter, req.body, { new: true })
 
-    console.log(await TrainingPlan.findOne(filter));
-
     res.status(201).send(await TrainingPlan.findOne(filter).populate({
       path: 'trainingDays',
       model: 'Training Day',
