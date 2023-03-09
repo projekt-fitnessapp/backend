@@ -5,8 +5,8 @@ import { Exercise } from '../../schemas/exercise';
 import { Account } from '../../schemas/account';
 
 const withMachinesEquipment = [
-  'barbell', //?
-  'assisted', //?
+  'barbell',
+  'assisted',
   'leverage machine',
   'sled machine',
   'upper body ergometer',
@@ -57,7 +57,7 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
     // Full Body Trainingsplan (2 oder 3 Trainingssession / Woche)
     if (numberTrainingssessions == 2 || numberTrainingssessions == 3){
 
-      nameOfTrainingPlan = 'Full Body training plan';
+      nameOfTrainingPlan = 'Full body training plan';
       split = 1;
       nameOfTrainingDayOne = 'Full body';
       const neededMuscles = ['pectorals', 'quads', 'delts', 'lats', 'hamstrings', 'abs'];
@@ -160,7 +160,7 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
       nameOfTrainingDayOne = "Front upper body"
       nameOfTrainingDayTwo = "Leg Day"
       nameOfTrainingDayThree = "Back and abs"
-      nameOfTrainingPlan = '3er Split training plan';
+      nameOfTrainingPlan = '3 split training plan';
 
       split = 3
       const firstTrainingDayMuscles = ['pectorals', 'biceps', 'triceps'];
