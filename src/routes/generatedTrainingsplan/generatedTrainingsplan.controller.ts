@@ -38,21 +38,16 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
 
   try {
 
-
-
-
-
     if (!req.body.user_id) throw Error('UserId is missing');
     if (!req.body.numberOfTraininssession) throw Error('Number of Trainingssessions is missing');
     if (!req.body.trainingsType) throw Error('Training type is missing');
     
 
-    var numberTrainingssessions = req.body.numberOfTraininssession;
-    var ergebnis;
+    const numberTrainingssessions = req.body.numberOfTraininssession;
     const firstTrainingDayExercises = new Array<any>;
     const secondTrainingDayExercises = new Array<any>;
     const thirdTrainingDayExercises = new Array<any>;
-    var nameOfTrainingPlan = 'Trainingsplan';
+    let nameOfTrainingPlan = 'Trainingsplan';
     const trainingsDayIds = new Array<string>;
     let nameOfTrainingDayOne = '';
     let nameOfTrainingDayTwo = '';
@@ -69,12 +64,12 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
 
       for(const muscle of neededMuscles){
         if (muscle == 'lats'){
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
           }
         } else{
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
           }}}
@@ -97,29 +92,29 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
 
       for(const muscle of upperBodyMuscles){
         if (muscle == 'pectorals'){
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
           }
         }else if (muscle == 'lats'){
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
           }
         }else{
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
           }}}
 
       for(const muscle of lowerBodyMuscles){
         if (muscle == 'abs'){
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             secondTrainingDayExercises.push(ergebnis[i]);
           }
         } else{
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
           for (let i = 0; i < ergebnis.length; i++) {
             secondTrainingDayExercises.push(ergebnis[i]);
           }}   
@@ -135,24 +130,24 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
         
       for(const muscle of pushMuscles){
         if (muscle == 'pectorals'){
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
         }
         } else {
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
           }}}
 
       for(const muscle of pullMuscles){
         if (muscle == 'lats' || muscle == 'abs'){
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             secondTrainingDayExercises.push(ergebnis[i]);
           }
         } else {
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
           for (let i = 0; i < ergebnis.length; i++) {
             secondTrainingDayExercises.push(ergebnis[i]);
           }}}
@@ -174,30 +169,30 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
 
       for(const muscle of firstTrainingDayMuscles){
         if (muscle == 'pectorals'){
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 4);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 4);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
           }
         }else{
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 3);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 3);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
           }}}
 
       for(const muscle of secondTrainingDayMuscles){
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
           for (let i = 0; i < ergebnis.length; i++) {
             secondTrainingDayExercises.push(ergebnis[i]);
           }}   
     
       for(const muscle of thirdTrainingDayMuscles){
         if (muscle == 'lats'){
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 4);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 4);
           for (let i = 0; i < ergebnis.length; i++) {
             thirdTrainingDayExercises.push(ergebnis[i]);
           }
         } else{
-          ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
           for (let i = 0; i < ergebnis.length; i++) {
             thirdTrainingDayExercises.push(ergebnis[i]);
           }}   
@@ -290,8 +285,8 @@ async function getExercisesForSpecificMuscle(muscle: string, equipment: string, 
 
   searchedExercise.muscle = muscle;
 
-  let finalExercises = new Array();
-  let filteredExercises = new Array();
+  let finalExercises: Array<any> = [];
+  let filteredExercises: Array<any> = [];
   const exercises = await Exercise.find(searchedExercise).select( '_id equipment name muscle gifUrl instruction');
 
   // Fall 1: Es wurden genau so viele Übungen für eine Muskelgruppe wie gewünscht gefunden
@@ -312,7 +307,7 @@ async function getExercisesForSpecificMuscle(muscle: string, equipment: string, 
     } 
      // Es wurden mehr Übungen für dieses Equipment für diese Musklegruppe gefunden als notwendig --> es werden zufällig Übungen ausgesucht
     else if (filteredExercises.length > numberOfExercises){
-      let randomNumbers = [];
+      const randomNumbers = [];
       while(randomNumbers.length < numberOfExercises){
         const r = Math.floor((Math.random() * filteredExercises.length) + 1);
         if(randomNumbers.indexOf(r) === -1) randomNumbers.push(r);
