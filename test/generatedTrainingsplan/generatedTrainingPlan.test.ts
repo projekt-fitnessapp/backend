@@ -19,6 +19,10 @@ describe('Testing the generatedTrainingPlan route', () => {
     }
   });
 
+  afterEach(async () => {
+    await testdb.cleanup();
+  });
+
   test('Post with no error (201)', async () => {
 
     for (const testObject of testObjects){
@@ -46,4 +50,67 @@ describe('Testing the generatedTrainingPlan route', () => {
     expect(res.status).to.equal(201);
 
   });
+
+
+  test('Post 400 without userId', async () => {
+
+    let testbody = {
+        user_id: "",
+        numberOfTraininssession: 2,
+        trainingsStatus: "untrained",
+        trainingsType: "withMachines"
+      };
+
+    const res = await testserver.post("/generatedTrainingsplan").send(testbody).set('Accept', 'application/json');
+    expect(res.status).to.equal(400);
+  });
+
+  test('Post 400 without numberOfTraininssession', async () => {
+
+    var mongoose = require('mongoose');
+    var objectId = mongoose.Types.ObjectId('5099503df6f494ade3f9d705');
+
+    let testbody = {
+        user_id: objectId,
+        numberOfTraininssession: null,
+        trainingsStatus: "untrained",
+        trainingsType: "withMachines"
+      };
+
+    const res = await testserver.post("/generatedTrainingsplan").send(testbody).set('Accept', 'application/json');
+    expect(res.status).to.equal(400);
+  });
+
+  test('Post 400 without trainingsType', async () => {
+
+    var mongoose = require('mongoose');
+    var objectId = mongoose.Types.ObjectId('5099503df6f494ade3f9d705');
+
+    let testbody = {
+        user_id: objectId,
+        numberOfTraininssession: 2,
+        trainingsStatus: "untrained",
+        trainingsType: null
+      };
+
+    const res = await testserver.post("/generatedTrainingsplan").send(testbody).set('Accept', 'application/json');
+    expect(res.status).to.equal(400);
+  });
+
+  test('Post 400 with non existent userId', async () => {
+
+    var mongoose = require('mongoose');
+    var objectId = mongoose.Types.ObjectId('2029503df6f294ade3f2d705');
+
+    let testbody = {
+        user_id: objectId,
+        numberOfTraininssession: 2,
+        trainingsStatus: "untrained",
+        trainingsType: "withMachines"
+      };
+
+    const res = await testserver.post("/generatedTrainingsplan").send(testbody).set('Accept', 'application/json');
+    expect(res.status).to.equal(400);
+  });
+
 });
