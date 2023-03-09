@@ -13,7 +13,7 @@ interface ILogEntry {
     statusCode?: number
     time?: number
     method?: string
-    payload?: any
+    payload?: string // JSON stringified string
 }
 
 
