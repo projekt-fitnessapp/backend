@@ -1,9 +1,7 @@
 import { Request, Response } from 'express';
-//import { UpdateQuery } from 'mongoose';
 import { Account } from '../../schemas/account';
 import { TrainingDay } from '../../schemas/training.day';
 import { TrainingPlan } from '../../schemas/training.plan';
-//import { TrainingDayDocument } from '../../types/db/training.day.types';
 
 export async function getTrainingPlan(
   req: Request,
