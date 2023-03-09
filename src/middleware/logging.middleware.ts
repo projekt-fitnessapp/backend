@@ -10,10 +10,7 @@ export default responseTime((req: express.Request, res: express.Response, time: 
                 statusCode: <number>res.statusCode,
                 time: time,
                 method: req.method,
-                payload: {
-                    body: req.body,
-                    query: req.query
-                }
+                payload: JSON.stringify(req.body, null, 4),
             });
             return;
         }
