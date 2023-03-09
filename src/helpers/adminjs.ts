@@ -26,7 +26,7 @@ const LogEntrySchema = new Schema<ILogEntry>(
         statusCode: { type: 'Number', required: false },
         time: { type: 'Number', required: false },
         method: { type: 'String', required: false },
-        payload: { type: 'Object', required: false }
+        payload: { type: 'String', required: false }
     },
     { timestamps: true },
 )
@@ -50,7 +50,7 @@ const adminOptions = {
             sort: {
                 sortBy: 'timestamp',
                 direction: 'desc'
-            }
+            },
         }
     }]
 }
