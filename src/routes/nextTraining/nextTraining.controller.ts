@@ -28,6 +28,7 @@ export async function getNextTraining(req: Request, res: Response) {
       nextTrainingDayId
     ).populate('exercises.exerciseId');
     const trainingDay = trainingDayDoc?.toJSON();
+    if (trainingDay) trainingDay['trainingPlanId'] = trainingPlan['_id'];
     return res.send(trainingDay);
   } catch (e) {
     return res.status(500).send(e);
