@@ -161,8 +161,6 @@ describe('Testing TrainingPlan Route', () => {
         nextDay: 3,
       });
 
-      console.log(res.body)
-
     expect(res.status).to.equal(201);
     expect(res.body).to.deep.equal({
       __v: 0,
