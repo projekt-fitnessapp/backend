@@ -318,15 +318,16 @@ async function getExercisesForSpecificMuscle(muscle: string, equipment: string, 
     } 
     // Es wurden zu wenige Übungen für dieses Equipment für diese Musklegruppe gefunden wie notwendig
     else if (filteredExercises.length < numberOfExercises){  
-      finalExercises.push(filteredExercises);
+      if (filteredExercises.length > 0){
+        finalExercises.push(filteredExercises);
+      }
       while(finalExercises.length < numberOfExercises){
         const randomNumber = Math.floor((Math.random() * exercises.length) + 1);
-        if (finalExercises.includes(exercises[randomNumber-1])){
-          finalExercises.push(filteredExercises);
+        if (!finalExercises.includes(exercises[randomNumber-1])){
+          finalExercises.push(exercises[randomNumber-1]);
         }
       }
-    }
+    } 
   }
   return finalExercises;
 }
-
