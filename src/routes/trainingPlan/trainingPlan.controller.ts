@@ -30,7 +30,6 @@ export async function postTrainingPlan(
       const account = await Account.findById(req.query.userId)
       id = (await TrainingPlan.create(req.body))._id.toString()
       if (account != null) {
-        console.log('\n\n\nWhoop whoop!\n\n\n')
         const filter = { _id: req.query.userId }
         await Account.findOneAndUpdate(filter, { $push: { trainingPlans: id } }, { new: true })
       } else {
@@ -52,19 +51,9 @@ export async function putTrainingPlan(
 ) {
   try {
     if (!req.query.trainingPlanId) throw new Error("No trainingPlanId provided!");
-    /*if (!Array.isArray(req.body.trainingDays)) {
-      res.statusMessage = 'TrainingDays has to be an array!'
-      res.status(400)
-      return
-    }*/
     const newTrainingDays = req.body.trainingDays
     const tDays: string[] = []
     for await (const newDay of newTrainingDays) {
-      /*if (newDay === undefined) {
-        res.statusMessage = 'New TrainingDay undefined'
-        res.sendStatus(400)
-        return
-      }*/
       const newExercises = newDay.exercises
       newExercises.forEach((newExercise: { exerciseId: { _id: any } }) => {
         newExercise.exerciseId = newExercise.exerciseId._id

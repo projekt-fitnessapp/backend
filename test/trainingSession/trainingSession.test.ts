@@ -62,7 +62,7 @@ describe('Testing the training session route', () => {
       ]
     })
 
-    const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5&id=[5099803df3f4948bd2f98548]")
+    const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5&id=5099803df3f4948bd2f98548&id=5099803df3f4948bd2f98547")
 
     expect(response.status).to.equal(200)
     expect(response.body).to.deep.equal([
@@ -180,6 +180,13 @@ describe('Testing the training session route', () => {
         ]
       }
     ])
+  })
+
+  test('Testing get training session without a userId', async () => {
+
+    const response = await testserver.get("/trainingSession")
+
+    expect(response.status).to.equal(400)
   })
 
   test('Testing get training session without a hit', async () => {
@@ -316,7 +323,7 @@ describe('Testing the training session route', () => {
     const trainingSession = {
       _id: "5099803df3f4948bd2f98548",
       date: "2016-05-18T16:30:00Z",
-      executions: []
+      executions: false
     }
 
     const res = await testserver.post("/trainingSession").send(trainingSession).set('Accept', 'application/json');
