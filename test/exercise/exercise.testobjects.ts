@@ -1,318 +1,298 @@
 export const testObjects = [
   {
-    _id: "634ac754a956a13abd771083",
-    name: "3/4 sit-up",
-    instruction:
-      "Lie down on the floor and secure your feet. Your legs should be bent at the knees. Place your hands behind or to the side of your head. You will begin with your back on the ground. This will be your starting position. Flex your hips and spine to raise your torso toward your knees. At the top of the contraction your torso should be perpendicular to the ground. Reverse the motion, going only Â¾ of the way down. Repeat for the recommended amount of repetitions.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0001.gif",
-    muscle: "abs",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd77108a",
-    name: "45° side bend",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0002.gif",
-    muscle: "abs",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd77108b",
-    name: "air bike",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0003.gif",
-    muscle: "abs",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd77108c",
-    name: "all fours squad stretch",
-    instruction:
-      "Start off on your hands and knees, then lift your leg off the floor and hold the foot with your hand. Use your hand to hold the foot or ankle, keeping the knee fully flexed, stretching the quadriceps and hip flexors. Focus on extending your hips, thrusting them towards the floor. Hold for 10-20 seconds and then switch sides.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1512.gif",
-    muscle: "quads",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd77108d",
-    name: "alternate heel touchers",
-    instruction:
-      "Lie on the floor with the knees bent and the feet on the floor around 18-24 inches apart. Your arms should be extended by your side. This will be your starting position. Crunch over your torso forward and up about 3-4 inches to the right side and touch your right heel as you hold the contraction for a second. Exhale while performing this movement. Now go back slowly to the starting position as you inhale. Now crunch over your torso forward and up around 3-4 inches to the left side and touch your left heel as you hold the contraction for a second. Exhale while performing this movement and then go back to the starting position as you inhale. Now that both heels have been touched, that is considered 1 repetition. Continue alternating sides in this manner until all prescribed repetitions are done.  Variations: None",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0006.gif",
-    muscle: "abs",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd77108e",
-    name: "alternate lateral pulldown",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0007.gif",
-    muscle: "lats",
-    equipment: "cable",
-  },
-  {
-    _id: "634ac754a956a13abd77108f",
-    name: "ankle circles",
-    instruction:
-      "Use a sturdy object like a squat rack to hold yourself. Lift the right leg in the air (just around 2 inches from the floor) and perform a circular motion with the big toe. Pretend that you are drawing a big circle with it. Tip: One circle equals 1 repetition. Breathe normally as you perform the movement. When you are done with the right foot, then repeat with the left leg.  Variations: None",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1368.gif",
-    muscle: "calves",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd771090",
-    name: "archer pull up",
-    instruction:
-      "Grab the pull-up bar with the palms facing forward using a wide grip. As you have both arms extended in front of you holding the bar at a wide grip, bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position. Pull your torso up while leaning to the left hand side until the bar almost touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space (no swinging) and only the arms should move. The forearms should do no other work other than hold the bar. After a second of contraction, inhale as you go back to the starting position. Now, pull your torso up while leaning to the right hand side until the bar almost touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space and only the arms should move. The forearms should do no other work other than hold the bar. After a second of contraction, inhale as you go back to the starting position. Repeat steps 3-6 until you have performed the prescribed amount of repetitions for each side.  Caution: If you are new to this exercise and do not have the strength to perform it, using a spotter to hold your legs can help being that it requires putting a lot of stress on the rotator cuffs. Alternatively you can also use a chin assist machine. Variations: If you have developed enough strength to perform this exercise with weights, do so with caution. Side to side chins can be a challenging exercise and if not performed correctly, can cause injury. Before attempting to use weights, make sure you are able to perform the exercise with good form. You can also perform the side to side chins by doing all reps to one side and then the next or by also including the middle movement as well (in which case you would pull up first to the left hand side, then the middle and then the right side). You can use a chin assist machine if you do not have the strength to perform the exercise on your own.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3293.gif",
-    muscle: "lats",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd771091",
-    name: "archer push up",
-    instruction:
-      "Assume a push-up position with your body straight, supported by your extended arms. Your hands should be outside of shoulder width. This will be your starting position. Initiate the movement by flexing the elbows and leaning to one side, lowering your torso to the ground. Return to the starting position by extending your elbows, pushing yourself back to center. On the next repetition lower yourself to the other side, again returning to the starting position after the rep is complete. Continue alternating until the set is finished.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3294.gif",
-    muscle: "pectorals",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd771092",
-    name: "arm slingers hanging bent knee legs",
-    instruction:
-      "Take a grip on pull-ups bars; hang with your knees together and your body straight. This will be your starting position. Initiate the movement by flexing the hips and knees, drawing the legs up. Pull the knees up into one side, going above 90 degrees at the hip. Avoid any swinging, performing the exercise with control. Return to the starting position and then perform the movement to the other side. Continue alternating until the set in complete.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/2355.gif",
-    muscle: "abs",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd771093",
-    name: "arm slingers hanging straight legs",
-    instruction:
-      "Hang from a chin-up bar with both arms extended at arms length in top of you using either a wide grip or a medium grip. The legs should be straight down with the pelvis rolled slightly backwards. This will be your starting position. Raise your legs until the torso makes a 90-degree angle with the legs. Exhale as you perform this movement and hold the contraction for a second or so. Go back slowly to the starting position as you breathe in. Repeat for the recommended amount of repetitions.  Caution: Perform this exercise slowly and deliberately as it takes some getting used to. Also, do not be hasty and try to use weights on the first time; you'll have enough in your hands by holding your weight and also learning how to balance yourself so that you avoid swinging your torso. As you get more advanced you can hold a dumbbell in between your feet. However, you have to be very careful when adding weight to this exercise as if you add too much too quickly you could get a hernia. Variations: This exercise can also be performed using a vertical bench that makes the exercise easier by supporting your upper back in place and by allowing you to hold yourself by placing your elbows and arms on the side pads.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/2333.gif",
-    muscle: "abs",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd771094",
-    name: "arms apart circular toe touch (male)",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3214.gif",
-    muscle: "glutes",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd771095",
-    name: "arms overhead full sit-up (male)",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3204.gif",
-    muscle: "abs",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd771096",
-    name: "assisted chest dip (kneeling)",
-    instruction:
-      "Sit securely in a dip machine, select the weight and firmly grasp the handles. Now keep your elbows in at your sides in order to place emphasis on the triceps. The elbows should be bent at a 90 degree angle. As you contract the triceps, extend your arms downwards as you exhale. Tip: At the bottom of the movement, focus on keeping a little bend in your arms to keep tension on the triceps muscle. Now slowly let your arms come back up to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations: You can perform this exercise on parallel bars or on a triceps dip assist machine.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0009.gif",
-    muscle: "pectorals",
-    equipment: "leverage machine",
-  },
-  {
-    _id: "634ac754a956a13abd771097",
-    name: "assisted hanging knee raise",
-    instruction:
-      "Hang from a pull-up bar with your arms extended and your feet together (use ab straps if your grip is weak). Lock a slight bend in your knees. This will be your starting position. Without swinging your body, contract your lower abs to raise your knees just past a position in which your thighs are parallel to the floor. As your pelvis begins to curl upward, your partner should place his hand just above your knees to push your legs back down to the starting position, keeping his hand in contact with your legs at all times. Engage your abs and try to resist the movement. With their free hand your partner can push against your lower back to ensure your body doesnâ€™t swing.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0011.gif",
-    muscle: "abs",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd771098",
-    name: "assisted lying calves stretch",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1708.gif",
-    muscle: "calves",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd771099",
-    name: "assisted lying glutes stretch",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1709.gif",
-    muscle: "glutes",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd77109a",
-    name: "assisted lying gluteus and piriformis stretch",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1710.gif",
-    muscle: "glutes",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd77109b",
-    name: "assisted lying leg raise with lateral throw down",
-    instruction:
-      "Lie supine on the floor with your feet together; your partner should position one foot on either side of your head and stand upright with his knees slightly bent. Grasp your partner's ankles to stabilize your torso. This will be your starting position. With a slight bend in your knees, do a reverse-crunch movement, raising your feet toward your partner while lifting your hips off the floor. Your partner should grab your ankles and push your feet back toward the start position. Donâ€™t allow your feet to contact the floor and smoothly reverse the direction, repeating for reps.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0012.gif",
-    muscle: "abs",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd77109c",
-    name: "assisted lying leg raise with throw down",
-    instruction:
-      "Lie supine on the floor with your feet together; your partner should position one foot on either side of your head and stand upright with his knees slightly bent. Grasp your partner's ankles to stabilize your torso. This will be your starting position. With a slight bend in your knees, do a reverse-crunch movement, raising your feet toward your partner while lifting your hips off the floor. Your partner should grab your ankles and push your feet back toward the start position. Donâ€™t allow your feet to contact the floor and smoothly reverse the direction, repeating for reps.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0013.gif",
-    muscle: "abs",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd77109d",
-    name: "assisted motion russian twist",
-    instruction:
-      "Lie down on the floor placing your feet either under something that will not move or by having a partner hold them. Your legs should be bent at the knees. Elevate your upper body so that it creates an imaginary V-shape with your thighs. Your arms should be fully extended in front of you perpendicular to your torso and with the hands clasped. This is the starting position. Twist your torso to the right side until your arms are parallel with the floor while breathing out. Hold the contraction for a second and move back to the starting position while breathing out. Now move to the opposite side performing the same techniques you applied to the right side. Repeat for the recommended amount of repetitions.  Variation: As you get more advanced, you can hold a weight with both arms for resistance.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0014.gif",
-    muscle: "abs",
-    equipment: "medicine ball",
-  },
-  {
-    _id: "634ac754a956a13abd77109e",
-    name: "assisted parallel close grip pull-up",
-    instruction:
-      "Use an assisted pull-up machine or securely attach a heavy-duty band to a pull-up station, securing it around just one knee. The tension should be taut enough to pull that lower leg up. Grasp the bar with an overhand grip just outside shoulder width and hang at full arm extension. This is your start position. Keeping your body straight, contract your lats to pull yourself up as high as you can, driving your elbows down. Slowly release to full arm extension. Repeat for the required number of reps and safely dismount from the apparatus.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0015.gif",
-    muscle: "lats",
-    equipment: "leverage machine",
-  },
-  {
-    _id: "634ac754a956a13abd77109f",
-    name: "assisted prone hamstring",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0016.gif",
-    muscle: "hamstrings",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd7710a0",
-    name: "assisted prone lying quads stretch",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1713.gif",
-    muscle: "quads",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd7710a1",
-    name: "assisted prone rectus femoris stretch",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1714.gif",
-    muscle: "abs",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd7710a2",
-    name: "assisted pull-up",
-    instruction:
-      "Use an assisted pull-up machine or securely attach a heavy-duty band to a pull-up station, securing it around just one knee. The tension should be taut enough to pull that lower leg up. Grasp the bar with an overhand grip just outside shoulder width and hang at full arm extension. This is your start position. Keeping your body straight, contract your lats to pull yourself up as high as you can, driving your elbows down. Slowly release to full arm extension. Repeat for the required number of reps and safely dismount from the apparatus.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0017.gif",
-    muscle: "lats",
-    equipment: "leverage machine",
-  },
-  {
-    _id: "634ac754a956a13abd7710a3",
-    name: "assisted seated pectoralis major stretch with stability ball",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1716.gif",
-    muscle: "pectorals",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd7710a4",
-    name: "assisted side lying adductor stretch",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1712.gif",
-    muscle: "adductors",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd7710a5",
-    name: "assisted sit-up",
-    instruction:
-      "Lie face-up on the floor, knees bent and feet flat on the floor about hip-width apart. Cross your fingertips and raise your hands above your head while your partner carefully holds your feet down by stepping on your toes. Your partner should extend one hand out in front of them and above your knees. This will be your starting position. Initiate the movement by contracting your abs to lift your shoulder blades off the floor, reaching to touch your partnerâ€™s hand. Use the strength of your abs to drive higher, not simply reaching with your arms. Donâ€™t allow your shoulder blades to come completely down between reps to keep tension on the muscle. Your partner can move the target point higher or lower, and to one side or the other, to increase the challenge.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1758.gif",
-    muscle: "abs",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd7710a6",
-    name: "assisted standing chin-up",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1431.gif",
-    muscle: "lats",
-    equipment: "leverage machine",
-  },
-  {
-    _id: "634ac754a956a13abd7710a7",
-    name: "assisted standing pull-up",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1432.gif",
-    muscle: "lats",
-    equipment: "leverage machine",
-  },
-  {
-    _id: "634ac754a956a13abd7710a8",
-    name: "assisted standing triceps extension (with towel)",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0018.gif",
-    muscle: "triceps",
-    equipment: "assisted",
-  },
-  {
-    _id: "634ac754a956a13abd7710a9",
-    name: "assisted triceps dip (kneeling)",
-    instruction:
-      "Sit securely in a dip machine, select the weight and firmly grasp the handles. Now keep your elbows in at your sides in order to place emphasis on the triceps. The elbows should be bent at a 90 degree angle. As you contract the triceps, extend your arms downwards as you exhale. Tip: At the bottom of the movement, focus on keeping a little bend in your arms to keep tension on the triceps muscle. Now slowly let your arms come back up to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations: You can perform this exercise on parallel bars or on a triceps dip assist machine.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0019.gif",
-    muscle: "triceps",
-    equipment: "leverage machine",
-  },
-  {
-    _id: "634ac754a956a13abd7710aa",
-    name: "assisted wide-grip chest dip (kneeling)",
-    instruction:
-      "Sit securely in a dip machine, select the weight and firmly grasp the handles. Now keep your elbows in at your sides in order to place emphasis on the triceps. The elbows should be bent at a 90 degree angle. As you contract the triceps, extend your arms downwards as you exhale. Tip: At the bottom of the movement, focus on keeping a little bend in your arms to keep tension on the triceps muscle. Now slowly let your arms come back up to the starting position as you inhale. Repeat for the recommended amount of repetitions.  Variations: You can perform this exercise on parallel bars or on a triceps dip assist machine.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/2364.gif",
-    muscle: "pectorals",
-    equipment: "leverage machine",
-  },
-  {
-    _id: "634ac754a956a13abd7710ab",
-    name: "astride jumps (male)",
-    instruction:
-      "Start by standing with your feet together. In one motion, jump your feet out to the side and raise your arms above your head. Immediately reverse the motion by jumping back to the starting position. Repeat for the recommended amount of repetitions.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3220.gif",
-    muscle: "cardiovascular system",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd7710ac",
-    name: "back and forth step",
-    instruction:
-      "Start in a relaxed position with one leg slightly forward. This will be your starting position. Skip by executing a step-hop pattern of right-right-step to left-left-step, and so on, alternating back and forth. Perform fast skips by maintaining close contact with the ground and reduce air time, moving as quickly as possible.",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3672.gif",
-    muscle: "cardiovascular system",
-    equipment: "body weight",
-  },
-  {
-    _id: "634ac754a956a13abd7710ad",
-    name: "back extension on exercise ball",
-    instruction: " ",
-    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1314.gif",
-    muscle: "spine",
-    equipment: "stability ball",
-  },
+    _id: "63ff1213bab825a9906e48a2",
+    name: "Liegestütze",
+    instruction: "Beginne in der Liegestützposition mit den Händen schulterbreit auseinander. Senke deinen Körper, bis deine Brust den Boden berührt, und drücke dich dann zurück nach oben.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0662.gif",
+    muscle: "Brust Trizeps Schultern",
+    equipment: "Bodyweight"
+},
+{
+    _id: "63ff1213bab825a9906e48a4",
+    name: "Kniebeugen",
+    instruction: "Stelle dich aufrecht hin, mit den Füßen schulterbreit auseinander. Beuge deine Knie und senke deinen Körper, als ob du dich auf einen Stuhl setzen würdest. Drücke dich zurück nach oben.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0043.gif",
+    muscle: "Quadrizeps Hüften Gesäßmuskulatur",
+    equipment: "Bodyweight"
+},
+{
+    _id: "63ff1213bab825a9906e48a6",
+    name: "Ausfallschritte",
+    instruction: "Stelle dich aufrecht hin, nimm einen großen Schritt nach vorne, senke deinen Körper, bis dein vorderes Knie im rechten Winkel gebogen ist. Drücke dich zurück nach oben und wiederhole auf der anderen Seite.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/3470.gif",
+    muscle: "Quadrizeps Gesäßmuskulatur Hüften",
+    equipment: "Bodyweight"
+},
+{
+    _id: "63ff1213bab825a9906e48a8",
+    name: "Klimmzüge",
+    instruction: "Greife eine Stange oder ein Klimmzuggerät und ziehe dich hoch, bis dein Kinn über der Stange ist. Senke dich langsam zurück nach unten.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0651.gif",
+    muscle: "Latissimus Bizeps Rücken",
+    equipment: "Bodyweight"
+},
+{
+    _id: "63ff1213bab825a9906e48aa",
+    name: "Bankdrücken",
+    instruction: "Liege mit dem Rücken auf einer Bank und halte eine Hantel oder eine Langhantel über deiner Brust. Senke die Hantel langsam auf deine Brust und drücke sie dann zurück nach oben.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0025.gif",
+    muscle: "Brust Trizeps Schultern",
+    equipment: "Barbell"
+},
+{
+    _id: "63ff1213bab825a9906e48ac",
+    name: "Rudern",
+    instruction: "Beuge dich nach vorne, halte eine Hantel oder eine Langhantel in deiner Hand und ziehe sie zu deinem Körper. Senke die Hantel langsam zurück und wiederhole die Bewegung.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0293.gif",
+    muscle: "Latissimus Bizeps Rücken",
+    equipment: "Barbell"
+},
+{
+    _id: "63ff1213bab825a9906e48ae",
+    name: "Crunches",
+    instruction: "Lege dich auf den Rücken und beuge die Knie. Platziere deine Hände hinter deinem Kopf und hebe deine Schultern vom Boden ab, während du deinen Bauch zusammenziehst. Senke dich langsam zurück und wiederhole die Bewegung.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0274.gif",
+    muscle: "Bauchmuskeln",
+    equipment: "Bodyweight"
+},
+{
+    _id: "63ff1213bab825a9906e48b0",
+    name: "Kettlebell Swings",
+    instruction: "Stelle dich mit den Füßen schulterbreit auseinander und halte eine Kettlebell mit beiden Händen vor deinem Körper. Beuge deine Knie und schwinge die Kettlebell zwischen deinen Beinen durch. Drücke dich nach oben und schwing die Kettlebell vor deinem Körper.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0549.gif",
+    muscle: "Gesäßmuskulatur Hüften Rücken",
+    equipment: "Kettlebell"
+},
+{
+    _id: "63ff1213bab825a9906e48b2",
+    name: "Beinpressen",
+    instruction: "Setze dich auf eine Beinpresse und drücke die Gewichte von dir weg, bis deine Beine fast gestreckt sind. Senke die Gewichte langsam zurück und wiederhole die Bewegung.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0739.gif",
+    muscle: "Quadrizeps Gesäßmuskulatur",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48b4",
+    name: "Seitheben",
+    instruction: "Stelle dich aufrecht hin, mit den Hanteln in deinen Händen und den Armen an deiner Seite. Hebe die Hanteln seitlich bis zur Schulterhöhe und senke sie dann langsam zurück.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0334.gif",
+    muscle: "Schultern",
+    equipment: "Dumbbell"
+},
+{
+    _id: "63ff1213bab825a9906e48b6",
+    name: "Bizeps Curl",
+    instruction: "Stelle Dich aufrecht hin und halte in jeder Hand eine Hantel. Die Handflächen zeigen nach vorne und die Arme hängen gestreckt seitlich am Körper herab. Beuge nun langsam die Arme, indem Du die Unterarme nach oben führst. Halte dabei die Ellenbogen in einer festen Position am Körper. Gehe dann wieder zurück in die Ausgangsposition. Wiederhole die Bewegung für die gewünschte Anzahl an Wiederholungen.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0294.gif",
+    muscle: "Bizeps",
+    equipment: "Dumbbell"
+},
+{
+    _id: "63ff1213bab825a9906e48b8",
+    name: "Enger Hammercurl",
+    instruction: "Stelle Dich aufrecht hin und halte in jeder Hand eine Hantel. Die Handflächen zeigen zueinander und die Arme hängen gestreckt seitlich am Körper herab. Beuge nun langsam die Arme, indem Du die Unterarme nach oben führst. Halte dabei die Ellenbogen in einer festen Position am Körper. Gehe dann wieder zurück in die Ausgangsposition. Wiederhole die Bewegung für die gewünschte Anzahl an Wiederholungen.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0313.gif",
+    muscle: "Bizeps",
+    equipment: "Dumbbell"
+},
+{
+    _id: "63ff1213bab825a9906e48ba",
+    name: "Zottman-Curls",
+    instruction: "Stelle Dich aufrecht hin und halte in jeder Hand eine Hantel. Die Handflächen zeigen nach vorne und die Arme hängen gestreckt seitlich am Körper herab. Beuge nun langsam die Arme, indem Du die Unterarme nach oben führst. Sobald Du die Hantel in Richtung Schulter geführt hast, drehst Du die Handflächen so, dass sie nun nach oben zeigen. Halte die Spannung in den Bizeps, während Du die Hantel zurück in die Ausgangsposition führst. Wenn die Hantel wieder unten ist, drehst Du die Handflächen zurück in die Ausgangsposition. Wiederhole die Bewegung für die gewünschte Anzahl an Wiederholungen.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0439.gif",
+    muscle: "Bizeps",
+    equipment: "Dumbbell"
+},
+{
+    _id: "63ff1213bab825a9906e48bc",
+    name: "Arnold-Presse",
+    instruction: "Setze dich auf eine Bank mit Rückenlehne und nimm eine Langhantel mit einem engen Griff. Hebe die Hantel zur Schulterhöhe und drücke sie dann über den Kopf. Senke sie langsam wieder auf Schulterhöhe und wiederhole den Vorgang.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/2137.gif",
+    muscle: "Schultern Trizeps",
+    equipment: "Barbell"
+},
+{
+    _id: "63ff1213bab825a9906e48be",
+    name: "Kurzhantel Schulterdrücken",
+    instruction: "Setze dich auf eine Bank mit Rückenlehne und nimm eine Hantel in jede Hand. Hebe die Hanteln zur Schulterhöhe und drücke sie dann über den Kopf. Senke sie langsam wieder auf Schulterhöhe und wiederhole den Vorgang.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0405.gif",
+    muscle: "Schultern Trizeps",
+    equipment: "Dumbbell"
+},
+{
+    _id: "63ff1213bab825a9906e48c0",
+    name: "Rudern am Kabelzug",
+    instruction: "Nimm die Griffstange des Kabelzugs und setze dich mit geradem Rücken hin. Ziehe die Stange in Richtung deines Körpers, bis deine Ellenbogen an deinem Körper vorbeikommen, und senke sie dann zurück.",
+    gifUrl: "https://example.com/cable-row.gif",
+    muscle: "Rücken Bizeps",
+    equipment: "Cable"
+},
+{
+    _id: "63ff1213bab825a9906e48c2",
+    name: "Rudern von Oben",
+    instruction: "Setze dich auf eine Maschine für das Rudern von oben, so dass sich deine Brust direkt unter dem Griff befindet. Greife den Griff mit beiden Händen und ziehe ihn zu deiner Brust, indem du deine Ellenbogen nach hinten und unten ziehst. Senke den Griff wieder langsam zurück zur Ausgangsposition und wiederhole die Bewegung.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0180.gif",
+    muscle: "Latissimus",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48c4",
+    name: "Rumänisches Kreuzheben",
+    instruction: "Stelle dich mit deinen Füßen schulterbreit auseinander und greife eine Langhantel mit beiden Händen. Halte die Langhantel vor dir, indem du deine Arme gerade nach unten streckst. Beuge deine Hüften und senke die Langhantel langsam ab, indem du deine Knie leicht beugst. Halte deine Schultern zurück und deinen Rücken gerade. Halte die Position für einen Moment und ziehe die Langhantel dann wieder zurück in die Ausgangsposition.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0085.gif",
+    muscle: "Beinbeuger Gesäßmuskulatur Rücken",
+    equipment: "Barbell"
+},
+{
+    _id: "63ff1213bab825a9906e48c6",
+    name: "Bulgarische Split Squats",
+    instruction: "Stelle dich mit deinem Rücken zu einer Bank und lege deinen rechten Fuß auf die Bank. Nimm eine Langhantel auf deine Schultern und beuge dein linkes Knie, bis es fast den Boden berührt. Strecke dann dein linkes Bein und kehre in die Ausgangsposition zurück. Wiederhole die Bewegung auf der anderen Seite.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/2368.gif",
+    muscle: "Beinstrecker Gesäßmuskulatur",
+    equipment: "Barbell"
+},
+{
+    _id: "63ff1213bab825a9906e48c8",
+    name: "Latzug",
+    instruction: "Setze dich an eine Latzug-Maschine und greife den Griff mit beiden Händen. Ziehe den Griff zu deiner Brust, indem du deine Ellenbogen nach unten und hinten ziehst. Halte den Griff einen Moment lang gedrückt und senke ihn dann langsam zurück in die Ausgangsposition.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0198.gif",
+    muscle: "Latissimus",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48ca",
+    name: "Hackenschmidt",
+    instruction: "Stelle dich mit deinen Füßen schulterbreit auseinander und greife eine Langhantel mit einem Griff, während du sie auf deinen Schultern ablegst. Gehe in die Knie, um deinen Körper abzusenken, während du die Langhantel festhältst. Gehe langsam zurück in die Ausgangsposition, indem du deine Beine streckst.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0743.gif",
+    muscle: "Beinstrecker Gesäßmuskulatur",
+    equipment: "Barbell"
+},
+{
+    _id: "63ff1213bab825a9906e48cc",
+    name: "Trizepsdrücken",
+    instruction: "Setze dich an eine Trizepsdrücken-Maschine und greife den Griff mit beiden Händen. Drücke den Griff nach unten, indem du deine Arme ausstreckst. Halte den Griff für einen Moment gedrückt und lasse ihn dann langsam zurück in die Ausgangsposition steigen.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0607.gif",
+    muscle: "Trizeps",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48ce",
+    name: "Katana Extensions",
+    instruction: "Stelle dich mit deinen Füßen schulterbreit auseinander und halte eine Langhantel hinter deinem Kopf. Strecke deine Arme nach oben, um die Langhantel über deinem Kopf zu halten. Beuge deine Ellbogen und senke die Langhantel langsam hinter deinem Kopf ab, bis deine Unterarme fast parallel zum Boden sind. Strecke deine Arme wieder aus, um in die Ausgangsposition zurückzukehren.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0092.gif",
+    muscle: "Triceps",
+    equipment: "Barbell"
+},
+{
+    _id: "63ff1213bab825a9906e48d0",
+    name: "Wadenheben im Stehen",
+    instruction: "Stelle dich mit deinen Füßen schulterbreit auseinander auf einer Wadenmaschine. Drücke deine Füße nach oben, um deine Wadenmuskulatur zu belasten. Halte für einen Moment gedrückt und lasse dann langsam zurück in die Ausgangsposition fallen.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0605.gif",
+    muscle: "Waden",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48d2",
+    name: "Wadenheben im Sitzen",
+    instruction: "Setze dich auf eine Wadenmaschine und platziere deine Füße auf der Plattform. Drücke deine Füße nach oben, um deine Wadenmuskulatur zu belasten. Halte für einen Moment gedrückt und lasse dann langsam zurück in die Ausgangsposition fallen.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1253.gif",
+    muscle: "Waden",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48d4",
+    name: "Beinstrecken",
+    instruction: "Setze dich an eine Beinstreckmaschine und lege deine Füße unter die Polster. Strecke deine Beine langsam aus und halte die Position kurz, bevor du die Beine wieder beugst.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0585.gif",
+    muscle: "Beinstrecker",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48d6",
+    name: "Beinbeugen",
+    instruction: "Setze dich an eine Beinbeugemaschine und lege deine Oberschenkel unter die Polster. Beuge deine Knie langsam, bis deine Oberschenkel fast die Polster berühren. Halte die Position kurz und strecke dann die Knie wieder aus.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0586.gif",
+    muscle: "Beinbeuger",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48d8",
+    name: "Adduktoren",
+    instruction: "Setze dich an eine Adduktorenmaschine und platziere deine Oberschenkel auf den Polstern. Drücke die Polster langsam zusammen, indem du deine Oberschenkel adduzierst. Halte die Position kurz und kehre dann zur Ausgangsposition zurück.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0598.gif",
+    muscle: "Adduktoren",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48da",
+    name: "Abduktoren",
+    instruction: "Setze dich an eine Abduktorenmaschine und platziere deine Oberschenkel auf den Polstern. Drücke die Polster langsam auseinander, indem du deine Oberschenkel abduzierst. Halte die Position kurz und kehre dann zur Ausgangsposition zurück.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0597.gif",
+    muscle: "Abduktoren",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48dc",
+    name: "Kickbacks",
+    instruction: "Stelle dich auf allen Vieren auf den Boden und halte eine Hantel in einer Hand. Führe dein Ellbogengelenk auf Höhe deines Rückens und strecke dann deinen Arm nach hinten aus, indem du dein Trizeps anspannst. Halte die Position kurz und kehre dann zur Ausgangsposition zurück.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0860.gif",
+    muscle: "Trizeps",
+    equipment: "Dumbbell"
+},
+{
+    _id: "63ff1213bab825a9906e48de",
+    name: "Preacher Curls",
+    instruction: "Setze dich an die Preacher-Curl-Maschine und lege deine Arme auf das gepolsterte Kissen. Greife die Stange mit einem Untergriff und hebe sie an, bis deine Arme vollständig gestreckt sind. Beuge nun die Arme und führe die Stange langsam zur Stirn. Halte die Spannung für einen Moment und senke die Stange dann langsam wieder ab.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0592.gif",
+    muscle: "Bizeps",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48e0",
+    name: "Butterfly",
+    instruction: "Setze dich an den Butterfly und lege deine Unterarme auf die gepolsterten Armpolster. Stelle sicher, dass deine Arme einen 90-Grad-Winkel bilden und deine Ellenbogen in einer Linie mit deinen Schultern sind. Drücke nun die Arme nach vorne, bis sie fast gestreckt sind, und halte die Spannung für einen Moment. Lasse die Arme dann langsam wieder zurück in die Ausgangsposition.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0596.gif",
+    muscle: "Brust",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48e2",
+    name: "Reverse Butterfly",
+    instruction: "Setze dich an den Reverse Butterfly und greife die beiden Griffe. Deine Ellenbogen sollten in einer Linie mit deinen Schultern sein. Ziehe nun die Griffe auseinander, bis deine Arme fast vollständig gestreckt sind, und halte die Spannung für einen Moment. Lasse die Griffe dann langsam zurück in die Ausgangsposition.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0602.gif",
+    muscle: "Rücken",
+    equipment: "Machine"
+},
+{
+    _id: "63ff1213bab825a9906e48e4",
+    name: "T-Bar Rudern",
+    instruction: "Stelle dich vor die T-Bar Rudermaschine und befestige die Langhantel an der Halterung. Greife die Hantel mit einem Obergriff und beuge deine Knie leicht. Ziehe die Hantel nun in Richtung deiner Brust und halte die Spannung für einen Moment. Lasse die Hantel dann langsam zurück in die Ausgangsposition.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/1349.gif",
+    muscle: "Rücken",
+    equipment: "Barbell"
+},
+{
+    _id: "63ff1213bab825a9906e48e6",
+    name: "Face-Pulls",
+    instruction: "Stelle dich vor eine Kabelzugmaschine und halte die Griffe mit ausgestreckten Armen auf Brusthöhe. Ziehe die Griffe nun zu deinem Gesicht und ziehe dabei deine Ellenbogen nach außen. Halte kurz und senke die Griffe dann kontrolliert wieder ab.",
+    gifUrl: "https://media.giphy.com/media/l0HlTfAVHxvphsEJ2/giphy.gif",
+    muscle: "Rücken",
+    equipment: "Cable"
+},
+{
+    _id: "63ff1213bab825a9906e48e8",
+    name: "Skull-Crushers",
+    instruction: "Lege dich mit einem Langhantel auf eine Flachbank. Nimm die Hantel im engen Obergriff und führe sie mit gestreckten Armen über deinen Kopf. Beuge anschließend deine Arme und lasse die Hantel kontrolliert hinter deinem Kopf ab. Strecke die Arme dann wieder aus und führe die Hantel zurück in die Ausgangsposition.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0035.gif",
+    muscle: "Trizeps",
+    equipment: "Barbell"
+},
+{
+    _id: "63ff1213bab825a9906e48ea",
+    name: "Schrägbankdrücken",
+    instruction: "Lege dich auf eine Schrägbank und nimm eine Langhantel im Obergriff. Führe die Hantel langsam zu deiner Brust und drücke sie anschließend wieder nach oben aus. Achte darauf, dass du die Hantel kontrolliert führst und nicht überstreckst.",
+    gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0232.gif",
+    muscle: "Brust Trizeps Schultern",
+    equipment: "Barbell"
+},
 ];
