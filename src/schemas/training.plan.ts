@@ -6,7 +6,7 @@ import {
 
 const TrainingPlanSchema = new Schema({
   name: { type: String, required: true },
-  split: { type: Number, min: 1, max: 10, required: true },
+  split: { type: Number, min: 0, max: 10, required: true },
   trainingDays: [
     {
       type: Schema.Types.ObjectId,
