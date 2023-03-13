@@ -6,6 +6,7 @@ import supertest from 'supertest';
 import { setupServer } from '../../src/server';
 import { Exercise } from '../../src/schemas/exercise';
 import { TrainingDay } from '../../src/schemas/training.day';
+import { Account } from '../../src/schemas/account';
 
 describe('Testing TrainingPlan Route', () => {
   const testdb = new TestDatabase();
@@ -282,5 +283,40 @@ describe('Testing TrainingPlan Route', () => {
     });
 
     expect(res.status).to.equal(201);
+  });
+
+  test('Post 201 with account', async () => {
+    const testaccount = await Account.create({
+      _id: '5099803df3f494add2f9d757',
+      birthdate: "12.12.2010",
+      name: "Max Mustermann",
+      google_id: "5099803df3f494add2f9dba7"
+      });
+
+    const res = await testserver.post(`/trainingPlan?userId=${ testaccount._id._id }`).send({
+      _id: '5d99802df3f4948bd2f9daa1',
+      name: 'Bruno',
+      split: 6,
+      trainingDays: ['5099803df3f4948bd2f9dba5'],
+      nextDay: 3,
+    });
+
+    expect(res.status).to.equal(201);
+  });
+
+  test('Post 400 malformed', async () => {
+
+    const testaccount = await Account.create({
+      _id: '5099803df3f494add2f9d757',
+      birthdate: "12.12.2010",
+      name: "Max Mustermann",
+      google_id: "5099803df3f494add2f9dba7"
+      });
+
+    const res = await testserver.post(`/trainingPlan?userId=${ testaccount._id._id }`).send({
+      random: ["random"]
+    });
+
+    expect(res.status).to.equal(400);
   });
 });
