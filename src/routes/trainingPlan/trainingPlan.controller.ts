@@ -29,16 +29,9 @@ export async function postTrainingPlan(
     if (req.query.userId) {
       const account = await Account.findById(req.query.userId)
       id = (await TrainingPlan.create(req.body))._id.toString()
-      if (!id) {
-        throw new Error("Malformed TrainingPlan");
-      }
       if (account != null) {
         const filter = { _id: req.query.userId }
-        const resBody = await Account.findOneAndUpdate(filter, { $push: { trainingPlans: id } }, { new: true })
-        if (!resBody) {
-          await TrainingPlan.findByIdAndDelete(id)
-          throw new Error("Update went wrong")
-        }
+        await Account.findOneAndUpdate(filter, { $push: { trainingPlans: id } }, { new: true })
       } else {
         await TrainingPlan.findByIdAndDelete(id)
         throw new Error("No Account with that Id!")
@@ -48,7 +41,7 @@ export async function postTrainingPlan(
     }
     res.status(201).send(id)
   } catch (e) {
-    res.status(400).send()
+    res.status(400).send(e)
   }
 }
 
@@ -58,19 +51,9 @@ export async function putTrainingPlan(
 ) {
   try {
     if (!req.query.trainingPlanId) throw new Error("No trainingPlanId provided!");
-    if (!Array.isArray(req.body.trainingDays)) {
-      res.statusMessage = 'TrainingDays has to be an array!'
-      res.status(400)
-      return
-    }
     const newTrainingDays = req.body.trainingDays
     const tDays: string[] = []
     for await (const newDay of newTrainingDays) {
-      if (newDay == undefined) {
-        res.statusMessage = 'New TrainingDay undefined'
-        res.sendStatus(400)
-        return
-      }
       const newExercises = newDay.exercises
       newExercises.forEach((newExercise: { exerciseId: { _id: any } }) => {
         newExercise.exerciseId = newExercise.exerciseId._id
