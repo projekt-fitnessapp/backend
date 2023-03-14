@@ -22,11 +22,11 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
   try {
 
     if (!req.body.user_id) throw Error('UserId is missing');
-    if (!req.body.numberOfTraininssession) throw Error('Number of Trainingssessions is missing');
+    if (!req.body.numberOfTrainingssessions) throw Error('Number of Trainingssessions is missing');
     if (!req.body.trainingsType) throw Error('Training type is missing');
     
 
-    const numberTrainingssessions = req.body.numberOfTraininssession;
+    const numberTrainingssessions = req.body.numberOfTrainingssessions;
     const firstTrainingDayExercises = new Array<any>;
     const secondTrainingDayExercises = new Array<any>;
     const thirdTrainingDayExercises = new Array<any>;
@@ -243,6 +243,7 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
     const resBody = await Account.findOneAndUpdate(filter, { $push: { trainingPlans: createdtrainingPlan._id.toString() }}, { new: true });
     if (resBody == null) throw Error('Number of Trainingssessions is missing');
 
+    console.log(trainingPlan);
     return res.status(201).send(trainingPlan);
 
   } catch (e) {
