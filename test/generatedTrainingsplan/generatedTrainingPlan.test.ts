@@ -41,7 +41,7 @@ describe('Testing the generatedTrainingPlan route', () => {
 
     let testbody = {
         user_id: "5099803df3f494add2f9d707",
-        numberOfTraininssession: 4,
+        numberOfTrainingssessions: 4,
         trainingsStatus: "untrained",
         trainingsType: "withMachines"
       };
@@ -69,7 +69,7 @@ describe('Testing the generatedTrainingPlan route', () => {
 
     let testbody = {
         user_id: "5099803df3f494add2f9d707",
-        numberOfTraininssession: 2,
+        numberOfTrainingssessions: 2,
         trainingsStatus: "untrained",
         trainingsType: "withMachines"
       };
@@ -97,7 +97,7 @@ describe('Testing the generatedTrainingPlan route', () => {
 
     let testbody = {
         user_id: "5099803df3f494add2f9d707",
-        numberOfTraininssession: 4,
+        numberOfTrainingssessions: 4,
         trainingsStatus: "untrained",
         trainingsType: "withMachines"
       };
@@ -125,7 +125,7 @@ describe('Testing the generatedTrainingPlan route', () => {
 
     let testbody = {
         user_id: "5099803df3f493add2f94707",
-        numberOfTraininssession: 6,
+        numberOfTrainingssessions: 6,
         trainingsStatus: "untrained",
         trainingsType: "withMachines"
       };
@@ -139,7 +139,7 @@ describe('Testing the generatedTrainingPlan route', () => {
 
     let testbody = {
         user_id: "",
-        numberOfTraininssession: 2,
+        numberOfTrainingssessions: 2,
         trainingsStatus: "untrained",
         trainingsType: "withMachines"
       };
@@ -155,7 +155,7 @@ describe('Testing the generatedTrainingPlan route', () => {
 
     let testbody = {
         user_id: objectId,
-        numberOfTraininssession: null,
+        numberOfTrainingssessions: null,
         trainingsStatus: "untrained",
         trainingsType: "withMachines"
       };
@@ -171,7 +171,7 @@ describe('Testing the generatedTrainingPlan route', () => {
 
     let testbody = {
         user_id: objectId,
-        numberOfTraininssession: 2,
+        numberOfTrainingssessions: 2,
         trainingsStatus: "untrained",
         trainingsType: null
       };
@@ -187,7 +187,7 @@ describe('Testing the generatedTrainingPlan route', () => {
 
     let testbody = {
         user_id: objectId,
-        numberOfTraininssession: 2,
+        numberOfTrainingssessions: 2,
         trainingsStatus: "untrained",
         trainingsType: "withMachines"
       };
