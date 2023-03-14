@@ -5,33 +5,16 @@ import { Exercise } from '../../schemas/exercise';
 import { Account } from '../../schemas/account';
 
 const withMachinesEquipment = [
-  'barbell',
-  'assisted',
-  'leverage machine',
-  'sled machine',
-  'upper body ergometer',
-  'elliptical machine',
+  'Machine'
 ];
 
 const withoutMaschinesEquipment = [
-  'body weight',
-  'barbell',
-  'cable',
-  'assisted',
-  'rope',
-  'dumbbell',
-  'stability ball',
-  'ez barbell',
-  'upper body ergometer',
-  'kettlebell',
-  'medicine ball',
-  'olympic barbell',
-  'bosu ball',
-  'resistance band',
-  'roller',
-  'wheel roller',
-  'tire',
-  'weighted',
+  'Bodyweight',
+  'Barbell',
+  'Kettlebell',
+  'Dumbbell',
+  'Barbell',
+  'Cable'
 ];
 
 export async function generateNewTrainingsplan (req: Request, res: Response) {
@@ -60,19 +43,13 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
       nameOfTrainingPlan = 'Full body training plan';
       split = 1;
       nameOfTrainingDayOne = 'Full body';
-      const neededMuscles = ['pectorals', 'quads', 'delts', 'lats', 'hamstrings', 'abs'];
+      const neededMuscles = ['Brust', 'Beinstrecker', 'Schultern Trizeps', 'Latissimus', 'Rücken', 'Beinbeuger', 'Bauchmuskeln'];
 
       for(const muscle of neededMuscles){
-        if (muscle == 'lats'){
-          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
-          for (let i = 0; i < ergebnis.length; i++) {
-            firstTrainingDayExercises.push(ergebnis[i]);
-          }
-        } else{
           const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
-          }}}
+          }}
     }
 
     // 2er Split Trainingsplan (4 oder 5 Trainingssession / Woche)
@@ -87,16 +64,11 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
       nameOfTrainingDayTwo = "Lower body"
       nameOfTrainingPlan = 'Upper / Lower Body plan';
 
-      const upperBodyMuscles = ['pectorals', 'lats', 'delts', 'biceps', 'triceps'];
-      const lowerBodyMuscles = ['quads', 'hamstrings', 'calves', 'upper back', 'abs'];
+      const upperBodyMuscles = ['Brust Trizeps Schultern', 'Latissimus', 'Rücken', 'Schultern', 'Bizeps', 'Trizeps'];
+      const lowerBodyMuscles = ['Quadrizeps Hüften Gesäßmuskulatur', 'Beinbeuger', 'Waden', 'Beinstrecker', "Beinbeuger Gesäßmuskulatur Rücken", 'Bauchmuskeln'];
 
       for(const muscle of upperBodyMuscles){
-        if (muscle == 'pectorals'){
-          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
-          for (let i = 0; i < ergebnis.length; i++) {
-            firstTrainingDayExercises.push(ergebnis[i]);
-          }
-        }else if (muscle == 'lats'){
+        if (muscle == 'Brust Trizeps Schultern'){
           const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
@@ -108,7 +80,7 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
           }}}
 
       for(const muscle of lowerBodyMuscles){
-        if (muscle == 'abs'){
+        if (muscle == 'Bauchmuskeln'){
           const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             secondTrainingDayExercises.push(ergebnis[i]);
@@ -121,15 +93,15 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
         }
       } else { //Push and Pull
 
-      const pushMuscles = ['pectorals', 'quads', 'delts', 'calves', 'triceps'];
-      const pullMuscles = ['lats', 'hamstrings', 'biceps', 'abs'];
+      const pushMuscles = ['Brust Trizeps Schultern', 'Beinstrecker', 'Schultern', 'Quadrizeps Hüften Gesäßmuskulatur', 'Waden', 'Trizeps'];
+      const pullMuscles = ['Latissimus', 'Beinbeuger', 'Rücken', "Beinbeuger Gesäßmuskulatur Rücken", 'Bizeps', 'Bauchmuskeln'];
 
       nameOfTrainingDayOne = "Push day"
       nameOfTrainingDayTwo = "Pull day"
       nameOfTrainingPlan = 'Push / Pull training plan';
         
       for(const muscle of pushMuscles){
-        if (muscle == 'pectorals'){
+        if (muscle == 'Brust Trizeps Schultern'){
           const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
@@ -141,7 +113,7 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
           }}}
 
       for(const muscle of pullMuscles){
-        if (muscle == 'lats' || muscle == 'abs'){
+        if (muscle == 'Bauchmuskeln'){
           const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             secondTrainingDayExercises.push(ergebnis[i]);
@@ -163,31 +135,32 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
       nameOfTrainingPlan = '3 split training plan';
 
       split = 3
-      const firstTrainingDayMuscles = ['pectorals', 'biceps', 'triceps'];
-      const secondTrainingDayMuscles = ['quads', 'hamstrings', 'calves'];
-      const thirdTrainingDayMuscles = ['lats', 'upper back', 'delts', 'abs'];
+      const firstTrainingDayMuscles = ['Brust Trizeps Schultern', 'Bizeps', 'Trizeps'];
+      const secondTrainingDayMuscles = ['Quadrizeps Hüften Gesäßmuskulatur', 'Beinstrecker Gesäßmuskulatur', 'Beinbeuger', 'Beinstrecker', 'Waden'];
+      const thirdTrainingDayMuscles = ['Latissimus', 'Rücken', 'Schultern', 'Schultern Trizeps', 'Bauchmuskeln'];
 
       for(const muscle of firstTrainingDayMuscles){
-        if (muscle == 'pectorals'){
-          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 4);
-          for (let i = 0; i < ergebnis.length; i++) {
-            firstTrainingDayExercises.push(ergebnis[i]);
-          }
-        }else{
           const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 3);
           for (let i = 0; i < ergebnis.length; i++) {
             firstTrainingDayExercises.push(ergebnis[i]);
-          }}}
+          }}
 
       for(const muscle of secondTrainingDayMuscles){
+        if (muscle == 'Beinstrecker' || muscle == 'Beinbeuger' || muscle == 'Waden'){
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
+          for (let i = 0; i < ergebnis.length; i++) {
+            secondTrainingDayExercises.push(ergebnis[i]);
+          }
+        } else{
           const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 1);
           for (let i = 0; i < ergebnis.length; i++) {
             secondTrainingDayExercises.push(ergebnis[i]);
-          }}   
+          }}  
+        }  
     
       for(const muscle of thirdTrainingDayMuscles){
-        if (muscle == 'lats'){
-          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 4);
+        if (muscle == 'Latissimus' || muscle == 'Rücken'){
+          const ergebnis = await getExercisesForSpecificMuscle(muscle, req.body.trainingsType, 2);
           for (let i = 0; i < ergebnis.length; i++) {
             thirdTrainingDayExercises.push(ergebnis[i]);
           }
@@ -204,13 +177,13 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
     if (firstTrainingDayExercises.length > 0){
       const exercises = new Array<any>;
       for (let i = 0; i < firstTrainingDayExercises.length; i++) {
+        console.log(firstTrainingDayExercises[i])
         exercises.push({
           _id: firstTrainingDayExercises[i]._id,
           exerciseId: firstTrainingDayExercises[i]._id,
           reps: 12,
           sets: 4
         })}
-      
       const trainingDay = await TrainingDay.create({
         name: nameOfTrainingDayOne,
         exercises: exercises
@@ -232,7 +205,6 @@ export async function generateNewTrainingsplan (req: Request, res: Response) {
         name: nameOfTrainingDayTwo,
         exercises: exercises
       });
-    
       trainingsDayIds.push(trainingDay._id.toString());
     }
 
@@ -290,7 +262,7 @@ async function getExercisesForSpecificMuscle(muscle: string, equipment: string, 
   const exercises = await Exercise.find(searchedExercise).select( '_id equipment name muscle gifUrl instruction');
 
   // Fall 1: Es wurden genau so viele Übungen für eine Muskelgruppe wie gewünscht gefunden
-  if (exercises.length == numberOfExercises){ 
+  if (exercises.length <= numberOfExercises){ 
     return exercises;
   } 
   // Fall 2: Es wurden mehr Übungen für eine Muskelgruppe als gewünscht gefunden
@@ -319,7 +291,9 @@ async function getExercisesForSpecificMuscle(muscle: string, equipment: string, 
     // Es wurden zu wenige Übungen für dieses Equipment für diese Musklegruppe gefunden wie notwendig
     else if (filteredExercises.length < numberOfExercises){  
       if (filteredExercises.length > 0){
-        finalExercises.push(filteredExercises);
+        for (let i = 0; i < filteredExercises.length; i++) {
+          finalExercises.push(filteredExercises[i]);
+        }
       }
       while(finalExercises.length < numberOfExercises){
         const randomNumber = Math.floor((Math.random() * exercises.length) + 1);
