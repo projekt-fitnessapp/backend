@@ -73,7 +73,15 @@ describe('Testing TrainingPlan Route', () => {
           name: 'Push',
           exercises: [{
             _id: exerciseId,
-            exerciseId: exerciseId,
+            exerciseId: {
+              __v: 0,
+              _id: "5099803df3f4948bd2f98391",
+              equipment: "barbell",
+              gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+              instruction: "Push the bar.",
+              muscle: "breast",
+              name: "Bench Press"
+            },
             reps: 2,
             sets: 3
           }],
@@ -291,9 +299,9 @@ describe('Testing TrainingPlan Route', () => {
       birthdate: "12.12.2010",
       name: "Max Mustermann",
       google_id: "5099803df3f494add2f9dba7"
-      });
+    });
 
-    const res = await testserver.post(`/trainingPlan?userId=${ testaccount._id._id }`).send({
+    const res = await testserver.post(`/trainingPlan?userId=${testaccount._id._id}`).send({
       _id: '5d99802df3f4948bd2f9daa1',
       name: 'Bruno',
       split: 6,
@@ -311,9 +319,9 @@ describe('Testing TrainingPlan Route', () => {
       birthdate: "12.12.2010",
       name: "Max Mustermann",
       google_id: "5099803df3f494add2f9dba7"
-      });
+    });
 
-    const res = await testserver.post(`/trainingPlan?userId=${ testaccount._id._id }`).send({
+    const res = await testserver.post(`/trainingPlan?userId=${testaccount._id._id}`).send({
       random: ["random"]
     });
 

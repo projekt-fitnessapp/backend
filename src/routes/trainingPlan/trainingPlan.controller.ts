@@ -11,7 +11,10 @@ export async function getTrainingPlan(
     if (!req.query.trainingPlanId) throw new Error("No trainingPlanId provided!");
     res.status(200).json(await TrainingPlan.findById(req.query.trainingPlanId).populate({
       path: 'trainingDays',
-      model: 'Training Day'
+      model: 'Training Day',
+      populate: {
+        path: 'exercises.exerciseId'
+      }
     }))
   } catch (e) {
     res.statusMessage = "No trainingPlanId provided"
