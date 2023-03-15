@@ -120,6 +120,9 @@ export async function deleteTrainingPlan(req: Request, res: Response) {
       (value: string) => value != trainingPlanId
     );
 
+    if (accountJSON.activePlan.toString() == trainingPlanId)
+      accountJSON.activePlan = null;
+
     // Find trainingPlan
     const trainingPlan = await TrainingPlan.findById(trainingPlanId);
     if (!trainingPlan) return res.status(400).json('trainingPlan not found');
