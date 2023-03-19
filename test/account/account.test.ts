@@ -152,7 +152,6 @@ describe('Account Endpoint Tests', () => {
     const plan = await TrainingPlan.findById(trainingPlanId);
     expect(plan).to.equal(null);
     const session = await TrainingSession.findById(trainingSessionId);
-    console.log(session);
     expect(session).to.equal(null);
   });
 
