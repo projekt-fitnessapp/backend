@@ -25,8 +25,8 @@ export async function getAccount(req: Request, res: Response) {
 
 export async function saveAccount(req: Request, res: Response) {
   try {
-    const existingAccount = await Account.findOne().where({
-      googleId: req.body.googleId,
+    const existingAccount = await Account.findOne({
+      google_id: {$eq: req.body.google_id},
     });
     if (existingAccount) {
       const userId = existingAccount._id;
