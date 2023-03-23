@@ -2,7 +2,7 @@ import mongoose, { Schema } from 'mongoose';
 import { AccountDocument, AccountModel } from '../types/db/account.types';
 
 const AccountSchema = new Schema({
-  google_id: { type: String, required: true },
+  google_id: { type: String, required: true, match: /\w+/gi },
   name: { type: String, required: true },
   birthdate: { type: String, required: true },
   sex: { type: String, enum: ['male', 'female'], required: false },
