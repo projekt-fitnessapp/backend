@@ -25,13 +25,15 @@ export async function getAccount(req: Request, res: Response) {
 
 export async function saveAccount(req: Request, res: Response) {
   try {
-    const existingAccount = await Account.findOne({
-      google_id: {$eq: req.body.google_id},
-    });
-    if (existingAccount) {
-      const userId = existingAccount._id;
+    if (req.body.google_id || req.body.google_id != '') {
+      const existingAccount = await Account.findOne({
+        google_id: { $eq: req.body.google_id },
+      });
+      if (existingAccount) {
+        const userId = existingAccount._id;
 
-      return res.status(201).json({ userId });
+        return res.status(201).json({ userId });
+      }
     }
 
     const savedAccount = await Account.create(req.body);
