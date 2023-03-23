@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
 import { AppRouter } from './routes/routes';
+import loggingMiddleware from './middleware/logging.middleware';
 
 export function setupServer(isTest: boolean) {
   if (isTest) {
@@ -13,6 +14,8 @@ export function setupServer(isTest: boolean) {
     dotenv.config();
   }
   const app = express();
+
+  app.use(loggingMiddleware);
 
   app.use(morgan('dev'));
 
@@ -31,6 +34,6 @@ export async function connectDB(isTest: boolean, logger: any) {
     dotenv.config();
   }
   await mongoose.connect(process.env.DB_URL as string)
-  .then(() => logger.log('info', "Database connection successfull"))
-  .catch(err => logger.log('error', err.toString()));
+    .then(() => logger.log('info', "Database connection successfull"))
+    .catch(err => logger.log('error', err.toString()));
 }

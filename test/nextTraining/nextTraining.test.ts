@@ -87,6 +87,7 @@ describe('NextTraining Endpoint Tests', () => {
     const expectedBody = {
       _id: '634dae75663403c8063adc43',
       name: 'Push',
+      trainingPlanId: '634daf6d663403c8063adc44',
       exercises: [
         {
           _id: '634db8025884101c4c97f005',
@@ -177,7 +178,7 @@ describe('NextTraining Endpoint Tests', () => {
     );
 
     expect(res.status).to.equal(400);
-    expect(res.body).to.deep.equal({ msg: 'No training plan active.' });
+    expect(res.body).to.deep.equal({ msg: 'No Trainingplan found' });
   });
 
   afterEach(async () => {

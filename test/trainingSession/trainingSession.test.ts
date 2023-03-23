@@ -6,6 +6,8 @@ import { setupServer } from '../../src/server';
 import supertest from "supertest";
 import { Exercise } from '../../src/schemas/exercise';
 import { Execution } from '../../src/schemas/execution';
+import { TrainingDay } from '../../src/schemas/training.day';
+import { TrainingPlan } from '../../src/schemas/training.plan';
 
 describe('Testing the training session route', () => {
 
@@ -60,7 +62,7 @@ describe('Testing the training session route', () => {
       ]
     })
 
-    const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5&id=[5099803df3f4948bd2f98548]")
+    const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5&id=5099803df3f4948bd2f98548&id=5099803df3f4948bd2f98547")
 
     expect(response.status).to.equal(200)
     expect(response.body).to.deep.equal([
@@ -180,6 +182,13 @@ describe('Testing the training session route', () => {
     ])
   })
 
+  test('Testing get training session without a userId', async () => {
+
+    const response = await testserver.get("/trainingSession")
+
+    expect(response.status).to.equal(400)
+  })
+
   test('Testing get training session without a hit', async () => {
 
     const response = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dja5")
@@ -189,6 +198,90 @@ describe('Testing the training session route', () => {
   })
 
   test('Post Method with no error', async ()=>{
+    const exercise = await Exercise.create({
+      _id: '5099803df3f4948bd2f98391',
+      name: 'Bench Press',
+      instruction: 'Push the bar.',
+      gifUrl: 'http://d205bpvrqc9yn1.cloudfront.net/0030.gif',
+      muscle: 'breast',
+      equipment: 'barbell',
+    });
+    const exerciseId = exercise._id.toString();
+    const trainingDay = await TrainingDay.create({
+      _id: '5099803df3f4948bd2f9db12',
+      name: 'Push',
+      exercises: [
+        {
+          _id: exerciseId,
+          exerciseId: exerciseId,
+          reps: 2,
+          sets: 3
+        }
+      ]
+    });
+    const trainingDay2 = await TrainingDay.create({
+      _id: '5099803df3f4948bd2f9db11',
+      name: 'Pull',
+      exercises: [
+        {
+          _id: exerciseId,
+          exerciseId: exerciseId,
+          reps: 1,
+          sets: 1
+        }
+      ]
+    });
+    const trainingDayId = trainingDay._id.toString();
+    const trainingDayId2 = trainingDay2._id.toString();
+    const planRes = await TrainingPlan.create({
+      _id: '5d99802df3f4948bd2f9daa1',
+      name: 'Bruno',
+      split: 6,
+      trainingDays: [trainingDayId, trainingDayId2],
+      nextDay: 0,
+    });
+
+    const trainingSession = {
+      _id: "5099803df3f4948bd2f98548",
+      userId: "5099803df3f494add2f9dba5",
+      trainingDayId: trainingDayId,
+      date: "2016-05-18T16:30:00Z",
+      executions: [
+        {
+          exercise: {
+            _id: "5099803df3f4948bd2f98391",
+            name: "Bench Press",
+            instruction: "Push the bar.",
+            gifUrl: "http://d205bpvrqc9yn1.cloudfront.net/0030.gif",
+            muscle: "breast",
+            equipment: "barbell"
+          },
+          notes: [
+            "string"
+          ],
+          sets: [
+            {
+              executionType: "warmup",
+              weight: 1,
+              reps: 1,
+              tenRM: 1
+            }
+          ]
+        }
+      ]
+    }
+
+    const res = await testserver.post(`/trainingSession?trainingPlanId=${ planRes._id }`).send(trainingSession).set('Accept', 'application/json');
+    expect(res.status).to.equal(201);
+
+    const plan = await testserver.get(`/trainingPlan?trainingPlanId=${ planRes._id._id }`);
+    expect(plan.body.nextDay).to.equal(1);
+
+    const res2 = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dba5");
+    expect(res2.status).to.equal(200);
+  });
+
+  test('Post Method with status 202', async ()=>{
     const trainingSession = {
       _id: "5099803df3f4948bd2f98548",
       userId: "5099803df3f494add2f9dba5",
@@ -220,7 +313,7 @@ describe('Testing the training session route', () => {
     }
 
     const res = await testserver.post("/trainingSession").send(trainingSession).set('Accept', 'application/json');
-    expect(res.status).to.equal(201);
+    expect(res.status).to.equal(202);
 
     const res2 = await testserver.get("/trainingSession?userId=5099803df3f494add2f9dba5");
     expect(res2.status).to.equal(200);
@@ -230,7 +323,7 @@ describe('Testing the training session route', () => {
     const trainingSession = {
       _id: "5099803df3f4948bd2f98548",
       date: "2016-05-18T16:30:00Z",
-      executions: []
+      executions: false
     }
 
     const res = await testserver.post("/trainingSession").send(trainingSession).set('Accept', 'application/json');

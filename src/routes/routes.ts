@@ -10,8 +10,8 @@ import { PingRouter } from './ping/ping.router';
 import { TrainingSessionRouter } from './trainingSession/trainingSession.router';
 import { MyPlansRouter } from './myPlans/myPlans.router';
 import { LastTrainingSessionRouter } from './lastTrainingSession/lastTrainingSession.router';
+import { generateNewTrainingsplanRouter } from './generatedTrainingsplan/generatedTrainingsplan.router';
 import { BenchmarkingRouter } from './benchmarking/benchmarking.router';
-
 
 const router = Router();
 
@@ -27,5 +27,6 @@ router.use('/nextTraining', NextTrainingRouter);
 router.use('/trainingDay', TrainingDayRouter);
 router.use('/lastTrainingSession', LastTrainingSessionRouter);
 router.use('/benchmarking', BenchmarkingRouter);
+router.use('/generatedTrainingsplan', generateNewTrainingsplanRouter);
 
 export { router as AppRouter };
